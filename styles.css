@@ -21,16 +21,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .counter {
-    font-size: 72px;
-    padding: 20px 40px;
-    border: 5px solid #FFD700;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 250px;
-    text-align: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.digit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Width of each rectangle */
+    height: 120px; /* Height of each rectangle */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 72px; /* Large font size for the digits */
+    color: #FFFFFF; /* White color for the digits */
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .goals-text {
@@ -64,7 +76,7 @@ body {
     font-size: 16px;
     padding: 10px 20px;
     background: #00C4FF;
-    color: #FFFFFF;
+    color: #FFD700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -93,7 +105,7 @@ body {
     font-size: 18px;
     padding: 10px 30px;
     background: linear-gradient(45deg, #FF416C, #FF4B2B);
-    color: #FFFFFF;
+    color: #FFD700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -113,7 +125,7 @@ body {
 }
 
 .club-logo {
-    height: 40px;
+    height: 50px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
