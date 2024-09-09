@@ -25,8 +25,9 @@ body {
 }
 
 .counter {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Use flexbox to align items horizontally */
+    gap: 10px; /* Adds spacing between each digit */
+    justify-content: center; /* Centers the counter within its parent */
     margin-bottom: 10px;
 }
 
@@ -43,6 +44,7 @@ body {
     color: #FFFFFF; /* White color for the digits */
     font-weight: bold;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
 }
 
 .goals-text {
