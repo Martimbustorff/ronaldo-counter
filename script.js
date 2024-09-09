@@ -27,7 +27,7 @@ function populateCountryDropdown() {
         });
 }
 
-// Add this mapping object before your updateCountryLeaderboard function
+// Mapping of country names to their ISO codes for flag display
 const countryCodes = {
     "Afghanistan": "af",
     "Albania": "al",
@@ -220,21 +220,35 @@ const countryCodes = {
     "Zimbabwe": "zw"
 };
 
-// Updated function to display flags in the leaderboard
+// Function to handle saving the selected country and updating the leaderboard
+document.getElementById('save-button').addEventListener('click', function () {
+    const dropdown = document.getElementById('country-dropdown');
+    const selectedCountry = dropdown.value; // Get selected country from dropdown
+
+    if (selectedCountry) {
+        updateCountryLeaderboard(selectedCountry); // Call function to update leaderboard
+    } else {
+        alert('Please select a country!');
+    }
+});
+
+// Function to update the leaderboard with the selected country and its flag
 function updateCountryLeaderboard(selectedCountry) {
     const votes = Math.floor(Math.random() * 100) + 1; // Example vote count
     const countryCode = countryCodes[selectedCountry]; // Get the ISO code for the selected country
-    
+
     if (!countryCode) {
         console.error(`No flag found for country: ${selectedCountry}`);
         return; // Exit if no country code found
     }
-    
+
     const countryItem = document.createElement('div');
     countryItem.className = 'country-item';
     countryItem.innerHTML = `<span class="fi fi-${countryCode}" style="margin-right: 10px;"></span> ${selectedCountry.toUpperCase()}: ${votes} votes`;
-    
+
     const countryLeaderboard = document.getElementById('country-leaderboard');
     countryLeaderboard.innerHTML = ''; // Clear previous content
     countryLeaderboard.appendChild(countryItem);
+}
+
 }
