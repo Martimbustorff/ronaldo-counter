@@ -8,7 +8,8 @@
     <meta property="og:image" content="path/to/preview-image.jpg">
     <title>Cristiano Ronaldo Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -19,22 +20,24 @@
         <main>
             <div class="countdown">
                 <div class="count-number">0</div>
-                <div class="count-number">9</div>
+                <div class="count-number">0</div>
                 <div class="count-number">9</div>
                 <div class="count-number">9</div>
                 <p class="count-label">Goals to 1000</p>
             </div>
             <div class="reactions">
-                <button class="reaction-button" data-reaction="heart">❤️ <span id="heart-count">0</span></button>
-                <button class="reaction-button" data-reaction="muscle">💪 <span id="muscle-count">0</span></button>
-                <button class="reaction-button" data-reaction="pray">🙏 <span id="pray-count">0</span></button>
+                <button class="reaction-button" data-reaction="heart"><i class="fa-solid fa-heart"></i> <span id="heart-count">0</span></button>
+                <button class="reaction-button" data-reaction="muscle"><i class="fa-solid fa-dumbbell"></i> <span id="muscle-count">0</span></button>
+                <button class="reaction-button" data-reaction="pray"><i class="fa-solid fa-praying-hands"></i> <span id="pray-count">0</span></button>
             </div>
             <div class="country-selection">
                 <label for="country-select">Select your country:</label>
-                <select id="country-select">
-                    <!-- Options will be dynamically populated -->
-                </select>
-                <button id="save-country">Save</button>
+                <div class="select-container">
+                    <select id="country-select">
+                        <!-- Options will be dynamically populated -->
+                    </select>
+                    <button id="save-country" class="save-button"><i class="fa-solid fa-save"></i></button>
+                </div>
             </div>
             <button id="share-button">SHARE</button>
             <section class="top-countries">
