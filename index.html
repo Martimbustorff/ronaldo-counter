@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristiano Ronaldo Countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1 class="title">Cristiano Ronaldo</h1>
         <div class="counter-section">
-            <div class="counter">0099</div>
-            <p class="goals-text">Goals to 1000</h1>
+            <div class="counter" id="counter">0099</div>
+            <p class="goals-text">Goals to 1000</p>
         </div>
     </header>
 
     <section class="support-section">
         <label for="country-input" class="support-label">From where are you supporting?</label>
-        <input type="text" id="country-input" placeholder="Search Country..." class="country-input">
+        <input type="search" id="country-input" placeholder="Search Country..." class="country-input">
         <select id="country-dropdown" class="country-dropdown">
-            <option value="portugal">Portugal</option>
-            <option value="bangladesh">Bangladesh</option>
-            <!-- Add more countries here -->
+            <!-- Countries will be populated dynamically -->
         </select>
         <button id="save-button" class="save-button">Save</button>
     </section>
