@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     populateCountryDropdown();
 
     document.getElementById('save-button').addEventListener('click', function() {
-        const inputCountry = document.getElementById('country-input').value.toLowerCase();
         const dropdownCountry = document.getElementById('country-dropdown').value;
 
         if (inputCountry) {
