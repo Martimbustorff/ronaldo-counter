@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
         .then(data => {
-            data.forEach(country => {
+            data.sort((a, b) => a.name.common.localeCompare(b.name.common)).forEach(country => {
                 const option = document.createElement('option');
                 option.value = country.cca2;
                 option.textContent = country.name.common;
@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
         countryLeaderboard.innerHTML = '';
         sortedCountries.forEach(([country, votes]) => {
             const countryItem = document.createElement('div');
-            countryItem.textContent = `${country}: ${votes} votes`;
+            countryItem.className = 'country-item';
+            countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${country.toLowerCase()}.png" alt="${country} flag"> ${country}: ${votes} votes`;
             countryLeaderboard.appendChild(countryItem);
         });
     }
