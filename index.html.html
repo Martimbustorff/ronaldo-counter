@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo 1000 Goals Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="counter-container">
+            <h1 class="counter-title">Ronaldo's Countdown to 1000 Goals</h1>
+            <div id="goal-counter" class="goal-counter">0091 Goals to 1000</div>
+        </div>
+        <div class="reaction-container">
+            <button class="reaction-button" onclick="addReaction('heart')">❤️</button>
+            <button class="reaction-button" onclick="addReaction('strong')">💪</button>
+            <button class="reaction-button" onclick="addReaction('prayer')">🙏🏻</button>
+        </div>
+        <div class="reaction-stats">
+            <span id="heart-count">❤️ 0</span>
+            <span id="strong-count">💪 0</span>
+            <span id="prayer-count">🙏🏻 0</span>
+        </div>
+        <div class="share-container">
+            <button class="share-button" onclick="shareCountdown()">📤 Share Countdown</button>
+        </div>
+        <canvas id="celebrationCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
