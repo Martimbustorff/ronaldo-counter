@@ -33,18 +33,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Update leaderboard with the top 5 countries
-    function updateLeaderboard(country) {
-        let countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
-        countryVotes[country] = (countryVotes[country] || 0) + 1;
-        localStorage.setItem('countryVotes', JSON.stringify(countryVotes));
+function updateLeaderboard(country) {
+    let countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
+    countryVotes[country] = (countryVotes[country] || 0) + 1;
+    localStorage.setItem('countryVotes', JSON.stringify(countryVotes));
 
-        const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
-        countryLeaderboard.innerHTML = '';
-        sortedCountries.forEach(([country, votes]) => {
-            const countryItem = document.createElement('div');
-            countryItem.textContent = `${country}: ${votes} votes`;
-            countryLeaderboard.appendChild(countryItem);
-        });
+    const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
+    const countryLeaderboard = document.getElementById('country-leaderboard');
+    countryLeaderboard.innerHTML = '';
+    sortedCountries.forEach(([country, votes]) => {
+        const countryCode = countryCodes[country];
+        const countryItem = document.createElement('div');
+        countryItem.className = 'country-item';
+        countryItem.innerHTML = `
+            <img src="https://flagcdn.com/20x15/${countryCode}.png" alt="${country} flag" style="height: 20px; margin-right: 10px;">
+            ${country}: ${votes} votes
+        `;
+        countryLeaderboard.appendChild(countryItem);
+    });
+}
         // Mapping country names to their respective ISO codes
 const countryCodes = {
  "Afghanistan": "af",
@@ -238,24 +245,5 @@ const countryCodes = {
     "Zimbabwe": "zw"
     // Add more mappings as necessary
 };
-
-function updateCountryLeaderboard(selectedCountry) {
-    const votes = Math.floor(Math.random() * 100) + 1; // Example vote count
-    const countryLeaderboard = document.getElementById('country-leaderboard');
-    
-    // Convert the selected country to its ISO code for the flag
-    const countryCode = countryCodes[selectedCountry];
-    
-    // Create the country item with the flag icon and vote count
-    const countryItem = document.createElement('div');
-    countryItem.className = 'country-item';
-    countryItem.innerHTML = `
-        <img src="https://flagcdn.com/20x15/${countryCode}.png" alt="${selectedCountry} flag" style="height: 20px; margin-right: 10px;">
-        ${selectedCountry}: ${votes} votes
-    `;
-    
-    countryLeaderboard.appendChild(countryItem);
-}
-
     }
 });
