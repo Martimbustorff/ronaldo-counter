@@ -26,18 +26,10 @@ body {
     margin: 20px 0 10px;
 }
 
-.subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    color: #00C4FF;
-    margin: 10px 0 30px;
-}
-
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -45,8 +37,10 @@ body {
 
 .count-number {
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+    font-size: 72px;
     padding: 30px;
+    width: 100px;
+    height: 120px;
     border: 3px solid #FFD700;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -67,6 +61,7 @@ body {
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
     color: #FFD700;
+    margin-top: 10px;
 }
 
 .reactions {
@@ -166,6 +161,11 @@ body {
     color: #FFD700;
 }
 
+#country-leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .country-item {
     display: flex;
     align-items: center;
@@ -187,9 +187,9 @@ body {
 }
 
 .club-logo {
-    height: 80px;
+    height: 30px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
     transition: transform 0.3s;
 }
