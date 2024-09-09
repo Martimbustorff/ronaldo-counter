@@ -1,10 +1,10 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: url('background.jpeg') no-repeat center center fixed;
     background-size: cover;
-    color: #FFFFFF;
+    color: #F5F5F5;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
     letter-spacing: 2px;
     color: #FFD700;
@@ -28,8 +28,7 @@ body {
 .subtitle {
     font-size: 36px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    color: #E50914;
+    color: #00C4FF;
     margin: 10px 0 30px;
 }
 
@@ -38,11 +37,13 @@ body {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .count-number {
-    font-size: 48px;
-    padding: 10px 20px;
+    font-size: 36px;
+    padding: 15px 25px;
     border: 2px solid #FFD700;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
@@ -89,10 +90,24 @@ body {
     gap: 10px;
 }
 
+#country-search {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+}
+
+#country-select {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+}
+
 #save-country {
     padding: 5px 10px;
     border: none;
-    background-color: #E50914;
+    background-color: #00C4FF;
     color: #FFFFFF;
     border-radius: 5px;
     cursor: pointer;
@@ -106,7 +121,7 @@ body {
 
 #share-button {
     padding: 10px 20px;
-    background: #E50914;
+    background: linear-gradient(45deg, #FF416C, #FF4B2B);
     border: none;
     border-radius: 25px;
     color: #FFFFFF;
@@ -114,11 +129,11 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 10px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 #share-button:hover {
-    background: #ff4500;
+    transform: scale(1.05);
 }
 
 .top-countries {
@@ -145,9 +160,9 @@ body {
 
 .club-logo {
     height: 60px;
-    width: 60px;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.5);
     transition: transform 0.3s;
 }
 
