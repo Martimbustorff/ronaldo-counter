@@ -1,86 +1,139 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply the background image to the body */
 body {
     margin: 0;
     font-family: 'ADLaM Display', sans-serif;
     color: #fff;
-}
-
-.container {
-    text-align: center;
+    background-image: url('background.jpeg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
 }
 
-.main-title {
-    font-size: 3rem;
+/* Main title styles */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
     margin-bottom: 10px;
-    color: #ffcc00;
+    color: #FFD700; /* Gold color to match Ronaldo's superstar status */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.sub-title {
-    font-size: 2rem;
+/* Subtitle styles */
+h2 {
+    font-size: 1.8em;
+    color: #FFFFFF;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.counter {
+/* Countdown display styles */
+.countdown-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 10px;
-}
-
-.counter-box {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff;
-    padding: 20px;
-    font-size: 2.5rem;
-    border-radius: 10px;
-}
-
-.goals-to {
-    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-.reactions {
+.countdown-box {
+    width: 70px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Goal text */
+.goal-text {
+    font-size: 1.5em;
+    color: #FFD700;
     margin-bottom: 20px;
 }
 
-.reaction-btn {
-    font-size: 1.5rem;
-    cursor: pointer;
+/* Reaction section */
+.reaction-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.reaction-button {
     background: none;
     border: none;
-    color: #ffcc00;
-}
-
-.share-section {
-    margin-top: 10px;
-}
-
-.share-btn {
-    background: #ff5733;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 2em;
     cursor: pointer;
+    color: #FFD700;
+    transition: transform 0.2s;
 }
 
-.top-countries-title {
-    margin-top: 20px;
-    font-size: 1.5rem;
+.reaction-button:hover {
+    transform: scale(1.2);
 }
 
-.top-countries {
+/* Country selection and share button */
+.country-selection {
+    margin: 20px 0;
+    color: #FFD700;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #FFD700;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.share-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #FF4500; /* Bright button to catch attention */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
     margin-top: 10px;
-    color: #ffcc00;
 }
 
-.logos img {
+.share-button:hover {
+    background-color: #E63900;
+}
+
+/* Top supporting countries logos */
+.supporting-countries {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.supporting-countries img {
     width: 50px;
-    margin: 0 10px;
-    display: inline-block;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.supporting-countries img:hover {
+    transform: scale(1.1);
 }
