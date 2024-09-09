@@ -1,120 +1,102 @@
-/* General Body Styling */
+/* General Styling */
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #121212; /* Dark theme background */
-    color: #f8f9fa; /* Light text for contrast */
-    overflow: hidden; /* Prevent scroll during celebration */
+    font-family: 'ADLaM Display', sans-serif;
+    background: #ffffff; /* White background for clean look */
+    color: #003366; /* Dark blue text for readability */
 }
 
-/* Main Hero Section */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #1d2671, #c33764); /* Softer gradient background */
+/* Main Title */
+.title {
+    font-size: 3em;
+    color: #b22222; /* Dark red color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 1.8em;
+    color: #005577;
     text-align: center;
 }
 
-/* Countdown Title */
-.counter-title {
-    font-size: 2.5em;
-    color: #ffde00; /* Gold for a premium look */
-    margin-bottom: 10px;
+/* Counter Container */
+.counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-/* Countdown Number Styling */
-.goal-counter {
-    font-size: 6em;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-    animation: pulse 1s infinite;
+/* Digit Box Styling */
+.digit-box {
+    font-size: 4em;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #b22222;
+    color: #005577;
+    border-radius: 10px;
 }
 
-/* Pulse Animation */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+/* Goals Text */
+.goal-text {
+    font-size: 1.5em;
+    color: #b22222;
+    text-align: center;
+    margin-top: 10px;
 }
 
-/* Reaction Button Container */
+/* Reaction Container */
 .reaction-container {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    justify-content: center;
     margin-top: 20px;
 }
 
-/* Reaction Button Styling */
-.reaction-button {
-    font-size: 2.5em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-/* Reaction Button Hover Effect */
-.reaction-button:hover {
-    transform: scale(1.2);
-}
-
-/* Reaction Counts */
+/* Reaction Stats */
 .reaction-stats {
-    margin-top: 20px;
     display: flex;
     gap: 20px;
-    font-size: 1.5em;
-    color: #ffffff;
+    font-size: 1.2em;
+    color: #4b0082;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-/* Share Button Styling */
-.share-container {
-    margin-top: 20px;
-}
-
+/* Share Button */
 .share-button {
     padding: 12px 30px;
     font-size: 1.2em;
-    background-color: #4caf50;
+    background-color: #005577;
     color: #ffffff;
-    border: none;
-    border-radius: 50px; /* Pill shape */
+    border: 2px solid #b22222;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Share Button Hover Effect */
+/* Share Button Hover */
 .share-button:hover {
-    background-color: #45a049;
+    background-color: #003366;
     transform: scale(1.05);
 }
 
-/* Celebration Canvas for Confetti */
-#celebrationCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+/* Club Logos */
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-/* Confetti Animation */
-.confetti {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background: #ffde00;
-    border-radius: 50%;
-    animation: fall linear infinite;
+.club-logo {
+    width: 50px;
+    height: 50px;
 }
-
-@keyframes fall {
-    0% { transform: translateY(-100vh); opacity: 1; }
-    100% { transform: translateY(100vh); opacity: 0; }
-}
-
