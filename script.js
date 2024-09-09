@@ -1,68 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const countrySelect = document.getElementById('country-select');
-    const countrySearch = document.getElementById('country-search');
-    const saveCountryButton = document.getElementById('save-country');
-    const countryLeaderboard = document.getElementById('country-leaderboard');
-    const reactionButtons = document.querySelectorAll('.reaction-button');
+document.getElementById('save-button').addEventListener('click', function() {
+    const inputCountry = document.getElementById('country-input').value.toLowerCase();
+    const dropdownCountry = document.getElementById('country-dropdown').value.toLowerCase();
 
-    const reactions = {
-        heart: 0,
-        muscle: 0,
-        pray: 0
-    };
-
-    // Array to store country data including names and flag URLs
-    let countries = [];
-
-    // Fetch and populate countries with flags, sorted alphabetically
-    fetch('https://restcountries.com/v3.1/all')
-        .then(response => response.json())
-        .then(data => {
-            countries = data.map(country => ({
-                name: country.name.common,
-                flag: country.flags.svg // Store the flag URL
-            })).sort((a, b) => a.name.localeCompare(b.name));
-
-            countries.forEach(country => {
-                const option = document.createElement('option');
-                option.value = country.name;
-                option.textContent = country.name;
-                option.dataset.flag = country.flag; // Store the flag URL in a data attribute
-                countrySelect.appendChild(option);
-            });
-        });
-
-    // Filter dropdown options based on search input
-    countrySearch.addEventListener('input', function () {
-        const searchQuery = this.value.toLowerCase();
-        Array.from(countrySelect.options).forEach(option => {
-            option.style.display = option.textContent.toLowerCase().includes(searchQuery) ? '' : 'none';
-        });
-    });
-
-    // Save selected country and update leaderboard
-    saveCountryButton.addEventListener('click', function () {
-        const selectedOption = countrySelect.options[countrySelect.selectedIndex];
-        const selectedCountry = selectedOption.text;
-        const flagUrl = selectedOption.dataset.flag; // Retrieve the stored flag URL
-        updateCountryLeaderboard(selectedCountry, flagUrl);
-    });
-
-    // Handle reaction button clicks
-    reactionButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const reaction = this.dataset.reaction;
-            reactions[reaction]++;
-            document.getElementById(`${reaction}-count`).textContent = reactions[reaction];
-        });
-    });
-
-    // Update leaderboard dynamically with the selected country and its flag
-    function updateCountryLeaderboard(selectedCountry, flagUrl) {
-        const votes = Math.floor(Math.random() * 100) + 1; // Example vote count
-        const countryItem = document.createElement('div');
-        countryItem.className = 'country-item';
-        countryItem.innerHTML = `<img src="${flagUrl}" alt="${selectedCountry} flag"> ${selectedCountry}: ${votes} votes`;
-        countryLeaderboard.appendChild(countryItem);
+    if (inputCountry) {
+        // Sync dropdown with input
+        document.getElementById('country-dropdown').value = inputCountry;
+        updateCountryLeaderboard(inputCountry);
+    } else {
+        alert('Please enter a valid country name.');
     }
 });
+
+function updateCountryLeaderboard(selectedCountry) {
+    const countryCode = getCountryCode(selectedCountry); // Convert to correct ISO code if available
+    const votes = Math.floor(Math.random() * 100) + 1; // Random vote count for demo
+    const countryItem = document.createElement('div');
+    countryItem.className = 'country-item';
+
+    if (countryCode) {
+        countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${countryCode}.png" alt="${selectedCountry} flag" style="height: 20px; margin-right: 10px;"> ${selectedCountry}: ${votes} votes`;
+    } else {
+        countryItem.innerHTML = `${selectedCountry}: ${votes} votes`;
+    }
+
+    document.getElementById('country-leaderboard').appendChild(countryItem);
+}
+
+function getCountryCode(countryName) {
+    const countryCodes = {
+        portugal: 'pt',
+        bangladesh: 'bd',
+        // Expand this list with more countries
+    };
+    return countryCodes[countryName.toLowerCase()] || null;
+}
