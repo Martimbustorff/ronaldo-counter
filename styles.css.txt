@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1c1c1e;
+    color: #f8f9fa;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #a80f0f, #6b0909);
+    text-align: center;
+}
+
+.counter-container {
+    margin-bottom: 20px;
+}
+
+.counter-title {
+    font-size: 2em;
+    color: #ffde00;
+    margin-bottom: 10px;
+}
+
+.goal-counter {
+    font-size: 5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.reaction-container {
+    display: flex;
+    gap: 20px;
+}
+
+.reaction-button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.reaction-button:hover {
+    transform: scale(1.2);
+}
+
+.reaction-stats {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.share-container {
+    margin-top: 20px;
+}
+
+.share-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #218838;
+}
+
+#celebrationCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
