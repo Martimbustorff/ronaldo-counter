@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #1c1c1e;
-    color: #f8f9fa;
+    background: #1c1c1e; /* Dark theme background */
+    color: #f8f9fa; /* Light text for contrast */
 }
 
 .hero {
@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(145deg, #a80f0f, #6b0909);
+    background: linear-gradient(145deg, #a80f0f, #6b0909); /* Inspired by Ronaldo's shirt colors */
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .counter-title {
     font-size: 2em;
-    color: #ffde00;
+    color: #ffde00; /* Gold for a premium look */
     margin-bottom: 10px;
 }
 
