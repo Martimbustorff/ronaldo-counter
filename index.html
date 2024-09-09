@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronaldo 1000 Goals Countdown</title>
+    <title>Cristiano Ronaldo 1000 Goals Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to ADLaM Display font, if available online -->
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero">
+        <h1 class="title">Cristiano Ronaldo</h1>
+        <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
         <div class="counter-container">
-            <h1 class="counter-title">Ronaldo's Countdown to 1000 Goals</h1>
-            <div id="goal-counter" class="goal-counter">0091 Goals to 1000</div>
+            <div class="digit-box">0</div>
+            <div class="digit-box">9</div>
+            <div class="digit-box">9</div>
         </div>
+        <p class="goal-text">Goals to 1000</p>
         <div class="reaction-container">
             <button class="reaction-button" onclick="addReaction('heart')">❤️</button>
             <button class="reaction-button" onclick="addReaction('strong')">💪</button>
@@ -24,10 +29,14 @@
             <span id="strong-count">💪 0</span>
             <span id="prayer-count">🙏🏻 0</span>
         </div>
-        <div class="share-container">
-            <button class="share-button" onclick="shareCountdown()">📤 Share Countdown</button>
+        <button class="share-button" onclick="shareCountdown()">SHARE</button>
+        <div class="logos">
+            <img src="sporting.png" alt="Sporting" class="club-logo">
+            <img src="manutd.png" alt="Manchester United" class="club-logo">
+            <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
+            <img src="juventus.png" alt="Juventus" class="club-logo">
+            <img src="alnassr.png" alt="Al Nassr" class="club-logo">
         </div>
-        <canvas id="celebrationCanvas"></canvas>
     </div>
 
     <script src="script.js"></script>
