@@ -34,13 +34,13 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    gap: 10px; /* Adjust spacing between counter rectangles */
+    gap: 15px; /* Adjust spacing between counter rectangles */
 }
 
 .count-number {
-    width: 120px; /* Increase width of each rectangle */
-    height: 140px; /* Increase height of each rectangle */
-    font-size: 80px; /* Increase font size of the numbers */
+    width: 140px; /* Increase width of each rectangle */
+    height: 160px; /* Increase height of each rectangle */
+    font-size: 90px; /* Increase font size of the numbers */
     margin: 0 10px;
     padding: 10px 20px;
     border: 3px solid #ffd700;
@@ -64,13 +64,14 @@ body {
     margin: 30px 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .reaction-button {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 3rem; /* Increase font size for better visibility */
+    color: #fff; /* Make icons white for contrast */
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -88,7 +89,7 @@ body {
     border: 1px solid #FFD700; /* Gold border to match the design */
     color: #111111;
     background-color: rgba(255, 255, 255, 0.8); /* Light background for better visibility */
-    width: 250px; /* Set a fixed width to make it more noticeable */
+    width: 300px; /* Increase width for better appearance */
     outline: none; /* Remove default outline */
     transition: all 0.3s ease; /* Smooth transitions */
 }
@@ -100,6 +101,7 @@ body {
 
 .country-selection {
     display: flex;
+    justify-content: center; /* Center the country selection */
     align-items: center;
     gap: 10px; /* Add space between elements */
     margin-bottom: 20px; /* Add margin below the section */
