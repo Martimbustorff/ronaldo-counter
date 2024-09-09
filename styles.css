@@ -29,19 +29,27 @@ body {
     color: #d3d3d3;
 }
 
+/* Counter Section Adjustments */
 .countdown {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    gap: 10px; /* Adjust spacing between counter rectangles */
 }
 
 .count-number {
-    font-size: 4rem;
+    width: 120px; /* Increase width of each rectangle */
+    height: 140px; /* Increase height of each rectangle */
+    font-size: 80px; /* Increase font size of the numbers */
     margin: 0 10px;
     padding: 10px 20px;
     border: 3px solid #ffd700;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for contrast */
 }
 
 .count-label {
@@ -135,6 +143,7 @@ body {
 
 .top-countries h3 {
     margin-bottom: 10px;
+    color: #ffd700; /* Match the gold theme */
 }
 
 .clubs-logos {
