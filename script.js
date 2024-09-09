@@ -11,20 +11,23 @@ document.addEventListener('DOMContentLoaded', function () {
         pray: 0
     };
 
-    // Fetch and populate countries with flags, sort alphabetically
+    // Array to store country data including names and flag URLs
+    let countries = [];
+
+    // Fetch and populate countries with flags, sorted alphabetically
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
         .then(data => {
-            const countries = data.map(country => ({
+            countries = data.map(country => ({
                 name: country.name.common,
-                flag: country.flags.svg
+                flag: country.flags.svg // Store the flag URL
             })).sort((a, b) => a.name.localeCompare(b.name));
 
             countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country.name;
                 option.textContent = country.name;
-                option.style.backgroundImage = `url(${country.flag})`;
+                option.dataset.flag = country.flag; // Store the flag URL in a data attribute
                 countrySelect.appendChild(option);
             });
         });
@@ -39,8 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Save selected country and update leaderboard
     saveCountryButton.addEventListener('click', function () {
-        const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
-        updateCountryLeaderboard(selectedCountry);
+        const selectedOption = countrySelect.options[countrySelect.selectedIndex];
+        const selectedCountry = selectedOption.text;
+        const flagUrl = selectedOption.dataset.flag; // Retrieve the stored flag URL
+        updateCountryLeaderboard(selectedCountry, flagUrl);
     });
 
     // Handle reaction button clicks
@@ -52,12 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Update leaderboard dynamically with the selected country
-    function updateCountryLeaderboard(selectedCountry) {
+    // Update leaderboard dynamically with the selected country and its flag
+    function updateCountryLeaderboard(selectedCountry, flagUrl) {
         const votes = Math.floor(Math.random() * 100) + 1; // Example vote count
         const countryItem = document.createElement('div');
         countryItem.className = 'country-item';
-        countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${selectedCountry.toLowerCase()}.png" alt="${selectedCountry} flag"> ${selectedCountry}: ${votes} votes`;
+        countryItem.innerHTML = `<img src="${flagUrl}" alt="${selectedCountry} flag"> ${selectedCountry}: ${votes} votes`;
         countryLeaderboard.appendChild(countryItem);
     }
 });
