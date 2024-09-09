@@ -46,3 +46,4 @@ function updateLeaderboard() {
         leaderboard.appendChild(li);
     });
 }
+}
