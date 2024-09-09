@@ -1,49 +1,36 @@
+// Reaction counters
 let heartCount = 0;
-let strongCount = 0;
-let prayerCount = 0;
-let countryStats = {};
+let muscleCount = 0;
+let prayCount = 0;
 
-function addReaction(type) {
-    if (type === 'heart') {
-        heartCount++;
-        document.getElementById('heart-count').textContent = `❤️ ${heartCount}`;
-    } else if (type === 'strong') {
-        strongCount++;
-        document.getElementById('strong-count').textContent = `💪 ${strongCount}`;
-    } else if (type === 'prayer') {
-        prayerCount++;
-        document.getElementById('prayer-count').textContent = `🙏🏻 ${prayerCount}`;
-    }
-}
+// Event listeners for reaction buttons
+document.getElementById('heart').addEventListener('click', () => {
+    heartCount++;
+    document.getElementById('heart-count').textContent = heartCount;
+});
 
-function shareCountdown() {
-    alert('Share this countdown with your friends!');
-}
+document.getElementById('muscle').addEventListener('click', () => {
+    muscleCount++;
+    document.getElementById('muscle-count').textContent = muscleCount;
+});
 
-function updateCountry() {
-    const countrySelect = document.getElementById('country-select');
-    const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
+document.getElementById('pray').addEventListener('click', () => {
+    prayCount++;
+    document.getElementById('pray-count').textContent = prayCount;
+});
 
-    if (selectedCountry !== "Select Country") {
-        if (!countryStats[selectedCountry]) {
-            countryStats[selectedCountry] = 1;
-        } else {
-            countryStats[selectedCountry]++;
-        }
-        updateLeaderboard();
-    }
-}
+// Handling country selection and updating the top countries
+const topCountries = {};
+const countrySelect = document.getElementById('country-select');
 
-function updateLeaderboard() {
-    const leaderboard = document.getElementById('country-leaderboard');
-    leaderboard.innerHTML = '';
+countrySelect.addEventListener('change', (event) => {
+    const selectedCountry = event.target.value;
+    topCountries[selectedCountry] = (topCountries[selectedCountry] || 0) + 1;
+    updateTopCountries();
+});
 
-    const sortedCountries = Object.entries(countryStats).sort((a, b) => b[1] - a[1]);
-
-    sortedCountries.forEach(([country, count]) => {
-        const li = document.createElement('li');
-        li.textContent = `${country}: ${count} fans`;
-        leaderboard.appendChild(li);
-    });
-}
+function updateTopCountries() {
+    const sortedCountries = Object.entries(topCountries).sort((a, b) => b[1] - a[1]);
+    const topCountriesList = sortedCountries.slice(0, 5).map(([country, count]) => `${country.toUpperCase()}: ${count} votes`).join('<br>');
+    document.getElementById('top-countries').innerHTML = topCountriesList;
 }
