@@ -1,154 +1,128 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    background: url('background.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background: url('background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .title {
-    font-size: 60px;
-    color: #FFD700;
-    text-align: center;
+    font-size: 3rem;
     margin-top: 20px;
+    color: #ffd700;
 }
 
-/* Counter Section */
-.counter-section {
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #d3d3d3;
+}
+
+.countdown {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 15px; /* Adjust spacing between counter rectangles */
+    margin: 20px 0;
 }
 
-/* Individual Counter Rectangles */
-.counter {
-    width: 140px; /* Increase width of each rectangle */
-    height: 160px; /* Increase height of each rectangle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2); /* Adjust background color */
-    border: 3px solid #FFD700; /* Gold border for the counter */
-    border-radius: 12px; /* Smooth edges */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-}
-
-/* Font Inside the Counter */
-.counter span {
-    font-size: 90px; /* Further increase font size of the numbers */
-    font-weight: bold;
-    color: #FFFFFF; /* White color for the numbers */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
-    line-height: 1; /* Adjust line height */
-}
-
-/* Counter Digit Styling */
-.digit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px; /* Increased width of each rectangle */
-    height: 160px; /* Increased height of each rectangle */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
-    border: 3px solid #FFD700; /* Gold border */
-    border-radius: 12px; /* Rounded corners */
-    font-size: 90px; /* Larger font size for the digits */
-    color: #FFFFFF; /* White color for the digits */
-    font-weight: bold;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); /* Shadow effect */
-}
-
-.goals-text {
-    font-size: 28px;
-    margin-top: 10px;
-    color: #FFD700;
-}
-
-.support-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.support-label {
-    font-size: 20px;
-}
-
-#country-input, #country-dropdown {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #E0E0E0;
-    color: #111111;
-}
-
-.save-button {
-    font-size: 16px;
+.count-number {
+    font-size: 4rem;
+    margin: 0 10px;
     padding: 10px 20px;
-    background: #00C4FF;
-    color: #FFD700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    border: 3px solid #ffd700;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
-.save-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.count-label {
+    font-size: 1.2rem;
+    color: #ffd700;
 }
 
-.leaderboard {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.country-item {
-    font-size: 20px;
-    margin-bottom: 5px;
+.reactions {
+    margin: 20px 0;
     display: flex;
-    align-items: center;
-    color: #FFD700;
+    justify-content: center;
+    gap: 15px;
 }
 
-.share-button {
-    font-size: 18px;
-    padding: 10px 30px;
-    background: linear-gradient(45deg, #FF416C, #FF4B2B);
-    color: #FFD700;
+.reaction-button {
+    background: none;
     border: none;
-    border-radius: 5px;
+    font-size: 1.5rem;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s;
 }
 
-.share-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.reaction-button:hover {
+    transform: scale(1.2);
 }
 
-.club-logos {
+.country-selection {
+    margin: 20px 0;
+}
+
+#save-country {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffd700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#save-country:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+#share-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #ff5733;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#share-button:hover {
+    background: #ff4500;
+}
+
+.top-countries {
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.top-countries h3 {
+    margin-bottom: 10px;
+}
+
+.clubs-logos {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .club-logo {
     height: 50px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.club-logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px rgba(255, 215, 0, 0.5);
+    width: auto;
 }
