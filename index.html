@@ -2,81 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristiano Ronaldo 1000 Goals Countdown</title>
+    <title>Cristiano Ronaldo Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: url('ronaldo-background.jpg') no-repeat center center fixed; /* Use a subtle Ronaldo image */
-            background-size: cover;
-            color: #fff;
-            backdrop-filter: blur(10px); /* Add a blur effect to make text readable */
-            font-family: 'ADLaM Display', sans-serif;
-        }
-    </style>
 </head>
-<body>
-    <div class="overlay"></div> <!-- Overlay for better readability -->
+<body style="background-image: url('background.jpeg'); background-size: cover; background-position: center;">
     <div class="container">
-        <header>
-            <h1 class="title">Cristiano Ronaldo</h1>
-            <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
-        </header>
+        <h1 class="main-title">Cristiano Ronaldo</h1>
+        <h2 class="sub-title">Countdown to 1000 Official Goals</h2>
+        <div class="counter">
+            <span class="counter-box">0</span>
+            <span class="counter-box">9</span>
+            <span class="counter-box">9</span>
+            <span class="counter-box">9</span>
+        </div>
+        <p class="goals-to">Goals to 1000</p>
 
-        <section class="counter-section">
-            <div class="counter">
-                <div class="digit-box">0</div>
-                <div class="digit-box">9</div>
-                <div class="digit-box">9</div>
-            </div>
-            <p class="goal-text">Goals to 1000</p>
-        </section>
+        <div class="reactions">
+            <button class="reaction-btn" id="heart">❤️ <span id="heart-count">0</span></button>
+            <button class="reaction-btn" id="muscle">💪 <span id="muscle-count">0</span></button>
+            <button class="reaction-btn" id="pray">🙏 <span id="pray-count">0</span></button>
+        </div>
 
-        <section class="interaction-section">
-            <div class="reaction-container">
-                <button class="reaction-button" onclick="addReaction('heart')">❤️</button>
-                <button class="reaction-button" onclick="addReaction('strong')">💪</button>
-                <button class="reaction-button" onclick="addReaction('prayer')">🙏🏻</button>
-            </div>
-            <div class="reaction-stats">
-                <span id="heart-count">❤️ 0</span>
-                <span id="strong-count">💪 0</span>
-                <span id="prayer-count">🙏🏻 0</span>
-            </div>
-        </section>
+        <label for="country-select">Select your country:</label>
+        <select id="country-select">
+            <!-- Add a list of all countries -->
+            <option value="pt">Portugal</option>
+            <option value="br">Brazil</option>
+            <option value="es">Spain</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <!-- Include more countries as needed -->
+        </select>
 
-        <section class="country-section">
-            <label for="country-select">Select your country:</label>
-            <select id="country-select" onchange="updateCountry()">
-                <option value="default" selected>Select Country</option>
-                <option value="Portugal">🇵🇹 Portugal</option>
-                <option value="Brazil">🇧🇷 Brazil</option>
-                <option value="Spain">🇪🇸 Spain</option>
-                <!-- More countries -->
-            </select>
-        </section>
+        <div class="share-section">
+            <button class="share-btn">SHARE</button>
+        </div>
 
-        <button class="share-button" onclick="shareCountdown()">SHARE</button>
+        <h3 class="top-countries-title">Top Supporting Countries</h3>
+        <div class="top-countries" id="top-countries">
+            <!-- Top countries list will be dynamically updated here -->
+        </div>
 
-        <section class="leaderboard">
-            <h3>Top Supporting Countries</h3>
-            <ul id="country-leaderboard">
-                <!-- Leaderboard content -->
-            </ul>
-        </section>
-
-        <footer>
-            <div class="logos">
-                <img src="sporting.png" alt="Sporting" class="club-logo">
-                <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
-                <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
-                <img src="juventus.png" alt="Juventus" class="club-logo">
-                <img src="alnasr.png" alt="Al Nassr" class="club-logo">
-            </div>
-        </footer>
+        <div class="logos">
+            <img src="sporting.png" alt="Sporting CP">
+            <img src="manchesterunited.png" alt="Manchester United">
+            <img src="realmadrid.png" alt="Real Madrid">
+            <img src="juventus.png" alt="Juventus">
+            <img src="alnasr.png" alt="Al Nassr">
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
