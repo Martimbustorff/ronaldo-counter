@@ -3,68 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Cristiano Ronaldo Countdown to 1000 Goals">
+    <meta property="og:description" content="Join the countdown to Cristiano Ronaldo's 1000 goals and support from your country!">
+    <meta property="og:image" content="path/to/preview-image.jpg">
     <title>Cristiano Ronaldo Countdown</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <!-- Animate.css for Animations -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container text-center">
-        <h1 class="display-4 animate__animated animate__fadeInDown">Cristiano Ronaldo</h1>
-        <h2 class="lead animate__animated animate__fadeInUp">Countdown to 1000 Official Goals</h2>
-        <div class="counter d-flex justify-content-center">
-            <div class="counter-box">0</div>
-            <div class="counter-box">9</div>
-            <div class="counter-box">9</div>
-        </div>
-        <p class="goal-text">Goals to 1000</p>
-        <div class="reactions">
-            <i class="fas fa-heart icon" data-type="heart"></i>
-            <i class="fas fa-dumbbell icon" data-type="muscle"></i>
-            <i class="fas fa-praying-hands icon" data-type="prayer"></i>
-        </div>
-        <div class="reaction-count">
-            <span id="heart-count">0</span>
-            <span id="muscle-count">0</span>
-            <span id="prayer-count">0</span>
-        </div>
-        <div class="country-container my-3">
-            <select id="country-select" class="form-control d-inline-block w-auto country-selection">
-                <!-- Add more countries dynamically or use a plugin for an enhanced country selector -->
-                <option value="Portugal">Portugal</option>
-                <option value="Brazil">Brazil</option>
-                <option value="Spain">Spain</option>
-                <option value="United States">United States</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <!-- Add a comprehensive list of countries here -->
-            </select>
-            <button id="save-country" class="btn btn-warning ml-2">Save</button>
-        </div>
-        <button class="btn btn-danger btn-lg animate__animated animate__pulse animate__infinite" id="share-btn">SHARE</button>
-        <div class="top-countries mt-4">
-            <canvas id="countryChart"></canvas>
-        </div>
-        <footer class="mt-4">
-            <div class="club-logos">
-                <img src="sporting.png" alt="Sporting">
-                <img src="manchesterunited.png" alt="Manchester United">
-                <img src="realmadrid.png" alt="Real Madrid">
-                <img src="juventus.png" alt="Juventus">
-                <img src="alnasr.png" alt="Al-Nasr">
+    <div class="container">
+        <header>
+            <h1 class="title">Cristiano Ronaldo</h1>
+            <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
+        </header>
+        <main>
+            <div class="countdown">
+                <div class="count-number">0</div>
+                <div class="count-number">9</div>
+                <div class="count-number">9</div>
+                <div class="count-number">9</div>
+                <p class="count-label">Goals to 1000</p>
             </div>
-        </footer>
+            <div class="reactions">
+                <button class="reaction-button" data-reaction="heart">❤️ <span id="heart-count">0</span></button>
+                <button class="reaction-button" data-reaction="muscle">💪 <span id="muscle-count">0</span></button>
+                <button class="reaction-button" data-reaction="pray">🙏 <span id="pray-count">0</span></button>
+            </div>
+            <div class="country-selection">
+                <label for="country-select">Select your country:</label>
+                <select id="country-select">
+                    <!-- Options will be dynamically populated -->
+                </select>
+                <button id="save-country">Save</button>
+            </div>
+            <button id="share-button">SHARE</button>
+            <section class="top-countries">
+                <h3>Top Supporting Countries</h3>
+                <div id="country-leaderboard">
+                    <!-- Top countries will be displayed here -->
+                </div>
+            </section>
+            <section class="clubs-logos">
+                <img src="sporting.png" alt="Sporting CP" class="club-logo">
+                <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
+                <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
+                <img src="juventus.png" alt="Juventus" class="club-logo">
+                <img src="alnasr.png" alt="Al Nassr" class="club-logo">
+            </section>
+        </main>
     </div>
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <!-- Chart.js for Country Stats -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
