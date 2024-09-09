@@ -68,8 +68,30 @@ body {
     transform: scale(1.2);
 }
 
+/* Dropdown Styling */
+#country-select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px; /* Add more padding for better appearance */
+    border-radius: 5px;
+    border: 1px solid #FFD700; /* Gold border to match the design */
+    color: #111111;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for better visibility */
+    width: 250px; /* Set a fixed width to make it more noticeable */
+    outline: none; /* Remove default outline */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+#country-select:focus {
+    border-color: #00C4FF; /* Cyan border on focus for better interactivity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
 .country-selection {
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between elements */
+    margin-bottom: 20px; /* Add margin below the section */
 }
 
 #save-country {
