@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
+    const countrySearch = document.getElementById('country-search');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
     const reactionButtons = document.querySelectorAll('.reaction-button');
@@ -17,34 +18,32 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-    // Handle vote counting
-    reactionButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const reactionType = button.getAttribute('data-reaction');
-            reactions[reactionType]++;
-            document.getElementById(`${reactionType}-count`).textContent = reactions[reactionType];
+    countrySearch.addEventListener('input', function () {
+        const searchQuery = this.value.toLowerCase();
+        Array.from(countrySelect.options).forEach(option => {
+            option.style.display = option.textContent.toLowerCase().includes(searchQuery) ? '' : 'none';
         });
     });
 
-    // Save selected country and update leaderboard
-    saveCountryButton.addEventListener('click', () => {
+    saveCountryButton.addEventListener('click', function () {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
-        updateLeaderboard(selectedCountry);
+        updateCountryLeaderboard(selectedCountry);
     });
 
-    // Update leaderboard with the top 5 countries
-    function updateLeaderboard(country) {
-        let countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
-        countryVotes[country] = (countryVotes[country] || 0) + 1;
-        localStorage.setItem('countryVotes', JSON.stringify(countryVotes));
-
-        const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
-        countryLeaderboard.innerHTML = '';
-        sortedCountries.forEach(([country, votes]) => {
-            const countryItem = document.createElement('div');
-            countryItem.className = 'country-item';
-            countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${country.toLowerCase()}.png" alt="${country} flag"> ${country}: ${votes} votes`;
-            countryLeaderboard.appendChild(countryItem);
+    reactionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const reaction = this.dataset.reaction;
+            reactions[reaction]++;
+            document.getElementById(`${reaction}-count`).textContent = reactions[reaction];
         });
+    });
+
+    function updateCountryLeaderboard(selectedCountry) {
+        // Simulating a vote count for demo purposes
+        const votes = Math.floor(Math.random() * 100) + 1;
+        const countryItem = document.createElement('div');
+        countryItem.className = 'country-item';
+        countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${selectedCountry.toLowerCase()}.png" alt="${selectedCountry} flag"> ${selectedCountry}: ${votes} votes`;
+        countryLeaderboard.appendChild(countryItem);
     }
 });
