@@ -1,8 +1,8 @@
 /* General Body Styling */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #1c1c1e; /* Dark theme background */
+    font-family: 'Poppins', sans-serif;
+    background: #121212; /* Dark theme background */
     color: #f8f9fa; /* Light text for contrast */
     overflow: hidden; /* Prevent scroll during celebration */
 }
@@ -14,20 +14,20 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(145deg, #a80f0f, #6b0909); /* Inspired by Ronaldo's shirt colors */
+    background: linear-gradient(135deg, #1d2671, #c33764); /* Softer gradient background */
     text-align: center;
 }
 
 /* Countdown Title */
 .counter-title {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #ffde00; /* Gold for a premium look */
     margin-bottom: 10px;
 }
 
 /* Countdown Number Styling */
 .goal-counter {
-    font-size: 5em;
+    font-size: 6em;
     font-weight: bold;
     color: #ffffff;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
@@ -50,7 +50,7 @@ body {
 
 /* Reaction Button Styling */
 .reaction-button {
-    font-size: 2em;
+    font-size: 2.5em;
     background: none;
     border: none;
     cursor: pointer;
@@ -67,7 +67,7 @@ body {
     margin-top: 20px;
     display: flex;
     gap: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #ffffff;
 }
 
@@ -77,18 +77,20 @@ body {
 }
 
 .share-button {
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 1.2em;
-    background-color: #28a745;
+    background-color: #4caf50;
     color: #ffffff;
     border: none;
+    border-radius: 50px; /* Pill shape */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 /* Share Button Hover Effect */
 .share-button:hover {
-    background-color: #218838;
+    background-color: #45a049;
+    transform: scale(1.05);
 }
 
 /* Celebration Canvas for Confetti */
@@ -115,3 +117,4 @@ body {
     0% { transform: translateY(-100vh); opacity: 1; }
     100% { transform: translateY(100vh); opacity: 0; }
 }
+
