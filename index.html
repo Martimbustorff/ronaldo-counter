@@ -2,41 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristiano Ronaldo 1000 Goals Countdown</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to ADLaM Display font, if available online -->
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <h1 class="title">Cristiano Ronaldo</h1>
-        <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
-        <div class="counter-container">
-            <div class="digit-box">0</div>
-            <div class="digit-box">9</div>
-            <div class="digit-box">9</div>
-        </div>
-        <p class="goal-text">Goals to 1000</p>
-        <div class="reaction-container">
-            <button class="reaction-button" onclick="addReaction('heart')">❤️</button>
-            <button class="reaction-button" onclick="addReaction('strong')">💪</button>
-            <button class="reaction-button" onclick="addReaction('prayer')">🙏🏻</button>
-        </div>
-        <div class="reaction-stats">
-            <span id="heart-count">❤️ 0</span>
-            <span id="strong-count">💪 0</span>
-            <span id="prayer-count">🙏🏻 0</span>
-        </div>
+    <div class="container">
+        <header>
+            <h1 class="title">Cristiano Ronaldo</h1>
+            <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
+        </header>
+        
+        <section class="counter-section">
+            <div class="counter">
+                <div class="digit-box">0</div>
+                <div class="digit-box">9</div>
+                <div class="digit-box">9</div>
+            </div>
+            <p class="goal-text">Goals to 1000</p>
+        </section>
+
+        <section class="interaction-section">
+            <div class="reaction-container">
+                <button class="reaction-button" onclick="addReaction('heart')">❤️</button>
+                <button class="reaction-button" onclick="addReaction('strong')">💪</button>
+                <button class="reaction-button" onclick="addReaction('prayer')">🙏🏻</button>
+            </div>
+            <div class="reaction-stats">
+                <span id="heart-count">❤️ 0</span>
+                <span id="strong-count">💪 0</span>
+                <span id="prayer-count">🙏🏻 0</span>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <label for="country-select">Select your country:</label>
+            <select id="country-select" onchange="updateCountry()">
+                <option value="default" selected>Select Country</option>
+                <!-- Add country options here -->
+                <option value="Portugal">🇵🇹 Portugal</option>
+                <option value="Brazil">🇧🇷 Brazil</option>
+                <option value="Spain">🇪🇸 Spain</option>
+                <!-- More countries... -->
+            </select>
+        </section>
+
         <button class="share-button" onclick="shareCountdown()">SHARE</button>
-        <div class="logos">
-    <img src="sporting.png" alt="Sporting" class="club-logo">
-    <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
-    <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
-    <img src="juventus.png" alt="Juventus" class="club-logo">
-    <img src="alnasr.png" alt="Al Nassr" class="club-logo">
-</div>
+
+        <section class="leaderboard">
+            <h3>Top Supporting Countries</h3>
+            <ul id="country-leaderboard">
+                <!-- Countries will be dynamically populated -->
+            </ul>
+        </section>
+
+        <footer>
+            <div class="logos">
+                <img src="sporting.png" alt="Sporting" class="club-logo">
+                <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
+                <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
+                <img src="juventus.png" alt="Juventus" class="club-logo">
+                <img src="alnasr.png" alt="Al Nassr" class="club-logo">
+            </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
