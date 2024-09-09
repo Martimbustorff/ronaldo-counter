@@ -6,14 +6,24 @@
     <title>Cristiano Ronaldo 1000 Goals Countdown</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('ronaldo-background.jpg') no-repeat center center fixed; /* Use a subtle Ronaldo image */
+            background-size: cover;
+            color: #fff;
+            backdrop-filter: blur(10px); /* Add a blur effect to make text readable */
+            font-family: 'ADLaM Display', sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <div class="overlay"></div> <!-- Overlay for better readability -->
     <div class="container">
         <header>
             <h1 class="title">Cristiano Ronaldo</h1>
             <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
         </header>
-        
+
         <section class="counter-section">
             <div class="counter">
                 <div class="digit-box">0</div>
@@ -40,11 +50,10 @@
             <label for="country-select">Select your country:</label>
             <select id="country-select" onchange="updateCountry()">
                 <option value="default" selected>Select Country</option>
-                <!-- Add country options here -->
                 <option value="Portugal">🇵🇹 Portugal</option>
                 <option value="Brazil">🇧🇷 Brazil</option>
                 <option value="Spain">🇪🇸 Spain</option>
-                <!-- More countries... -->
+                <!-- More countries -->
             </select>
         </section>
 
@@ -53,7 +62,7 @@
         <section class="leaderboard">
             <h3>Top Supporting Countries</h3>
             <ul id="country-leaderboard">
-                <!-- Countries will be dynamically populated -->
+                <!-- Leaderboard content -->
             </ul>
         </section>
 
