@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
         pray: 0
     };
 
-    // Populate countries with flags and sort alphabetically
+    // Fetch and populate countries with flags, sort alphabetically
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
         .then(data => {
             const countries = data.map(country => ({
                 name: country.name.common,
-                flag: country.flags.svg,
+                flag: country.flags.svg
             })).sort((a, b) => a.name.localeCompare(b.name));
 
             countries.forEach(country => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-    // Country search functionality
+    // Filter dropdown options based on search input
     countrySearch.addEventListener('input', function () {
         const searchQuery = this.value.toLowerCase();
         Array.from(countrySelect.options).forEach(option => {
@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Save country and update leaderboard
+    // Save selected country and update leaderboard
     saveCountryButton.addEventListener('click', function () {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
         updateCountryLeaderboard(selectedCountry);
     });
 
-    // Reaction buttons functionality
+    // Handle reaction button clicks
     reactionButtons.forEach(button => {
         button.addEventListener('click', function () {
             const reaction = this.dataset.reaction;
@@ -52,10 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Update the leaderboard dynamically
+    // Update leaderboard dynamically with the selected country
     function updateCountryLeaderboard(selectedCountry) {
-        // Example vote count for demonstration
-        const votes = Math.floor(Math.random() * 100) + 1;
+        const votes = Math.floor(Math.random() * 100) + 1; // Example vote count
         const countryItem = document.createElement('div');
         countryItem.className = 'country-item';
         countryItem.innerHTML = `<img src="https://flagcdn.com/16x12/${selectedCountry.toLowerCase()}.png" alt="${selectedCountry} flag"> ${selectedCountry}: ${votes} votes`;
