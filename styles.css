@@ -11,24 +11,42 @@ body {
 }
 
 .title {
-    font-size: 56px;
+    font-size: 60px;
     color: #FFD700;
     text-align: center;
     margin-top: 20px;
 }
 
+/* Counter Section */
 .counter-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 10px; /* Adjust spacing between counter rectangles */
 }
 
+/* Individual Counter Rectangles */
 .counter {
-    display: flex; /* Use flexbox to align items horizontally */
-    gap: 10px; /* Adds spacing between each digit */
-    justify-content: center; /* Centers the counter within its parent */
-    margin-bottom: 10px;
+    width: 100px; /* Increase width of each rectangle */
+    height: 120px; /* Increase height of each rectangle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust background color */
+    border: 2px solid #FFD700; /* Gold border for the counter */
+    border-radius: 8px; /* Smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Font Inside the Counter */
+.counter span {
+    font-size: 72px; /* Increase font size of the numbers */
+    font-weight: bold;
+    color: #FFFFFF; /* White color for the numbers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for contrast */
+    line-height: 1; /* Adjust line height */
+
 }
 
 .digit {
