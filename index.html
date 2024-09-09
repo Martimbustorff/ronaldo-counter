@@ -2,52 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Cristiano Ronaldo Countdown to 1000 Goals">
+    <meta property="og:description" content="Join the countdown to Cristiano Ronaldo's 1000 goals and support from your country!">
+    <meta property="og:image" content="path/to/preview-image.jpg">
     <title>Cristiano Ronaldo Countdown</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
-    <header>
-    <h1 class="title">Cristiano Ronaldo</h1>
-    <div class="counter-section">
-        <div class="counter">
-            <div class="digit">0</div>
-            <div class="digit">0</div>
-            <div class="digit">9</div>
-            <div class="digit">9</div>
-        </div>
-        <p class="goals-text">Goals to 1000</p>
+    <div class="container">
+        <header>
+            <h1 class="title">Cristiano Ronaldo</h1>
+            <h2 class="subtitle">Countdown to 1000 Official Goals</h2>
+        </header>
+        <main>
+            <div class="countdown">
+                <div class="count-number">0</div>
+                <div class="count-number">9</div>
+                <div class="count-number">9</div>
+                <div class="count-number">9</div>
+                <p class="count-label">Goals to 1000</p>
+            </div>
+            <div class="reactions">
+                <button class="reaction-button" data-reaction="heart">❤️ <span id="heart-count">0</span></button>
+                <button class="reaction-button" data-reaction="muscle">💪 <span id="muscle-count">0</span></button>
+                <button class="reaction-button" data-reaction="pray">🙏 <span id="pray-count">0</span></button>
+            </div>
+            <div class="country-selection">
+                <label for="country-select">Select your country:</label>
+                <select id="country-select">
+                    <!-- Options will be dynamically populated -->
+                </select>
+                <button id="save-country">Save</button>
+            </div>
+            <button id="share-button">SHARE</button>
+            <section class="top-countries">
+                <h3>Top Supporting Countries</h3>
+                <div id="country-leaderboard">
+                    <!-- Top countries will be displayed here -->
+                </div>
+            </section>
+            <section class="clubs-logos">
+                <img src="sporting.png" alt="Sporting CP" class="club-logo">
+                <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
+                <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
+                <img src="juventus.png" alt="Juventus" class="club-logo">
+                <img src="alnasr.png" alt="Al Nassr" class="club-logo">
+            </section>
+        </main>
     </div>
-</header>
-
-    <section class="support-section">
-        <label for="country-input" class="support-label">From where are you supporting?</label>
-        <select id="country-dropdown" class="country-dropdown">
-            <!-- Countries will be populated dynamically -->
-        </select>
-        <button id="save-button" class="save-button">Save</button>
-    </section>
-
-    <section id="country-leaderboard" class="leaderboard">
-        <h2 class="leaderboard-title">Top Supporting Countries</h2>
-        <!-- Country leaderboard items will be appended here -->
-    </section>
-
-    <button class="share-button">Share</button>
-
-    <footer>
-        <div class="club-logos">
-            <img src="sporting.png" alt="Sporting Club" class="club-logo">
-            <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
-            <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
-            <img src="juventus.png" alt="Juventus" class="club-logo">
-            <img src="alnasr.png" alt="Al Nasr" class="club-logo">
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
