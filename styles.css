@@ -2,36 +2,43 @@
 body {
     margin: 0;
     font-family: 'ADLaM Display', sans-serif;
-    background: #ffffff; /* White background for clean look */
-    color: #003366; /* Dark blue text for readability */
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+    color: #003366;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Main Title */
 .title {
-    font-size: 3em;
-    color: #b22222; /* Dark red color */
-    text-align: center;
-    margin-top: 20px;
+    font-size: 3.5em;
+    color: #b22222;
+    margin: 20px 0;
 }
 
 /* Subtitle Styling */
 .subtitle {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #005577;
-    text-align: center;
 }
 
-/* Counter Container */
-.counter-container {
+/* Counter Section */
+.counter-section {
+    margin-top: 30px;
+}
+
+.counter {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px;
 }
 
-/* Digit Box Styling */
 .digit-box {
-    font-size: 4em;
+    font-size: 4.5em;
     width: 80px;
     height: 100px;
     display: flex;
@@ -46,11 +53,10 @@ body {
 .goal-text {
     font-size: 1.5em;
     color: #b22222;
-    text-align: center;
     margin-top: 10px;
 }
 
-/* Reaction Container */
+/* Interaction Section */
 .reaction-container {
     display: flex;
     gap: 15px;
@@ -58,7 +64,6 @@ body {
     margin-top: 20px;
 }
 
-/* Reaction Stats */
 .reaction-stats {
     display: flex;
     gap: 20px;
@@ -68,27 +73,47 @@ body {
     margin-top: 10px;
 }
 
+/* Country Section */
+.country-section {
+    margin: 20px 0;
+}
+
+.country-section select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 2px solid #b22222;
+}
+
 /* Share Button */
 .share-button {
     padding: 12px 30px;
     font-size: 1.2em;
     background-color: #005577;
     color: #ffffff;
-    border: 2px solid #b22222;
+    border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    display: block;
-    margin: 20px auto;
 }
 
-/* Share Button Hover */
 .share-button:hover {
     background-color: #003366;
     transform: scale(1.05);
 }
 
-/* Club Logos */
+/* Leaderboard */
+.leaderboard {
+    margin-top: 30px;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+
+/* Logos Section */
 .logos {
     display: flex;
     justify-content: center;
@@ -97,6 +122,7 @@ body {
 }
 
 .club-logo {
-    width: 50px;
+    width: auto;
     height: 50px;
+    object-fit: contain;
 }
