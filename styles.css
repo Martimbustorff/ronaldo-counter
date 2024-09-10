@@ -41,7 +41,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Increased opacity for better readability */
+    background: rgba(0, 0, 0, 0.75); /* Slightly increased opacity for better readability */
     z-index: -1;
 }
 
@@ -56,9 +56,9 @@ body::after {
 }
 
 .title {
-    font-size: 5.5rem; /* Adjust size slightly to balance with other elements */
+    font-size: 5rem; /* Adjusted size to fit all screens at 100% */
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     color: #ffd700;
 }
 
@@ -66,14 +66,14 @@ body::after {
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjusted for better spacing */
+    gap: 25px; /* Adjusted spacing for a balanced look */
     margin: 20px 0;
 }
 
 .count-number {
-    width: 160px; /* Increased size for emphasis */
-    height: 180px; /* Increased size for emphasis */
-    font-size: 100px; /* Further increase font size for visibility */
+    width: 160px;
+    height: 180px;
+    font-size: 100px;
     padding: 15px;
     border: 4px solid #ffd700;
     background-color: rgba(0, 0, 0, 0.6);
@@ -81,38 +81,37 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Enhanced shadow for better contrast */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 .count-label {
-    font-size: 2.5rem; /* Made it visually distinct but smaller than the main title */
+    font-size: 2.2rem; /* Reduced size slightly to improve spacing */
     color: #ffd700;
-    margin-top: 10px;
+    margin-top: 20px; /* Increased margin for better spacing */
     text-align: center;
 }
 
 .reactions {
-    margin: 30px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 15px; /* Increased gap for better layout */
+    gap: 15px;
 }
 
 .reaction-button {
     background: none;
     border: none;
-    font-size: 2.5rem; /* Increased for better visibility */
-    color: #ffd700; /* Changed to gold for better visibility */
+    font-size: 2.5rem;
+    color: #ffd700; /* Gold for better contrast */
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
 
 .reaction-button:hover {
     transform: scale(1.3);
-    color: #fff; /* Hover effect for enhanced interactivity */
+    color: #fff;
 }
 
-/* Dropdown Styling */
 #country-select {
     font-family: 'Prometo', sans-serif;
     font-size: 18px;
@@ -120,7 +119,7 @@ body::after {
     border-radius: 8px;
     border: 2px solid #FFD700;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter for readability */
+    background-color: rgba(255, 255, 255, 0.9);
     width: 320px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -135,12 +134,11 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 30px;
 }
 
 #save-country {
-    margin-left: 10px;
     padding: 8px 15px;
     border: 1px solid #ffd700;
     border-radius: 6px;
@@ -169,20 +167,32 @@ body::after {
 
 #share-button:hover {
     background: #ff4500;
-    transform: scale(1.05); /* Slight pop-up effect */
+    transform: scale(1.05);
 }
 
 .top-countries {
     margin: 30px 0;
     background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 
 .top-countries h3 {
     margin-bottom: 15px;
     color: #ffd700;
-    font-size: 1.8rem; /* Slightly larger for emphasis */
+    font-size: 2rem; /* Increased font size for emphasis */
+}
+
+.top-countries .country-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+.top-countries .country-row:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .clubs-logos {
@@ -193,11 +203,31 @@ body::after {
 }
 
 .club-logo {
-    height: 70px; /* Increased size for better visibility */
+    height: 80px; /* Increased size */
     width: auto;
-    transition: transform 0.3s; /* Added hover scaling effect */
+    transition: transform 0.3s;
 }
 
 .club-logo:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4rem; /* Scale down on smaller screens */
+    }
+    .count-number {
+        width: 120px;
+        height: 140px;
+        font-size: 80px;
+    }
+    .count-label {
+        font-size: 1.8rem;
+    }
+    #country-select {
+        width: 280px;
+    }
+    .club-logo {
+        height: 60px;
+    }
 }
