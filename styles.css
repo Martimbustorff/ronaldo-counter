@@ -87,8 +87,6 @@ body::after {
 
 .count-label {
     font-size: 2.5vw;
-    font-family: 'Prometo';
-    src: url('./Prometo_Trial_Rg.ttf') format('truetype');
     color: #ffd700;
     margin-top: 2vh; /* Existing margin */
     margin-bottom: 1vh; /* Reduce this margin */
@@ -136,7 +134,6 @@ body::after {
 }
 
 .country-selection {
-    .country-selection {
     display: flex;
     flex-direction: column; /* Set to column to stack label and select */
     justify-content: center;
