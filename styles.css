@@ -71,8 +71,8 @@ body::after {
 }
 
 .count-number {
-    width: 12vw; /* Adjust this value to make the box more squared */
-    height: 12vw; /* Make the height equal to width for a square look */
+    width: 8vw; /* Adjust this value to make the box more squared */
+    height: 10vw; /* Make the height equal to width for a square look */
     font-size: 6vw;
     padding: 1vh 1vw;
     border: 4px solid #ffd700;
