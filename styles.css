@@ -239,33 +239,6 @@ body::after {
         width: 280px;
     }
     .club-logo {
-        /* Add this at the end of your existing CSS */
-.counter-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#goal-count {
-    font-size: 3em;
-    font-weight: bold;
-    color: #00cc44; /* Adjust color to match your theme */
-}
-
-#goal-button {
-    padding: 8px 16px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-#goal-button:hover {
-    background-color: #ffd700;
-}
-
         height: 30px;
     }
 }
