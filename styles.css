@@ -49,7 +49,7 @@ body::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 10vw;
+    padding: 5vh 5vw;
     max-width: 1200px;
     margin: auto;
     z-index: 1;
