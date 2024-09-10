@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
-    const reactionButtons = document.querySelectorAll('.reaction-button');
-    const reactions = { heart: 0, muscle: 0, pray: 0 };
 
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
         .then(data => {
-            data.forEach(country => {
+            // Sort countries alphabetically by common name
+            const sortedCountries = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+            sortedCountries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country.cca2.toLowerCase();
                 option.textContent = country.name.common;
@@ -17,15 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
         .catch(error => console.error('Error fetching country data:', error));
-
-    // Handle vote counting for reactions
-    reactionButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const reactionType = button.getAttribute('data-reaction');
-            reactions[reactionType]++;
-            document.getElementById(`${reactionType}-count`).textContent = reactions[reactionType];
-        });
-    });
 
     // Save selected country and update leaderboard
     saveCountryButton.addEventListener('click', () => {
@@ -246,3 +237,4 @@ document.addEventListener('DOMContentLoaded', function () {
         "Zimbabwe": "zw"
     };
 });
+
