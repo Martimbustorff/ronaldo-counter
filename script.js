@@ -3,30 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
 
-    // Add this function to handle fetching and updating the goal counter
-document.addEventListener('DOMContentLoaded', () => {
-    const goalCountElement = document.getElementById('goal-count');
-    const goalButton = document.getElementById('goal-button');
-
-    // Fetch current goal count from the backend
-    const fetchGoalCount = async () => {
-        try {
-            const response = await fetch('/api/goals/remaining'); // Ensure your server serves this endpoint
-            const data = await response.json();
-            updateGoalDisplay(data.remaining);
-        } catch (error) {
-            console.error('Error fetching goal count:', error);
-            goalCountElement.textContent = 'Error fetching data';
-        }
-    };
-
-    // Function to update the goal display with leading zeros
-    const updateGoalDisplay = (count) => {
-        goalCountElement.textContent = count.toString().padStart(4, '0'); // Update counter format to 4 digits
-    };
-
-});
-
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
@@ -261,4 +237,3 @@ document.addEventListener('DOMContentLoaded', () => {
         "Zimbabwe": "zw"
     };
 });
-
