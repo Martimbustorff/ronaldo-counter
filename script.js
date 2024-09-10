@@ -25,16 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         goalCountElement.textContent = count.toString().padStart(4, '0'); // Update counter format to 4 digits
     };
 
-    // Handle button click to simulate a goal scored
-    goalButton.addEventListener('click', async () => {
-        try {
-            const response = await fetch('/api/goals/score', { method: 'POST' }); // Simulate goal scoring
-            const data = await response.json();
-            updateGoalDisplay(data.remaining);
-        } catch (error) {
-            console.error('Error updating goal count:', error);
-            goalCountElement.textContent = 'Error updating count';
-        }
     });
 
     // Initial fetch of the goal count
