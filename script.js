@@ -25,10 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         goalCountElement.textContent = count.toString().padStart(4, '0'); // Update counter format to 4 digits
     };
 
-    });
-
-    // Initial fetch of the goal count
-    fetchGoalCount();
 });
 
     // Populate country select with all available countries
