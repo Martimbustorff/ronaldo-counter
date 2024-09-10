@@ -49,23 +49,24 @@ body::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 10vw; /* Use viewport units for responsive scaling */
+    padding: 5vh 10vw;
     max-width: 1200px;
     margin: auto;
     z-index: 1;
 }
 
 .title {
-    font-size: 5vw; /* Use viewport width to ensure consistent scaling */
+    font-size: 5vw;
     margin-top: 2vh;
     color: #ffd700;
+    white-space: nowrap; /* Make sure the title stays on one line */
 }
 
 /* Counter Section Adjustments */
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 2vw; /* Viewport units for consistent spacing */
+    gap: 2vw;
     margin: 3vh 0;
 }
 
@@ -93,23 +94,24 @@ body::after {
     margin: 2vh 0;
     display: flex;
     justify-content: center;
-    gap: 2vw;
+    gap: 1.5vw; /* Reduced gap for better alignment */
 }
 
 .reaction-button {
     background: none;
     border: none;
-    font-size: 2.5vw;
-    color: #ffd700;
+    font-size: 1.5vw; /* Reduced size for the icons */
+    color: #fff; /* Make icons white for contrast */
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
 
 .reaction-button:hover {
-    transform: scale(1.3);
-    color: #fff;
+    transform: scale(1.1);
+    color: #ffd700; /* Optional: change color on hover */
 }
 
+/* Dropdown Styling */
 #country-select {
     font-family: 'Prometo', sans-serif;
     font-size: 1.5vw;
@@ -130,10 +132,15 @@ body::after {
 
 .country-selection {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack the label above the dropdown */
     align-items: center;
-    gap: 2vw;
+    gap: 1vw;
     margin-bottom: 3vh;
+}
+
+.country-selection label {
+    font-size: 1.5vw; /* Increase font size to match dropdown */
+    margin-bottom: 0.5vh;
 }
 
 #save-country {
@@ -170,9 +177,9 @@ body::after {
 
 .top-countries {
     margin: 3vh 0;
-    background: rgba(0, 0, 0, 0.6);
     padding: 2vh;
     border-radius: 10px;
+    background: none; /* Remove the dark overlay */
 }
 
 .top-countries h3 {
