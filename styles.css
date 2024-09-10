@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Prometo';
-    src: url('./fonts/Prometo_Trial_Rg.ttf') format('truetype');
+    src: url('./Prometo_Trial_Rg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Prometo';
-    src: url('./fonts/Prometo_Trial_Bd.ttf') format('truetype');
+    src: url('./Prometo_Trial_Bd.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 body {
-    font-family: 'Prometo', sans-serif;
+    font-family: 'Prometo', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -41,7 +41,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* Slightly increased opacity for better readability */
+    background: rgba(0, 0, 0, 0.75);
     z-index: -1;
 }
 
@@ -49,16 +49,15 @@ body::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 5vh 10vw; /* Use viewport units for responsive scaling */
     max-width: 1200px;
     margin: auto;
     z-index: 1;
 }
 
 .title {
-    font-size: 5rem; /* Adjusted size to fit all screens at 100% */
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 5vw; /* Use viewport width to ensure consistent scaling */
+    margin-top: 2vh;
     color: #ffd700;
 }
 
@@ -66,15 +65,15 @@ body::after {
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Adjusted spacing for a balanced look */
-    margin: 20px 0;
+    gap: 2vw; /* Viewport units for consistent spacing */
+    margin: 3vh 0;
 }
 
 .count-number {
-    width: 160px;
-    height: 180px;
-    font-size: 100px;
-    padding: 15px;
+    width: 12vw;
+    height: 14vh;
+    font-size: 6vw;
+    padding: 1vh 1vw;
     border: 4px solid #ffd700;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 12px;
@@ -85,24 +84,23 @@ body::after {
 }
 
 .count-label {
-    font-size: 2.2rem; /* Reduced size slightly to improve spacing */
+    font-size: 2.5vw;
     color: #ffd700;
-    margin-top: 20px; /* Increased margin for better spacing */
-    text-align: center;
+    margin-top: 2vh;
 }
 
 .reactions {
-    margin: 20px 0;
+    margin: 2vh 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 2vw;
 }
 
 .reaction-button {
     background: none;
     border: none;
-    font-size: 2.5rem;
-    color: #ffd700; /* Gold for better contrast */
+    font-size: 2.5vw;
+    color: #ffd700;
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
@@ -114,13 +112,13 @@ body::after {
 
 #country-select {
     font-family: 'Prometo', sans-serif;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 1.5vw;
+    padding: 1vh 1.5vw;
     border-radius: 8px;
     border: 2px solid #FFD700;
     color: #333;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 320px;
+    width: 25vw;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -134,12 +132,12 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 2vw;
+    margin-bottom: 3vh;
 }
 
 #save-country {
-    padding: 8px 15px;
+    padding: 1vh 1.5vw;
     border: 1px solid #ffd700;
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.7);
@@ -154,13 +152,13 @@ body::after {
 }
 
 #share-button {
-    margin: 20px 0;
-    padding: 12px 25px;
+    margin: 2vh 0;
+    padding: 1.5vh 3vw;
     background: #ff5733;
     border: none;
     border-radius: 25px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
@@ -171,23 +169,23 @@ body::after {
 }
 
 .top-countries {
-    margin: 30px 0;
+    margin: 3vh 0;
     background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    padding: 2vh;
     border-radius: 10px;
 }
 
 .top-countries h3 {
-    margin-bottom: 15px;
+    margin-bottom: 2vh;
     color: #ffd700;
-    font-size: 2rem; /* Increased font size for emphasis */
+    font-size: 2vw;
 }
 
 .top-countries .country-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 5px;
+    gap: 1vw;
+    padding: 0.5vh;
     transition: background 0.3s;
 }
 
@@ -196,14 +194,14 @@ body::after {
 }
 
 .clubs-logos {
-    margin-top: 30px;
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 2vw;
 }
 
 .club-logo {
-    height: 80px; /* Increased size */
+    height: 10vh;
     width: auto;
     transition: transform 0.3s;
 }
@@ -214,7 +212,7 @@ body::after {
 
 @media (max-width: 768px) {
     .title {
-        font-size: 4rem; /* Scale down on smaller screens */
+        font-size: 4rem;
     }
     .count-number {
         width: 120px;
