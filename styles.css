@@ -4,6 +4,8 @@ body {
     padding: 0;
     color: #fff;
     text-align: center;
+    position: relative; /* Ensure the body is positioned correctly for the overlay */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
     z-index: 1; /* Ensure the content is above the overlay */
 }
 
-/* Add a dark overlay to the background */
+/* Dark overlay applied to the entire container */
 .container::before {
     content: '';
     position: absolute;
@@ -45,6 +47,7 @@ body::before {
 .title {
     font-size: 6rem;
     margin-top: 10px;
+    margin-bottom: 0; /* Remove bottom margin to reduce space */
     color: #ffd700;
 }
 
@@ -52,7 +55,7 @@ body::before {
 .countdown {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0; /* Reduce margin to bring the counter closer */
     gap: 15px; /* Adjust spacing between counter rectangles */
 }
 
