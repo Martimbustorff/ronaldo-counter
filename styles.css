@@ -72,7 +72,7 @@ body::after {
 
 .count-number {
     width: 12vw;
-    height: 16vh;
+    height: 14vh;
     font-size: 6vw;
     padding: 1vh 1vw;
     border: 4px solid #ffd700;
@@ -81,22 +81,25 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center; /* Aligns text inside */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 .count-label {
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: 'Prometo';
     src: url('./Prometo_Trial_Rg.ttf') format('truetype');
     color: #ffd700;
-    margin-top: 2vh;
+    margin-top: 2vh; /* Existing margin */
+    margin-bottom: 1vh; /* Reduce this margin */
+    text-align: center;
 }
 
 .reactions {
     margin: 1vh 0;
     display: flex;
     justify-content: center;
-    gap: 1.5vw; /* Reduced gap for better alignment */
+    gap: 2vw; /* Reduced gap for better alignment */
 }
 
 .reaction-button {
@@ -116,10 +119,10 @@ body::after {
 /* Dropdown Styling */
 #country-select {
     font-family: 'Prometo', sans-serif;
-    font-size: 1vw;
-    padding: 1vh 1.5vw;
+    font-size: 1.5vw; /* Increased size for better readability */
+    padding: 0.8vh 1.5vw; /* Adjusted padding for more compact look */
     border-radius: 8px;
-    border: 2.2px solid #FFD700;
+    border: 2px solid #FFD700;
     color: #333;
     background-color: rgba(255, 255, 255, 0.9);
     width: 25vw;
@@ -133,11 +136,14 @@ body::after {
 }
 
 .country-selection {
+    .country-selection {
     display: flex;
-    flex-direction: column; /* Stack the label above the dropdown */
+    flex-direction: column; /* Set to column to stack label and select */
+    justify-content: center;
     align-items: center;
-    gap: 1vw;
-    margin-bottom: 3vh;
+    gap: 1vh; /* Reduced space between label and dropdown */
+    margin-top: 1vh; /* Reduced space to bring it closer to the above elements */
+    margin-bottom: 2vh; /* Adjust bottom space as needed */
 }
 
 .country-selection label {
