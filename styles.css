@@ -125,10 +125,10 @@ body::after {
     flex: 1;
     max-width: 45%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align text to the left */
-    margin-right: 1vw; /* Adjust this value to fine-tune alignment */
+    flex-direction: row; /* Ensure dropdown and button are in a row */
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    margin: auto; /* Center the wrapper itself */
 }
 
 /* Country selection dropdown and label */
@@ -177,6 +177,7 @@ body::after {
     padding: 1vh 1.5vw;
     border: 2px solid #ffd700;
     border-radius: 6px;
+    #save-country:focus, 
     background: rgba(0, 0, 0, 0.7);
     color: #ffd700;
     cursor: pointer;
@@ -202,6 +203,10 @@ body::after {
 #share-button:hover {
     background: #ffd700;
     color: #000;
+#share-button:focus {
+    outline: 2px solid #00C4FF; /* Add a visible outline for keyboard navigation */
+}
+
 }
 
 /* TOP COUNTRIES CONTAINER */
@@ -222,8 +227,10 @@ body::after {
 }
 
 .show-top-countries {
-    display: flex; /* Show when activated */
-    opacity: 1; /* Ensure it's fully visible */
+    display: flex; /* Ensure this is set by JavaScript */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth transition */
 }
 
 .top-countries h3 {
