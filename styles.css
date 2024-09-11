@@ -135,24 +135,24 @@ body::after {
 }
 
 /* COUNTRY SELECTION CONTAINER */
-/* Wrapper for the country selection dropdown */
+/* Ensure the entire wrapper is centered within the page */
 .country-selection-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Align text to the left */
-    margin: 20px auto;       /* Center with auto margin */
-    flex-direction: row;     /* Ensure it's in a row */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically */
+    margin: 0 auto;          /* Centers the wrapper horizontally within the page */
+    width: 100%;             /* Take full width to center contents */
 }
 
-/* Country selection dropdown and label */
-/* Ensure the selection elements are centered */
+/* Make sure the inner content is also centered properly */
 .country-selection {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; /* Align items horizontally */
     align-items: center;     /* Center items vertically */
-    gap: 10px;               /* Add some spacing between elements */
+    gap: 10px;               /* Space between dropdown and button */
     text-align: center;
 }
+
 
 .country-selection label {
     font-size: 1.5vw;
