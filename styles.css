@@ -185,9 +185,9 @@ body::after {
 }
 
 .top-countries h3 {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     color: #ffd700;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .top-countries .country-row {
