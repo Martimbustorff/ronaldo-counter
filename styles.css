@@ -126,6 +126,7 @@ body::after {
     gap: 1vh; /* Reduced space between label and dropdown */
     margin-top: 1vh; /* Reduced space to bring it closer to the above elements */
     margin-bottom: 2vh; /* Adjust bottom space as needed */
+    width: fit-content;
 }
 
 .country-selection label {
