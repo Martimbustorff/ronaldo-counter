@@ -1,326 +1,257 @@
-/* CSS VARIABLES FOR CONSISTENT STYLING */
-:root {
-    --main-font: 'Prometo', Arial, sans-serif;
-    --main-bg-color: rgba(0, 0, 0, 0.55);
-    --highlight-color: #ffd700;
-    --text-color: #fff;
-    --button-bg-color: rgba(0, 0, 0, 0.7);
-    --button-hover-bg-color: #ffd700;
-    --border-color: rgba(255, 215, 0, 0.8);
-    --transition-duration: 0.3s;
-    --shadow-color: rgba(0, 0, 0, 0.3);
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const countrySelect = document.getElementById('country-select');
+    const saveCountryButton = document.getElementById('save-country');
+    const countryLeaderboard = document.getElementById('country-leaderboard');
+    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper');
+    const topCountriesWrapper = document.getElementById('top-countries');
 
-/* FONT DEFINITIONS */
-/* Custom fonts used throughout the site */
-@font-face {
-    font-family: 'Prometo';
-    src: url('./Prometo_Trial_Rg.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+    // Populate country select with all available countries
+    fetch('https://restcountries.com/v3.1/all')
+        .then(response => response.json())
+        .then(data => populateCountrySelect(data))
+        .catch(error => console.error('Error fetching country data:', error));
 
-@font-face {
-    font-family: 'Prometo';
-    src: url('./Prometo_Trial_Bd.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* GLOBAL STYLES */
-/* Main body styling including fonts, colors, and background */
-body {
-    font-family: var(--main-font);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    text-align: center;
-    position: relative;
-    overflow-x: hidden;
-}
-
-body::before {
-    /* Background image */
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Background1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    z-index: -2;
-}
-
-body::after {
-    /* Dark overlay on the background */
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--main-bg-color);
-    z-index: -1;
-}
-
-/* CONTAINER STYLES */
-/* Main container for centering content */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh 10vw;
-    max-width: 1200px;
-    margin: auto;
-    z-index: 1;
-}
-
-/* TITLE SECTION */
-/* Styling for the main title */
-.title {
-    font-size: 5vw;
-    margin-top: 2vh;
-    color: var(--highlight-color);
-    white-space: nowrap; /* Keeps the title in one line */
-}
-
-/* COUNTER SECTION */
-/* Container for the countdown numbers */
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    margin: 2vh 0;
-}
-
-/* Individual number boxes in the countdown */
-.count-number {
-    width: 8rem;
-    height: 7rem;
-    font-size: 6rem;
-    padding: 1vh 0.5rem;
-    border: 4px solid var(--highlight-color);
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px var(--shadow-color); /* Adds a subtle shadow */
-}
-
-/* LABEL FOR COUNTER */
-/* Text below the countdown */
-.count-label {
-    font-size: 3vw;
-    color: var(--text-color);
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    text-align: center;
-}
-
-/* PAGE LAYOUT */
-/* Flex container for layout control of side sections */
-.page-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
-    gap: 2vw;
-    padding: 2vh 5vw;
-    margin-top: 2vh; /* Adjust this value to add more space between the sections */
-}
-
-/* COUNTRY SELECTION CONTAINER */
-/* Ensure the entire wrapper is centered within the page */
-.country-selection-wrapper {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center;     /* Centers the content vertically */
-    margin: 0 auto;          /* Centers the wrapper horizontally within the page */
-    width: 100%;             /* Take full width to center contents */
-}
-
-/* Make sure the inner content is also centered properly */
-.country-selection {
-    display: flex;
-    justify-content: center; /* Align items horizontally */
-    align-items: center;     /* Center items vertically */
-    gap: 10px;               /* Space between dropdown and button */
-    text-align: center;
-}
-
-
-.country-selection label {
-    font-size: 1.5vw;
-    margin-bottom: 0.5vh;
-    color: var(--highlight-color);
-    display: flex;
-    align-items: center; /* Align the label vertically */
-}
-
-/* COUNTRY DROPDOWN STYLING */
-/* Styles for the country dropdown input */
-#country-select {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    padding: 0.6vh 1.3vw;
-    border-radius: 8px;
-    border: 4px solid var(--highlight-color);
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 22vw;
-    outline: none;
-    transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
-}
-
-#country-select:focus {
-    border-color: #00C4FF;
-    box-shadow: 0 0 10px var(--shadow-color);
-}
-
-/* BUTTON STYLING */
-/* Shared button styling */
-.button {
-    padding: 1vh 1.5vw;
-    border: 2px solid var(--highlight-color);
-    border-radius: 6px;
-    background: var(--button-bg-color);
-    color: var(--highlight-color);
-    cursor: pointer;
-    transition: background var(--transition-duration), color var(--transition-duration);
-}
-
-.button:hover {
-    background: var(--button-hover-bg-color);
-    color: #000;
-}
-
-/* Specific button IDs use the shared button class */
-#save-country {
-    /* Additional styles specific to the save button, if needed */
-}
-
-#share-button {
-    /* Additional styles specific to the share button, if needed */
-}
-
-/* TOP COUNTRIES CONTAINER */
-/* Wrapper for displaying top supporting countries */
-.top-countries-wrapper {
-    display: none; /* Hide initially */
-    flex: 1;
-    max-width: 45%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 1vw;
-    margin-top: 1vh;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    padding: 2vh;
-    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out; /* Smooth transition effect */
-    opacity: 0;
-    max-height: 0;
-}
-
-.show-top-countries {
-    display: flex; /* Show when activated */
-    opacity: 1;
-    max-height: 1000px; /* or a suitable max-height */
-}
-
-.top-countries h3 {
-    font-size: 1.5vw;
-    margin-bottom: 0.5vh;
-    color: var(--highlight-color);
-    display: flex;
-    align-items: center;
-    margin-top: 0; /* Remove top margin to align with the left section */
-}
-
-/* Individual country row styling */
-.top-countries .country-row {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    padding: 0.5vh;
-    transition: background var(--transition-duration);
-}
-
-.top-countries .country-row:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Container for the flags and votes */
-.votes-container {
-    display: flex;
-    flex-direction: column;
-    padding: 1vh 2vw;
-    border: 2px solid var(--border-color); /* Gold border with slight transparency */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    border-radius: 10px; /* Rounded corners */
-    margin-top: 1vh;
-    box-shadow: 0 4px 10px var(--shadow-color); /* Optional: Add a subtle shadow */
-}
-
-.country-row {
-    padding: 0.5vh 0;
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    transition: background var(--transition-duration);
-}
-
-.country-row:hover {
-    background: rgba(255, 255, 255, 0.1); /* Light highlight on hover */
-}
-
-/* CLUB LOGOS SECTION */
-/* Container for club logos */
-.clubs-logos {
-    margin-top: 2.2vh;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-}
-
-/* Individual club logo styling */
-.club-logo {
-    height: 5vh;
-    width: auto;
-    transition: transform var(--transition-duration);
-}
-
-.club-logo:hover {
-    transform: scale(1.1);
-}
-
-/* MEDIA QUERIES */
-/* Adjustments for smaller screen sizes */
-@media (max-width: 768px) {
-    .title {
-        font-size: 4rem;
+    // Populate the dropdown with country options sorted alphabetically
+    function populateCountrySelect(countries) {
+        const sortedCountries = countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+        sortedCountries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country.cca2.toLowerCase();
+            option.textContent = country.name.common;
+            countrySelect.appendChild(option);
+        });
     }
-    .count-number {
-        width: 120px;
-        height: 140px;
-        font-size: 80px;
+
+    // Event listener for saving the selected country
+    saveCountryButton.addEventListener('click', () => {
+        const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
+        if (selectedCountry) {
+            updateLeaderboard(selectedCountry);
+            toggleVisibility(countrySelectionWrapper, topCountriesWrapper);
+        }
+    });
+
+    // Function to update the leaderboard with the top 5 countries
+    function updateLeaderboard(country) {
+        const countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
+        countryVotes[country] = (countryVotes[country] || 0) + 1;
+        localStorage.setItem('countryVotes', JSON.stringify(countryVotes));
+        renderLeaderboard(countryVotes);
     }
-    .count-label {
-        font-size: 1.8rem;
+
+    // Function to render the leaderboard
+    function renderLeaderboard(countryVotes) {
+        const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
+        countryLeaderboard.innerHTML = ''; // Clear existing leaderboard content
+        sortedCountries.forEach(([country, votes]) => {
+            const countryCode = countryCodes[country] || 'xx'; // Fallback if country code is missing
+            const countryItem = document.createElement('div');
+            countryItem.className = 'country-item';
+            countryItem.innerHTML = `
+                <img src="https://flagcdn.com/20x15/${countryCode}.png" alt="${country} flag" style="height: 20px; margin-right: 10px;">
+                ${country}: ${votes} votes
+            `;
+            countryLeaderboard.appendChild(countryItem);
+        });
     }
-    #country-select {
-        width: 280px;
+
+    // Function to toggle visibility between selection and leaderboard
+    function toggleVisibility(hideElement, showElement) {
+        hideElement.style.display = 'none';   // Hide the dropdown container
+        showElement.style.display = 'flex';   // Show the leaderboard section
+        showElement.setAttribute('aria-hidden', 'false');  // Accessibility improvement
     }
-    .club-logo {
-        height: 30px;
-    }
-    .page-layout {
-        flex-direction: column;
-        gap: 1vh;
-    }
-}
+
+    // Mapping country names to their respective ISO codes
+    const countryCodes = {
+        "Afghanistan": "af",
+        "Albania": "al",
+        "Algeria": "dz",
+        "Andorra": "ad",
+        "Angola": "ao",
+        "Argentina": "ar",
+        "Armenia": "am",
+        "Australia": "au",
+        "Austria": "at",
+        "Azerbaijan": "az",
+        "Bahamas": "bs",
+        "Bahrain": "bh",
+        "Bangladesh": "bd",
+        "Barbados": "bb",
+        "Belarus": "by",
+        "Belgium": "be",
+        "Belize": "bz",
+        "Benin": "bj",
+        "Bhutan": "bt",
+        "Bolivia": "bo",
+        "Bosnia and Herzegovina": "ba",
+        "Botswana": "bw",
+        "Brazil": "br",
+        "Brunei": "bn",
+        "Bulgaria": "bg",
+        "Burkina Faso": "bf",
+        "Burundi": "bi",
+        "Cambodia": "kh",
+        "Cameroon": "cm",
+        "Canada": "ca",
+        "Cape Verde": "cv",
+        "Central African Republic": "cf",
+        "Chad": "td",
+        "Chile": "cl",
+        "China": "cn",
+        "Colombia": "co",
+        "Comoros": "km",
+        "Congo (Brazzaville)": "cg",
+        "Congo (Kinshasa)": "cd",
+        "Costa Rica": "cr",
+        "Croatia": "hr",
+        "Cuba": "cu",
+        "Cyprus": "cy",
+        "Czech Republic": "cz",
+        "Denmark": "dk",
+        "Djibouti": "dj",
+        "Dominica": "dm",
+        "Dominican Republic": "do",
+        "Ecuador": "ec",
+        "Egypt": "eg",
+        "El Salvador": "sv",
+        "Equatorial Guinea": "gq",
+        "Eritrea": "er",
+        "Estonia": "ee",
+        "Eswatini": "sz",
+        "Ethiopia": "et",
+        "Fiji": "fj",
+        "Finland": "fi",
+        "France": "fr",
+        "Gabon": "ga",
+        "Gambia": "gm",
+        "Georgia": "ge",
+        "Germany": "de",
+        "Ghana": "gh",
+        "Greece": "gr",
+        "Grenada": "gd",
+        "Guatemala": "gt",
+        "Guinea": "gn",
+        "Guinea-Bissau": "gw",
+        "Guyana": "gy",
+        "Haiti": "ht",
+        "Honduras": "hn",
+        "Hungary": "hu",
+        "Iceland": "is",
+        "India": "in",
+        "Indonesia": "id",
+        "Iran": "ir",
+        "Iraq": "iq",
+        "Ireland": "ie",
+        "Israel": "il",
+        "Italy": "it",
+        "Jamaica": "jm",
+        "Japan": "jp",
+        "Jordan": "jo",
+        "Kazakhstan": "kz",
+        "Kenya": "ke",
+        "Kiribati": "ki",
+        "Kuwait": "kw",
+        "Kyrgyzstan": "kg",
+        "Laos": "la",
+        "Latvia": "lv",
+        "Lebanon": "lb",
+        "Lesotho": "ls",
+        "Liberia": "lr",
+        "Libya": "ly",
+        "Liechtenstein": "li",
+        "Lithuania": "lt",
+        "Luxembourg": "lu",
+        "Madagascar": "mg",
+        "Malawi": "mw",
+        "Malaysia": "my",
+        "Maldives": "mv",
+        "Mali": "ml",
+        "Malta": "mt",
+        "Mauritania": "mr",
+        "Mauritius": "mu",
+        "Mexico": "mx",
+        "Moldova": "md",
+        "Monaco": "mc",
+        "Mongolia": "mn",
+        "Montenegro": "me",
+        "Morocco": "ma",
+        "Mozambique": "mz",
+        "Myanmar": "mm",
+        "Namibia": "na",
+        "Nauru": "nr",
+        "Nepal": "np",
+        "Netherlands": "nl",
+        "New Zealand": "nz",
+        "Nicaragua": "ni",
+        "Niger": "ne",
+        "Nigeria": "ng",
+        "North Macedonia": "mk",
+        "Norway": "no",
+        "Oman": "om",
+        "Pakistan": "pk",
+        "Palau": "pw",
+        "Panama": "pa",
+        "Papua New Guinea": "pg",
+        "Paraguay": "py",
+        "Peru": "pe",
+        "Philippines": "ph",
+        "Poland": "pl",
+        "Portugal": "pt",
+        "Qatar": "qa",
+        "Romania": "ro",
+        "Russia": "ru",
+        "Rwanda": "rw",
+        "Saint Kitts and Nevis": "kn",
+        "Saint Lucia": "lc",
+        "Saint Vincent and the Grenadines": "vc",
+        "Samoa": "ws",
+        "San Marino": "sm",
+        "Sao Tome and Principe": "st",
+        "Saudi Arabia": "sa",
+        "Senegal": "sn",
+        "Serbia": "rs",
+        "Seychelles": "sc",
+        "Sierra Leone": "sl",
+        "Singapore": "sg",
+        "Slovakia": "sk",
+        "Slovenia": "si",
+        "Solomon Islands": "sb",
+        "Somalia": "so",
+        "South Africa": "za",
+        "South Korea": "kr",
+        "South Sudan": "ss",
+        "Spain": "es",
+        "Sri Lanka": "lk",
+        "Sudan": "sd",
+        "Suriname": "sr",
+        "Sweden": "se",
+        "Switzerland": "ch",
+        "Syria": "sy",
+        "Taiwan": "tw",
+        "Tajikistan": "tj",
+        "Tanzania": "tz",
+        "Thailand": "th",
+        "Togo": "tg",
+        "Tonga": "to",
+        "Trinidad and Tobago": "tt",
+        "Tunisia": "tn",
+        "Turkey": "tr",
+        "Turkmenistan": "tm",
+        "Tuvalu": "tv",
+        "Uganda": "ug",
+        "Ukraine": "ua",
+        "United Arab Emirates": "ae",
+        "United Kingdom": "gb",
+        "United States": "us",
+        "Uruguay": "uy",
+        "Uzbekistan": "uz",
+        "Vanuatu": "vu",
+        "Vatican City": "va",
+        "Venezuela": "ve",
+        "Vietnam": "vn",
+        "Yemen": "ye",
+        "Zambia": "zm",
+        "Zimbabwe": "zw"
+    };
+});
