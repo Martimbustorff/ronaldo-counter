@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
+    const countrySelectionContainer = document.getElementById('country-selection-container');
 
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
         .then(data => {
-            // Sort countries alphabetically by common name
             const sortedCountries = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
             sortedCountries.forEach(country => {
                 const option = document.createElement('option');
@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     saveCountryButton.addEventListener('click', () => {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
         updateLeaderboard(selectedCountry);
+        countrySelectionContainer.style.display = 'none';  // Hide dropdown after saving
+        countryLeaderboard.style.display = 'block';       // Show the leaderboard
     });
 
     // Update leaderboard with the top 5 countries
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             countryLeaderboard.appendChild(countryItem);
         });
     }
+
 
     // Mapping country names to their respective ISO codes
     const countryCodes = {
