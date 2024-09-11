@@ -2,56 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Cristiano Ronaldo Countdown to 1000 Goals">
     <meta property="og:description" content="Join the countdown to Cristiano Ronaldo's 1000 goals and support from your country!">
     <meta property="og:image" content="path/to/preview-image.jpg">
+    <meta name="description" content="Support Cristiano Ronaldo in reaching 1000 official goals. Choose your country and see the top supporting nations!">
     <title>Cristiano Ronaldo Countdown</title>
+
+    <!-- Linking styles and fonts -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
-   <div class="container">
-    <header>
-        <h1 class="title">Cristiano Ronaldo</h1>
-    </header>
-    <main>
-        <div class="countdown">
-            <div class="count-number">0</div>
-            <div class="count-number">0</div>
-            <div class="count-number">9</div>
-            <div class="count-number">9</div>
-        </div>
-        <p class="count-label">Official Goals to Reach 1000!</p>
-
-        <!-- Country Selection Section -->
-        <div class="country-selection-wrapper">
-            <div class="country-selection">
-                <label for="country-select">From where are you supporting?</label>
-                <select id="country-select"></select>
-                <button id="save-country">Save</button>
+    <div class="container">
+        <header>
+            <h1 class="title">Cristiano Ronaldo</h1>
+        </header>
+        <main>
+            <!-- Countdown Section -->
+            <div class="countdown" aria-live="polite">
+                <div class="count-number" aria-label="Number 0">0</div>
+                <div class="count-number" aria-label="Number 0">0</div>
+                <div class="count-number" aria-label="Number 9">9</div>
+                <div class="count-number" aria-label="Number 9">9</div>
             </div>
-        </div>
+            <p class="count-label">Official Goals to Reach 1000!</p>
 
-        <!-- Top Countries Section (Hidden Initially) -->
-        <div class="top-countries-wrapper" id="top-countries">
-            <section class="top-countries">
-                <h3>Top Supporting Countries</h3>
-                <div id="country-leaderboard">
-                    <!-- Top countries will be displayed here dynamically -->
+            <!-- Country Selection Section -->
+            <div class="country-selection-wrapper">
+                <div class="country-selection">
+                    <label for="country-select">From where are you supporting?</label>
+                    <select id="country-select" aria-label="Select your country">
+                        <!-- Options populated dynamically -->
+                    </select>
+                    <button id="save-country" class="button" aria-label="Save selected country">Save</button>
                 </div>
+            </div>
+
+            <!-- Top Countries Section (Hidden Initially) -->
+            <div class="top-countries-wrapper" id="top-countries" aria-hidden="true">
+                <section class="top-countries" aria-labelledby="top-countries-title">
+                    <h3 id="top-countries-title">Top Supporting Countries</h3>
+                    <div id="country-leaderboard">
+                        <!-- Top countries will be displayed here dynamically -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- Share Button -->
+            <button id="share-button" class="button" aria-label="Share this page">SHARE</button>
+
+            <!-- Clubs Logos Section -->
+            <section class="clubs-logos" aria-label="Clubs Cristiano Ronaldo has played for">
+                <img src="sporting.png" alt="Sporting CP logo" class="club-logo">
+                <img src="manchesterunited.png" alt="Manchester United logo" class="club-logo">
+                <img src="realmadrid.png" alt="Real Madrid logo" class="club-logo">
+                <img src="juventus.png" alt="Juventus logo" class="club-logo">
+                <img src="alnasr.png" alt="Al Nassr logo" class="club-logo">
             </section>
-        </div>
+        </main>
+    </div>
 
-        <button id="share-button">SHARE</button>
-
-        <section class="clubs-logos">
-            <img src="sporting.png" alt="Sporting CP" class="club-logo">
-            <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
-            <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
-            <img src="juventus.png" alt="Juventus" class="club-logo">
-            <img src="alnasr.png" alt="Al Nassr" class="club-logo">
-        </section>
-    </main>
-</div>
+    <!-- Add your JavaScript file at the end of the body to improve page load speed -->
+    <script src="script.js"></script>
+</body>
+</html>
