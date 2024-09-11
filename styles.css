@@ -137,25 +137,21 @@ body::after {
 /* COUNTRY SELECTION CONTAINER */
 /* Wrapper for the country selection dropdown */
 .country-selection-wrapper {
-    flex: 1;
-    max-width: 45%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align text to the left */
-    margin-right: 1vw; /* Adjust this value to fine-tune alignment */
+    align-items: center; /* Align text to the left */
+    margin: 20px auto;       /* Center with auto margin */
+    flex-direction: row;     /* Ensure it's in a row */
 }
 
 /* Country selection dropdown and label */
+/* Ensure the selection elements are centered */
 .country-selection {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vh;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
-    width: fit-content;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Center items vertically */
+    gap: 10px;               /* Add some spacing between elements */
+    text-align: center;
 }
 
 .country-selection label {
