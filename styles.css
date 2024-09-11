@@ -89,16 +89,50 @@ body::after {
 .count-label {
     font-size: 3vw;
     color: #ffd700;
-    margin-top: 2vh; /* Existing margin */
-    margin-bottom: 1vh; /* Reduce this margin */
+    margin-top: 2vh;
+    margin-bottom: 1vh;
     text-align: center;
+}
+
+/* Layout adjustments for the page sections */
+.page-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2vw;
+    padding: 2vh 5vw;
+}
+
+.country-selection-wrapper, .top-countries-wrapper {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: fit-content;
+}
+
+.country-selection label {
+    font-size: 1.5vw;
+    margin-bottom: 0.3vh;
+    color: #FFD700;
 }
 
 /* Dropdown Styling */
 #country-select {
     font-family: 'Prometo', sans-serif;
-    font-size: 1vw; /* Increased size for better readability */
-    padding: 0.6vh 1.3vw; /* Adjusted padding for more compact look */
+    font-size: 1vw;
+    padding: 0.6vh 1.3vw;
     border-radius: 8px;
     border: 4px solid #FFD700;
     color: #333;
@@ -111,23 +145,6 @@ body::after {
 #country-select:focus {
     border-color: #00C4FF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.country-selection {
-    display: flex;
-    flex-direction: column; /* Set to column to stack label and select */
-    justify-content: center;
-    align-items: center;
-    gap: 1vh; /* Reduced space between label and dropdown */
-    margin-top: 1vh; /* Reduced space to bring it closer to the above elements */
-    margin-bottom: 2vh; /* Adjust bottom space as needed */
-    width: fit-content;
-}
-
-.country-selection label {
-    font-size: 1.5vw; /* Increase font size to match dropdown */
-    margin-bottom: 0.3vh;
-    color: #FFD700;
 }
 
 #save-country {
@@ -146,20 +163,18 @@ body::after {
 }
 
 #share-button {
-    margin: 1.2vh 0;
-    padding: 1.3vh 2.5vw;
-    background: #ffd700;
-    border: none;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 1vw;
+    padding: 1vh 1.5vw;
+    border: 2px solid #ffd700;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffd700;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 #share-button:hover {
-    background: #ff4500;
-    transform: scale(1.00);
+    background: #ffd700;
+    color: #000;
 }
 
 .top-countries {
@@ -221,5 +236,13 @@ body::after {
     }
     .club-logo {
         height: 30px;
+    }
+    .page-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .country-selection-wrapper, .top-countries-wrapper {
+        max-width: 100%;
     }
 }
