@@ -2,36 +2,43 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
-    const countrySelectionContainer = document.getElementById('country-selection-container');
+    const countrySelectionContainer = document.querySelector('.country-selection-wrapper');
+    const topCountriesWrapper = document.getElementById('top-countries');
 
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
-        .then(data => {
-            const sortedCountries = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-            sortedCountries.forEach(country => {
-                const option = document.createElement('option');
-                option.value = country.cca2.toLowerCase();
-                option.textContent = country.name.common;
-                countrySelect.appendChild(option);
-            });
-        })
+        .then(data => populateCountrySelect(data))
         .catch(error => console.error('Error fetching country data:', error));
 
-    // Save selected country and update leaderboard
+    // Populate the dropdown with country options sorted alphabetically
+    function populateCountrySelect(countries) {
+        const sortedCountries = countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+        sortedCountries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country.cca2.toLowerCase();
+            option.textContent = country.name.common;
+            countrySelect.appendChild(option);
+        });
+    }
+
+    // Event listener for saving the selected country
     saveCountryButton.addEventListener('click', () => {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
         updateLeaderboard(selectedCountry);
-        countrySelectionContainer.style.display = 'none';  // Hide dropdown after saving
-        countryLeaderboard.style.display = 'block';       // Show the leaderboard
+        toggleVisibility(countrySelectionContainer, topCountriesWrapper);
     });
 
-    // Update leaderboard with the top 5 countries
+    // Function to update the leaderboard with the top 5 countries
     function updateLeaderboard(country) {
-        let countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
+        const countryVotes = JSON.parse(localStorage.getItem('countryVotes')) || {};
         countryVotes[country] = (countryVotes[country] || 0) + 1;
         localStorage.setItem('countryVotes', JSON.stringify(countryVotes));
+        renderLeaderboard(countryVotes);
+    }
 
+    // Function to render the leaderboard
+    function renderLeaderboard(countryVotes) {
         const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
         countryLeaderboard.innerHTML = '';
         sortedCountries.forEach(([country, votes]) => {
@@ -46,6 +53,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Function to toggle visibility between selection and leaderboard
+    function toggleVisibility(hideElement, showElement) {
+        hideElement.style.display = 'none';   // Hide dropdown container
+        showElement.style.display = 'block';  // Show the leaderboard section
+        showElement.setAttribute('aria-hidden', 'false');  // Improve accessibility
+    }
 
     // Mapping country names to their respective ISO codes
     const countryCodes = {
