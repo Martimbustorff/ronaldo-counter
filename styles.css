@@ -86,29 +86,43 @@ body::after {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for a 3D effect */
 }
 
-.count-label {
-    font-size: 3vw;
-    color: #ffd700;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
-    text-align: center;
+/* Adjust labels to have consistent size and styling */
+.country-selection label,
+.top-countries h3 {
+    font-size: 1.5vw; /* Consistent font size for both labels */
+    font-weight: bold;
+    color: #ffd700; /* Matching color */
+    margin-bottom: 0.5vh; /* Add spacing below the labels */
 }
 
-/* Layout adjustments for the page sections */
+/* Flex container to balance layout */
 .page-layout {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures both sections are balanced */
     align-items: flex-start;
-    gap: 2vw;
+    gap: 2vw; /* Adds space between the dropdown and the top countries */
     padding: 2vh 5vw;
 }
 
-.country-selection-wrapper, .top-countries-wrapper {
+.country-selection-wrapper, 
+.top-countries-wrapper {
     flex: 1;
-    max-width: 45%;
+    max-width: 45%; /* Adjusts width for better balance */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers content inside each section */
+}
+
+/* Additional media query adjustments for mobile view */
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .country-selection-wrapper, .top-countries-wrapper {
+        max-width: 100%; /* Ensures full-width on smaller screens */
+    }
 }
 
 .country-selection {
