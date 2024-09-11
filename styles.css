@@ -123,12 +123,11 @@ body::after {
 /* Wrapper for the country selection dropdown */
 .country-selection-wrapper {
     flex: 1;
-    max-width: 45%;
     display: flex;
-    flex-direction: row; /* Ensure dropdown and button are in a row */
-    justify-content: center; /* Center contents horizontally */
-    align-items: center; /* Center contents vertically */
-    margin: auto; /* Center the wrapper itself */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto; /* Ensure the selection is centered with the page */
 }
 
 /* Country selection dropdown and label */
@@ -217,9 +216,8 @@ body::after {
     max-width: 45%;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 1vw;
-    margin-top: 1vh;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto; /* Center the wrapper itself within the page */
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 2vh;
@@ -227,11 +225,8 @@ body::after {
 }
 
 .show-top-countries {
-    display: flex; /* Ensure this is set by JavaScript */
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth transition */
-}
+    display: flex; /* Show when activated */
+    opacity: 1; /* Ensure it's fully visible */
 
 .top-countries h3 {
     font-size: 1.5vw;
@@ -240,6 +235,7 @@ body::after {
     display: flex;
     align-items: center;
     margin-top: 0; /* Remove top margin to align with the left section */
+    font-weight: normal; /* Ensure consistency with other elements */
 }
 
 /* Individual country row styling */
