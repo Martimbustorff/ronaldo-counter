@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
-    const countrySelectionContainer = document.querySelector('.country-selection-wrapper');
+    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper'); // Updated to match the correct element
     const topCountriesWrapper = document.getElementById('top-countries');
 
     // Populate country select with all available countries
@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for saving the selected country
     saveCountryButton.addEventListener('click', () => {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
-        updateLeaderboard(selectedCountry);
-        toggleVisibility(countrySelectionContainer, topCountriesWrapper);
+        if (selectedCountry) {
+            updateLeaderboard(selectedCountry);
+            toggleVisibility(countrySelectionWrapper, topCountriesWrapper);
+        }
     });
 
     // Function to update the leaderboard with the top 5 countries
@@ -56,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to toggle visibility between selection and leaderboard
     function toggleVisibility(hideElement, showElement) {
         hideElement.style.display = 'none';   // Hide dropdown container
-        showElement.style.display = 'block';  // Show the leaderboard section
+        showElement.style.display = 'flex';   // Show the leaderboard section
         showElement.setAttribute('aria-hidden', 'false');  // Improve accessibility
     }
 
