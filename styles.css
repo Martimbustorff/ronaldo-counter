@@ -89,7 +89,7 @@ body::after {
 /* Adjust labels to have consistent size and styling */
 .country-selection label,
 .top-countries h3 {
-    font-size: 1vw; /* Consistent font size for both labels */
+    font-size: 1.5vw; /* Consistent font size for both labels */
     font-weight: bold;
     color: #ffd700; /* Matching color */
     margin-bottom: 0.3vh; /* Add spacing below the labels */
@@ -137,7 +137,7 @@ body::after {
 }
 
 .country-selection label {
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-bottom: 0.3vh;
     color: #FFD700;
 }
@@ -201,7 +201,7 @@ body::after {
 .top-countries h3 {
     margin-bottom: 3vh;
     color: #ffd700;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .top-countries .country-row {
