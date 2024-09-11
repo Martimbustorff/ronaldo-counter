@@ -1,3 +1,5 @@
+/* FONT DEFINITIONS */
+/* Custom fonts used throughout the site */
 @font-face {
     font-family: 'Prometo';
     src: url('./Prometo_Trial_Rg.ttf') format('truetype');
@@ -12,6 +14,8 @@
     font-style: normal;
 }
 
+/* GLOBAL STYLES */
+/* Main body styling including fonts, colors, and background */
 body {
     font-family: 'Prometo', Arial, sans-serif;
     margin: 0;
@@ -23,6 +27,7 @@ body {
 }
 
 body::before {
+    /* Background image */
     content: '';
     position: fixed;
     top: 0;
@@ -35,6 +40,7 @@ body::before {
 }
 
 body::after {
+    /* Dark overlay on the background */
     content: '';
     position: fixed;
     top: 0;
@@ -45,6 +51,8 @@ body::after {
     z-index: -1;
 }
 
+/* CONTAINER STYLES */
+/* Main container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -55,14 +63,17 @@ body::after {
     z-index: 1;
 }
 
+/* TITLE SECTION */
+/* Styling for the main title */
 .title {
     font-size: 5vw;
     margin-top: 2vh;
     color: #ffd700;
-    white-space: nowrap; /* Make sure the title stays on one line */
+    white-space: nowrap; /* Keeps the title in one line */
 }
 
-/* Counter Section Adjustments */
+/* COUNTER SECTION */
+/* Container for the countdown numbers */
 .countdown {
     display: flex;
     justify-content: center;
@@ -70,22 +81,25 @@ body::after {
     margin: 2vh 0;
 }
 
+/* Individual number boxes in the countdown */
 .count-number {
-    width: 8vw; /* Adjust this value to make the box more squared */
-    height: 8vw; /* Make the height equal to width for a square look */
+    width: 8vw; /* Width and height adjusted for squared look */
+    height: 8vw;
     font-size: 6vw;
     padding: 1vh 1vw;
     border: 4px solid #ffd700;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 13px; /* Adjust this value for roundness of corners */
+    border-radius: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Aligns text inside */
+    text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for a 3D effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
+/* LABEL FOR COUNTER */
+/* Text below the countdown */
 .count-label {
     font-size: 3vw;
     color: #ffd700;
@@ -94,7 +108,8 @@ body::after {
     text-align: center;
 }
 
-/* Layout adjustments for the page sections */
+/* PAGE LAYOUT */
+/* Flex container for layout control of side sections */
 .page-layout {
     display: flex;
     justify-content: space-between;
@@ -103,7 +118,9 @@ body::after {
     padding: 2vh 5vw;
 }
 
-.country-selection-wrapper, .top-countries-wrapper {
+/* COUNTRY SELECTION CONTAINER */
+/* Wrapper for the country selection dropdown */
+.country-selection-wrapper {
     flex: 1;
     max-width: 45%;
     display: flex;
@@ -111,6 +128,7 @@ body::after {
     align-items: center;
 }
 
+/* Country selection dropdown and label */
 .country-selection {
     display: flex;
     flex-direction: column;
@@ -128,7 +146,8 @@ body::after {
     color: #FFD700;
 }
 
-/* Dropdown Styling */
+/* COUNTRY DROPDOWN STYLING */
+/* Styles for the country dropdown input */
 #country-select {
     font-family: 'Prometo', sans-serif;
     font-size: 1vw;
@@ -147,6 +166,8 @@ body::after {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* BUTTON STYLING */
+/* Save button styling */
 #save-country {
     padding: 1vh 1.5vw;
     border: 2px solid #ffd700;
@@ -162,6 +183,7 @@ body::after {
     color: #000;
 }
 
+/* Share button styling */
 #share-button {
     padding: 1vh 1.5vw;
     border: 2px solid #ffd700;
@@ -177,11 +199,21 @@ body::after {
     color: #000;
 }
 
+/* TOP COUNTRIES CONTAINER */
+/* Wrapper for displaying top supporting countries */
+.top-countries-wrapper {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .top-countries {
     margin: 2vh 0;
     padding: 2vh;
     border-radius: 10px;
-    background: none; /* Remove the dark overlay */
+    background: none;
 }
 
 .top-countries h3 {
@@ -190,6 +222,7 @@ body::after {
     font-size: 1.5vw;
 }
 
+/* Individual country row styling */
 .top-countries .country-row {
     display: flex;
     align-items: center;
@@ -202,6 +235,8 @@ body::after {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* CLUB LOGOS SECTION */
+/* Container for club logos */
 .clubs-logos {
     margin-top: 2.2vh;
     display: flex;
@@ -209,6 +244,7 @@ body::after {
     gap: 2vw;
 }
 
+/* Individual club logo styling */
 .club-logo {
     height: 5vh;
     width: auto;
@@ -219,6 +255,8 @@ body::after {
     transform: scale(1.1);
 }
 
+/* MEDIA QUERIES */
+/* Adjustments for smaller screen sizes */
 @media (max-width: 768px) {
     .title {
         font-size: 4rem;
