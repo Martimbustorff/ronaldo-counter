@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
-    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper'); // Updated to match the correct element
+    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper'); 
     const topCountriesWrapper = document.getElementById('top-countries');
 
     // Populate country select with all available countries
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
         countryLeaderboard.innerHTML = '';
         sortedCountries.forEach(([country, votes]) => {
-            const countryCode = countryCodes[country];
+            const countryCode = countryCodes[country] || 'xx'; // Check if country code exists
             const countryItem = document.createElement('div');
             countryItem.className = 'country-item';
             countryItem.innerHTML = `
