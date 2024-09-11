@@ -112,7 +112,7 @@ body::after {
 /* Flex container for layout control of side sections */
 .page-layout {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 2vw;
     padding: 2vh 5vw;
@@ -121,10 +121,12 @@ body::after {
 /* COUNTRY SELECTION CONTAINER */
 /* Wrapper for the country selection dropdown */
 .country-selection-wrapper {
+    flex: 1;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
-    align-items: center;             /* Center items within the column */
-    justify-content: center;         /* Vertically centers within the parent */
+    justify-content: center; /* Ensures text and dropdown align vertically */
+    align-items: flex-start; /* Align text to the left */
 }
 
 /* Country selection dropdown and label */
@@ -141,8 +143,10 @@ body::after {
 
 .country-selection label {
     font-size: 1.5vw;
-    margin-bottom: 0.3vh;
+    margin-bottom: 0.5vh;
     color: #FFD700;
+    display: flex;
+    align-items: center; /* Align the label vertically */
 }
 
 /* COUNTRY DROPDOWN STYLING */
@@ -201,10 +205,12 @@ body::after {
 /* TOP COUNTRIES CONTAINER */
 /* Wrapper for displaying top supporting countries */
 .top-countries-wrapper {
+    flex: 1;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
-    align-items: center;             /* Center items within the column */
-    justify-content: center;         /* Vertically centers within the parent */
+    justify-content: center; /* Ensures the label aligns vertically */
+    align-items: flex-start; /* Align text to the left */
 }
 
 .top-countries {
@@ -215,9 +221,11 @@ body::after {
 }
 
 .top-countries h3 {
-    margin-bottom: 3vh;
-    color: #ffd700;
     font-size: 1.5vw;
+    margin-bottom: 0.5vh;
+    color: #ffd700;
+    display: flex;
+    align-items: center; /* Align the label vertically */
 }
 
 /* Individual country row styling */
@@ -232,6 +240,31 @@ body::after {
 .top-countries .country-row:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
+/* Container for the flags and votes */
+.votes-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vw;
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border with slight transparency */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 1vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
+}
+
+.country-row {
+    padding: 0.5vh 0;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    transition: background 0.3s;
+}
+
+.country-row:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light highlight on hover */
+}
+
 
 /* CLUB LOGOS SECTION */
 /* Container for club logos */
