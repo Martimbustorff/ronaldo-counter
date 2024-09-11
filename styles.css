@@ -206,23 +206,29 @@ body::after {
 
 /* TOP COUNTRIES CONTAINER */
 /* Wrapper for displaying top supporting countries */
+/* Add this style to hide the top supporting countries initially */
 .top-countries-wrapper {
+    display: none; /* Hide initially */
     flex: 1;
     max-width: 45%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align text to the left */
-    margin-left: 1vw; /* Adjust this value to fine-tune alignment */
-    margin-top: 1vh; /* Add some space above the section for better separation */
+    align-items: flex-start;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2vh;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
 }
 
-.top-countries {
-    margin: 2vh 0;
-    padding: 2vh;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for visual separation */
-    width: 100%; /* Full width to balance with the left section */
+.show-top-countries {
+    display: flex; /* Show when activated */
+    opacity: 1; /* Ensure it's fully visible */
+}
+
+/* Add any additional animation or style adjustments as needed */
+
 }
 
 .top-countries h3 {
