@@ -189,7 +189,8 @@ body::after {
 }
 
 /* Share button styling */
-#share-button {
+/* Consistent styling for all buttons */
+.button {
     padding: 1vh 1.5vw;
     border: 2px solid #ffd700;
     border-radius: 6px;
@@ -197,13 +198,18 @@ body::after {
     color: #ffd700;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+    font-family: 'Prometo', Arial, sans-serif; /* Ensure font consistency */
+    font-size: 1vw; /* Adjust the size to be consistent */
 }
 
-#share-button:hover {
+.button:hover {
     background: #ffd700;
     color: #000;
-#share-button:focus {
-    outline: 2px solid #00C4FF; /* Add a visible outline for keyboard navigation */
+}
+
+/* Specific styling for the share button to match the other buttons */
+#share-button {
+    margin-bottom: 2vh; /* Adds space between the share button and the club logos */
 }
 
 }
@@ -278,16 +284,16 @@ body::after {
 /* CLUB LOGOS SECTION */
 /* Container for club logos */
 .clubs-logos {
-    margin-top: 2.2vh;
+    margin-top: 2vh; /* Add space between the share button and the logos */
     display: flex;
     justify-content: center;
-    gap: 2vw;
+    gap: 2vw; /* Adds consistent spacing between logos */
 }
 
-/* Individual club logo styling */
+/* Ensure all club logos are uniform in size */
 .club-logo {
-    height: 5vh;
-    width: auto;
+    height: 5vh; /* Set a consistent height for all logos */
+    width: auto; /* Maintain aspect ratio */
     transition: transform 0.3s;
 }
 
