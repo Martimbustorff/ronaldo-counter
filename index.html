@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="title">Cristiano Ronaldo</h1>
-        </header>
-        <main>
-            <div class="countdown">
-                <div class="count-number">0</div>
-                <div class="count-number">0</div>
-                <div class="count-number">9</div>
-                <div class="count-number">9</div>
-            </div>
-            <p class="count-label">Official Goals to Reach 1000!</p>
-            
-      <div class="page-layout">
-        <!-- Left side: Country selection -->
+   <div class="container">
+    <header>
+        <h1 class="title">Cristiano Ronaldo</h1>
+    </header>
+    <main>
+        <div class="countdown">
+            <div class="count-number">0</div>
+            <div class="count-number">0</div>
+            <div class="count-number">9</div>
+            <div class="count-number">9</div>
+        </div>
+        <p class="count-label">Official Goals to Reach 1000!</p>
+
+        <!-- Country Selection Section -->
         <div class="country-selection-wrapper">
             <div class="country-selection">
                 <label for="country-select">From where are you supporting?</label>
@@ -35,30 +34,24 @@
             </div>
         </div>
 
-        <!-- Right side: Top supporting countries -->
-        <div class="top-countries-wrapper">
+        <!-- Top Countries Section (Hidden Initially) -->
+        <div class="top-countries-wrapper" id="top-countries">
             <section class="top-countries">
                 <h3>Top Supporting Countries</h3>
                 <div id="country-leaderboard">
-                    <!-- Top countries will be displayed here -->
-                    <div class="top-countries-wrapper">
-
+                    <!-- Top countries will be displayed here dynamically -->
                 </div>
             </section>
         </div>
-    </div>
 
-            <button id="share-button">SHARE</button>
+        <button id="share-button">SHARE</button>
 
-            <section class="clubs-logos">
-                <img src="sporting.png" alt="Sporting CP" class="club-logo">
-                <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
-                <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
-                <img src="juventus.png" alt="Juventus" class="club-logo">
-                <img src="alnasr.png" alt="Al Nassr" class="club-logo">
-            </section>
-        </main>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <section class="clubs-logos">
+            <img src="sporting.png" alt="Sporting CP" class="club-logo">
+            <img src="manchesterunited.png" alt="Manchester United" class="club-logo">
+            <img src="realmadrid.png" alt="Real Madrid" class="club-logo">
+            <img src="juventus.png" alt="Juventus" class="club-logo">
+            <img src="alnasr.png" alt="Al Nassr" class="club-logo">
+        </section>
+    </main>
+</div>
