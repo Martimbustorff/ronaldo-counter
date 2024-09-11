@@ -116,6 +116,7 @@ body::after {
     align-items: center; /* Align items vertically */
     gap: 2vw;
     padding: 2vh 5vw;
+    margin-top: 2vh; /* Adjust this value to add more space between the sections */
 }
 
 /* COUNTRY SELECTION CONTAINER */
@@ -126,7 +127,8 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align text to the left */
+    margin-right: 1vw; /* Adjust this value to fine-tune alignment */
 }
 
 /* Country selection dropdown and label */
@@ -210,7 +212,9 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align text to the left */
+    margin-left: 1vw; /* Adjust this value to fine-tune alignment */
+    margin-top: 1vh; /* Add some space above the section for better separation */
 }
 
 .top-countries {
@@ -226,8 +230,9 @@ body::after {
     margin-bottom: 0.5vh;
     color: #ffd700;
     display: flex;
-    align-items: center; /* Align the label vertically */
-}
+    align-items: center;
+    margin-top: 0; /* Remove top margin to align with the left section */
+}/* Align the label vertically */
 
 /* Individual country row styling */
 .top-countries .country-row {
