@@ -1,5 +1,3 @@
-/* FONT DEFINITIONS */
-/* Custom fonts used throughout the site */
 @font-face {
     font-family: 'Prometo';
     src: url('./Prometo_Trial_Rg.ttf') format('truetype');
@@ -14,8 +12,6 @@
     font-style: normal;
 }
 
-/* GLOBAL STYLES */
-/* Main body styling including fonts, colors, and background */
 body {
     font-family: 'Prometo', Arial, sans-serif;
     margin: 0;
@@ -27,7 +23,6 @@ body {
 }
 
 body::before {
-    /* Background image */
     content: '';
     position: fixed;
     top: 0;
@@ -40,7 +35,6 @@ body::before {
 }
 
 body::after {
-    /* Dark overlay on the background */
     content: '';
     position: fixed;
     top: 0;
@@ -51,8 +45,6 @@ body::after {
     z-index: -1;
 }
 
-/* CONTAINER STYLES */
-/* Main container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -63,17 +55,14 @@ body::after {
     z-index: 1;
 }
 
-/* TITLE SECTION */
-/* Styling for the main title */
 .title {
     font-size: 5vw;
     margin-top: 2vh;
     color: #ffd700;
-    white-space: nowrap; /* Keeps the title in one line */
+    white-space: nowrap; /* Make sure the title stays on one line */
 }
 
-/* COUNTER SECTION */
-/* Container for the countdown numbers */
+/* Counter Section Adjustments */
 .countdown {
     display: flex;
     justify-content: center;
@@ -95,8 +84,8 @@ body::after {
     text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 0;               /* Remove padding */
-    line-height: 1;           /* Ensure line-height doesn't affect vertical alignment */
+    padding: 0;
+    line-height: 1;
 }
 
 /* LABEL FOR COUNTER */
