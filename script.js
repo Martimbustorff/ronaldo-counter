@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const countryLeaderboard = document.getElementById('country-leaderboard');
     const countrySelectionWrapper = document.querySelector('.country-selection-wrapper');
     const topCountriesWrapper = document.getElementById('top-countries');
+    const shareButton = document.getElementById('share-button');
 
     // Object to store dynamically mapped country codes
     const countryCodes = {};
@@ -76,4 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
         showElement.style.display = 'flex';
         showElement.setAttribute('aria-hidden', 'false'); // Improve accessibility
     }
+
+    // Event listener for the share button
+    shareButton.addEventListener('click', () => {
+        // Set up the content to share
+        const shareData = {
+            title: 'Cristiano Ronaldo Countdown to 1000 Goals',
+            text: 'Join the countdown to Cristiano Ronaldo\'s 1000 goals and support from your country!',
+            url: window.location.href // Sharing the current page URL
+        };
+
+        // Check if the Web Share API is supported
+        if (navigator.share) {
+            navigator.share(shareData)
+                .then(() => console.log('Successfully shared'))
+                .catch((error) => console.error('Error sharing:', error));
+        } else {
+            // Fallback message if Web Share API is not supported
+            alert('Sharing is not supported on your browser. Please copy the URL and share it manually.');
+        }
+    });
 });
