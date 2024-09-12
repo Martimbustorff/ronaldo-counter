@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Save selected country and update leaderboard
     saveCountryButton.addEventListener('click', () => {
-        const selectedCountry = countrySelect.options[countrySelect.selectedIndex]?.text || '';
-        if (selectedCountry) {
-            updateLeaderboard(selectedCountry);
+        const selectedCountry = countrySelect.value; // Get the value of the selected option
+        const countryName = countrySelect.options[countrySelect.selectedIndex]?.text || ''; // Get the text of the selected option
+        
+        if (selectedCountry && countryName) {
+            updateLeaderboard(countryName);
             showTopCountries(); // Ensure the top countries section is shown
         } else {
             alert('Please select a country.');
@@ -75,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function showTopCountries() {
         topCountriesWrapper.style.display = 'flex'; // Display the top countries section
         topCountriesWrapper.setAttribute('aria-hidden', 'false'); // Improve accessibility
+        countrySelectionWrapper.style.display = 'none'; // Hide the country selection after saving
     }
 
     // Event listener for the share button
