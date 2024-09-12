@@ -255,7 +255,19 @@ document.addEventListener('DOMContentLoaded', function () {
         "Zimbabwe": "zw"
     };
 
-    // Initialize ShareThis with default settings
-    window.ShareThis.init();
-
+// Add event listener to the SHARE button
+document.getElementById('share-button').addEventListener('click', () => {
+    // Check if the Share API is supported by the user's browser
+    if (navigator.share) {
+        // Use the Share API to share content
+        navigator.share({
+            title: 'Cristiano Ronaldo Countdown',
+            text: 'Check out this amazing Cristiano Ronaldo countdown to 1000 goals!',
+            url: window.location.href // Use the current URL of the page
+        }).catch((error) => console.error('Error sharing:', error));
+    } else {
+        // Alert the user if their browser does not support the Share API
+        alert('Sharing is not supported in this browser.');
+    }
 });
+
