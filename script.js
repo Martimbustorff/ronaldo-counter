@@ -19,8 +19,6 @@ document.getElementById('share-button').addEventListener('click', () => {
         // Alert the user if their browser does not support the Share API
         alert('Sharing is not supported in this browser.');
     }
-});
-
 
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
