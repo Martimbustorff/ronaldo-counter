@@ -329,8 +329,8 @@ body::after {
 /* General adjustments for mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 6vw; /* Adjusted for better readability */
-        margin-top: 2vh;
+        font-size: 7vw; /* Adjusted for better readability */
+        margin-top: 1.5vh;
     }
 
     .countdown {
@@ -342,19 +342,19 @@ body::after {
     }
 
     .count-number {
-        width: 15vw; /* Reduced size for better fit */
-        height: 15vw;
-        font-size: 5vw;
+        width: 13vw; /* Reduced size for better fit */
+        height: 13vw;
+        font-size: 6vw;
         padding: 0.5vh 0.5vw;
         border: 3px solid #ffd700;
-        border-radius: 8px;
+        border-radius: 7px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .count-label {
-        font-size: 3vw;
+        font-size: 4.5vw;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
@@ -362,7 +362,7 @@ body::after {
     /* Adjust dropdown and buttons for uniform width */
     #country-select {
         width: 90%; /* Uniform width with buttons */
-        font-size: 3.5vw;
+        font-size: 4vw;
         padding: 1vh 1.5vw;
         border: 2px solid #FFD700;
         border-radius: 8px;
