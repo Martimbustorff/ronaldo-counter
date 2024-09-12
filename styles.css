@@ -329,22 +329,22 @@ body::after {
 /* General adjustments for mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 6vw; /* Increase title size */
+        font-size: 6vw; /* Adjusted for better readability */
         margin-top: 2vh;
     }
 
     .countdown {
         display: flex;
         justify-content: center;
-        gap: 2vw;
-        margin: 2vh 0;
-        flex-wrap: nowrap; /* Prevent wrapping to keep numbers in a single row */
+        gap: 1vw; /* Reduced gap for fitting boxes */
+        margin: 1vh 0;
+        flex-wrap: nowrap; /* Prevent wrapping */
     }
 
     .count-number {
-        width: 18vw; /* Adjust to make them fit horizontally */
-        height: 18vw;
-        font-size: 6vw;
+        width: 15vw; /* Reduced size for better fit */
+        height: 15vw;
+        font-size: 5vw;
         padding: 0.5vh 0.5vw;
         border: 3px solid #ffd700;
         border-radius: 8px;
@@ -359,33 +359,46 @@ body::after {
         margin-bottom: 1vh;
     }
 
-    /* Adjust dropdown width, font size, and alignment */
+    /* Adjust dropdown and buttons for uniform width */
     #country-select {
         width: 90%; /* Uniform width with buttons */
-        font-size: 3.5vw; /* Increase font size for better readability */
+        font-size: 3.5vw;
         padding: 1vh 1.5vw;
         border: 2px solid #FFD700;
         border-radius: 8px;
         margin-bottom: 1vh;
+        display: block; /* Ensure dropdown is block-level */
+        margin-left: auto;
+        margin-right: auto; /* Center align */
     }
 
     .country-selection label {
-        font-size: 3.5vw; /* Increase label size */
+        font-size: 3.5vw;
         margin-bottom: 0.5vh;
         color: #FFD700;
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    /* Style buttons to match dropdown width and improve spacing */
+    /* Style buttons to have consistent width */
     .button {
         padding: 1.5vh 2vw;
-        font-size: 3.5vw; /* Adjust button text size */
+        font-size: 3.5vw;
         margin: 1vh 0;
         width: 90%; /* Uniform width */
         border-radius: 8px;
         display: block;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto; /* Center align buttons */
+    }
+
+    #save-country, #share-button {
+        width: 90%; /* Ensure both buttons have the same width */
+        display: block;
+        margin: 1vh auto; /* Center align */
     }
 
     .clubs-logos {
@@ -407,19 +420,19 @@ body::after {
 /* Extra small screens (like smaller smartphones) */
 @media (max-width: 480px) {
     .title {
-        font-size: 7vw; /* Further increase title size for smaller screens */
+        font-size: 7vw; /* Adjust title size for smaller screens */
     }
 
     .count-number {
-        width: 22vw; /* Adjust to keep numbers in a single row on very small screens */
-        height: 22vw;
-        font-size: 8vw;
+        width: 13vw; /* Further reduce size for small screens */
+        height: 13vw;
+        font-size: 6vw;
         padding: 0.5vh 0.5vw;
     }
 
     .button {
         padding: 1.5vh 4vw;
-        font-size: 4vw; /* Adjust button font size for smaller screens */
+        font-size: 4vw;
     }
 
     #country-select {
