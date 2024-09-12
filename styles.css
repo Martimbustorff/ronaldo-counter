@@ -1,5 +1,9 @@
+/* Additional class for hiding elements */
+.hidden {
+    display: none !important;
+}
+
 /* FONT DEFINITIONS */
-/* Custom fonts used throughout the site */
 @font-face {
     font-family: 'Prometo';
     src: url('./Prometo_Trial_Rg.ttf') format('truetype');
@@ -15,7 +19,6 @@
 }
 
 /* GLOBAL STYLES */
-/* Main body styling including fonts, colors, and background */
 body {
     font-family: 'Prometo', Arial, sans-serif;
     margin: 0;
@@ -27,7 +30,6 @@ body {
 }
 
 body::before {
-    /* Background image */
     content: '';
     position: fixed;
     top: 0;
@@ -40,7 +42,6 @@ body::before {
 }
 
 body::after {
-    /* Dark overlay on the background */
     content: '';
     position: fixed;
     top: 0;
@@ -52,7 +53,6 @@ body::after {
 }
 
 /* CONTAINER STYLES */
-/* Main container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -64,16 +64,14 @@ body::after {
 }
 
 /* TITLE SECTION */
-/* Styling for the main title */
 .title {
     font-size: 5vw;
     margin-top: 2vh;
     color: #ffd700;
-    white-space: nowrap; /* Keeps the title in one line */
+    white-space: nowrap;
 }
 
 /* COUNTER SECTION */
-/* Container for the countdown numbers */
 .countdown {
     display: flex;
     justify-content: center;
@@ -81,7 +79,6 @@ body::after {
     margin: 2vh 0;
 }
 
-/* Individual number boxes in the countdown */
 .count-number {
     width: 8vw;
     height: 7vw;
@@ -99,7 +96,6 @@ body::after {
 }
 
 /* LABEL FOR COUNTER */
-/* Text below the countdown */
 .count-label {
     font-size: 3vw;
     color: #FFFFFF;
@@ -109,7 +105,6 @@ body::after {
 }
 
 /* PAGE LAYOUT */
-/* Flex container for layout control of side sections */
 .page-layout {
     display: flex;
     justify-content: center;
@@ -120,7 +115,6 @@ body::after {
 }
 
 /* COUNTRY SELECTION CONTAINER */
-/* Wrapper for the country selection dropdown */
 .country-selection-wrapper {
     flex: 1;
     display: flex;
@@ -130,7 +124,6 @@ body::after {
     margin: 0 auto;
 }
 
-/* Country selection dropdown and label */
 .country-selection {
     display: flex;
     flex-direction: column;
@@ -151,7 +144,6 @@ body::after {
 }
 
 /* COUNTRY DROPDOWN STYLING */
-/* Styles for the country dropdown input */
 #country-select {
     font-family: 'Prometo', sans-serif;
     font-size: 1vw;
@@ -197,9 +189,8 @@ body::after {
 }
 
 /* TOP COUNTRIES CONTAINER */
-/* Wrapper for displaying top supporting countries */
 .top-countries-wrapper {
-    display: none;
+    display: none; /* Hidden by default */
     flex: 1;
     max-width: 45%;
     flex-direction: column;
@@ -213,7 +204,7 @@ body::after {
 }
 
 .show-top-countries {
-    display: flex;
+    display: flex; /* This class will show the top countries section */
     opacity: 1;
 }
 
@@ -265,7 +256,6 @@ body::after {
 }
 
 /* CLUB LOGOS SECTION */
-/* Container for club logos */
 .clubs-logos {
     margin-top: 2vh;
     display: flex;
@@ -284,7 +274,6 @@ body::after {
 }
 
 /* MEDIA QUERIES */
-/* Adjustments for smaller screen sizes */
 @media (max-width: 768px) {
     .title {
         font-size: 4rem;
@@ -297,14 +286,4 @@ body::after {
     .count-label {
         font-size: 1.8rem;
     }
-    #country-select {
-        width: 280px;
-    }
-    .club-logo {
-        height: 30px;
-    }
-    .page-layout {
-        flex-direction: column;
-        gap: 1vh;
-    }
-}
+   
