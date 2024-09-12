@@ -254,4 +254,8 @@ document.addEventListener('DOMContentLoaded', function () {
         "Zambia": "zm",
         "Zimbabwe": "zw"
     };
+
+    // Initialize ShareThis with default settings
+    window.ShareThis.init();
+
 });
