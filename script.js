@@ -76,8 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to show the top countries section
     function showTopCountries() {
         topCountriesWrapper.style.display = 'flex'; // Display the top countries section
+        topCountriesWrapper.style.visibility = 'visible'; // Ensure the section is visible
         topCountriesWrapper.setAttribute('aria-hidden', 'false'); // Improve accessibility
-        countrySelectionWrapper.style.display = 'none'; // Hide the country selection after saving
+        topCountriesWrapper.classList.add('show-top-countries'); // Optionally add a class to manage display via CSS
+
+        // Hide the country selection wrapper
+        countrySelectionWrapper.style.display = 'none'; 
     }
 
     // Event listener for the share button
