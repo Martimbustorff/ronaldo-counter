@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedCountry = countrySelect.options[countrySelect.selectedIndex]?.text || '';
         if (selectedCountry) {
             updateLeaderboard(selectedCountry);
-            toggleVisibility(countrySelectionWrapper, topCountriesWrapper);
+            showTopCountries(); // Ensure the top countries section is shown
         } else {
             alert('Please select a country.');
         }
@@ -71,11 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function to toggle visibility between selection and leaderboard
-    function toggleVisibility(hideElement, showElement) {
-        hideElement.style.display = 'none';
-        showElement.style.display = 'flex';
-        showElement.setAttribute('aria-hidden', 'false'); // Improve accessibility
+    // Function to show the top countries section
+    function showTopCountries() {
+        topCountriesWrapper.style.display = 'flex'; // Display the top countries section
+        topCountriesWrapper.setAttribute('aria-hidden', 'false'); // Improve accessibility
     }
 
     // Event listener for the share button
