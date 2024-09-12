@@ -326,35 +326,31 @@ body::after {
     }
 }
 
-/* Additional Media Queries for Extra Small Screens */
-@media (max-width: 480px) {
-    .count-number {
-        width: 25vw;
-        height: 25vw;
-        font-size: 10vw;
-        padding: 0.5vh 0.5vw;
-    }
-
-    /* General adjustments for mobile */
+/* General adjustments for mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 5vw;
+        font-size: 6vw; /* Increase title size */
         margin-top: 2vh;
     }
 
     .countdown {
-        gap: 1vw;
-        margin: 1vh 0;
-        flex-wrap: wrap; /* Allow wrapping to prevent overlapping */
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        margin: 2vh 0;
+        flex-wrap: nowrap; /* Prevent wrapping to keep numbers in a single row */
     }
 
     .count-number {
-        width: 18vw; /* Adjust size to fit mobile */
+        width: 18vw; /* Adjust to make them fit horizontally */
         height: 18vw;
-        font-size: 7vw;
+        font-size: 6vw;
         padding: 0.5vh 0.5vw;
         border: 3px solid #ffd700;
         border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .count-label {
@@ -363,30 +359,39 @@ body::after {
         margin-bottom: 1vh;
     }
 
-    /* Adjust dropdown width and font size */
+    /* Adjust dropdown width, font size, and alignment */
     #country-select {
-        width: 90%;
-        font-size: 4vw;
-        padding: 1vh 2vw;
-        margin-bottom: 1vh;
+        width: 90%; /* Uniform width with buttons */
+        font-size: 3.5vw; /* Increase font size for better readability */
+        padding: 1vh 1.5vw;
         border: 2px solid #FFD700;
-        border-radius: 6px;
-    }
-
-    /* Style buttons to fit mobile */
-    .button {
-        padding: 1vh 3vw;
-        font-size: 4vw;
-        margin: 1vh 0;
-        width: 90%; /* Full-width buttons */
         border-radius: 8px;
+        margin-bottom: 1vh;
     }
 
-    /* Clubs Logos section */
+    .country-selection label {
+        font-size: 3.5vw; /* Increase label size */
+        margin-bottom: 0.5vh;
+        color: #FFD700;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style buttons to match dropdown width and improve spacing */
+    .button {
+        padding: 1.5vh 2vw;
+        font-size: 3.5vw; /* Adjust button text size */
+        margin: 1vh 0;
+        width: 90%; /* Uniform width */
+        border-radius: 8px;
+        display: block;
+        text-align: center;
+    }
+
     .clubs-logos {
         margin-top: 2vh;
         gap: 1vw;
-        justify-content: center; /* Center align logos */
+        justify-content: center;
     }
 
     .club-logo {
@@ -401,20 +406,27 @@ body::after {
 
 /* Extra small screens (like smaller smartphones) */
 @media (max-width: 480px) {
+    .title {
+        font-size: 7vw; /* Further increase title size for smaller screens */
+    }
+
     .count-number {
-        width: 25vw;
-        height: 25vw;
-        font-size: 9vw;
+        width: 22vw; /* Adjust to keep numbers in a single row on very small screens */
+        height: 22vw;
+        font-size: 8vw;
+        padding: 0.5vh 0.5vw;
     }
 
     .button {
         padding: 1.5vh 4vw;
-        font-size: 5vw;
+        font-size: 4vw; /* Adjust button font size for smaller screens */
     }
 
-    .clubs-logos {
-        gap: 2vw;
+    #country-select {
+        width: 95%; /* Slightly wider for smaller devices */
     }
-}
 
+    .country-selection label {
+        font-size: 4vw; /* Adjust label font size */
+    }
 }
