@@ -1,6 +1,6 @@
 /* Additional class for hiding elements */
 .hidden {
-    display: none !important;
+    display: none !important; /* Ensure this is not conflicting with JavaScript control */
 }
 
 /* FONT DEFINITIONS */
@@ -190,7 +190,7 @@ body::after {
 
 /* TOP COUNTRIES CONTAINER */
 .top-countries-wrapper {
-    display: none;
+    display: none; /* Initially hidden */
     flex: 1;
     max-width: 45%;
     flex-direction: column;
@@ -204,7 +204,7 @@ body::after {
 }
 
 .show-top-countries {
-    display: flex;
+    display: flex !important; /* Ensure visibility when this class is added */
     opacity: 1;
 }
 
@@ -331,3 +331,7 @@ body::after {
     .count-number {
         width: 25vw;
         height: 25vw;
+        font-size: 10vw;
+        padding: 0.5vh 0.5vw;
+    }
+}
