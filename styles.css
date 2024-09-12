@@ -83,7 +83,7 @@ body::after {
 
 /* Individual number boxes in the countdown */
 .count-number {
-    width: 8vw; /* Width and height adjusted for squared look */
+    width: 8vw;
     height: 7vw;
     font-size: 6vw;
     padding: 1vh 0.5vw;
@@ -95,7 +95,7 @@ body::after {
     align-items: center;
     text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* LABEL FOR COUNTER */
@@ -113,10 +113,10 @@ body::after {
 .page-layout {
     display: flex;
     justify-content: center;
-    align-items: center; /* Align items vertically */
+    align-items: center;
     gap: 2vw;
     padding: 2vh 5vw;
-    margin-top: 2vh; /* Adjust this value to add more space between the sections */
+    margin-top: 2vh;
 }
 
 /* COUNTRY SELECTION CONTAINER */
@@ -126,8 +126,8 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
-    margin: 0 auto; /* Ensure the selection is centered with the page */
+    align-items: center;
+    margin: 0 auto;
 }
 
 /* Country selection dropdown and label */
@@ -147,7 +147,7 @@ body::after {
     margin-bottom: 0.5vh;
     color: #FFD700;
     display: flex;
-    align-items: center; /* Align the label vertically */
+    align-items: center;
 }
 
 /* COUNTRY DROPDOWN STYLING */
@@ -171,25 +171,6 @@ body::after {
 }
 
 /* BUTTON STYLING */
-/* Save button styling */
-#save-country {
-    padding: 1vh 1.5vw;
-    border: 2px solid #ffd700;
-    border-radius: 6px;
-    #save-country:focus, 
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffd700;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-}
-
-#save-country:hover {
-    background: #ffd700;
-    color: #000;
-}
-
-/* Share button styling */
-/* Consistent styling for all buttons */
 .button {
     padding: 1vh 1.5vw;
     border: 2px solid #ffd700;
@@ -198,8 +179,8 @@ body::after {
     color: #ffd700;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    font-family: 'Prometo', Arial, sans-serif; /* Ensure font consistency */
-    font-size: 1vw; /* Adjust the size to be consistent */
+    font-family: 'Prometo', Arial, sans-serif;
+    font-size: 1vw;
 }
 
 .button:hover {
@@ -207,32 +188,34 @@ body::after {
     color: #000;
 }
 
-/* Specific styling for the share button to match the other buttons */
-#share-button {
-    margin-bottom: 2vh; /* Adds space between the share button and the club logos */
+#save-country {
+    margin-top: 1vh;
 }
 
+#share-button {
+    margin-bottom: 2vh;
 }
 
 /* TOP COUNTRIES CONTAINER */
 /* Wrapper for displaying top supporting countries */
 .top-countries-wrapper {
-    display: none; /* Hide initially */
+    display: none;
     flex: 1;
     max-width: 45%;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
-    margin: 0 auto; /* Center the wrapper itself within the page */
+    align-items: center;
+    margin: 0 auto;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 2vh;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+    transition: opacity 0.5s ease-in-out;
 }
 
 .show-top-countries {
-    display: flex; /* Show when activated */
-    opacity: 1; /* Ensure it's fully visible */
+    display: flex;
+    opacity: 1;
+}
 
 .top-countries h3 {
     font-size: 1.5vw;
@@ -240,8 +223,8 @@ body::after {
     color: #ffd700;
     display: flex;
     align-items: center;
-    margin-top: 0; /* Remove top margin to align with the left section */
-    font-weight: normal; /* Ensure consistency with other elements */
+    margin-top: 0;
+    font-weight: normal;
 }
 
 /* Individual country row styling */
@@ -262,11 +245,11 @@ body::after {
     display: flex;
     flex-direction: column;
     padding: 1vh 2vw;
-    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border with slight transparency */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    border-radius: 10px; /* Rounded corners */
+    border: 2px solid rgba(255, 215, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     margin-top: 1vh;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .country-row {
@@ -278,22 +261,21 @@ body::after {
 }
 
 .country-row:hover {
-    background: rgba(255, 255, 255, 0.1); /* Light highlight on hover */
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* CLUB LOGOS SECTION */
 /* Container for club logos */
 .clubs-logos {
-    margin-top: 2vh; /* Add space between the share button and the logos */
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
-    gap: 2vw; /* Adds consistent spacing between logos */
+    gap: 2vw;
 }
 
-/* Ensure all club logos are uniform in size */
 .club-logo {
-    height: 5vh; /* Set a consistent height for all logos */
-    width: auto; /* Maintain aspect ratio */
+    height: 5vh;
+    width: auto;
     transition: transform 0.3s;
 }
 
