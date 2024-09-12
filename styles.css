@@ -334,4 +334,87 @@ body::after {
         font-size: 10vw;
         padding: 0.5vh 0.5vw;
     }
+
+    /* General adjustments for mobile */
+@media (max-width: 768px) {
+    .title {
+        font-size: 5vw;
+        margin-top: 2vh;
+    }
+
+    .countdown {
+        gap: 1vw;
+        margin: 1vh 0;
+        flex-wrap: wrap; /* Allow wrapping to prevent overlapping */
+    }
+
+    .count-number {
+        width: 18vw; /* Adjust size to fit mobile */
+        height: 18vw;
+        font-size: 7vw;
+        padding: 0.5vh 0.5vw;
+        border: 3px solid #ffd700;
+        border-radius: 8px;
+    }
+
+    .count-label {
+        font-size: 3vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    /* Adjust dropdown width and font size */
+    #country-select {
+        width: 90%;
+        font-size: 4vw;
+        padding: 1vh 2vw;
+        margin-bottom: 1vh;
+        border: 2px solid #FFD700;
+        border-radius: 6px;
+    }
+
+    /* Style buttons to fit mobile */
+    .button {
+        padding: 1vh 3vw;
+        font-size: 4vw;
+        margin: 1vh 0;
+        width: 90%; /* Full-width buttons */
+        border-radius: 8px;
+    }
+
+    /* Clubs Logos section */
+    .clubs-logos {
+        margin-top: 2vh;
+        gap: 1vw;
+        justify-content: center; /* Center align logos */
+    }
+
+    .club-logo {
+        height: 4vh;
+        transition: transform 0.3s;
+    }
+
+    .club-logo:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Extra small screens (like smaller smartphones) */
+@media (max-width: 480px) {
+    .count-number {
+        width: 25vw;
+        height: 25vw;
+        font-size: 9vw;
+    }
+
+    .button {
+        padding: 1.5vh 4vw;
+        font-size: 5vw;
+    }
+
+    .clubs-logos {
+        gap: 2vw;
+    }
+}
+
 }
