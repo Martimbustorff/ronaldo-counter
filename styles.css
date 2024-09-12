@@ -190,7 +190,7 @@ body::after {
 
 /* TOP COUNTRIES CONTAINER */
 .top-countries-wrapper {
-    display: none; /* Hidden by default */
+    display: none;
     flex: 1;
     max-width: 45%;
     flex-direction: column;
@@ -204,7 +204,7 @@ body::after {
 }
 
 .show-top-countries {
-    display: flex; /* This class will show the top countries section */
+    display: flex;
     opacity: 1;
 }
 
@@ -273,17 +273,61 @@ body::after {
     transform: scale(1.1);
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR RESPONSIVENESS */
 @media (max-width: 768px) {
     .title {
-        font-size: 4rem;
+        font-size: 4vw;
     }
+
+    .countdown {
+        gap: 1vw;
+        margin: 1vh 0;
+    }
+
     .count-number {
-        width: 120px;
-        height: 140px;
-        font-size: 80px;
+        width: 20vw;
+        height: 20vw;
+        font-size: 8vw;
+        padding: 0.5vh 0.5vw;
+        border: 3px solid #ffd700;
+        border-radius: 8px;
     }
+
     .count-label {
-        font-size: 1.8rem;
+        font-size: 2.5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
-   
+
+    #country-select {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .button {
+        padding: 1vh 4vw;
+        font-size: 4vw;
+        margin: 1vh 0;
+    }
+
+    #save-country, #share-button {
+        width: 80%;
+        margin-top: 1vh;
+    }
+
+    .clubs-logos {
+        margin-top: 1vh;
+        gap: 1vw;
+    }
+
+    .club-logo {
+        height: 3vh;
+        width: auto;
+    }
+}
+
+/* Additional Media Queries for Extra Small Screens */
+@media (max-width: 480px) {
+    .count-number {
+        width: 25vw;
+        height: 25vw;
