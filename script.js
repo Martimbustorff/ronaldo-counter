@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelectionWrapper = document.querySelector('.country-selection-wrapper');
     const topCountriesWrapper = document.getElementById('top-countries');
 
-    }
-
     // Populate country select with all available countries
     fetch('https://restcountries.com/v3.1/all')
         .then(response => response.json())
