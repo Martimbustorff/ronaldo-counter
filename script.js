@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const countrySelect = document.getElementById('country-select');
     const saveCountryButton = document.getElementById('save-country');
     const countryLeaderboard = document.getElementById('country-leaderboard');
-    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper'); 
+    const countrySelectionWrapper = document.querySelector('.country-selection-wrapper');
     const topCountriesWrapper = document.getElementById('top-countries');
 
     // Populate country select with all available countries
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const sortedCountries = Object.entries(countryVotes).sort((a, b) => b[1] - a[1]).slice(0, 5);
         countryLeaderboard.innerHTML = '';
         sortedCountries.forEach(([country, votes]) => {
-            const countryCode = countryCodes[country] || 'xx'; // Check if country code exists
+            const countryCode = countryCodes[country] || 'xx'; // Default to 'xx' if no code found
             const countryItem = document.createElement('div');
             countryItem.className = 'country-item';
             countryItem.innerHTML = `
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
         showElement.style.display = 'flex';   // Show the leaderboard section
         showElement.setAttribute('aria-hidden', 'false');  // Improve accessibility
     }
-
-    // Mapping country names to their respective ISO codes
+    
+// Mapping country names to their respective ISO codes
     const countryCodes = {
         "Afghanistan": "af",
         "Albania": "al",
