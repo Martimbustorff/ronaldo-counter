@@ -1,0 +1,13 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 5,
+  "as_of": "2026-09-09",
+  "publishable": false,
+  "blocking_reasons": [
+    "2026-09-09-moreirense-benfica: review_status=awaiting_full_expert_review"
+  ],
+  "public_totals": {},
+  "reviewed_matches": 0,
+  "played_matches_in_scope": 1,
+  "note": "Only confirmed decisions may enter public totals. Candidate and disputed rows are excluded."
+}

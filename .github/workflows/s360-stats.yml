@@ -1,0 +1,24 @@
+name: S360 stats integrity
+
+on:
+  push:
+    paths:
+      - "s360/**"
+      - ".github/workflows/s360-stats.yml"
+  pull_request:
+    paths:
+      - "s360/**"
+      - ".github/workflows/s360-stats.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: PYTHONPATH=s360/src python -m unittest discover -s s360/tests -v
+      - name: Validate source of truth
+        run: python s360/scripts/validate.py

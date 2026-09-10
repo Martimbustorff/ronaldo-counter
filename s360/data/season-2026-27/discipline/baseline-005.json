@@ -1,0 +1,27 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 5,
+  "as_of": "2026-09-09",
+  "status": "verified_baseline",
+  "provenance": {
+    "type": "manual_verified_snapshot",
+    "note": "Baseline imported from the S360 disciplinary panel after SL Benfica completed its fifth league match. Future milestones must be generated from match-level records, not hand-edited totals."
+  },
+  "clubs": {
+    "FC Porto": {
+      "games": 5,
+      "team": {"fouls": 69, "player_yellows": 2, "player_dismissals": 0},
+      "opponents": {"fouls": 44, "player_yellows": 6, "player_dismissals": 1}
+    },
+    "SL Benfica": {
+      "games": 5,
+      "team": {"fouls": 65, "player_yellows": 7, "player_dismissals": 0},
+      "opponents": {"fouls": 75, "player_yellows": 14, "player_dismissals": 1}
+    },
+    "Sporting CP": {
+      "games": 5,
+      "team": {"fouls": 63, "player_yellows": 10, "player_dismissals": 0},
+      "opponents": {"fouls": 65, "player_yellows": 11, "player_dismissals": 0}
+    }
+  }
+}

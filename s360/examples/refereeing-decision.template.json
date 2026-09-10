@@ -1,0 +1,17 @@
+{
+  "decision_id": "match-id-minute-kind",
+  "match_id": "YYYY-MM-DD-club-opponent",
+  "tracked_club": "Sporting CP",
+  "minute": "53",
+  "category": "missed_yellow",
+  "direction": "against",
+  "status": "candidate",
+  "provenance": [
+    {
+      "source_family": "Pedro Henriques / A BOLA",
+      "url": "https://example.com",
+      "position": "Supports error"
+    }
+  ],
+  "notes": "candidate/disputed decisions never enter public totals"
+}

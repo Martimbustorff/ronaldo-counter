@@ -1,0 +1,18 @@
+{
+  "season": "2026-27",
+  "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
+  "matches": [
+    {
+      "match_id": "2026-09-09-moreirense-benfica",
+      "played_at": "2026-09-09",
+      "competition_round": null,
+      "comparison_game_number": 5,
+      "tracked_club": "SL Benfica",
+      "opponent": "Moreirense FC",
+      "status": "completed",
+      "review_status": "awaiting_full_expert_review",
+      "reviewed_sources": [],
+      "notes": "Known played match added to the review queue. No zero-error inference is allowed until evidence review is complete."
+    }
+  ]
+}
