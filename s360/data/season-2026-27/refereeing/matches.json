@@ -5,14 +5,61 @@
     {
       "match_id": "2026-09-09-moreirense-benfica",
       "played_at": "2026-09-09",
-      "competition_round": null,
+      "competition_round": 3,
       "comparison_game_number": 5,
       "tracked_club": "SL Benfica",
       "opponent": "Moreirense FC",
       "status": "completed",
       "review_status": "awaiting_full_expert_review",
-      "reviewed_sources": [],
-      "notes": "Known played match added to the review queue. No zero-error inference is allowed until evidence review is complete."
+      "reviewed_sources": [
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "published_at": "2026-09-09T23:54:00+01:00",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/09/09/nota-3-para-fabio-verissimo-sem-influencia-no-resultado/484902/",
+          "reviewer": "Tiago Rocha",
+          "coverage": "principal incidents and disciplinary management",
+          "findings": [
+            "15m: no penalty on Pavlidis; correct play-on",
+            "44m: VAR-supported Benfica penalty correct; yellow card correct",
+            "all six shown yellow cards considered correct",
+            "no relevant refereeing errors and no influence on result"
+          ],
+          "usable_for_confirmation": true
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "published_at": "2026-09-10T01:04:00+01:00",
+          "url": "https://www.abola.pt/video/pedro-henriques-analisa-penalti-que-abriu-caminho-a-vitoria-do-benfica-2026091000042543608",
+          "reviewer": "Pedro Henriques",
+          "coverage": "penalty incident",
+          "findings": [],
+          "usable_for_confirmation": false,
+          "notes": "A BOLA exposes the analysis video and incident title, but the indexed text available in this review does not expose Pedro Henriques' actual verdict. Do not infer a verdict from the headline alone."
+        },
+        {
+          "source_family": "VSPORTS",
+          "published_at": "2026-09-09",
+          "url": "https://vsports.pt/abola/jogo/i-liga/moreirense-benfica/30376",
+          "reviewer": null,
+          "coverage": "match evidence / incident video",
+          "findings": [],
+          "usable_for_confirmation": false,
+          "notes": "Match evidence located; not treated as an expert verdict by itself."
+        }
+      ],
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS"
+      ],
+      "notes": "Round-3 catch-up match. Renascença VAR Bola Branca provides a usable expert review finding no relevant errors. A BOLA/Pedro Henriques video was located but its indexed text does not expose the verdict, so it is not counted as confirming evidence. Other named source families did not yield a usable current match analysis in the 2026-09-10 review. Keep review incomplete; never infer zero errors from missing analysis."
     }
   ]
 }
