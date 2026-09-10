@@ -2,6 +2,8 @@
 
 This folder is the source of truth for the S360 Liga Portugal panels. It is deliberately separate from the original Ronaldo Counter web app.
 
+Persistent operational memory and tables live in `docs/OPERATIONAL_MEMORY.md`.
+
 ## Two independent data branches
 
 - `discipline/`: match-level fouls and cards, plus deterministic cumulative snapshots.
@@ -28,6 +30,14 @@ Every played tracked match must be present in the review queue. A refereeing sna
 Named review families are configured in `config/season-2026-27.json` and include Pedro Henriques/A BOLA; Marco Ferreira, Jorge Faustino and Iturralde/Record; Jorge Coroado, José Leirós and Fortunato Azevedo/O JOGO; Renascença VAR Bola Branca; Verdade Desportiva; and VSPORTS evidence.
 
 Only `confirmed` decisions enter public totals. `candidate` and `disputed` decisions are retained with provenance but excluded. Missing analysis is never interpreted as zero errors.
+
+## Canonical club assets
+
+| Club | Asset path | Usage rule |
+|---|---|---|
+| FC Porto | `assets/clubs/fc-porto.webp` | Always use the repository crest. |
+| SL Benfica | `assets/clubs/sl-benfica.webp` | Always use the repository crest. |
+| Sporting CP | `assets/clubs/sporting-cp.webp` | Always use the 2026 symbol supplied by Martim. |
 
 ## Commands
 
