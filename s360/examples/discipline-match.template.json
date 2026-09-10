@@ -1,0 +1,65 @@
+{
+  "match_id": "YYYY-MM-DD-club-opponent",
+  "comparison_game_number": 6,
+  "competition_round": 6,
+  "played_at": "2026-09-XX",
+  "tracked_club": "FC Porto",
+  "opponent": "Opponent",
+  "status": "completed",
+  "verification_status": "verified",
+  "resolved": {
+    "tracked_fouls": 0,
+    "opponent_fouls": 0
+  },
+  "cards": [
+    {
+      "side": "tracked",
+      "subject_type": "player",
+      "card": "yellow",
+      "subject": "Player name"
+    },
+    {
+      "side": "opponent",
+      "subject_type": "staff",
+      "card": "yellow",
+      "subject": "Staff name"
+    },
+    {
+      "side": "tracked",
+      "subject_type": "player",
+      "card": "second_yellow_red",
+      "subject": "Player name"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-a",
+      "publisher": "Source A",
+      "independence_group": "source-a",
+      "url": "https://example.com/a",
+      "claims": {
+        "tracked_fouls": 0,
+        "opponent_fouls": 0,
+        "tracked_player_yellows": 2,
+        "tracked_player_dismissals": 1,
+        "opponent_player_yellows": 0,
+        "opponent_player_dismissals": 0
+      }
+    },
+    {
+      "id": "source-b",
+      "publisher": "Source B",
+      "independence_group": "source-b",
+      "url": "https://example.com/b",
+      "claims": {
+        "tracked_fouls": 0,
+        "opponent_fouls": 0,
+        "tracked_player_yellows": 2,
+        "tracked_player_dismissals": 1,
+        "opponent_player_yellows": 0,
+        "opponent_player_dismissals": 0
+      }
+    }
+  ],
+  "conflicts": []
+}

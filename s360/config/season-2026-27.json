@@ -1,0 +1,33 @@
+{
+  "season": "2026-27",
+  "competition": "Liga Portugal",
+  "tracked_clubs": [
+    "FC Porto",
+    "SL Benfica",
+    "Sporting CP"
+  ],
+  "baseline_game_number": 5,
+  "discipline": {
+    "minimum_independent_sources": 2,
+    "public_card_subject": "player",
+    "second_yellow_counts_as_yellow": true,
+    "second_yellow_counts_as_dismissal": true
+  },
+  "refereeing": {
+    "public_decision_status": "confirmed",
+    "publish_requires_all_matches_reviewed": true,
+    "never_infer_zero_from_missing_analysis": true,
+    "named_source_families": [
+      "Pedro Henriques / A BOLA",
+      "Marco Ferreira / Record",
+      "Jorge Faustino / Record",
+      "Iturralde / Record",
+      "Jorge Coroado / O JOGO",
+      "José Leirós / O JOGO",
+      "Fortunato Azevedo / O JOGO",
+      "Renascença VAR Bola Branca",
+      "Verdade Desportiva",
+      "VSPORTS"
+    ]
+  }
+}
