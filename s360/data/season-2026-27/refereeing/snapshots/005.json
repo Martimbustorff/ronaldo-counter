@@ -1,13 +1,16 @@
 {
   "season": "2026-27",
   "comparison_game_number": 5,
-  "as_of": "2026-09-09",
+  "as_of": "2026-09-11",
   "publishable": false,
   "blocking_reasons": [
-    "2026-09-09-moreirense-benfica: review_status=awaiting_full_expert_review"
+    "Refereeing baseline backfill is incomplete: 14 earlier played tracked matches through comparison game 5 are not yet present as fully reviewed match-level queue records."
   ],
   "public_totals": {},
-  "reviewed_matches": 0,
-  "played_matches_in_scope": 1,
-  "note": "Only confirmed decisions may enter public totals. Candidate and disputed rows are excluded."
+  "reviewed_matches": 1,
+  "played_matches_in_scope": 15,
+  "reviewed_match_ids": [
+    "2026-09-09-moreirense-benfica"
+  ],
+  "note": "Only confirmed decisions may enter public totals. Candidate and disputed rows are excluded. The Moreirense-Benfica review is complete, but the public refereeing snapshot remains blocked until every played tracked match in the 5-game comparison scope is backfilled and reviewed."
 }
