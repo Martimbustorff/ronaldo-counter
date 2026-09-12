@@ -1,0 +1,70 @@
+{
+  "season": "2026-27",
+  "purpose": "Explicit review backlog. A match listed here must not be interpreted as zero refereeing errors; it remains excluded from publishable totals until moved into matches.json with review_status=complete and evidence-threshold review.",
+  "matches": [
+    {"match_id":"2026-08-09-fc-porto-alverca","comparison_game_number":1,"tracked_club":"FC Porto","opponent":"FC Alverca","review_status":"pending_backfill"},
+    {"match_id":"2026-08-15-rio-ave-fc-porto","comparison_game_number":2,"tracked_club":"FC Porto","opponent":"Rio Ave FC","review_status":"pending_backfill"},
+    {"match_id":"2026-08-23-fc-porto-arouca","comparison_game_number":3,"tracked_club":"FC Porto","opponent":"FC Arouca","review_status":"pending_backfill"},
+    {"match_id":"2026-08-29-academico-fc-porto","comparison_game_number":4,"tracked_club":"FC Porto","opponent":"Académico de Viseu FC","review_status":"pending_backfill"},
+    {"match_id":"2026-09-04-fc-porto-moreirense","comparison_game_number":5,"tracked_club":"FC Porto","opponent":"Moreirense FC","review_status":"pending_backfill"},
+
+    {"match_id":"2026-08-09-benfica-academico","comparison_game_number":1,"tracked_club":"SL Benfica","opponent":"Académico de Viseu FC","review_status":"pending_backfill"},
+    {"match_id":"2026-08-17-casa-pia-benfica","comparison_game_number":2,"tracked_club":"SL Benfica","opponent":"Casa Pia AC","review_status":"pending_backfill"},
+    {"match_id":"2026-08-31-benfica-estoril","comparison_game_number":3,"tracked_club":"SL Benfica","opponent":"GD Estoril Praia","review_status":"pending_backfill"},
+    {"match_id":"2026-09-05-maritimo-benfica","comparison_game_number":4,"tracked_club":"SL Benfica","opponent":"CS Marítimo","review_status":"pending_backfill"},
+
+    {"match_id":"2026-08-08-estrela-sporting","comparison_game_number":1,"tracked_club":"Sporting CP","opponent":"CF Estrela da Amadora","review_status":"pending_backfill"},
+    {"match_id":"2026-08-14-sporting-vitoria","comparison_game_number":2,"tracked_club":"Sporting CP","opponent":"Vitória SC","review_status":"pending_backfill"},
+    {"match_id":"2026-08-22-sporting-alverca","comparison_game_number":3,"tracked_club":"Sporting CP","opponent":"FC Alverca","review_status":"pending_backfill"},
+    {"match_id":"2026-08-28-rio-ave-sporting","comparison_game_number":4,"tracked_club":"Sporting CP","opponent":"Rio Ave FC","review_status":"pending_backfill"},
+    {"match_id":"2026-09-05-sporting-nacional","comparison_game_number":5,"tracked_club":"Sporting CP","opponent":"CD Nacional","review_status":"pending_backfill"},
+
+    {
+      "match_id":"2026-09-12-casa-pia-fc-porto",
+      "played_at":"2026-09-12",
+      "competition_round":6,
+      "comparison_game_number":6,
+      "tracked_club":"FC Porto",
+      "opponent":"Casa Pia AC",
+      "status":"completed",
+      "result":"Casa Pia AC 1-4 FC Porto",
+      "referee":"José Bessa",
+      "var":"Rui Costa",
+      "review_status":"awaiting_expert_analysis",
+      "searched_source_families":[
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / official material",
+        "FPF / official referee material"
+      ],
+      "evidence_found":[
+        {
+          "source_family":"RTP / match report",
+          "url":"https://www.rtp.pt/noticias/desporto/casa-pia-fc-porto_e1765036",
+          "finding":"Confirms 1-4 result and two penalties in the match; not an expert refereeing verdict."
+        },
+        {
+          "source_family":"A BOLA / post-match coverage",
+          "url":"https://www.abola.pt/noticias/filipe-coelho-resultado-nao-e-o-espelho-do-que-realmente-se-passou-2026091220142834139",
+          "finding":"Confirms match/result context; no published Pedro Henriques referee analysis located in this run."
+        },
+        {
+          "source_family":"official appointment / reported FPF designation",
+          "url":"https://www.fcporto.ws/jose-bessa-nomeado-para-o-casa-pia-fc-porto-da-sexta-jornada/",
+          "finding":"José Bessa referee; Rui Costa VAR; Tiago Leandro AVAR."
+        }
+      ],
+      "notes":"No current named expert-analysis family meeting the S360 threshold was located by 23:05 on 2026-09-12. No decision is recorded as confirmed, candidate or disputed solely from silence or match-report narrative. Re-check as analyses publish."
+    }
+  ],
+  "already_complete_elsewhere":["2026-09-09-moreirense-benfica"],
+  "source_for_fixture_backfill":"Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available."
+}
