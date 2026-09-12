@@ -1,0 +1,44 @@
+{
+  "season": "2026-27",
+  "purpose": "Completed tracked matches that are not yet safe to merge into discipline/matches.json because the public foul/card metrics have not been independently verified to the S360 threshold.",
+  "matches": [
+    {
+      "match_id": "2026-09-12-casa-pia-fc-porto",
+      "played_at": "2026-09-12",
+      "competition_round": 6,
+      "comparison_game_number": 6,
+      "tracked_club": "FC Porto",
+      "opponent": "Casa Pia AC",
+      "status": "completed",
+      "result": "Casa Pia AC 1-4 FC Porto",
+      "verification_status": "pending",
+      "verified_match_facts": {
+        "result_sources": [
+          "https://www.rtp.pt/noticias/desporto/casa-pia-fc-porto_e1765036",
+          "https://www.abola.pt/noticias/filipe-coelho-resultado-nao-e-o-espelho-do-que-realmente-se-passou-2026091220142834139"
+        ],
+        "referee": "José Bessa",
+        "var": "Rui Costa",
+        "referee_appointment_source": "https://www.fcporto.ws/jose-bessa-nomeado-para-o-casa-pia-fc-porto-da-sexta-jornada/"
+      },
+      "missing_for_discipline_merge": [
+        "tracked_fouls verified by at least two independent source groups",
+        "opponent_fouls verified by at least two independent source groups",
+        "player card event list verified independently",
+        "staff card event list checked separately",
+        "source conflicts resolved if any"
+      ],
+      "sources_checked_2026-09-12": [
+        "Liga Portugal official competition pages",
+        "RTP match report",
+        "A BOLA post-match coverage",
+        "365Scores match page",
+        "theScore match page",
+        "Soccerhub match page",
+        "Zerozero / Playmaker listings",
+        "GolMates / match-stat aggregators"
+      ],
+      "notes": "The result and officials are confirmed, but currently indexed post-match sources do not provide a sufficiently reliable, mutually independent foul/card breakdown for S360 publication. Do not infer metrics from stale pre-match or incorrect auto-generated pages. Keep the public discipline snapshot at the equalised 5-game milestone until Benfica and Sporting play round 6 and all three round-6 records clear verification."
+    }
+  ]
+}
