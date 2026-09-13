@@ -1,0 +1,20 @@
+{
+  "season":"2026-27",
+  "comparison_game_number":6,
+  "as_of":"2026-09-13",
+  "publishable":false,
+  "blocking_reasons":[
+    "14 earlier tracked matches through comparison game 5 remain pending explicit match-level backfill",
+    "2026-09-13-benfica-gil-vicente: awaiting independent confirmation of current expert analysis",
+    "2026-09-13-famalicao-sporting: awaiting expert analysis after final whistle"
+  ],
+  "public_totals":{},
+  "confirmed_decisions_not_yet_public":[
+    {"decision_id":"2026-09-12-casa-pia-fc-porto-45+4m-missed-kaly-yellow","tracked_club":"FC Porto","direction":"against"}
+  ],
+  "material_disputes":[
+    {"decision_id":"2026-09-09-moreirense-benfica-44m-penalty","tracked_club":"SL Benfica"},
+    {"decision_id":"2026-09-12-casa-pia-fc-porto-1m-penalty","tracked_club":"FC Porto"}
+  ],
+  "note":"No public errors-for/errors-against totals are emitted until every played tracked match in scope is fully reviewed. Candidate/disputed decisions remain excluded."
+}
