@@ -2,158 +2,33 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "The Moreirense-Benfica catch-up match is fully reviewed, but the earlier played tracked matches through comparison game 5 still need explicit match-level backfill before the refereeing snapshot can be publishable.",
+  "coverage_note": "Moreirense-Benfica and Casa Pia-FC Porto have current match-level reviews. Earlier tracked matches through comparison game 5 still require explicit backfill; Benfica-Gil Vicente and Famalicão-Sporting remain in the pending review queue until current analysis reaches threshold.",
   "matches": [
     {
-      "match_id": "2026-09-09-moreirense-benfica",
-      "played_at": "2026-09-09",
-      "competition_round": 3,
-      "comparison_game_number": 5,
-      "tracked_club": "SL Benfica",
-      "opponent": "Moreirense FC",
-      "status": "completed",
-      "review_status": "complete",
-      "reviewed_sources": [
-        {
-          "source_family": "Renascença VAR Bola Branca",
-          "published_at": "2026-09-09T23:54:00+01:00",
-          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/09/09/nota-3-para-fabio-verissimo-sem-influencia-no-resultado/484902/",
-          "reviewer": "Tiago Rocha",
-          "coverage": "principal incidents and disciplinary management",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct play-on",
-            "44m: VAR-supported Benfica penalty correct; yellow card correct",
-            "all six shown yellow cards considered correct",
-            "no relevant refereeing errors and no influence on result"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Pedro Henriques / A BOLA",
-          "published_at": "2026-09-10T09:40:00+01:00",
-          "url": "https://www.abola.pt/noticias/nao-houve-penalti-sobre-pavlidis-a-analise-a-arbitragem-do-moreirense-benfica-2026091000192534724",
-          "reviewer": "Pedro Henriques",
-          "coverage": "full published referee analysis",
-          "findings": [
-            "12m: direct free kick and yellow card to Maracas were missed after foul on Rafa Silva",
-            "14m/15m: no penalty on Pavlidis; correct decision",
-            "41m: Gilberto Batista yellow correct",
-            "44m: Benfica penalty and Parsemain yellow correct after VAR intervention",
-            "52m: Landerson yellow for dissent correct",
-            "75m: Palhinha yellow correct",
-            "90+1m: John Duran yellow correct"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Marco Ferreira / Record",
-          "published_at": "2026-09-09T22:54:00+01:00",
-          "url": "https://www.record.pt/jogos-em-direto/detalhe/169788/moreirense-vs-benfica/posjogo/casosdearbitragem",
-          "reviewer": "Marco Ferreira",
-          "coverage": "selected match incidents",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct decision",
-            "41m: Gilberto Batista yellow correct",
-            "44m: Benfica penalty and yellow correct after VAR intervention",
-            "75m: Palhinha yellow correct",
-            "90+1m: John Duran yellow correct"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Jorge Faustino / Record",
-          "published_at": "2026-09-09T22:54:00+01:00",
-          "url": "https://www.record.pt/jogos-em-direto/detalhe/169788/moreirense-vs-benfica/posjogo/casosdearbitragem",
-          "reviewer": "Jorge Faustino",
-          "coverage": "selected match incidents",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct decision",
-            "41m: Gilberto Batista yellow correct",
-            "44m: Benfica penalty and yellow correct after VAR intervention",
-            "75m: Palhinha yellow correct",
-            "90+1m: John Duran yellow correct"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Jorge Coroado / O JOGO",
-          "published_at": "2026-09-10",
-          "url": "https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143",
-          "reviewer": "Jorge Coroado",
-          "coverage": "Tribunal O JOGO incidents",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct decision",
-            "44m: Benfica penalty and yellow were wrong",
-            "69m: foul and yellow to Lukebakio were missed"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "José Leirós / O JOGO",
-          "published_at": "2026-09-10",
-          "url": "https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143",
-          "reviewer": "José Leirós",
-          "coverage": "Tribunal O JOGO incidents",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct decision",
-            "44m: Benfica penalty was wrong",
-            "69m: foul and yellow to Lukebakio were missed"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Fortunato Azevedo / O JOGO",
-          "published_at": "2026-09-10",
-          "url": "https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143",
-          "reviewer": "Fortunato Azevedo",
-          "coverage": "Tribunal O JOGO incidents",
-          "findings": [
-            "15m: no penalty on Pavlidis; correct decision",
-            "44m: Benfica penalty was wrong",
-            "69m: foul and yellow to Lukebakio were missed"
-          ],
-          "usable_for_confirmation": true
-        },
-        {
-          "source_family": "Verdade Desportiva",
-          "published_at": "2026-09-10",
-          "url": "https://verdadedesportiva.pt/jogos/33c6dc9d-f7aa-4e8e-b2ee-fdafb9dc1aa7",
-          "reviewer": null,
-          "coverage": "aggregated cited incident matrix",
-          "findings": [
-            "7 incidents indexed with source-by-source provenance",
-            "44m penalty split 4 correct versus 3 error",
-            "69m missed Lukebakio foul/yellow recorded as error by 3/3 O JOGO analysts"
-          ],
-          "usable_for_confirmation": false,
-          "notes": "Aggregator used to cross-check provenance and identify disagreement; not counted as an independent expert family by itself."
-        },
-        {
-          "source_family": "VSPORTS",
-          "published_at": "2026-09-09",
-          "url": "https://vsports.pt/abola/jogo/i-liga/moreirense-benfica/30376",
-          "reviewer": null,
-          "coverage": "match evidence / incident video",
-          "findings": [],
-          "usable_for_confirmation": false,
-          "notes": "Match evidence located; not treated as an expert verdict by itself."
-        }
+      "match_id":"2026-09-09-moreirense-benfica","played_at":"2026-09-09","competition_round":3,"comparison_game_number":5,"tracked_club":"SL Benfica","opponent":"Moreirense FC","status":"completed","review_status":"complete",
+      "reviewed_sources":[
+        {"source_family":"Renascença VAR Bola Branca","url":"https://rr.pt/bola-branca/noticia/futebol-nacional/2026/09/09/nota-3-para-fabio-verissimo-sem-influencia-no-resultado/484902/","reviewer":"Tiago Rocha","usable_for_confirmation":true},
+        {"source_family":"Pedro Henriques / A BOLA","url":"https://www.abola.pt/noticias/nao-houve-penalti-sobre-pavlidis-a-analise-a-arbitragem-do-moreirense-benfica-2026091000192534724","reviewer":"Pedro Henriques","usable_for_confirmation":true},
+        {"source_family":"Marco Ferreira / Record","url":"https://www.record.pt/jogos-em-direto/detalhe/169788/moreirense-vs-benfica/posjogo/casosdearbitragem","reviewer":"Marco Ferreira","usable_for_confirmation":true},
+        {"source_family":"Jorge Faustino / Record","url":"https://www.record.pt/jogos-em-direto/detalhe/169788/moreirense-vs-benfica/posjogo/casosdearbitragem","reviewer":"Jorge Faustino","usable_for_confirmation":true},
+        {"source_family":"Jorge Coroado / O JOGO","url":"https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143","reviewer":"Jorge Coroado","usable_for_confirmation":true},
+        {"source_family":"José Leirós / O JOGO","url":"https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143","reviewer":"José Leirós","usable_for_confirmation":true},
+        {"source_family":"Fortunato Azevedo / O JOGO","url":"https://www.ojogo.pt/futebol/artigo/tribunal-o-jogo-acao-de-parsemain-sobre-lenglet-justifica-penalti-e-amarelo-no-moreirense-benfica/18125143","reviewer":"Fortunato Azevedo","usable_for_confirmation":true},
+        {"source_family":"Verdade Desportiva","url":"https://verdadedesportiva.pt/jogos/33c6dc9d-f7aa-4e8e-b2ee-fdafb9dc1aa7","usable_for_confirmation":false},
+        {"source_family":"VSPORTS","url":"https://vsports.pt/abola/jogo/i-liga/moreirense-benfica/30376","usable_for_confirmation":false}
       ],
-      "searched_source_families": [
-        "Pedro Henriques / A BOLA",
-        "Marco Ferreira / Record",
-        "Jorge Faustino / Record",
-        "Iturralde / Record",
-        "Jorge Coroado / O JOGO",
-        "José Leirós / O JOGO",
-        "Fortunato Azevedo / O JOGO",
-        "Renascença VAR Bola Branca",
-        "Verdade Desportiva",
-        "VSPORTS",
-        "Liga Portugal / official material",
-        "FPF / official referee material"
+      "notes":"44m penalty remains disputed; candidate-only disciplinary incidents remain excluded."
+    },
+    {
+      "match_id":"2026-09-12-casa-pia-fc-porto","played_at":"2026-09-12","competition_round":6,"comparison_game_number":6,"tracked_club":"FC Porto","opponent":"Casa Pia AC","status":"completed","result":"Casa Pia AC 1-4 FC Porto","referee":"José Bessa","var":"Rui Costa","review_status":"complete",
+      "reviewed_sources":[
+        {"source_family":"Pedro Henriques / A BOLA","published_at":"2026-09-13","url":"https://www.abola.pt/noticias/um-penalti-por-assinalar-a-analise-a-arbitragem-do-casa-pia-fc-porto-2026091219351913472","reviewer":"Pedro Henriques","coverage":"key incidents and disciplinary management","usable_for_confirmation":true},
+        {"source_family":"Renascença VAR Bola Branca","published_at":"2026-09-12","url":"https://rr.pt/bola-branca/noticia/futebol-nacional/2026/09/12/nota-4-para-jose-bessa-esteve-bem-nos-lances-capitais/485214/","reviewer":"Tiago Rocha","coverage":"key incidents and disciplinary management","usable_for_confirmation":true},
+        {"source_family":"Record / Apito Record","published_at":"2026-09-13","url":"https://www.record.pt/multimedia/videos/detalhe/apito-record-falta-no-golo-do-fc-porto-penalti-na-luz-estas-e-outras-duvidas-para-tirar","reviewer":"Marco Ferreira / Jorge Faustino","coverage":"round cases located; paywalled detail not used to assign verdicts","usable_for_confirmation":false},
+        {"source_family":"VSPORTS","published_at":"2026-09-12","url":"https://zerozero.vsports.pt/","coverage":"match video evidence","usable_for_confirmation":false}
       ],
-      "notes": "Full current review completed on 2026-09-11. The 44m penalty remains disputed: Record, VAR Bola Branca and Pedro Henriques/A BOLA support the decision, while all three Tribunal O JOGO analysts consider it wrong. The 12m missed foul/yellow identified by Pedro Henriques remains candidate-only because no independent confirming expert family was located. The 69m missed foul/yellow to Lukebakio is supported by all three O JOGO analysts but remains candidate-only under the conservative independent-family threshold. Missing Iturralde analysis is not treated as zero evidence."
+      "searched_source_families":["Pedro Henriques / A BOLA","Marco Ferreira / Record","Jorge Faustino / Record","Iturralde / Record","Jorge Coroado / O JOGO","José Leirós / O JOGO","Fortunato Azevedo / O JOGO","Renascença VAR Bola Branca","Verdade Desportiva","VSPORTS","Liga Portugal / official material","FPF / official referee material"],
+      "notes":"1m penalty incident is disputed: Pedro Henriques says clear penalty/VAR error; Tiago Rocha says correct no-penalty. At 45+4 both independent families identify a missed foul and yellow to Kaly, therefore confirmed. At 30m Tiago Rocha alone identifies a missed foul, so it remains candidate. Missing analysis from other named families is not interpreted as zero errors."
     }
   ]
 }
