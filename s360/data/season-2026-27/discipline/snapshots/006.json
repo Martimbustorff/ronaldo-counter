@@ -7,18 +7,54 @@
   "clubs": {
     "FC Porto": {
       "games": 6,
-      "team": {"fouls":79,"player_yellows":3,"player_dismissals":0,"avg_fouls":13.2,"fouls_per_yellow":26.3},
-      "opponents": {"fouls":57,"player_yellows":10,"player_dismissals":1,"avg_fouls":9.5,"fouls_per_yellow":5.7}
+      "team": {
+        "fouls": 79,
+        "player_yellows": 3,
+        "player_dismissals": 0,
+        "avg_fouls": 13.2,
+        "fouls_per_yellow": 26.3
+      },
+      "opponents": {
+        "fouls": 57,
+        "player_yellows": 10,
+        "player_dismissals": 1,
+        "avg_fouls": 9.5,
+        "fouls_per_yellow": 5.7
+      }
     },
     "SL Benfica": {
       "games": 6,
-      "team": {"fouls":76,"player_yellows":9,"player_dismissals":0,"avg_fouls":12.7,"fouls_per_yellow":8.4},
-      "opponents": {"fouls":93,"player_yellows":17,"player_dismissals":1,"avg_fouls":15.5,"fouls_per_yellow":5.5}
+      "team": {
+        "fouls": 76,
+        "player_yellows": 9,
+        "player_dismissals": 0,
+        "avg_fouls": 12.7,
+        "fouls_per_yellow": 8.4
+      },
+      "opponents": {
+        "fouls": 93,
+        "player_yellows": 17,
+        "player_dismissals": 1,
+        "avg_fouls": 15.5,
+        "fouls_per_yellow": 5.5
+      }
     },
     "Sporting CP": {
       "games": 6,
-      "team": {"fouls":73,"player_yellows":13,"player_dismissals":0,"avg_fouls":12.2,"fouls_per_yellow":5.6},
-      "opponents": {"fouls":79,"player_yellows":13,"player_dismissals":1,"avg_fouls":13.2,"fouls_per_yellow":6.1}
+      "team": {
+        "fouls": 74,
+        "player_yellows": 14,
+        "player_dismissals": 0,
+        "avg_fouls": 12.3,
+        "fouls_per_yellow": 5.3
+      },
+      "opponents": {
+        "fouls": 79,
+        "player_yellows": 13,
+        "player_dismissals": 1,
+        "avg_fouls": 13.2,
+        "fouls_per_yellow": 6.1
+      }
     }
   }
 }
