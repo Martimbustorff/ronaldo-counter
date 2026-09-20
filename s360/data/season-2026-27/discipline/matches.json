@@ -11,17 +11,74 @@
       "opponent": "Casa Pia AC",
       "status": "completed",
       "verification_status": "verified",
-      "resolved": {"tracked_fouls": 10, "opponent_fouls": 13},
+      "resolved": {
+        "tracked_fouls": 10,
+        "opponent_fouls": 13
+      },
       "cards": [
-        {"side":"tracked","subject_type":"player","subject":"Jakub Kiwior","minute":"45","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Kaly (Domingos José Gabriel Bandeira)","minute":"53","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"André Geraldes","minute":"54","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"David Sousa","minute":"87","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Ivan Mandić","minute":"90","card":"yellow"}
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Jakub Kiwior",
+          "minute": "45",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Kaly (Domingos José Gabriel Bandeira)",
+          "minute": "53",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "André Geraldes",
+          "minute": "54",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "David Sousa",
+          "minute": "87",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Ivan Mandić",
+          "minute": "90",
+          "card": "yellow"
+        }
       ],
       "sources": [
-        {"id":"ofstats-casa-pia-porto","independence_group":"OFStats","url":"https://ofstats.com/matches/view/casa-pia-porto-2026-09-12","claims":{"tracked_fouls":10,"opponent_fouls":13,"tracked_player_yellows":1,"tracked_player_dismissals":0,"opponent_player_yellows":4,"opponent_player_dismissals":0}},
-        {"id":"espn-casa-pia-porto","independence_group":"ESPN","url":"https://www.espn.com.au/football/team-stats/_/gameId/401885444","claims":{"tracked_fouls":10,"opponent_fouls":13,"tracked_player_yellows":1,"tracked_player_dismissals":0,"opponent_player_yellows":4,"opponent_player_dismissals":0}}
+        {
+          "id": "ofstats-casa-pia-porto",
+          "independence_group": "OFStats",
+          "url": "https://ofstats.com/matches/view/casa-pia-porto-2026-09-12",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 13,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "espn-casa-pia-porto",
+          "independence_group": "ESPN",
+          "url": "https://www.espn.com.au/football/team-stats/_/gameId/401885444",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 13,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        }
       ],
       "conflicts": [],
       "notes": "Kaly is the player also rendered under his civil name Domingos José Gabriel Bandeira by some feeds; treated as the same player, not two card events. No staff cards located."
@@ -35,17 +92,74 @@
       "opponent": "Gil Vicente FC",
       "status": "completed",
       "verification_status": "verified",
-      "resolved": {"tracked_fouls": 11, "opponent_fouls": 18},
+      "resolved": {
+        "tracked_fouls": 11,
+        "opponent_fouls": 18
+      },
       "cards": [
-        {"side":"tracked","subject_type":"player","subject":"Enzo Barrenechea","minute":"12","card":"yellow"},
-        {"side":"tracked","subject_type":"player","subject":"João Palhinha","minute":"63","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Héctor Hernández","minute":"26","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Lucão","minute":"70","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Ricardo Esgaio","minute":"90+5","card":"yellow"}
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Enzo Barrenechea",
+          "minute": "12",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "João Palhinha",
+          "minute": "63",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Héctor Hernández",
+          "minute": "26",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Lucão",
+          "minute": "70",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Ricardo Esgaio",
+          "minute": "90+5",
+          "card": "yellow"
+        }
       ],
       "sources": [
-        {"id":"espn-benfica-gil","independence_group":"ESPN","url":"https://www.espn.com/soccer/team-stats/_/gameId/401885439","claims":{"tracked_fouls":11,"opponent_fouls":18,"tracked_player_yellows":2,"tracked_player_dismissals":0,"opponent_player_yellows":3,"opponent_player_dismissals":0}},
-        {"id":"besoccer-benfica-gil","independence_group":"BeSoccer","url":"https://www.besoccer.com/match/benfica/gil-vicente/2026-09-13","claims":{"tracked_fouls":11,"opponent_fouls":18,"tracked_player_yellows":2,"tracked_player_dismissals":0,"opponent_player_yellows":3,"opponent_player_dismissals":0}}
+        {
+          "id": "espn-benfica-gil",
+          "independence_group": "ESPN",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401885439",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 18,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "besoccer-benfica-gil",
+          "independence_group": "BeSoccer",
+          "url": "https://www.besoccer.com/match/benfica/gil-vicente/2026-09-13",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 18,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        }
       ],
       "conflicts": [],
       "notes": "Card event list cross-checked against post-match event feeds. No staff cards located."
@@ -59,22 +173,520 @@
       "opponent": "FC Famalicão",
       "status": "completed",
       "verification_status": "verified",
-      "resolved": {"tracked_fouls": 10, "opponent_fouls": 14},
+      "resolved": {
+        "tracked_fouls": 11,
+        "opponent_fouls": 14
+      },
       "cards": [
-        {"side":"tracked","subject_type":"player","subject":"Geny Catamo","minute":"73","card":"yellow"},
-        {"side":"tracked","subject_type":"player","subject":"Luis Suárez","minute":"86","card":"yellow"},
-        {"side":"tracked","subject_type":"player","subject":"Nestory Irankunda","minute":"90","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Gil Dias","minute":"45+1","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Sorriso","minute":"78","card":"yellow"},
-        {"side":"opponent","subject_type":"player","subject":"Roméo Beney","minute":"87","card":"red"},
-        {"side":"opponent","subject_type":"staff","subject":"Carlos Carvalhal","minute":"80","card":"yellow"}
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Geny Catamo",
+          "minute": "73",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Luis Suárez",
+          "minute": "86",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Nestory Irankunda",
+          "minute": "90",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Iván Fresneda",
+          "minute": "90+7",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Gil Dias",
+          "minute": "45+1",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Sorriso",
+          "minute": "78",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Roméo Beney",
+          "minute": "87",
+          "card": "red"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "staff",
+          "subject": "Carlos Carvalhal",
+          "minute": "80",
+          "card": "yellow"
+        }
       ],
       "sources": [
-        {"id":"espn-famalicao-sporting","independence_group":"ESPN","url":"https://www.espn.com/soccer/team-stats/_/gameId/401885443","claims":{"tracked_fouls":10,"opponent_fouls":14,"tracked_player_yellows":3,"tracked_player_dismissals":0,"opponent_player_yellows":2,"opponent_player_dismissals":1}},
-        {"id":"besoccer-famalicao-sporting","independence_group":"BeSoccer","url":"https://fr.besoccer.com/match/famalicao/sporting-lisbon/202733976","claims":{"tracked_fouls":10,"opponent_fouls":14,"tracked_player_yellows":3,"tracked_player_dismissals":0,"opponent_player_yellows":2,"opponent_player_dismissals":1}}
+        {
+          "id": "espn-famalicao-sporting",
+          "independence_group": "ESPN",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401885443",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 14,
+            "tracked_player_yellows": 3,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 1
+          },
+          "note": "Earlier feed snapshot; retained to document the conflict."
+        },
+        {
+          "id": "besoccer-famalicao-sporting",
+          "independence_group": "BeSoccer",
+          "url": "https://fr.besoccer.com/match/famalicao/sporting-lisbon/202733976",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 14,
+            "tracked_player_yellows": 3,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 1
+          },
+          "note": "Earlier feed snapshot; retained to document the conflict."
+        },
+        {
+          "id": "zerozero-famalicao-sporting",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/jogo/2026-09-13-fc-famalicao-sporting/12278003",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 14,
+            "tracked_player_yellows": 4,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "offsidescores-famalicao-sporting",
+          "independence_group": "OffsideScores",
+          "url": "https://offsidescores.com/pt/futebol/jogo/fc-famalicao-sporting-cp-20260913/658f9b3f-31b7-4e63-adf5-da0d5102597c/detalhe",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 14,
+            "tracked_player_yellows": 4,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "flashscore-famalicao-sporting-event",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.com/match/football/famalicao-ABBgitC3/sporting-cp-tljXuHBC/",
+          "claims": {
+            "tracked_player_yellows": 4,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 1
+          },
+          "note": "Indexed post-match event evidence includes Iván Fresneda yellow at 90+7 and is retained as an event-level cross-check."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_fouls",
+          "status": "resolved",
+          "chosen_value": 11,
+          "observed_values": [
+            10,
+            11
+          ],
+          "resolution_note": "Current zerozero and OffsideScores match-stat tables independently show Famalicão 14–11 Sporting. Earlier ESPN/BeSoccer snapshots showed 14–10 and are retained only as conflict provenance."
+        },
+        {
+          "field": "tracked_player_yellows",
+          "status": "resolved",
+          "chosen_value": 4,
+          "observed_values": [
+            3,
+            4
+          ],
+          "resolution_note": "Current match-stat/event evidence records four Sporting player yellows, including Iván Fresneda at 90+7. The earlier three-yellow feeds omitted the late Fresneda card."
+        }
+      ],
+      "notes": "Corrected after post-match reconciliation. Sporting: 11 fouls, 4 player yellows (Catamo, Suárez, Irankunda, Fresneda). Famalicão: 14 fouls, 2 player yellows and Beney direct red. Carlos Carvalhal's yellow is staff and excluded from public totals."
+    },
+    {
+      "match_id": "2026-09-19-sporting-arouca",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-19",
+      "competition_round": 7,
+      "tracked_club": "Sporting CP",
+      "opponent": "FC Arouca",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 9,
+        "opponent_fouls": 17
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Espen van Ee",
+          "minute": "36",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Javi Sánchez",
+          "minute": "44",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "José Fontán",
+          "minute": "51",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Zeno Debast",
+          "minute": "54",
+          "card": "red"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Luis Suárez",
+          "minute": "61",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Pedro Santos",
+          "minute": "61",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Eduardo Quaresma",
+          "minute": "80",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Brian Mansilla",
+          "minute": "90+2",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Maxi Araújo",
+          "minute": "90+4",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Gonçalo Inácio",
+          "minute": "90+8",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fotmob-sporting-arouca-r7",
+          "independence_group": "FotMob",
+          "url": "https://www.fotmob.com/matches/sporting-cp-vs-arouca/6gza1yr",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 4,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "365scores-sporting-arouca-r7",
+          "independence_group": "365Scores",
+          "url": "https://www.365scores.com/football/match/liga-portugal-73/arouca-sporting-cp-890-927-73",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 17
+          }
+        },
+        {
+          "id": "record-sporting-arouca-r7",
+          "independence_group": "Record",
+          "url": "https://www.record.pt/jogos-em-direto/169824/sporting-vs-arouca/posjogo/casosdearbitragem",
+          "claims": {
+            "tracked_player_yellows": 4,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "flashscore-sporting-arouca-r7",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.com/match/football/arouca-fJqfm7CG/sporting-cp-tljXuHBC/summary/stats/",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 17
+          },
+          "note": "Flashscore is now an approved S360 discipline source; match stats were cross-checked with an independent provider."
+        }
       ],
       "conflicts": [],
-      "notes": "Carlos Carvalhal's yellow is stored as staff and excluded from player totals. Beney's dismissal is a direct red. ESPN and BeSoccer agree on final discipline totals."
+      "notes": "Debast dismissal is a direct red, not a second-yellow. Late player yellows to Mansilla (90+2), Maxi Araújo (90+4) and Gonçalo Inácio (90+8) are included. No staff card located."
+    },
+    {
+      "match_id": "2026-09-20-fc-porto-benfica",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-20",
+      "competition_round": 7,
+      "tracked_club": "FC Porto",
+      "opponent": "SL Benfica",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 17,
+        "opponent_fouls": 12
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Gabri Veiga",
+          "minute": "5",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Clément Lenglet",
+          "minute": "25",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Gianluca Prestianni",
+          "minute": "34",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Clément Lenglet",
+          "minute": "35",
+          "card": "second_yellow_red"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Hwang In-Beom",
+          "minute": "80",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Oskar Pietuszewski",
+          "minute": "90+2",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Tomás Araújo",
+          "minute": "90+3",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Alexander Bah",
+          "minute": "90+3",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fotmob-porto-benfica-r7",
+          "independence_group": "FotMob",
+          "url": "https://www.fotmob.com/matches/benfica-vs-fc-porto/35qac2",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 12,
+            "tracked_player_yellows": 3,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 1
+          },
+          "note": "FotMob event feed identifies Lenglet's 35' dismissal as a second yellow."
+        },
+        {
+          "id": "365scores-porto-benfica-r7",
+          "independence_group": "365Scores",
+          "url": "https://www.365scores.com/football/match/liga-portugal-73/benfica-fc-porto-887-888-73",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 12,
+            "tracked_player_yellows": 3,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 1
+          },
+          "note": "Provider lists four ordinary Benfica yellow events plus Lenglet's second-yellow dismissal; S360 normalization counts the second yellow as a shown yellow, producing five."
+        },
+        {
+          "id": "flashscore-porto-benfica-r7",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.com/match/football/benfica-zBkyuyRI/fc-porto-S2NmScGp/summary/stats/",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 12
+          },
+          "note": "Flashscore stats cross-check; card normalization is independently verified with FotMob/365Scores."
+        }
+      ],
+      "conflicts": [],
+      "notes": "Lenglet's 35' dismissal is second_yellow_red and therefore counts as both one shown yellow and one Benfica player dismissal. No staff cards located."
+    },
+    {
+      "match_id": "2026-09-20-fc-porto-benfica-benfica-perspective",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-20",
+      "competition_round": 7,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Porto",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 12,
+        "opponent_fouls": 17
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Gabri Veiga",
+          "minute": "5",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Clément Lenglet",
+          "minute": "25",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Gianluca Prestianni",
+          "minute": "34",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Clément Lenglet",
+          "minute": "35",
+          "card": "second_yellow_red"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Hwang In-Beom",
+          "minute": "80",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Oskar Pietuszewski",
+          "minute": "90+2",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Tomás Araújo",
+          "minute": "90+3",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Alexander Bah",
+          "minute": "90+3",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fotmob-porto-benfica-r7-benfica-perspective",
+          "independence_group": "FotMob",
+          "url": "https://www.fotmob.com/matches/benfica-vs-fc-porto/35qac2",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          },
+          "note": "FotMob event feed identifies Lenglet's 35' dismissal as a second yellow."
+        },
+        {
+          "id": "365scores-porto-benfica-r7-benfica-perspective",
+          "independence_group": "365Scores",
+          "url": "https://www.365scores.com/football/match/liga-portugal-73/benfica-fc-porto-887-888-73",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          },
+          "note": "Provider lists four ordinary Benfica yellow events plus Lenglet's second-yellow dismissal; S360 normalization counts the second yellow as a shown yellow, producing five."
+        },
+        {
+          "id": "flashscore-porto-benfica-r7-benfica-perspective",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.com/match/football/benfica-zBkyuyRI/fc-porto-S2NmScGp/summary/stats/",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 17
+          },
+          "note": "Flashscore stats cross-check; card normalization is independently verified with FotMob/365Scores."
+        }
+      ],
+      "conflicts": [],
+      "notes": "Same physical match as the FC Porto perspective, side-inverted for deterministic club comparison. Lenglet second-yellow counts as a shown yellow plus a Benfica player dismissal."
     }
   ]
 }
