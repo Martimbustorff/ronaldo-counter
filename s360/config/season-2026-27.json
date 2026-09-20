@@ -11,7 +11,19 @@
     "minimum_independent_sources": 2,
     "public_card_subject": "player",
     "second_yellow_counts_as_yellow": true,
-    "second_yellow_counts_as_dismissal": true
+    "second_yellow_counts_as_dismissal": true,
+    "preferred_source_families": [
+      "Flashscore",
+      "FotMob",
+      "365Scores",
+      "zerozero",
+      "OFStats",
+      "RTP",
+      "Record",
+      "ESPN",
+      "BeSoccer"
+    ],
+    "source_independence_note": "Use at least two genuinely independent source groups for every public metric. Flashscore is an approved preferred discipline source, but a second independent group is still required."
   },
   "refereeing": {
     "public_decision_status": "confirmed",
