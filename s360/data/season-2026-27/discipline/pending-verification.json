@@ -1,8 +1,69 @@
 {
   "season": "2026-27",
   "purpose": "Completed tracked matches that are not yet safe to merge into discipline/matches.json because the public foul/card metrics have not been independently verified to the S360 threshold.",
-  "matches": [],
+  "matches": [
+    {
+      "match_id": "2026-09-19-sporting-arouca",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-19",
+      "competition_round": 7,
+      "tracked_club": "Sporting CP",
+      "opponent": "FC Arouca",
+      "status": "completed",
+      "verification_status": "pending_second_independent_source",
+      "provisional": {"tracked_fouls": 9, "opponent_fouls": 17, "tracked_player_yellows": 2, "tracked_player_dismissals": 1, "opponent_player_yellows": 4, "opponent_player_dismissals": 0},
+      "known_player_cards": [
+        {"side":"tracked","subject":"Luis Suárez","minute":"62","card":"yellow"},
+        {"side":"tracked","subject":"Maxi Araújo","minute":"90+4","card":"yellow"},
+        {"side":"tracked","subject":"Zeno Debast","minute":"54","card":"red"},
+        {"side":"opponent","subject":"Espen van Ee","minute":"36","card":"yellow"},
+        {"side":"opponent","subject":"Javi Sánchez","minute":"44","card":"yellow"},
+        {"side":"opponent","subject":"José Fontán","minute":"46","card":"yellow"},
+        {"side":"opponent","subject":"Pedro Santos","minute":"62","card":"yellow"}
+      ],
+      "sources": [
+        {"id":"zerozero-sporting-arouca-r7","independence_group":"zerozero","url":"https://www.zerozero.pt/live-ao-minuto/2026-09-19-sporting-fc-arouca/12278073","claims":{"tracked_fouls":9,"opponent_fouls":17,"tracked_player_yellows":2,"tracked_player_dismissals":1,"opponent_player_yellows":4,"opponent_player_dismissals":0}},
+        {"id":"espn-sporting-arouca-r7","independence_group":"ESPN","url":"https://www.espn.com/soccer/match/_/gameId/401885431","claims":{"result":"2-2"},"note":"Second independent match source located; detailed foul/card totals were not exposed in the accessible page during this run, so it is not yet used to verify the metrics."}
+      ],
+      "conflicts": [],
+      "notes": "Direct red to Debast; no second-yellow dismissal identified. Staff cards must remain excluded if later located."
+    },
+    {
+      "match_id": "2026-09-20-fc-porto-benfica",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-20",
+      "competition_round": 7,
+      "tracked_club": "FC Porto",
+      "opponent": "SL Benfica",
+      "status": "completed",
+      "result": "FC Porto 3-1 SL Benfica",
+      "verification_status": "pending_match_metrics",
+      "sources": [
+        {"id":"sofascore-porto-benfica-r7","independence_group":"Sofascore","url":"https://www.sofascore.com/pt-pt/football/match/benfica-fc-porto/ckbsgkb","claims":{"result":"3-1"}},
+        {"id":"zerozero-porto-benfica-r7","independence_group":"zerozero","url":"https://www.zerozero.pt/live-ao-minuto/2026-09-20-fc-porto-benfica/12278065","claims":{"result":"3-1"}}
+      ],
+      "conflicts": [],
+      "notes": "Result independently located, but accessible sources in this run did not expose a complete match-level foul/card table suitable for S360 verification. Do not merge totals until independently verified."
+    },
+    {
+      "match_id": "2026-09-20-fc-porto-benfica-benfica-perspective",
+      "comparison_game_number": 7,
+      "played_at": "2026-09-20",
+      "competition_round": 7,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Porto",
+      "status": "completed",
+      "result": "FC Porto 3-1 SL Benfica",
+      "verification_status": "pending_match_metrics",
+      "sources": [
+        {"id":"sofascore-porto-benfica-r7","independence_group":"Sofascore","url":"https://www.sofascore.com/pt-pt/football/match/benfica-fc-porto/ckbsgkb","claims":{"result":"3-1"}},
+        {"id":"zerozero-porto-benfica-r7","independence_group":"zerozero","url":"https://www.zerozero.pt/live-ao-minuto/2026-09-20-fc-porto-benfica/12278065","claims":{"result":"3-1"}}
+      ],
+      "conflicts": [],
+      "notes": "Same physical match as FC Porto perspective. Do not duplicate event evidence; invert sides only after the common match metrics are verified."
+    }
+  ],
   "last_cleared_milestone": 6,
   "last_cleared_at": "2026-09-13",
-  "note": "Casa Pia-FC Porto, Benfica-Gil Vicente and Famalicão-Sporting CP comparison-game-6 records were independently verified and moved to discipline/matches.json."
+  "note": "Round 7 is complete for all three tracked clubs, but discipline publication remains blocked pending independent verification of the new match metrics."
 }
