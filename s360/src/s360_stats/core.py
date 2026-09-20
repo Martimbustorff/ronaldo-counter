@@ -250,7 +250,14 @@ def build_discipline_snapshot(config: dict, baseline: dict, dataset: dict, targe
     }
 
 
-def build_refereeing_snapshot(config: dict, matches_doc: dict, decisions_doc: dict, target_games: int, as_of: str | None = None):
+def build_refereeing_snapshot(
+    config: dict,
+    matches_doc: dict,
+    decisions_doc: dict,
+    target_games: int,
+    as_of: str | None = None,
+    pending_doc: dict | None = None,
+):
     tracked = set(config["tracked_clubs"])
     relevant_matches = [
         m for m in matches_doc.get("matches", [])
@@ -258,10 +265,20 @@ def build_refereeing_snapshot(config: dict, matches_doc: dict, decisions_doc: di
         and m.get("status") == "completed"
         and int(m.get("comparison_game_number", 10**9)) <= target_games
     ]
+    pending_in_scope = [
+        m for m in (pending_doc or {}).get("matches", [])
+        if m.get("tracked_club") in tracked
+        and int(m.get("comparison_game_number", 10**9)) <= target_games
+    ]
+
     blocking = []
     for match in relevant_matches:
         if match.get("review_status") != "complete":
             blocking.append(f"{match['match_id']}: review_status={match.get('review_status')}")
+    for match in pending_in_scope:
+        blocking.append(
+            f"{match.get('match_id','<unknown>')}: pending review_status={match.get('review_status','pending')}"
+        )
 
     relevant_ids = {m["match_id"] for m in relevant_matches}
     decisions = [d for d in decisions_doc.get("decisions", []) if d.get("match_id") in relevant_ids]
@@ -289,7 +306,8 @@ def build_refereeing_snapshot(config: dict, matches_doc: dict, decisions_doc: di
         else:
             blocking.append(f"{decision.get('decision_id','<unknown>')}: invalid direction {direction}")
 
-    publishable = not blocking and bool(relevant_matches)
+    played_scope = len(relevant_matches) + len(pending_in_scope)
+    publishable = not blocking and bool(played_scope)
     return {
         "season": config["season"],
         "comparison_game_number": target_games,
@@ -298,5 +316,5 @@ def build_refereeing_snapshot(config: dict, matches_doc: dict, decisions_doc: di
         "blocking_reasons": blocking,
         "public_totals": totals if publishable else {},
         "reviewed_matches": len([m for m in relevant_matches if m.get("review_status") == "complete"]),
-        "played_matches_in_scope": len(relevant_matches),
+        "played_matches_in_scope": played_scope,
     }
