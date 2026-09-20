@@ -19,7 +19,10 @@ def main():
     data_root = ROOT / "data" / f"season-{args.season}"
     matches = load_json(data_root / "refereeing" / "matches.json")
     decisions = load_json(data_root / "refereeing" / "decisions.json")
-    snapshot = build_refereeing_snapshot(cfg, matches, decisions, args.target_games, args.as_of)
+    pending = load_json(data_root / "refereeing" / "pending-review.json")
+    snapshot = build_refereeing_snapshot(
+        cfg, matches, decisions, args.target_games, args.as_of, pending_doc=pending
+    )
     out = data_root / "refereeing" / "snapshots" / f"{args.target_games:03d}.json"
     dump_json(snapshot, out)
     print(out)
