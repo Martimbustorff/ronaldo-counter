@@ -17,6 +17,8 @@ A completed match can enter a public snapshot only when it is `verified` and has
 
 Cards are stored as events with `subject_type = player|staff`. Public card totals use **players only**. `second_yellow_red` counts as **one shown yellow plus one player dismissal**. Staff cards remain stored for audit but never contaminate player totals.
 
+**Flashscore is an approved preferred discipline source.** It still requires a second genuinely independent source group for every public metric. Other current source families include FotMob, 365Scores, zerozero, OFStats, RTP, Record, ESPN and BeSoccer. Do not count two publishers carrying the same upstream feed as independent without evidence.
+
 The imported milestone-5 baseline is in `data/season-2026-27/discipline/baseline-005.json`. From comparison game #6 onward, append one tracked-club perspective to `matches.json`; the builder adds those records to the baseline.
 
 ## Comparison milestones
@@ -25,7 +27,7 @@ S360 publishes a comparison only when FC Porto, SL Benfica and Sporting CP have 
 
 ## Refereeing rules
 
-Every played tracked match must be present in the review queue. A refereeing snapshot is blocked until each match in scope has `review_status = complete`.
+Every played tracked match must be present either in the reviewed match dataset or in `pending-review.json`. The snapshot builder reads the pending queue directly, so any pending in-scope match hard-blocks publication. A refereeing snapshot is blocked until each match in scope has `review_status = complete`.
 
 Named review families are configured in `config/season-2026-27.json` and include Pedro Henriques/A BOLA; Marco Ferreira, Jorge Faustino and Iturralde/Record; Jorge Coroado, José Leirós and Fortunato Azevedo/O JOGO; Renascença VAR Bola Branca; Verdade Desportiva; and VSPORTS evidence.
 
@@ -45,11 +47,11 @@ Only `confirmed` decisions enter public totals. `candidate` and `disputed` decis
 PYTHONPATH=s360/src python -m unittest discover -s s360/tests -v
 python s360/scripts/validate.py
 
-# once match #6 is verified for all three clubs:
-python s360/scripts/build_discipline_snapshot.py --target-games 6 --as-of YYYY-MM-DD
+# once the target comparison milestone is verified for all three clubs:
+python s360/scripts/build_discipline_snapshot.py --target-games 7 --as-of YYYY-MM-DD
 
-# refereeing; exits non-zero while review coverage is incomplete:
-python s360/scripts/build_refereeing_snapshot.py --target-games 6 --as-of YYYY-MM-DD
+# refereeing; exits non-zero while pending/backfill coverage is incomplete:
+python s360/scripts/build_refereeing_snapshot.py --target-games 7 --as-of YYYY-MM-DD
 ```
 
 Exit code `2` from a snapshot builder means the requested milestone is **not publishable**. This is intentional: it prevents a partial panel from being mistaken for a finished one.
