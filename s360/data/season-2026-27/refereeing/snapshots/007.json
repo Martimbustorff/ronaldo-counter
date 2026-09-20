@@ -1,0 +1,54 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 7,
+  "as_of": "2026-09-20",
+  "publishable": false,
+  "blocking_reasons": [
+    "14 earlier tracked matches through comparison game 5 remain pending explicit match-level backfill",
+    "2026-09-20-fc-porto-benfica: current named expert analysis has not yet reached the S360 evidence threshold for either tracked-club perspective"
+  ],
+  "public_totals": {},
+  "confirmed_decisions_not_yet_public": [
+    {
+      "decision_id": "2026-09-12-casa-pia-fc-porto-45+4m-missed-kaly-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-benfica-gil-vicente-18m-missed-card",
+      "tracked_club": "SL Benfica",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-benfica-gil-vicente-67m-missed-free-kick",
+      "tracked_club": "SL Benfica",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-famalicao-sporting-7m-missed-penalty",
+      "tracked_club": "Sporting CP",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-19-sporting-arouca-25m-missed-yellow",
+      "tracked_club": "Sporting CP",
+      "direction": "against"
+    }
+  ],
+  "material_disputes": [
+    {
+      "decision_id": "2026-09-09-moreirense-benfica-44m-penalty",
+      "tracked_club": "SL Benfica"
+    },
+    {
+      "decision_id": "2026-09-12-casa-pia-fc-porto-1m-penalty",
+      "tracked_club": "FC Porto"
+    },
+    {
+      "decision_id": "2026-09-13-benfica-gil-vicente-18m-missed-card",
+      "tracked_club": "SL Benfica",
+      "note": "error existence confirmed; sanction severity yellow vs red remains disputed"
+    }
+  ],
+  "note": "Milestone 7 refereeing remains withheld. Sporting-Arouca is fully reviewed; FC Porto-Benfica is still under current expert review. Missing analysis is not treated as zero."
+}
