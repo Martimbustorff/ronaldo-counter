@@ -122,6 +122,27 @@ class TestSnapshots(unittest.TestCase):
         self.assertFalse(snap["publishable"])
         self.assertEqual(snap["public_totals"], {})
 
+    def test_refereeing_pending_queue_blocks_even_when_completed_rows_are_reviewed(self):
+        matches = {"matches": [{
+            "match_id": "m1",
+            "tracked_club": "FC Porto",
+            "comparison_game_number": 6,
+            "status": "completed",
+            "review_status": "complete",
+        }]}
+        pending = {"matches": [{
+            "match_id": "old-backfill",
+            "tracked_club": "FC Porto",
+            "comparison_game_number": 2,
+            "review_status": "pending_backfill",
+        }]}
+        snap = build_refereeing_snapshot(
+            CONFIG, matches, {"decisions": []}, 6, "2026-09-20", pending_doc=pending
+        )
+        self.assertFalse(snap["publishable"])
+        self.assertEqual(snap["public_totals"], {})
+        self.assertTrue(any("old-backfill" in reason for reason in snap["blocking_reasons"]))
+
     def test_refereeing_only_confirmed_counts(self):
         matches = {"matches": [{
             "match_id": "m1",
