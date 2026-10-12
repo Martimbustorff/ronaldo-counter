@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "Fourteen earlier tracked matches through comparison game 5 still require explicit backfill. Round-6 reviews for Benfica-Gil Vicente and Famalicão-Sporting are now complete; Sporting-Arouca (round 7) is complete. FC Porto-Benfica (round 7) remains pending current named expert analysis and therefore blocks milestone 7 publication.",
+  "coverage_note": "J8 added as pending. Earlier 14-match backfill and J7/J8 outstanding checks block refereeing publication.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -261,6 +261,42 @@
         }
       ],
       "notes": "Review complete under current evidence. 25m missed yellow to Espen van Ee is confirmed. 28m missed yellow to Ivan Barbero remains candidate-only. Debast direct red and the penalty by Eduardo Quaresma are supported as correct decisions."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "played_at": "2026-10-09",
+      "competition_round": 8,
+      "comparison_game_number": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "status": "completed",
+      "review_status": "pending",
+      "reviewed_sources": [],
+      "notes": "J8 initial evidence recorded in staging; referee review incomplete; missing analyses do not imply no errors."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "played_at": "2026-10-10",
+      "competition_round": 8,
+      "comparison_game_number": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "status": "completed",
+      "review_status": "pending",
+      "reviewed_sources": [],
+      "notes": "J8 initial evidence recorded in staging; referee review incomplete; missing analyses do not imply no errors."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "played_at": "2026-10-11",
+      "competition_round": 8,
+      "comparison_game_number": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "status": "completed",
+      "review_status": "pending",
+      "reviewed_sources": [],
+      "notes": "J8 initial evidence recorded in staging; referee review incomplete; missing analyses do not imply no errors."
     }
   ]
 }
