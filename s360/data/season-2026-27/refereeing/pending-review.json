@@ -177,6 +177,30 @@
         }
       ],
       "notes": "Same physical match as the FC Porto perspective. Keep pending until named expert analysis reaches threshold; no zero inference."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "comparison_game_number": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "comparison_game_number": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "comparison_game_number": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
     }
   ],
   "already_complete_elsewhere": [
