@@ -687,6 +687,185 @@
       ],
       "conflicts": [],
       "notes": "Same physical match as the FC Porto perspective, side-inverted for deterministic club comparison. Lenglet second-yellow counts as a shown yellow plus a Benfica player dismissal."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-09",
+      "competition_round": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "status": "completed",
+      "verification_status": "pending",
+      "resolved": {
+        "tracked_fouls": 10,
+        "opponent_fouls": 11
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Flávio Gonçalves",
+          "minute": "89",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Sergio Barcia",
+          "minute": "88",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "j8-provisional-0",
+          "independence_group": "WorldSoccerData",
+          "url": "https://www.worldsoccerdata.com/stats/portugal/liga-portugal/matches/sc-braga-vs-sporting-cp-09-10-2026",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-1",
+          "independence_group": "BettingOdds",
+          "url": "https://www.bettingodds.com/football/liga-portugal/09-10-2026/sc-braga-vs-sporting-cp",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-2",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-09-sc-braga-sporting/12278035",
+          "claims": {}
+        }
+      ],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-10",
+      "competition_round": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "status": "completed",
+      "verification_status": "pending",
+      "resolved": {
+        "tracked_fouls": 15,
+        "opponent_fouls": 15
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Alan Varela",
+          "minute": "36",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Pepê",
+          "minute": "57",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Igor Julião",
+          "minute": "87",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "j8-provisional-0",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/jogo/2026-10-10-maritimo-fc-porto/12278041",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-1",
+          "independence_group": "Footlab",
+          "url": "https://footlab-data.com/primeira-liga/match/maritimo-fc-porto-2026-10-11",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-2",
+          "independence_group": "SofaScore",
+          "url": "https://www.sofascore.com/football/match/cs-maritimo-fc-porto/ckbshkb",
+          "claims": {}
+        }
+      ],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-11",
+      "competition_round": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "status": "completed",
+      "verification_status": "pending",
+      "resolved": {
+        "tracked_fouls": 9,
+        "opponent_fouls": 23
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Leandro Barreiro",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Tomás Araújo",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Tony Strata",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Gonçalo Nogueira",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Toni Borevković",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Samu (Fábio Samuel Amorim Silva)",
+          "minute": "unverified",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Thiago Balieiro",
+          "minute": "unverified",
+          "card": "yellow"
+        }
+      ],
+      "sources": [],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified."
     }
   ]
 }
