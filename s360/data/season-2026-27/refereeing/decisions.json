@@ -326,6 +326,84 @@
         }
       ],
       "notes": "Only one underlying expert evaluation at the current check; excluded from public totals."
+    },
+    {
+      "decision_id": "2026-10-09-braga-sporting-20m-missed-yellow",
+      "match_id": "2026-10-09-braga-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "20",
+      "incident": "Possible missed yellow for Gabriel Silva challenge on Geny Catamo",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "url": "https://www.abola.pt/noticias/penalti-por-marcar-a-analise-de-pedro-henriques-ao-sc-braga-sporting-2026100922234411476",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Verdade Desportiva (aggregated analysts)",
+          "url": "https://verdadedesportiva.pt/lances/d551c5ca-abde-490c-89e3-fe5bebe5dfcd",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Preliminary report indicated 3 agreeing reviewers; candidate pending direct review of primary named claims and reviewer independence."
+    },
+    {
+      "decision_id": "2026-10-09-braga-sporting-48m-doumbia-handball",
+      "match_id": "2026-10-09-braga-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "48",
+      "incident": "Possible penalty, Doumbia handball",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva (aggregate)",
+          "url": "https://verdadedesportiva.pt/lances/1ab61544-0033-483e-b8a2-669e54f4b3ee",
+          "verdict": "conflicting_4_to_3"
+        }
+      ],
+      "notes": "Previous report notes disagreement: 4 error versus 3 no error. Retain dispute, excluded."
+    },
+    {
+      "decision_id": "2026-10-10-maritimo-porto-20m-froholdt",
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "20",
+      "incident": "Possible missed yellow on Froholdt",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "url": "https://www.abola.pt/noticias/a-analise-de-pedro-henriques-a-arbitragem-do-maritimo-fc-porto-2026101020184576321",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Verdade Desportiva",
+          "url": "https://verdadedesportiva.pt/clubes/maritimo",
+          "verdict": "no_error_according_to_preliminary_summary"
+        }
+      ],
+      "notes": "Source interpretation conflict in preliminary review, not included."
+    },
+    {
+      "decision_id": "2026-10-11-benfica-vitoria-9m-penalty",
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "tracked_club": "SL Benfica",
+      "minute": "9",
+      "incident": "Possible missed penalty for Benfica",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "url": "https://www.abola.pt/video/penalti-por-marcar-a-favor-do-benfica-a-analise-de-pedro-henriques-2026101120231764897",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Single reviewer; excluded."
     }
   ]
 }
