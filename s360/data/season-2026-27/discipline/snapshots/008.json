@@ -1,0 +1,10 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 8,
+  "as_of": "2026-10-12",
+  "publishable": false,
+  "blocking_reasons": [
+    "Three J8 match cards/foul statistics require full source validation before verified status."
+  ],
+  "note": "Staging only; no public update. Preliminary values retained as pending match data."
+}

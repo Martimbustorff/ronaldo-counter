@@ -177,6 +177,46 @@
         }
       ],
       "notes": "Same physical match as the FC Porto perspective. Keep pending until named expert analysis reaches threshold; no zero inference."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "comparison_game_number": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "comparison_game_number": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "comparison_game_number": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "comparison_game_number": 9,
+      "tracked_club": "FC Porto",
+      "opponent": "Gil Vicente FC",
+      "review_status": "pending_evidence_review",
+      "notes": "J9 not finished (Benfica pending) and named-source match review incomplete. Candidate/disputed rows excluded; do not infer zero errors."
+    },
+    {
+      "match_id": "2026-10-25-sporting-academico",
+      "comparison_game_number": 9,
+      "tracked_club": "Sporting CP",
+      "opponent": "Académico de Viseu FC",
+      "review_status": "pending_evidence_review",
+      "notes": "J9 not finished (Benfica pending) and named-source match review incomplete. Candidate/disputed rows excluded; do not infer zero errors."
     }
   ],
   "already_complete_elsewhere": [
