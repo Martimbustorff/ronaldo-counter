@@ -866,6 +866,191 @@
       "sources": [],
       "conflicts": [],
       "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified."
+    },
+    {
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "comparison_game_number": 9,
+      "played_at": "2026-10-24",
+      "competition_round": 9,
+      "tracked_club": "FC Porto",
+      "opponent": "Gil Vicente FC",
+      "status": "completed",
+      "verification_status": "pending",
+      "resolved": {
+        "tracked_fouls": 16,
+        "opponent_fouls": 18
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Pablo Rosario",
+          "minute": "56",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Marvin Elimbi",
+          "minute": "84",
+          "card": "red"
+        }
+      ],
+      "sources": [
+        {
+          "id": "diadejogo-gil-porto-j9",
+          "independence_group": "Dia de Jogo",
+          "url": "https://diadejogo.pt/liga/1816439-gil-vicente-fc-porto",
+          "claims": {
+            "tracked_fouls": 16,
+            "opponent_fouls": 18,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "ofstats-gil-porto-j9",
+          "independence_group": "OFStats",
+          "url": "https://ofstats.com/matches/view/gil-vicente-porto-2026-10-24",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "zerozero-tribuna-gil-porto-j9",
+          "independence_group": "zerozero / Expresso Tribuna",
+          "url": "https://app.tribuna.expresso.pt/futebol-nacional/2026-10-24-em-direto-gil-vicente-0-1-fc-porto--terminado--f2069e6a",
+          "claims": {
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "vsports-gil-porto-j9",
+          "independence_group": "VSPORTS",
+          "url": "https://rr.vsports.pt/vod/132139/m/30429/rr/fafa4b904f2a0c1df4bd78fc49f971d8",
+          "claims": {
+            "opponent_player_dismissals": 1
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_fouls",
+          "status": "unresolved",
+          "reported_values": [
+            {
+              "source": "Dia de Jogo",
+              "value": 16
+            },
+            {
+              "source": "OFStats",
+              "value": 17
+            }
+          ],
+          "resolution_note": "Counts 16 and 17 for FC Porto. Values are provisional; check official Liga Portugal full match sheet or independent third source before publication."
+        },
+        {
+          "field": "opponent_fouls",
+          "status": "unresolved",
+          "reported_values": [
+            {
+              "source": "Dia de Jogo",
+              "value": 18
+            },
+            {
+              "source": "OFStats",
+              "value": 17
+            }
+          ],
+          "resolution_note": "Counts 18 and 17 for Gil Vicente. Source group independence and definition of foul need review; cannot verify at this stage."
+        }
+      ],
+      "notes": "J9 is incomplete until SL Benfica plays Santa Clara on 2026-10-26. DISCIPLINE only counts cards actually shown: red to Elimbi was DIRECT, not second-yellow; referee experts dispute appropriateness but this does not change official disciplinary card count. Foul numbers unresolved; resolved fields are provisional Dia de Jogo values and NOT public."
+    },
+    {
+      "match_id": "2026-10-25-sporting-academico",
+      "comparison_game_number": 9,
+      "played_at": "2026-10-25",
+      "competition_round": 9,
+      "tracked_club": "Sporting CP",
+      "opponent": "Académico de Viseu FC",
+      "status": "completed",
+      "verification_status": "pending",
+      "resolved": {
+        "tracked_fouls": 12,
+        "opponent_fouls": 11
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Luís Silva",
+          "minute": "9",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Cihan Kahraman",
+          "minute": "11",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Issa Doumbia",
+          "minute": "41",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Nils Mortimer",
+          "minute": "45+6",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Maximiliano Araújo",
+          "minute": "88",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Alejandro Mestanza",
+          "minute": "90+4",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "diadejogo-sporting-academico-j9",
+          "independence_group": "Dia de Jogo",
+          "url": "https://diadejogo.pt/liga/1816445-sporting-cp-academico-de-viseu",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "Pending independent full match-level second-source validation across all six public metrics; neither totals nor graphic may be published."
     }
   ]
 }
