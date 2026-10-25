@@ -404,6 +404,48 @@
         }
       ],
       "notes": "Single reviewer; excluded."
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red",
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "84",
+      "incident": "Marvin Elimbi shown direct red for foul on Pepê; two expert analysts conclude DOGSO criteria not met and caution (yellow) should have been shown instead.",
+      "direction": "for",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/expulsao-incorreta-no-gil-vicente-fc-porto-a-analise-de-pedro-henriques-2026102423450755827",
+          "verdict": "error_yellow_not_red"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Antunes",
+          "url": "https://rr.pt/bola-branca/noticia/amp/futebol-nacional/2026/10/24/nota-2-para-luis-godinho-arbitragem-manchada-pelo-vermelho/490610/",
+          "verdict": "error_no_clear_goal_scoring_opportunity"
+        }
+      ],
+      "notes": "Confirmed with two independent named expert families on Oct 25. Official shown card remains direct red in discipline. Not eligible for public snapshot until all played tracked matches fully reviewed."
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "73",
+      "incident": "Potential missing yellow for Santiago García challenge on Jan Bednarek.",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/expulsao-incorreta-no-gil-vicente-fc-porto-a-analise-de-pedro-henriques-2026102423450755827",
+          "verdict": "error_yellow_required"
+        }
+      ],
+      "notes": "Single named reviewer; awaiting independent assessment. Exclude from public totals."
     }
   ]
 }
