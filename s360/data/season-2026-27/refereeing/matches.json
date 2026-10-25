@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "J8 added as pending. Earlier 14-match backfill and J7/J8 outstanding checks block refereeing publication.",
+  "coverage_note": "As of 2026-10-25, Jornada 9 underway; FC Porto and Sporting completed, Benfica (Santa Clara away) scheduled 2026-10-26. Earlier backfill plus J7–J9 review incomplete, public refereeing withheld.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -297,6 +297,54 @@
       "review_status": "pending",
       "reviewed_sources": [],
       "notes": "J8 initial evidence recorded in staging; referee review incomplete; missing analyses do not imply no errors."
+    },
+    {
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "played_at": "2026-10-24",
+      "competition_round": 9,
+      "comparison_game_number": 9,
+      "tracked_club": "FC Porto",
+      "opponent": "Gil Vicente FC",
+      "status": "completed",
+      "review_status": "pending",
+      "reviewed_sources": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/expulsao-incorreta-no-gil-vicente-fc-porto-a-analise-de-pedro-henriques-2026102423450755827",
+          "usable_for_confirmation": true
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Antunes",
+          "url": "https://rr.pt/bola-branca/noticia/amp/futebol-nacional/2026/10/24/nota-2-para-luis-godinho-arbitragem-manchada-pelo-vermelho/490610/",
+          "usable_for_confirmation": true
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://rr.vsports.pt/vod/132139/m/30429/rr/fafa4b904f2a0c1df4bd78fc49f971d8",
+          "usable_for_confirmation": false
+        }
+      ],
+      "notes": "Confirmed internal Elimbi incorrect red and candidate missed yellow. Further named-source match review and backlog outstanding; no implicit zero."
+    },
+    {
+      "match_id": "2026-10-25-sporting-academico",
+      "played_at": "2026-10-25",
+      "competition_round": 9,
+      "comparison_game_number": 9,
+      "tracked_club": "Sporting CP",
+      "opponent": "Académico de Viseu FC",
+      "status": "completed",
+      "review_status": "pending",
+      "reviewed_sources": [
+        {
+          "source_family": "Dia de Jogo",
+          "url": "https://diadejogo.pt/liga/1816445-sporting-cp-academico-de-viseu",
+          "usable_for_confirmation": false
+        }
+      ],
+      "notes": "Current result/event record found, but no complete named-referee analysis or VAR source reviewed. Investigate 45m rescinded penalty and disallowed Viseu goal; no zero-error inference."
     }
   ]
 }
