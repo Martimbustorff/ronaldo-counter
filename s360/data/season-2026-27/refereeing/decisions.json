@@ -642,6 +642,144 @@
         }
       ],
       "notes": "2026-11-01: Pedro Henriques (A BOLA) plus Jorge Faustino and Marco Ferreira (Record) + José Leirós (O JOGO) support missed yellow; Jorge Coroado and Fortunato Azevedo (O JOGO) say no yellow, 4 vs 2 all named sources, 3 vs 2 among the O JOGO+Record reviewers in Verdade Desportiva. Classified DISPUTED conservatively pending any new named/official clarification; excluded from public confirmed totals."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-30m-andre-silva-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "30",
+      "incident": "André Silva contact on Luís Silva; caution not shown",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/a-analise-de-pedro-henriques-a-arbitragem-do-academico-de-viseu-fc-porto-2026082907333799612",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "3 error vs 3 no_error across 3 publishers. Excluded; no majority-based promotion."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-33m-froholdt-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "33",
+      "incident": "Froholdt jersey tug; missed caution",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        }
+      ],
+      "notes": "All three are O JOGO, one independent publisher family: keep candidate, not confirmed."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-35m-antonio-correia-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "35",
+      "incident": "António Correia contact on Pepê; missed caution",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        }
+      ],
+      "notes": "All three are O JOGO, one independent publisher family: keep candidate, not confirmed."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-57m-kahraman-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "57",
+      "incident": "Kahraman held Gabri Veiga shirt; caution not shown",
+      "direction": "against",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/a-analise-de-pedro-henriques-a-arbitragem-do-academico-de-viseu-fc-porto-2026082907333799612",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Independently supported by two editorial families, unanimity 3 named reviewers. Confirmed INTERNAL only until whole referee scope threshold complete. Does NOT alter actual on-field discipline yellows."
     }
   ]
 }
