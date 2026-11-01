@@ -1333,7 +1333,7 @@
         {
           "side": "opponent",
           "subject_type": "player",
-          "subject": "Welinton Torrão",
+          "subject": "Luís Fernando (Fernando Oliveira)",
           "minute": "post-final whistle",
           "card": "red"
         },
@@ -1385,7 +1385,8 @@
             "tracked_player_dismissals": 1,
             "opponent_player_yellows": 4,
             "opponent_player_dismissals": 1
-          }
+          },
+          "notes": "Live match event showed Torrão after whistle then late event appended Fernando; correct official recipient is Fernando. Source claim uses ONE Santa Clara player dismissal (not two)."
         },
         {
           "id": "flashscore-santa-clara-benfica-j9",
@@ -1463,15 +1464,20 @@
         {
           "field": "opponent_red_recipient",
           "status": "resolved",
-          "chosen_value": "Welinton Torrão",
+          "chosen_value": "Luís Fernando (Fernando Oliveira)",
           "observed_values": [
-            "Luís Fernando (initial liveblog)",
-            "Welinton Torrão (later full reports)"
+            "Welinton Torrão (early zerozero event, superseded)",
+            "Luís Fernando (SL Benfica match center quoting Liga official game sheet, A BOLA, FotMob and FPF discipline bulletin)"
           ],
-          "resolution_note": "Later full five-red breakdown identifies Welinton Torrão player plus Tiago Pinto staff for Santa Clara; A BOLA live event initially labeled Luís Fernando and another summary ambiguously showed both. Chosen recipient from detailed post-match reports; this does not alter 1 player dismissal."
+          "resolution_note": "Verified 2026-11-01 against SL Benfica official match center citing Liga Portugal match sheet, A BOLA 2026-10-29 report of FPF disciplinary map, and match-event records from FotMob/Sky Sports: Santa Clara player sent off after full whistle was Luís Fernando (Fernando Oliveira), NOT Welinton Torrão. zerozero earlier event wrongly recorded Torrão and later appended a Fernando red; no second Santa Clara player dismissal must be counted.",
+          "sources": [
+            "https://www.slbenfica.pt/pt-pt/futebol/match-center/santa-clara-benfica-26-outubro-2026",
+            "https://www.abola.pt/noticias/benfica-mario-branco-suspenso-20-dias-2026102914325018999",
+            "https://www.fotmob.com/pt-PT/matches/santa-clara-vs-benfica/12a7ny"
+          ]
         }
       ],
-      "notes": "S360 shown-card policy: Jhon Durán player yellow at 89' and direct red AFTER full-time count separately; red was NOT second yellow. Santa Clara also has one player red after full-time (Welinton Torrão, with early-source recipient naming dispute) and staff red Tiago Pinto. Benfica staff yellow Marco Silva, staff red assistant Gonçalo Santos and director Mário Branco, Santa Clara staff yellow Petit; staff events excluded from public player totals. Five dismissals across two clubs, including three staff. All post-whistle dismissals have zero on-field numeric impact. Source identity resolved by later detailed five-red reports: 1 player+2 staff Benfica and 1 player+1 staff Santa Clara; initial media identification of Santa Clara player still documented."
+      "notes": "S360 shown-card policy: Benfica Jhon Durán received a player yellow at 89' plus a separate DIRECT red AFTER full-time (not a second yellow); Santa Clara's Luís Fernando (Fernando Oliveira) also saw a direct red after the final whistle. Five reds in incident: two players (Durán and Luís Fernando) and three staff/director events (Benfica Gonçalo Santos and Mário Branco, Santa Clara Tiago Pinto). Benfica staff yellow Marco Silva, Santa Clara Petit staff yellow excluded. Identity dispute resolved in favor of Luís Fernando from club official match center citing Liga match sheet and FPF disciplinary bulletin, superseding earlier zerozero live rendering Welinton Torrão. None of the after-whistle reds changed on-field numbers."
     },
     {
       "match_id": "2026-10-30-casa-pia-sporting",
