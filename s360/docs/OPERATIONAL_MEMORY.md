@@ -175,3 +175,28 @@ J9 discipline social graphic generated from published J8 layout reference with e
 ### Next required gate
 
 Verify and ingest Benfica–Alverca after 2 Nov match; rebuild snapshot 010 only when all three clubs have played ten games and independent event verification passes. Continue backfilling historical refereeing evidence and close each reviewed tracked match under the named-source/official threshold before any public refereeing total.
+
+
+## 2026-11-01 late named-source review: Sporting J9 closed; Académico–FC Porto J4 backfill
+
+### Sporting CP 1–2 Académico de Viseu, 25 Oct 2026 (J9)
+- Referee: Miguel Nogueira; VAR: Luís Ferreira.
+- Full **13-incident** match sweep (8', 11', 16', 21', **22'**, 29', 36', 41', **45'**, 45+6', 74', 88', 90+4') against named assessments from **A BOLA (Pedro Henriques)**, **Record (Marco Ferreira, Jorge Faustino)**, **O JOGO (Coroado, Leirós, Fortunato)**, **Renascença Bola Branca**, plus match sheet/VSPORTS clips and Verdade Desportiva incident-index source attribution. Editorial independence counted per publication family rather than by number of reviewers.
+- **22' Suárez missed yellow:** Jorge Coroado requires yellow, José Leirós and Fortunato disagree; **DISPUTED** (1/3, one publication family), excluded.
+- **45' initially awarded Sporting penalty reverted by VAR:** Jorge Coroado calls the reversal wrong/penalty required, whereas Pedro Henriques, Marco Ferreira, Jorge Faustino, José Leirós and Fortunato Azevedo find the VAR correction appropriate (**5/6 no-error vs one dissent**); **DISPUTED** rather than treating majority as unanimity, excluded.
+- **29' disallowed Académico goal:** Record and O JOGO reviewers consider the throw-in illegal; A BOLA states available images cannot determine whether heel was on line. Record this as residual evidentiary uncertainty: no **confirmed** refereeing error, not a false zero inferred from absent review.
+- 36' main Verdade Desportiva match widget initially showed stale 'Em análise', but the incident-specific expert page and latest match page show **no penalty** from A BOLA, Record, O JOGO. Corrected based on primary sources.
+- All other match issues reviewed; match status changed from pending to **complete** after the thresholded full match sweep. Note: this DOES NOT make milestone referee totals public, as older and other matches remain pending.
+- Primary attribution: https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91 ; A BOLA https://www.abola.pt/noticias/o-golo-anulado-ao-academico-e-o-penalti-revertido-ao-sporting-pedro-henriques-analisa-os-casos-2026102601113914088 ; Renascença https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/25/nota-4-para-miguel-nogueira-muito-boa-arbitragem/490711/ ; VSPORTS https://vsports.pt/vsports/jogo/i-liga/sporting-academico/30427/destaques .
+
+### Académico de Viseu 0–3 FC Porto, 29 Aug 2026 (J4)
+- Older game now represented in explicit refereeing match-review dataset. Reviewed game/result/date via worldfootball and A BOLA; **still pending** for full closure (33'/35' need cross-publisher confirmation).
+- **30' André Silva missed yellow:** 3 pro and 3 against from A BOLA, Record and O JOGO — **DISPUTED**, excluded.
+- **33' Froholdt missed yellow** and **35' António Correia missed yellow**: all three O JOGO experts agree but they are one publication group — two **CANDIDATES**, excluded.
+- **57' Kahraman jersey hold on Gabri Veiga**: two independent editorial source groups (Pedro Henriques/A BOLA and Marco Ferreira & Jorge Faustino/Record), three agreeing reviewers — **CONFIRMED INTERNAL error AGAINST FC Porto**; excluded publicly until all tracked matches clear threshold.
+- Source incident URLs: https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df ; https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3 ; https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62 ; https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c .
+
+### Publication gate and builder correction
+- Current **round-9** referee review: **6 complete, 21 pending out of 27** tracked perspectives; round-10: **6 complete, 23 pending out of 29**. Public snapshots remain `publishable=false` and `public_totals={}`; no zero-error implication.
+- `build_refereeing_snapshot` previously summed lengths of `matches.json` and `pending-review.json` when **eight pending match_ids occurred in both**, double-counting scope. Fixed builder to use **union of unique match_ids**, preserving independently tracked club perspectives. Added regression test.
+- Discipline unchanged. Latest publishable common milestone still **J9**; Benfica–Alverca J10 scheduled **2 Nov 2026, 20:15 Lisbon**. Wait until it is completed and verified before any J10 public discipline comparison.
