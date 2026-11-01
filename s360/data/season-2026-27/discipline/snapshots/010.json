@@ -4,9 +4,7 @@
   "as_of": "2026-11-01",
   "publishable": false,
   "blocking_reasons": [
-    "SL Benfica: expected verified games 6,7,8,9,10 but got 6,7,8,9",
-    "Sporting CP: expected verified games 6,7,8,9,10 but got 6,7,8,9",
-    "2026-10-30-casa-pia-sporting: completed but not verified"
+    "SL Benfica: expected verified games 6,7,8,9,10 but got 6,7,8,9"
   ],
   "clubs": {
     "FC Porto": {
@@ -44,20 +42,20 @@
       }
     },
     "Sporting CP": {
-      "games": 9,
+      "games": 10,
       "team": {
-        "fouls": 107,
-        "player_yellows": 21,
-        "player_dismissals": 1,
-        "avg_fouls": 11.9,
-        "fouls_per_yellow": 5.1
-      },
-      "opponents": {
-        "fouls": 116,
+        "fouls": 122,
         "player_yellows": 23,
         "player_dismissals": 1,
-        "avg_fouls": 12.9,
-        "fouls_per_yellow": 5
+        "avg_fouls": 12.2,
+        "fouls_per_yellow": 5.3
+      },
+      "opponents": {
+        "fouls": 127,
+        "player_yellows": 25,
+        "player_dismissals": 1,
+        "avg_fouls": 12.7,
+        "fouls_per_yellow": 5.1
       }
     }
   }
