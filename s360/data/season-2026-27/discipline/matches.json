@@ -1487,9 +1487,9 @@
       "tracked_club": "Sporting CP",
       "opponent": "Casa Pia AC",
       "status": "completed",
-      "verification_status": "pending",
+      "verification_status": "verified",
       "resolved": {
-        "tracked_fouls": 14,
+        "tracked_fouls": 15,
         "opponent_fouls": 11
       },
       "cards": [
@@ -1526,15 +1526,16 @@
         {
           "id": "flashscore-casapia-sporting-j10",
           "independence_group": "Flashscore",
-          "url": "https://www.flashscore.pt/futebol/portugal/liga-portugal/",
+          "url": "https://www.flashscore.pt/jogo/futebol/casa-pia-QFHt9Zgs/sporting-cp-tljXuHBC/sumario/estatisticas/",
           "claims": {
-            "tracked_fouls": 14,
+            "tracked_fouls": 15,
             "opponent_fouls": 11,
             "tracked_player_yellows": 2,
             "tracked_player_dismissals": 0,
             "opponent_player_yellows": 2,
             "opponent_player_dismissals": 0
-          }
+          },
+          "notes": "Full-time match-specific stats checked on 2026-11-01; 15 Sporting fouls. Earlier source record had stale value 14 and non-match-specific URL."
         },
         {
           "id": "plaibook-casapia-sporting-j10",
@@ -1544,20 +1545,68 @@
             "tracked_fouls": 15,
             "opponent_fouls": 11
           }
+        },
+        {
+          "id": "zerozero-casapia-sporting-j10",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-30-casa-pia-ac-sporting/12278066",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Match stats table: Casa Pia 11 - Sporting 15 fouls; 2-2 shown yellow cards; no player reds, independently maintained events."
+        },
+        {
+          "id": "worldfootball-casapia-sporting-j10",
+          "independence_group": "worldfootball.net",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223804/casa-pia-ac_sporting-cp/team-statistics/",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Independent corroboration 11-15 fouls and 2-2 player yellows; source may share upstream metrics with Flashscore, so zerozero used as principal independent confirmation."
+        },
+        {
+          "id": "footballedge-casapia-sporting-j10",
+          "independence_group": "FootballEdge",
+          "url": "https://footballedge.io/pt/matches/casa-pia-vs-sporting-cp-2026-10-30",
+          "claims": {
+            "tracked_fouls": 14,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Dissenting 14-foul feed; xG and pass totals also disagree with Flashscore/zerozero, suggesting alternate/stale provider."
         }
       ],
       "conflicts": [
         {
           "field": "tracked_fouls",
-          "status": "unresolved",
+          "status": "resolved",
           "observed_values": [
             14,
             15
           ],
-          "resolution_note": "Preliminary 14 Sporting fouls versus Plaibook 15; resolve with official Liga Portugal before round 10 publication."
+          "chosen_value": 15,
+          "resolution_note": "On 2026-11-01, match-specific Flashscore and independent zerozero final full-match tables agree Sporting committed 15 fouls (Casa Pia 11); worldfootball match stats corroborate 15. Earlier cached/general Flashscore lookup and FootballEdge show 14; FootballEdge's different passes/xG suggest another methodology/stale final. Adopt 15 and retain 14 dissent; Liga Portugal match page currently exposes no foul table to text fetch. Two genuinely distinct source groups confirm adopted value.",
+          "sources": [
+            "https://www.flashscore.pt/jogo/futebol/casa-pia-QFHt9Zgs/sporting-cp-tljXuHBC/sumario/estatisticas/",
+            "https://www.zerozero.pt/live-ao-minuto/2026-10-30-casa-pia-ac-sporting/12278066",
+            "https://footballedge.io/pt/matches/casa-pia-vs-sporting-cp-2026-10-30"
+          ]
         }
       ],
-      "notes": "J10 played 30 Oct, Casa Pia 0-2 Sporting. Provisional foul/card interpretation; requires source-level reconciliation. Keep unpublished until Benfica's tenth game and full verification."
+      "notes": "J10 Casa Pia 0–2 Sporting (30 October). Verified 11–15 fouls, 2–2 player yellows (Silas Andersen and Maxi Araújo, David Sousa and Kaly), no player dismissals. Earlier 14-foul secondary feed preserved as resolved conflict. J10 infographic still blocked until SL Benfica plays and is verified."
     },
     {
       "match_id": "2026-10-31-fc-porto-estoril",
