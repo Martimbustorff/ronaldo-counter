@@ -28,7 +28,9 @@
       "comparison_game_number": 4,
       "tracked_club": "FC Porto",
       "opponent": "Académico de Viseu FC",
-      "review_status": "pending_backfill"
+      "review_status": "pending_evidence_review",
+      "notes": "4 incidents logged, 57' confirmed across A BOLA and Record, 30' disputed 3-3, 33'/35' still single publication family. Explicit evidence threshold incomplete. See refereeing/matches.json.",
+      "last_checked_at": "2026-11-01"
     },
     {
       "match_id": "2026-09-04-fc-porto-moreirense",
@@ -211,14 +213,6 @@
       "notes": "J9 Porto: Santi 73 confirmed after 4/4 independent A BOLA/Record reports; Elimbi 84 confirmed erroneous red; other match review stays pending."
     },
     {
-      "match_id": "2026-10-25-sporting-academico",
-      "comparison_game_number": 9,
-      "tracked_club": "Sporting CP",
-      "opponent": "Académico de Viseu FC",
-      "review_status": "pending_evidence_review",
-      "notes": "J9 reviewed A BOLA, Renascença, and O JOGO; further evidence threshold checks pending."
-    },
-    {
       "match_id": "2026-10-26-santa-clara-benfica",
       "played_at": "2026-10-26",
       "competition_round": 9,
@@ -254,7 +248,8 @@
     "2026-09-12-casa-pia-fc-porto",
     "2026-09-13-benfica-gil-vicente",
     "2026-09-13-famalicao-sporting",
-    "2026-09-19-sporting-arouca"
+    "2026-09-19-sporting-arouca",
+    "2026-10-25-sporting-academico"
   ],
   "source_for_fixture_backfill": "Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available.",
   "last_checked_at": "2026-11-01"
