@@ -426,14 +426,14 @@
         {
           "source_family": "Marco Ferreira / Record",
           "reviewer": "Marco Ferreira",
-          "url": "https://verdadedesportiva.pt/jogos/sporting-ac-viseu-2026-10-25",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
           "coverage": "Named Record appraisal as indexed in Verdade Desportiva match incidents",
           "usable_for_confirmation": true
         },
         {
           "source_family": "Jorge Faustino / Record",
           "reviewer": "Jorge Faustino",
-          "url": "https://verdadedesportiva.pt/jogos/sporting-ac-viseu-2026-10-25",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
           "coverage": "Record match incident review indexed in Verdade Desportiva; same publication family as Marco Ferreira",
           "usable_for_confirmation": true
         },
@@ -452,7 +452,7 @@
           "usable_for_confirmation": false
         }
       ],
-      "notes": "Full match incident sweep completed 2026-11-01: A BOLA (Pedro Henriques), RR VAR Bola Branca (José Leirós), Record named expert coverage indexed by Verdade Desportiva, O JOGO named panel, official Liga sheet and VSPORTS videos. All known penalty, goal, VAR and notable disciplinary incidents reviewed. The 29' throw-in remains visually inconclusive but no independently established refereeing mistake; retain narrative uncertainty rather than assign zero from unavailable analysis. 36' stale aggregator status reconciled to detailed unanimous no-penalty incident. No confirmed referee error for this tracked match after completed substantive evidence review. This is a positive reviewed outcome, not an inferred zero.",
+      "notes": "Match-level J9 expert review completed 2026-11-01 with 13 timestamped incidents, 4 named-source editorial families and official/VSPORTS evidence. Two contested sanctions explicitly retained as disputed: 22' Suárez (O JOGO panel 1 error/2 no error) and 45' overturned Sporting penalty (Jorge Coroado penalty required vs 5 independent reviewers saying VAR correct). 29' disallowed throw-in goal: A BOLA footage inconclusive vs Record/O JOGO panel correct; document uncertainty. No referee error CONFIRMED; disputed items excluded. Did not infer zero from absent analysis.",
       "review_last_checked_at": "2026-11-01",
       "searched_source_families": [
         "Pedro Henriques / A BOLA",
@@ -496,6 +496,13 @@
           "evidence": "A BOLA and Renascença independently"
         },
         {
+          "minute": "22",
+          "type": "Suárez foul on Ewerton without yellow",
+          "verdict": "disputed",
+          "evidence": "O JOGO Coroado says yellow missing; O JOGO Leirós and Fortunato say no yellow, 1 vs 2, only one editorial group",
+          "source_conflict": "Disciplinary severity contested within O JOGO; exclude from public errors"
+        },
+        {
           "minute": "29",
           "type": "Académico goal disallowed after illegal throw-in",
           "verdict": "no_confirmed_error",
@@ -518,8 +525,9 @@
         {
           "minute": "45",
           "type": "VAR reversal of initially awarded Sporting penalty",
-          "verdict": "correct_after_var",
-          "evidence": "Pedro Henriques/A BOLA and Renascença VAR Bola Branca; initial on-field penalty corrected before restart"
+          "verdict": "disputed",
+          "evidence": "VAR penalty reversal supported Pedro Henriques/A BOLA, Record Marco/Faustino and O JOGO Leirós/Fortunato; O JOGO Coroado dissents and says penalty should stand (5 no-error vs 1 error).",
+          "source_conflict": "Jorge Coroado/O JOGO rejects VAR reversal as wrong, whereas 5 reviewers across 3 editorial groups affirm it; keep disputed flag, not counted."
         },
         {
           "minute": "45+6",
