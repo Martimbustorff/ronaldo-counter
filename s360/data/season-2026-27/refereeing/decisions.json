@@ -780,6 +780,84 @@
         }
       ],
       "notes": "Independently supported by two editorial families, unanimity 3 named reviewers. Confirmed INTERNAL only until whole referee scope threshold complete. Does NOT alter actual on-field discipline yellows."
+    },
+    {
+      "decision_id": "2026-10-25-sporting-academico-22m-suarez-yellow",
+      "match_id": "2026-10-25-sporting-academico",
+      "tracked_club": "Sporting CP",
+      "minute": "22",
+      "incident": "Suárez contact on Académico goalkeeper Ewerton; foul given, caution disputed",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "error_yellow_required"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "1 vs 2 judgments, all same publication. Disputed (not zero, not confirmed); excluded."
+    },
+    {
+      "decision_id": "2026-10-25-sporting-academico-45m-reversed-penalty",
+      "match_id": "2026-10-25-sporting-academico",
+      "tracked_club": "Sporting CP",
+      "minute": "45",
+      "incident": "Sporting penalty reversed after VAR following Ewerton–Maxi collision",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "error_penalty_required"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/o-golo-anulado-ao-academico-e-o-penalti-revertido-ao-sporting-pedro-henriques-analisa-os-casos-2026102601113914088",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "5 no-error / 1 error across Record/A BOLA/O JOGO, majority favor correction but expert disagreement remains documented: disputed and excluded from public error totals."
     }
   ]
 }
