@@ -192,7 +192,7 @@
       "tracked_club": "FC Porto",
       "opponent": "CS Marítimo",
       "review_status": "pending_evidence_review",
-      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+      "notes": "J8 Porto: Froholdt 20 card split 3/5, remains disputed after A BOLA/Record/Renascença named reviews; match backfill incomplete."
     },
     {
       "match_id": "2026-10-11-benfica-vitoria-sc",
@@ -208,7 +208,7 @@
       "tracked_club": "FC Porto",
       "opponent": "Gil Vicente FC",
       "review_status": "pending_evidence_review",
-      "notes": "J9 fully played; confirmed Elimbi decision remains nonpublic until all match reviews; incomplete other named coverage."
+      "notes": "J9 Porto: Santi 73 confirmed after 4/4 independent A BOLA/Record reports; Elimbi 84 confirmed erroneous red; other match review stays pending."
     },
     {
       "match_id": "2026-10-25-sporting-academico",
@@ -246,7 +246,7 @@
       "tracked_club": "FC Porto",
       "opponent": "GD Estoril Praia",
       "review_status": "pending_evidence_review",
-      "notes": "J10 played. Renascença VAR Bola Branca review and VSPORTS highlights; independent expert cross-check pending."
+      "notes": "J10 Porto: Pedro Henriques/A BOLA, Record and O JOGO experts + Renascença now consulted. 82 Souza card disputed (4 supporting, 2 disagreeing); excluded. Match overall still pending full threshold."
     }
   ],
   "already_complete_elsewhere": [
