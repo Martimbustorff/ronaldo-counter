@@ -446,6 +446,101 @@
         }
       ],
       "notes": "Single named reviewer; awaiting independent assessment. Exclude from public totals."
+    },
+    {
+      "decision_id": "2026-10-26-santa-clara-benfica-48m-brenner-yellow",
+      "match_id": "2026-10-26-santa-clara-benfica",
+      "tracked_club": "SL Benfica",
+      "minute": "48",
+      "incident": "Brenner challenge on Alexander Bah should have been sanctioned by a yellow card.",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/penalti-golo-validado-e-duran-a-analise-de-pedro-henriques-ao-santa-clara-benfica-2026102623455767448",
+          "verdict": "missed_yellow"
+        }
+      ],
+      "notes": "Only one independent editorial group; Renascença summary did not identify this specific caution. Not included."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-4m-ofori-yellow",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "4",
+      "incident": "Ofori missed foul and yellow on Pedro Lima near edge of area.",
+      "direction": "against",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "missed_yellow_and_direct_free_kick"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_yellow_and_foul"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_yellow_and_foul"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_foul_but_no_yellow"
+        }
+      ],
+      "notes": "Confirmed error: missed foul and card endorsed by A BOLA Pedro Henriques and two O JOGO reviewers from independent editorial family; third O JOGO disagrees only on sanction severity. Club direction against Sporting because opponent should have been cautioned. Withheld from public referee totals until all tracked games in scope fully reviewed."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-45+2m-pedro-lima-yellow",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "45+2",
+      "incident": "Pedro Lima pulled Khaly; yellow not shown.",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "missed_yellow"
+        }
+      ],
+      "notes": "Single primary named source; excluded."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-70m-flavio-penalty",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "70",
+      "incident": "Possible missed penalty after contact of Khaly on Flávio Gonçalves in Casa Pia area.",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva / expert aggregation",
+          "url": "https://verdadedesportiva.pt/jornadas/2026-27/10",
+          "verdict": "analysts_divided"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "reviewed"
+        }
+      ],
+      "notes": "Genuine analyst disagreement; no public tally."
     }
   ]
 }
