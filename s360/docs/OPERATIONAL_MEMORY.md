@@ -126,3 +126,35 @@ These are eligible only after the whole refereeing snapshot becomes publishable:
 | Verdade Desportiva | Match-by-match decision aggregation and provenance |
 | VSPORTS | Match evidence / video incidents |
 | Official material | Liga Portugal, FPF, match sheets, disciplinary records, VAR/official communications where available |
+
+## 2026-11-01 review — J9 discipline publishable; J10 not yet equalised
+
+### Current comparison milestone 9 (as at 26 October 2026)
+
+J9 reached 9 games each (FC Porto, SL Benfica, Sporting CP). Match-level discipline 8/9 was reconciled through official match stats, player-event logs and independent sources; `discipline/snapshots/008.json` and `009.json` are deterministic and `publishable: true`. The last previously published J7 snapshot remains immutable.
+
+| Club | Team fouls | Team player yellows | Team reds | Opp. fouls | Opp. yellows | Opp. reds |
+|---|---:|---:|---:|---:|---:|---:|
+| FC Porto | 128 | 9 | 0 | 101 | 16 | 3 |
+| SL Benfica | 110 | 21 | 2 | 150 | 29 | 2 |
+| Sporting CP | 107 | 21 | 1 | 116 | 23 | 1 |
+
+#### Material resolved source conflicts
+
+- Gil Vicente–FC Porto (24 Oct, J9): earlier Dia de Jogo **16 Porto/18 Gil** versus official Liga Portugal/OFStats/Footlab **17–17**. Adopted **17–17** and retained dissent as conflict provenance.
+- Sporting–Académico (25 Oct, J9): early Dia de Jogo **12 Sporting/11 Académico**, whereas Liga Portugal and corroborating match stats **14/9**. Correct Sporting player yellows **2** (Doumbia, Maxi Araújo), opponent **4**. A secondary site displays 1 Sporting yellow; event audit confirms two.
+- Santa Clara–SL Benfica (26 Oct, J9): **17–13 fouls**, **4–5 player yellows**. Post-final direct-red player dismissals to **Jhon Durán** (Benfica) and **Welinton Torrão** (Santa Clara) are counted in S360 despite being absent from some feeds that freeze at final whistle. Durán had an earlier *separate yellow* at 89'; this is **not** a second-yellow dismissal. Other reds to staff/directors (Benfica: Mário Branco and Gonçalo Santos; Santa Clara: Tiago Pinto) are retained as staff, excluded from player totals. The early report that labelled the Santa Clara player red Luís Fernando was superseded by later full five-red reporting; retained in conflicts audit. These after-final reds did not reduce on-field player numbers.
+
+### J10 games and blockers
+
+- Casa Pia–Sporting (30 Oct): played; discipline event evidence staged `pending` due conflicting Sporting foul counts 14/15 pending further official check.
+- FC Porto–Estoril (31 Oct): played; discipline match appended with verified 13–7 foul and 1–0 player yellows.
+- SL Benfica–Alverca: scheduled **2 November 2026, 20:15 local Portugal**. No J10 three-club comparison yet. `discipline/snapshots/010.json` deliberately `publishable: false`.
+
+### Refereeing publication gate unchanged
+
+J9 and provisional J10 match/incident evidence is stored in `refereeing/matches.json`, `decisions.json` and `pending-review.json`. A confirmed incident in Gil Vicente–FC Porto (Elimbi incorrect direct red, beneficial to Porto) and J10 Casa Pia–Sporting (missed Ofori yellow/foul against Sporting) are **internal-only** until the entire tracked scope meets review threshold. Other J9/J10 incidents marked candidate or disputed do not affect public totals. 14 earlier comparison-match backfills plus the newer J7–J10 outstanding expert checks block **refereeing/snapshots/009.json** and **010.json**. Public totals intentionally empty, not zero. The match pending queues must be exhausted before publication.
+
+### Image policy
+
+J9 discipline social graphic generated from published J8 layout reference with exact original club crest crops, including the **Sporting CP white-lion shield from the original user-supplied J8 graphic**. Never regenerate a crest with ImageGen. Image was exported from the local run as `S360_Liga_Portugal_2026-27_Jornada_09_Disciplina.png`; source datasets and snapshots are in GitHub branch pending PR review. Link artifact in the user notification.
