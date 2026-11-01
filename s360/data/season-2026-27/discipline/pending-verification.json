@@ -1,22 +1,9 @@
 {
   "season": "2026-27",
   "purpose": "Completed tracked matches that are not yet safe to merge into discipline/matches.json because the public foul/card metrics have not been independently verified to the S360 threshold.",
-  "matches": [
-    {
-      "match_id": "2026-10-30-casa-pia-sporting",
-      "played_at": "2026-10-30",
-      "comparison_game_number": 10,
-      "tracked_club": "Sporting CP",
-      "status": "completed",
-      "verification_status": "pending",
-      "issue": "Sporting foul count 14 vs 15 in differing feeds; official round-10 match sheet still needs cross-check.",
-      "sources": [
-        "Flashscore",
-        "Plaibook"
-      ]
-    }
-  ],
+  "matches": [],
   "last_cleared_milestone": 9,
   "last_cleared_at": "2026-11-01",
-  "note": "J9 discipline match-level data reconciled with official and independent sources; J10 partial (Porto and Sporting have played; Benfica plays Nov 2), with Sporting foul-count disagreement awaiting reconciliation. Do not infer J10 totals."
+  "note": "All currently played tracked J10 discipline matches (FC Porto and Sporting CP) verified. SL Benfica J10 versus Alverca remains scheduled for 2026-11-02 20:15; no J10 public snapshot until all clubs play. Sporting foul discrepancy 14 vs 15 resolved with match-specific Flashscore/zerozero in discipline/matches.json.",
+  "last_checked_at": "2026-11-01"
 }
