@@ -114,8 +114,10 @@
       "2026-09-12-casa-pia-fc-porto-1m-penalty",
       "2026-10-09-braga-sporting-48m-doumbia-handball",
       "2026-10-10-maritimo-porto-20m-froholdt",
-      "2026-08-29-academico-fc-porto-30m-andre-silva-yellow"
+      "2026-08-29-academico-fc-porto-30m-andre-silva-yellow",
+      "2026-10-25-sporting-academico-22m-suarez-yellow",
+      "2026-10-25-sporting-academico-45m-reversed-penalty"
     ]
   },
-  "note": "2026-11-01 latest: Sporting–Académico J9 complete after named-source, official, and VSPORTS incident sweep; Académico–Porto J4 evidence backfilled (Kahraman 57' confirmed internally, Andre Silva 30' disputed, Froholdt 33'/Correia 35' candidate). 21 tracked perspectives still pending; empty public_totals means WITHHELD, not zero errors."
+  "note": "2026-11-01 latest: Sporting–Académico J9 complete after named-source, official, and VSPORTS incident sweep; Académico–Porto J4 evidence backfilled (Kahraman 57' confirmed internally, Andre Silva 30' disputed, Froholdt 33'/Correia 35' candidate). 21 tracked perspectives still pending; empty public_totals means WITHHELD, not zero errors. Sporting J9 dissent at 22' (1/3 O JOGO) and 45' (1/6 cross-group) explicitly disputed, excluded."
 }
