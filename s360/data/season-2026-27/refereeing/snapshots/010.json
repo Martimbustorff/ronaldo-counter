@@ -94,6 +94,11 @@
       "decision_id": "2026-10-30-casa-pia-sporting-4m-ofori-yellow",
       "tracked_club": "Sporting CP",
       "direction": "against"
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
     }
   ],
   "excluded_unconfirmed_decisions": {
@@ -106,7 +111,6 @@
       "2026-09-19-sporting-arouca-28m-missed-yellow",
       "2026-10-09-braga-sporting-20m-missed-yellow",
       "2026-10-11-benfica-vitoria-9m-penalty",
-      "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
       "2026-10-26-santa-clara-benfica-48m-brenner-yellow",
       "2026-10-30-casa-pia-sporting-45+2m-pedro-lima-yellow"
     ],
@@ -115,8 +119,9 @@
       "2026-09-12-casa-pia-fc-porto-1m-penalty",
       "2026-10-09-braga-sporting-48m-doumbia-handball",
       "2026-10-10-maritimo-porto-20m-froholdt",
-      "2026-10-30-casa-pia-sporting-70m-flavio-penalty"
+      "2026-10-30-casa-pia-sporting-70m-flavio-penalty",
+      "2026-10-31-fc-porto-estoril-82m-souza-yellow"
     ]
   },
-  "note": "No public refereeing totals while any played tracked match in scope remains pending. The queue is audited; duplicate entries in reviewed/pending store are deduplicated for coverage counts. No-error verdict never inferred from missing analysis."
+  "note": "Public totals intentionally empty because played tracked matches still await review. Latest 2026-11-01 evidence: Santi J9 unanimous missed yellow confirmed internally; Souza J10 disputed 4 vs 2 named expert judgments, excluded. Candidate and disputed counts are never public counts."
 }
