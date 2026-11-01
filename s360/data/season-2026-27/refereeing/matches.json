@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "As of 2026-10-25, Jornada 9 underway; FC Porto and Sporting completed, Benfica (Santa Clara away) scheduled 2026-10-26. Earlier backfill plus J7–J9 review incomplete, public refereeing withheld.",
+  "coverage_note": "As of 2026-11-01, comparison J9 all three played, J10 Porto and Sporting played, Benfica-Alverca scheduled 2026-11-02. 14 earlier games still in backfill, J7 classic and J8-J10 referee reviews not fully closed. Public referee snapshot blocked; absence of expert reporting is not zero errors.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -324,9 +324,35 @@
           "source_family": "VSPORTS",
           "url": "https://rr.vsports.pt/vod/132139/m/30429/rr/fafa4b904f2a0c1df4bd78fc49f971d8",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/9/4",
+          "usable_for_confirmation": false,
+          "coverage": "Official result, player cards"
+        },
+        {
+          "source_family": "Verdade Desportiva",
+          "url": "https://verdadedesportiva.pt/jornadas/2026-27/9",
+          "usable_for_confirmation": false,
+          "coverage": "Match incident index; independent primary review outstanding"
         }
       ],
-      "notes": "Confirmed internal Elimbi incorrect red and candidate missed yellow. Further named-source match review and backlog outstanding; no implicit zero."
+      "notes": "Elimbi direct red remains confirmed error with independent A BOLA and Renascença expert analyses; a different missed caution remains candidate. Need full Record/O JOGO and remaining incidents; pending.",
+      "review_last_checked_at": "2026-11-01",
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF official material"
+      ]
     },
     {
       "match_id": "2026-10-25-sporting-academico",
@@ -342,9 +368,200 @@
           "source_family": "Dia de Jogo",
           "url": "https://diadejogo.pt/liga/1816445-sporting-cp-academico-de-viseu",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-10-26",
+          "url": "https://www.abola.pt/noticias/o-golo-anulado-ao-academico-e-o-penalti-revertido-ao-sporting-pedro-henriques-analisa-os-casos-2026102601113914088",
+          "usable_for_confirmation": true,
+          "coverage": "Full incident review; VAR penalty correction, disallowed goal, yellow incidents"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "José Leirós",
+          "published_at": "2026-10-25",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/25/nota-4-para-miguel-nogueira-muito-boa-arbitragem/490711/",
+          "usable_for_confirmation": true,
+          "coverage": "Four penalty-area events and major disciplinary judgments"
+        },
+        {
+          "source_family": "O JOGO tribunal / Verdade Desportiva",
+          "reviewer": "Jorge Coroado, José Leirós, Fortunato Azevedo",
+          "published_at": "2026-10-26",
+          "url": "https://verdadedesportiva.pt/lances/ffef9023-cb3a-4214-a142-befa83fe2628",
+          "usable_for_confirmation": true,
+          "coverage": "Minute 88 Maxi yellow corroborated, no error"
         }
       ],
-      "notes": "Current result/event record found, but no complete named-referee analysis or VAR source reviewed. Investigate 45m rescinded penalty and disallowed Viseu goal; no zero-error inference."
+      "notes": "Incident review updated 2026-11-01: 16' possible handball no penalty, 45' reversed penalty confirmed correct, 74' goal legal, 88' yellow correct per named experts. Further source-family coverage and complete review threshold not yet signed off; do not infer zero.",
+      "review_last_checked_at": "2026-11-01",
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF official material"
+      ]
+    },
+    {
+      "match_id": "2026-10-26-santa-clara-benfica",
+      "played_at": "2026-10-26",
+      "competition_round": 9,
+      "comparison_game_number": 9,
+      "tracked_club": "SL Benfica",
+      "opponent": "CD Santa Clara",
+      "status": "completed",
+      "result": "CD Santa Clara 1-2 SL Benfica",
+      "referee": "Cláudio Pereira",
+      "review_status": "pending",
+      "reviewed_sources": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-10-27",
+          "url": "https://www.abola.pt/noticias/penalti-golo-validado-e-duran-a-analise-de-pedro-henriques-ao-santa-clara-benfica-2026102623455767448",
+          "usable_for_confirmation": true,
+          "coverage": "Full review incl 30 penalty, 48 missed Brenner caution, 64 penalty appeal, 68 hand, 90+3 yellow"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Rocha",
+          "published_at": "2026-10-26",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/26/nota-3-para-claudio-pereira-lances-decisivos-foram-bem-decididos/490840/",
+          "usable_for_confirmation": true,
+          "coverage": "Key decisions affirmed; general disciplinary management criticized"
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://vsports.pt/",
+          "usable_for_confirmation": false,
+          "coverage": "Post-match red card video; cannot assign refereeing error without matching expert verdict"
+        }
+      ],
+      "notes": "Check 30' penalty for Santa Clara, 34' play-on, 48' Brenner missed caution candidate, 64' Bah fall not penalty, 68' Lukébakio shoulder not handball, 90+3' caution vs possible DOGSO; after-full-time red Durán remains disciplinary event, justification disputed. No confirmed new refereeing error yet.",
+      "review_last_checked_at": "2026-11-01",
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF official material"
+      ]
+    },
+    {
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "played_at": "2026-10-30",
+      "competition_round": 10,
+      "comparison_game_number": 10,
+      "tracked_club": "Sporting CP",
+      "opponent": "Casa Pia AC",
+      "status": "completed",
+      "result": "Casa Pia AC 0-2 Sporting CP",
+      "referee": "Miguel Fonseca",
+      "review_status": "pending",
+      "reviewed_sources": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-10-31",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "usable_for_confirmation": true,
+          "coverage": "4m Ofori yellow; 45+2 Pedro Lima; 46m and 70m penalty incidents; 60m Andersen yellow not justified"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "Jorge Coroado, José Leirós, Fortunato Azevedo",
+          "published_at": "2026-10-31",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "usable_for_confirmation": true,
+          "coverage": "4m Ofori two analysts missed yellow, third dissent technical-only; inter-editorial agreement with A BOLA"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Rocha",
+          "published_at": "2026-10-30",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/30/nota-3-para-miguel-fonseca-arbitro-nao-teve-influencia-no-resultado/491480/",
+          "usable_for_confirmation": true,
+          "coverage": "No result-determinative error, four shown yellows proper, no Silas second yellow"
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://sporting.vsports.pt/vod/132645/m/45343/vsports/458fa8f7bd4bea73c8a3a887cd28bad6",
+          "usable_for_confirmation": false,
+          "coverage": "Match video/incident reference"
+        }
+      ],
+      "notes": "4m Ofori missed yellow: A BOLA and 2 O JOGO reviewers agree, confirmed under 2 independent editorial families. 45+2 missed yellow Pedro Lima candidate. 70m Flávio Gonçalves penalty disputed; second yellow for Silas Andersen not justified. More named-source review pending; refereeing snapshot blocked.",
+      "review_last_checked_at": "2026-11-01",
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF official material"
+      ]
+    },
+    {
+      "match_id": "2026-10-31-fc-porto-estoril",
+      "played_at": "2026-10-31",
+      "competition_round": 10,
+      "comparison_game_number": 10,
+      "tracked_club": "FC Porto",
+      "opponent": "GD Estoril Praia",
+      "status": "completed",
+      "result": "FC Porto 4-0 GD Estoril Praia",
+      "referee": "Miguel Nogueira",
+      "review_status": "pending",
+      "reviewed_sources": [
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Antunes",
+          "published_at": "2026-10-31",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/31/nota-4-para-miguel-nogueira-arbitragem-de-excelencia/491576/",
+          "usable_for_confirmation": true,
+          "coverage": "25 hand, 34 yellow, 44 challenge, 59 penalty claim; all considered correct"
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://fcporto.vsports.pt/vod/132760/m/30436/fcp/be4ae61c0bbb884e86f2d8abe1082417",
+          "usable_for_confirmation": false,
+          "coverage": "Match highlights; not independently an expert verdict"
+        }
+      ],
+      "notes": "Tiago Antunes/Renascença: 25' hand by body side no penalty; 34' Bednarek yellow correct; 44' Gabri Veiga fall no foul; 59' Samu fall no foul. Await further independent named reviews before closing; no zero-error inference.",
+      "review_last_checked_at": "2026-11-01",
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF official material"
+      ]
     }
   ]
 }
