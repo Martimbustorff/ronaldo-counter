@@ -752,7 +752,7 @@
         {
           "id": "zerozero-braga-sporting-j8",
           "independence_group": "zerozero",
-          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-09-sc-braga-sporting/12278035",
+          "url": "https://www.zerozero.pt/jogo/2026-10-09-sc-braga-sporting/12278035",
           "claims": {
             "tracked_fouls": 10,
             "opponent_fouls": 11,
@@ -945,7 +945,7 @@
         {
           "id": "zerozero-benfica-vitoria-j8",
           "independence_group": "zerozero",
-          "url": "https://www.zerozero.pt/jogo/2026-10-11-benfica-vitoria-sc/12278035",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-11-benfica-vitoria-sc/12278047",
           "claims": {
             "tracked_fouls": 9,
             "opponent_fouls": 23,
@@ -1418,13 +1418,12 @@
           "independence_group": "A BOLA",
           "url": "https://www.abola.pt/futebol/jogo/santa-clara-benfica-11216326/liveblog",
           "claims": {
-            "tracked_fouls": 13,
-            "opponent_fouls": 17,
             "tracked_player_yellows": 5,
             "tracked_player_dismissals": 1,
             "opponent_player_yellows": 4,
             "opponent_player_dismissals": 1
-          }
+          },
+          "notes": "Live-blog reports two player reds but initially mislabels Santa Clara recipient Fernando; later identified Torrão."
         },
         {
           "id": "errosdearbitragem-santa-clara-benfica-j9",
@@ -1472,7 +1471,7 @@
           "resolution_note": "Later full five-red breakdown identifies Welinton Torrão player plus Tiago Pinto staff for Santa Clara; A BOLA live event initially labeled Luís Fernando and another summary ambiguously showed both. Chosen recipient from detailed post-match reports; this does not alter 1 player dismissal."
         }
       ],
-      "notes": "S360 shown-card policy: Jhon Durán player yellow at 89' and direct red AFTER full-time count separately; red was NOT second yellow. Santa Clara also has one player red after full-time (Welinton Torrão, with early-source recipient naming dispute) and staff red Tiago Pinto. Benfica staff yellow Marco Silva, staff red assistant Gonçalo Santos and director Mário Branco, Santa Clara staff yellow Petit; staff events excluded from public player totals. Five dismissals across two clubs, including three staff. All post-whistle dismissals have zero on-field numeric impact."
+      "notes": "S360 shown-card policy: Jhon Durán player yellow at 89' and direct red AFTER full-time count separately; red was NOT second yellow. Santa Clara also has one player red after full-time (Welinton Torrão, with early-source recipient naming dispute) and staff red Tiago Pinto. Benfica staff yellow Marco Silva, staff red assistant Gonçalo Santos and director Mário Branco, Santa Clara staff yellow Petit; staff events excluded from public player totals. Five dismissals across two clubs, including three staff. All post-whistle dismissals have zero on-field numeric impact. Source identity resolved by later detailed five-red reports: 1 player+2 staff Benfica and 1 player+1 staff Santa Clara; initial media identification of Santa Clara player still documented."
     },
     {
       "match_id": "2026-10-30-casa-pia-sporting",
