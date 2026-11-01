@@ -85,6 +85,11 @@
       "decision_id": "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red",
       "tracked_club": "FC Porto",
       "direction": "for"
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
     }
   ],
   "excluded_unconfirmed_decisions": {
@@ -97,7 +102,6 @@
       "2026-09-19-sporting-arouca-28m-missed-yellow",
       "2026-10-09-braga-sporting-20m-missed-yellow",
       "2026-10-11-benfica-vitoria-9m-penalty",
-      "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
       "2026-10-26-santa-clara-benfica-48m-brenner-yellow"
     ],
     "disputed": [
@@ -107,5 +111,5 @@
       "2026-10-10-maritimo-porto-20m-froholdt"
     ]
   },
-  "note": "No public refereeing totals while any played tracked match in scope remains pending. The queue is audited; duplicate entries in reviewed/pending store are deduplicated for coverage counts. No-error verdict never inferred from missing analysis."
+  "note": "Public totals intentionally empty because played tracked matches still await review. Latest 2026-11-01 evidence: Santi J9 unanimous missed yellow confirmed internally; Souza J10 disputed 4 vs 2 named expert judgments, excluded. Candidate and disputed counts are never public counts."
 }
