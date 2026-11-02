@@ -4,6 +4,6 @@
   "matches": [],
   "last_cleared_milestone": 9,
   "last_cleared_at": "2026-11-01",
-  "note": "All currently played tracked J10 discipline matches (FC Porto and Sporting CP) verified. SL Benfica J10 versus Alverca remains scheduled for 2026-11-02 20:15; no J10 public snapshot until all clubs play. Sporting foul discrepancy 14 vs 15 resolved with match-specific Flashscore/zerozero in discipline/matches.json.",
-  "last_checked_at": "2026-11-01"
+  "note": "All played tracked J10 discipline matches (Sporting and FC Porto) verified through independent match-source families; Sporting 15 vs 14 foul conflict resolved in matches.json. Benfica–Alverca scheduled 2026-11-02 at 20:15 local Portugal, not played at 00:08 UTC. J10 public snapshot remains blocked until that game is complete and independently verified.",
+  "last_checked_at": "2026-11-02"
 }
