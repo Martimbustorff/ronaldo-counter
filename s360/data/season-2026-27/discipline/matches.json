@@ -687,6 +687,992 @@
       ],
       "conflicts": [],
       "notes": "Same physical match as the FC Porto perspective, side-inverted for deterministic club comparison. Lenglet second-yellow counts as a shown yellow plus a Benfica player dismissal."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-09",
+      "competition_round": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 10,
+        "opponent_fouls": 11
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Flávio Gonçalves",
+          "minute": "89",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Sergio Barcia",
+          "minute": "88",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "j8-provisional-0",
+          "independence_group": "WorldSoccerData",
+          "url": "https://www.worldsoccerdata.com/stats/portugal/liga-portugal/matches/sc-braga-vs-sporting-cp-09-10-2026",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-1",
+          "independence_group": "BettingOdds",
+          "url": "https://www.bettingodds.com/football/liga-portugal/09-10-2026/sc-braga-vs-sporting-cp",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-2",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-09-sc-braga-sporting/12278035",
+          "claims": {}
+        },
+        {
+          "id": "liga-braga-sporting-j8",
+          "independence_group": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/8/3",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 1,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "zerozero-braga-sporting-j8",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/jogo/2026-10-09-sc-braga-sporting/12278035",
+          "claims": {
+            "tracked_fouls": 10,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 1,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified. Reconciled 2026-11-01: official Liga Portugal match metrics and zerozero match event record; only player yellows counted."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-10",
+      "competition_round": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 15,
+        "opponent_fouls": 15
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Alan Varela",
+          "minute": "36",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Pepê",
+          "minute": "57",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Igor Julião",
+          "minute": "87",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "j8-provisional-0",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/jogo/2026-10-10-maritimo-fc-porto/12278041",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-1",
+          "independence_group": "Footlab",
+          "url": "https://footlab-data.com/primeira-liga/match/maritimo-fc-porto-2026-10-11",
+          "claims": {}
+        },
+        {
+          "id": "j8-provisional-2",
+          "independence_group": "SofaScore",
+          "url": "https://www.sofascore.com/football/match/cs-maritimo-fc-porto/ckbshkb",
+          "claims": {}
+        },
+        {
+          "id": "golmera-maritimo-porto-j8",
+          "independence_group": "Golmera",
+          "url": "https://golmera.com/match/maritimo-vs-fc-porto/2026-10-10/1575515",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 1,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "predictstats-maritimo-porto-j8",
+          "independence_group": "PredictStats",
+          "url": "https://predictstats.com/pt/matches/1575515/maritimo-vs-fc-porto",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 1,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "playerstats-maritimo-porto-j8",
+          "independence_group": "PlayerStats",
+          "url": "https://playerstats.football/fixture/maritimo/porto/2026-10-10",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 1,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified. Reconciled 2026-11-01: 15-15 fouls, 1-2 player yellows, no dismissals, cross-checked against three published match statistics/event records."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "comparison_game_number": 8,
+      "played_at": "2026-10-11",
+      "competition_round": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 9,
+        "opponent_fouls": 23
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Leandro Barreiro",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Tomás Araújo",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Tony Strata",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Gonçalo Nogueira",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Toni Borevković",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Samu (Fábio Samuel Amorim Silva)",
+          "minute": "unknown",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Thiago Balieiro",
+          "minute": "unknown",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "liga-benfica-vitoria-j8",
+          "independence_group": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/8/9?tab=match_timeline",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 23,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "zerozero-benfica-vitoria-j8",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-11-benfica-vitoria-sc/12278047",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 23,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "flashscore-benfica-vitoria-j8",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.pt/futebol/portugal/liga-portugal/",
+          "claims": {
+            "tracked_fouls": 9,
+            "opponent_fouls": 23,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 5,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "J8 preview import, NOT independently revalidated in this commit. Reconfirm event details, source claims and independence before marking verified. Reconciled 2026-11-01: official Liga Portugal match stats 9-23 fouls and 2-5 player yellows; player events cross-checked with match logs; event minute not always known."
+    },
+    {
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "comparison_game_number": 9,
+      "played_at": "2026-10-24",
+      "competition_round": 9,
+      "tracked_club": "FC Porto",
+      "opponent": "Gil Vicente FC",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 17,
+        "opponent_fouls": 17
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Pablo Rosario",
+          "minute": "56",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Marvin Elimbi",
+          "minute": "84",
+          "card": "red"
+        }
+      ],
+      "sources": [
+        {
+          "id": "diadejogo-gil-porto-j9",
+          "independence_group": "Dia de Jogo",
+          "url": "https://diadejogo.pt/liga/1816439-gil-vicente-fc-porto",
+          "claims": {
+            "tracked_fouls": 16,
+            "opponent_fouls": 18,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "ofstats-gil-porto-j9",
+          "independence_group": "OFStats",
+          "url": "https://ofstats.com/matches/view/gil-vicente-porto-2026-10-24",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "zerozero-tribuna-gil-porto-j9",
+          "independence_group": "zerozero / Expresso Tribuna",
+          "url": "https://app.tribuna.expresso.pt/futebol-nacional/2026-10-24-em-direto-gil-vicente-0-1-fc-porto--terminado--f2069e6a",
+          "claims": {
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "vsports-gil-porto-j9",
+          "independence_group": "VSPORTS",
+          "url": "https://rr.vsports.pt/vod/132139/m/30429/rr/fafa4b904f2a0c1df4bd78fc49f971d8",
+          "claims": {
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "liga-gil-porto-j9",
+          "independence_group": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/9/4?tab=match_formations",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "footlab-gil-porto-j9",
+          "independence_group": "Footlab",
+          "url": "https://footlab-data.com/pt/primeira-liga/match/gil-vicente-fc-porto-2026-10-24",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        },
+        {
+          "id": "jogosdehoje-gil-porto-j9",
+          "independence_group": "Jogos de Hoje",
+          "url": "https://www.jogosdehoje.eu.com/football/matches/2604557/gil-vicente-vs-fc-porto",
+          "claims": {
+            "tracked_fouls": 17,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 1
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_fouls",
+          "status": "resolved",
+          "resolution_note": "Resolved 2026-11-01: official Liga Portugal 17-17, independently corroborated by Footlab, OFStats and Jogos de Hoje. Earlier Dia de Jogo 16-18 feed is not adopted.",
+          "chosen_value": 17,
+          "observed_values": [
+            16,
+            17
+          ]
+        },
+        {
+          "field": "opponent_fouls",
+          "status": "resolved",
+          "resolution_note": "Resolved 2026-11-01: official Liga Portugal 17-17, independently corroborated by Footlab, OFStats and Jogos de Hoje. Earlier Dia de Jogo 16-18 feed is not adopted.",
+          "chosen_value": 17,
+          "observed_values": [
+            18,
+            17
+          ]
+        }
+      ],
+      "notes": "Official Liga Portugal and additional sources resolve 17-17 fouls. Pablo Rosario player yellow 56'; Marvin Elimbi 84' direct red, not second yellow. Previously asserted 16-18 was provisional and rejected."
+    },
+    {
+      "match_id": "2026-10-25-sporting-academico",
+      "comparison_game_number": 9,
+      "played_at": "2026-10-25",
+      "competition_round": 9,
+      "tracked_club": "Sporting CP",
+      "opponent": "Académico de Viseu FC",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 14,
+        "opponent_fouls": 9
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Luís Silva",
+          "minute": "9",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Cihan Kahraman",
+          "minute": "11",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Issa Doumbia",
+          "minute": "41",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Nils Mortimer",
+          "minute": "45+6",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Maximiliano Araújo",
+          "minute": "88",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Alejandro Mestanza",
+          "minute": "90+4",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "diadejogo-sporting-academico-j9",
+          "independence_group": "Dia de Jogo",
+          "url": "https://diadejogo.pt/liga/1816445-sporting-cp-academico-de-viseu",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "liga-sporting-academico-j9",
+          "independence_group": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/9/8",
+          "claims": {
+            "tracked_fouls": 14,
+            "opponent_fouls": 9,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "scoreshark-sporting-academico-j9",
+          "independence_group": "ScoreShark",
+          "url": "https://www.scoreshark.io/fr/football/matchs/sporting-cp-academico-viseu-portugal-2026-10-25",
+          "claims": {
+            "tracked_fouls": 14,
+            "opponent_fouls": 9,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "promatch24-sporting-academico-j9",
+          "independence_group": "ProMatch24",
+          "url": "https://promatch24.com/match/745180/",
+          "claims": {
+            "tracked_fouls": 14,
+            "opponent_fouls": 9,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_fouls",
+          "status": "resolved",
+          "chosen_value": 14,
+          "observed_values": [
+            12,
+            14
+          ],
+          "resolution_note": "Official Liga Portugal and ProMatch24: Sporting 14; earlier Dia de Jogo 12 is stale."
+        },
+        {
+          "field": "opponent_fouls",
+          "status": "resolved",
+          "chosen_value": 9,
+          "observed_values": [
+            11,
+            9
+          ],
+          "resolution_note": "Official Liga Portugal and ProMatch24: Académico 9; earlier Dia de Jogo 11 is stale."
+        }
+      ],
+      "notes": "Reconciled 2026-11-01 against Liga Portugal official (14-9 fouls, 2-4 player yellows) and independent event logs (Doumbia 41', Maxi Araújo 88'; Luís Silva, Kahraman, Mortimer, Mestanza). No reds. Ignore a stale one-yellow source: official timeline records both Sporting yellows."
+    },
+    {
+      "match_id": "2026-10-26-santa-clara-benfica",
+      "comparison_game_number": 9,
+      "played_at": "2026-10-26",
+      "competition_round": 9,
+      "tracked_club": "SL Benfica",
+      "opponent": "CD Santa Clara",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 13,
+        "opponent_fouls": 17
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Alexander Bah",
+          "minute": "8",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Vangelis Pavlidis",
+          "minute": "59",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Fredrik Aursnes",
+          "minute": "74",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Samuel Dahl",
+          "minute": "88",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Jhon Durán",
+          "minute": "89",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Emanuel Moreira",
+          "minute": "36",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Pedro Pacheco",
+          "minute": "40",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Guilherme Romão",
+          "minute": "90",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "João Vasconcelos",
+          "minute": "90+3",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Jhon Durán",
+          "minute": "post-final whistle",
+          "card": "red"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Luís Fernando (Fernando Oliveira)",
+          "minute": "post-final whistle",
+          "card": "red"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Marco Silva",
+          "minute": "10",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "staff",
+          "subject": "Petit",
+          "minute": "69",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Gonçalo Santos (assistant coach)",
+          "minute": "post-final whistle",
+          "card": "red"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Mário Branco (football director)",
+          "minute": "post-final whistle",
+          "card": "red"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "staff",
+          "subject": "Tiago Pinto (assistant coach)",
+          "minute": "post-final whistle",
+          "card": "red"
+        }
+      ],
+      "sources": [
+        {
+          "id": "zerozero-santa-clara-benfica-j9",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-26-santa-clara-benfica/12278115",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 1
+          },
+          "notes": "Live match event showed Torrão after whistle then late event appended Fernando; correct official recipient is Fernando. Source claim uses ONE Santa Clara player dismissal (not two)."
+        },
+        {
+          "id": "flashscore-santa-clara-benfica-j9",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.pt/jogo/futebol/benfica-zBkyuyRI/santa-clara-YmQyLBJf/sumario/estatisticas/",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "kadario-santa-clara-benfica-j9",
+          "independence_group": "Kadario",
+          "url": "https://kadario.com/pt_BR/football/matches/2604562/santa-clara-vs-benfica",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "abola-santa-clara-benfica-j9",
+          "independence_group": "A BOLA",
+          "url": "https://www.abola.pt/futebol/jogo/santa-clara-benfica-11216326/liveblog",
+          "claims": {
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 1
+          },
+          "notes": "Live-blog reports two player reds but initially mislabels Santa Clara recipient Fernando; later identified Torrão."
+        },
+        {
+          "id": "errosdearbitragem-santa-clara-benfica-j9",
+          "independence_group": "Erros de Arbitragem",
+          "url": "https://errosdearbitragem.pt/jogos/santa-clara-benfica-j9",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 17,
+            "tracked_player_yellows": 5,
+            "tracked_player_dismissals": 1,
+            "opponent_player_yellows": 4,
+            "opponent_player_dismissals": 1
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_player_dismissals",
+          "status": "resolved",
+          "chosen_value": 1,
+          "observed_values": [
+            0,
+            1
+          ],
+          "resolution_note": "Durán direct red after final whistle documented by A BOLA, VSPORTS and match reports; some full-time automated statistics omit late disciplinary sanctions; no on-field reduction. Distinct from his yellow at 89'."
+        },
+        {
+          "field": "opponent_player_dismissals",
+          "status": "resolved",
+          "chosen_value": 1,
+          "observed_values": [
+            0,
+            1
+          ],
+          "resolution_note": "One Santa Clara PLAYER red after whistle corroborated by post-match reporting and zerozero. Later detailed five-dismissal reporting identifies Welinton Torrão; A BOLA early liveblog rendered Luís Fernando and zerozero had inconsistent late entries. Two other Santa Clara red attributions unconfirmed; status of recipient is resolved from later reporting pending FPF official discipline bulletin."
+        },
+        {
+          "field": "opponent_red_recipient",
+          "status": "resolved",
+          "chosen_value": "Luís Fernando (Fernando Oliveira)",
+          "observed_values": [
+            "Welinton Torrão (early zerozero event, superseded)",
+            "Luís Fernando (SL Benfica match center quoting Liga official game sheet, A BOLA, FotMob and FPF discipline bulletin)"
+          ],
+          "resolution_note": "Verified 2026-11-01 against SL Benfica official match center citing Liga Portugal match sheet, A BOLA 2026-10-29 report of FPF disciplinary map, and match-event records from FotMob/Sky Sports: Santa Clara player sent off after full whistle was Luís Fernando (Fernando Oliveira), NOT Welinton Torrão. zerozero earlier event wrongly recorded Torrão and later appended a Fernando red; no second Santa Clara player dismissal must be counted.",
+          "sources": [
+            "https://www.slbenfica.pt/pt-pt/futebol/match-center/santa-clara-benfica-26-outubro-2026",
+            "https://www.abola.pt/noticias/benfica-mario-branco-suspenso-20-dias-2026102914325018999",
+            "https://www.fotmob.com/pt-PT/matches/santa-clara-vs-benfica/12a7ny"
+          ]
+        }
+      ],
+      "notes": "S360 shown-card policy: Benfica Jhon Durán received a player yellow at 89' plus a separate DIRECT red AFTER full-time (not a second yellow); Santa Clara's Luís Fernando (Fernando Oliveira) also saw a direct red after the final whistle. Five reds in incident: two players (Durán and Luís Fernando) and three staff/director events (Benfica Gonçalo Santos and Mário Branco, Santa Clara Tiago Pinto). Benfica staff yellow Marco Silva, Santa Clara Petit staff yellow excluded. Identity dispute resolved in favor of Luís Fernando from club official match center citing Liga match sheet and FPF disciplinary bulletin, superseding earlier zerozero live rendering Welinton Torrão. None of the after-whistle reds changed on-field numbers."
+    },
+    {
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "comparison_game_number": 10,
+      "played_at": "2026-10-30",
+      "competition_round": 10,
+      "tracked_club": "Sporting CP",
+      "opponent": "Casa Pia AC",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 15,
+        "opponent_fouls": 11
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Silas Andersen",
+          "minute": "29",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Maxi Araújo",
+          "minute": "90+3",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "David Sousa",
+          "minute": "9",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Kaly (Domingos José Gabriel Bandeira)",
+          "minute": "20",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "flashscore-casapia-sporting-j10",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.pt/jogo/futebol/casa-pia-QFHt9Zgs/sporting-cp-tljXuHBC/sumario/estatisticas/",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Full-time match-specific stats checked on 2026-11-01; 15 Sporting fouls. Earlier source record had stale value 14 and non-match-specific URL."
+        },
+        {
+          "id": "plaibook-casapia-sporting-j10",
+          "independence_group": "Plaibook",
+          "url": "https://plaibook.com/",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11
+          }
+        },
+        {
+          "id": "zerozero-casapia-sporting-j10",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-10-30-casa-pia-ac-sporting/12278066",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Match stats table: Casa Pia 11 - Sporting 15 fouls; 2-2 shown yellow cards; no player reds, independently maintained events."
+        },
+        {
+          "id": "worldfootball-casapia-sporting-j10",
+          "independence_group": "worldfootball.net",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223804/casa-pia-ac_sporting-cp/team-statistics/",
+          "claims": {
+            "tracked_fouls": 15,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Independent corroboration 11-15 fouls and 2-2 player yellows; source may share upstream metrics with Flashscore, so zerozero used as principal independent confirmation."
+        },
+        {
+          "id": "footballedge-casapia-sporting-j10",
+          "independence_group": "FootballEdge",
+          "url": "https://footballedge.io/pt/matches/casa-pia-vs-sporting-cp-2026-10-30",
+          "claims": {
+            "tracked_fouls": 14,
+            "opponent_fouls": 11,
+            "tracked_player_yellows": 2,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Dissenting 14-foul feed; xG and pass totals also disagree with Flashscore/zerozero, suggesting alternate/stale provider."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "tracked_fouls",
+          "status": "resolved",
+          "observed_values": [
+            14,
+            15
+          ],
+          "chosen_value": 15,
+          "resolution_note": "On 2026-11-01, match-specific Flashscore and independent zerozero final full-match tables agree Sporting committed 15 fouls (Casa Pia 11); worldfootball match stats corroborate 15. Earlier cached/general Flashscore lookup and FootballEdge show 14; FootballEdge's different passes/xG suggest another methodology/stale final. Adopt 15 and retain 14 dissent; Liga Portugal match page currently exposes no foul table to text fetch. Two genuinely distinct source groups confirm adopted value.",
+          "sources": [
+            "https://www.flashscore.pt/jogo/futebol/casa-pia-QFHt9Zgs/sporting-cp-tljXuHBC/sumario/estatisticas/",
+            "https://www.zerozero.pt/live-ao-minuto/2026-10-30-casa-pia-ac-sporting/12278066",
+            "https://footballedge.io/pt/matches/casa-pia-vs-sporting-cp-2026-10-30"
+          ]
+        }
+      ],
+      "notes": "J10 Casa Pia 0–2 Sporting (30 October). Verified 11–15 fouls, 2–2 player yellows (Silas Andersen and Maxi Araújo, David Sousa and Kaly), no player dismissals. Earlier 14-foul secondary feed preserved as resolved conflict. J10 infographic still blocked until SL Benfica plays and is verified."
+    },
+    {
+      "match_id": "2026-10-31-fc-porto-estoril",
+      "comparison_game_number": 10,
+      "played_at": "2026-10-31",
+      "competition_round": 10,
+      "tracked_club": "FC Porto",
+      "opponent": "GD Estoril Praia",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 13,
+        "opponent_fouls": 7
+      },
+      "cards": [
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Jan Bednarek",
+          "minute": "34",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "apwin-porto-estoril-j10",
+          "independence_group": "APWin",
+          "url": "https://www.apwin.com/match/porto-gd-estoril-praia/jSdqw/",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 7,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "myfootballfacts-porto-estoril-j10",
+          "independence_group": "My Football Facts / Statorium",
+          "url": "https://www.myfootballfacts.com/match/primeira-liga-2026-27-porto-vs-estoril-2026-10-31/",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 7,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "cornerflick-porto-estoril-j10",
+          "independence_group": "Cornerflick",
+          "url": "https://cornerflick.com/football/primeira-liga/matches/fc-porto-vs-estoril-primeira-liga-2026-10-31",
+          "claims": {
+            "tracked_fouls": 13,
+            "opponent_fouls": 7,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 0,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "Porto 4-0 Estoril. Fouls 13-7, player yellows 1-0 (Bednarek 34'), no reds; corroborated by multiple published stat/event feeds. J10 comparison withheld pending Benfica match."
     }
   ]
 }

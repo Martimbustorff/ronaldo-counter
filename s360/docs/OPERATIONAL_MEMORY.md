@@ -126,3 +126,84 @@ These are eligible only after the whole refereeing snapshot becomes publishable:
 | Verdade Desportiva | Match-by-match decision aggregation and provenance |
 | VSPORTS | Match evidence / video incidents |
 | Official material | Liga Portugal, FPF, match sheets, disciplinary records, VAR/official communications where available |
+
+## 2026-11-01 review — J9 discipline publishable; J10 not yet equalised
+
+### Current comparison milestone 9 (as at 26 October 2026)
+
+J9 reached 9 games each (FC Porto, SL Benfica, Sporting CP). Match-level discipline 8/9 was reconciled through official match stats, player-event logs and independent sources; `discipline/snapshots/008.json` and `009.json` are deterministic and `publishable: true`. The last previously published J7 snapshot remains immutable.
+
+| Club | Team fouls | Team player yellows | Team reds | Opp. fouls | Opp. yellows | Opp. reds |
+|---|---:|---:|---:|---:|---:|---:|
+| FC Porto | 128 | 9 | 0 | 101 | 16 | 3 |
+| SL Benfica | 110 | 21 | 2 | 150 | 29 | 2 |
+| Sporting CP | 107 | 21 | 1 | 116 | 23 | 1 |
+
+#### Material resolved source conflicts
+
+- Gil Vicente–FC Porto (24 Oct, J9): earlier Dia de Jogo **16 Porto/18 Gil** versus official Liga Portugal/OFStats/Footlab **17–17**. Adopted **17–17** and retained dissent as conflict provenance.
+- Sporting–Académico (25 Oct, J9): early Dia de Jogo **12 Sporting/11 Académico**, whereas Liga Portugal and corroborating match stats **14/9**. Correct Sporting player yellows **2** (Doumbia, Maxi Araújo), opponent **4**. A secondary site displays 1 Sporting yellow; event audit confirms two.
+- Santa Clara–SL Benfica (26 Oct, J9): **17–13 fouls**, **4–5 player yellows**. Post-final direct-red player dismissals to **Jhon Durán** (Benfica) and **Luís Fernando (Fernando Oliveira)** (Santa Clara) are counted in S360 despite being absent from some feeds that freeze at final whistle. Durán had an earlier *separate yellow* at 89'; this is **not** a second-yellow dismissal. Other reds to staff/directors (Benfica: Mário Branco and Gonçalo Santos; Santa Clara: Tiago Pinto) are retained as staff, excluded from player totals. Early zerozero event briefly labelled Santa Clara player Welinton Torrão, but the official club match centre citing Liga Portugal match sheet, A BOLA reporting the FPF disciplinary bulletin on 29 Oct, and independent match-event feeds identify **Luís Fernando** as the single Santa Clara player expelled. The incorrect initial name remains documented in source conflict provenance. These after-final reds did not reduce on-field player numbers.
+
+### J10 games and blockers
+
+- Casa Pia–Sporting (30 Oct): played; discipline event evidence staged `pending` due conflicting Sporting foul counts 14/15 pending further official check.
+- FC Porto–Estoril (31 Oct): played; discipline match appended with verified 13–7 foul and 1–0 player yellows.
+- SL Benfica–Alverca: scheduled **2 November 2026, 20:15 local Portugal**. No J10 three-club comparison yet. `discipline/snapshots/010.json` deliberately `publishable: false`.
+
+### Refereeing publication gate unchanged
+
+J9 and provisional J10 match/incident evidence is stored in `refereeing/matches.json`, `decisions.json` and `pending-review.json`. A confirmed incident in Gil Vicente–FC Porto (Elimbi incorrect direct red, beneficial to Porto) and J10 Casa Pia–Sporting (missed Ofori yellow/foul against Sporting) are **internal-only** until the entire tracked scope meets review threshold. Other J9/J10 incidents marked candidate or disputed do not affect public totals. 14 earlier comparison-match backfills plus the newer J7–J10 outstanding expert checks block **refereeing/snapshots/009.json** and **010.json**. Public totals intentionally empty, not zero. The match pending queues must be exhausted before publication.
+
+### Image policy
+
+J9 discipline social graphic generated from published J8 layout reference with exact original club crest crops, including the **Sporting CP white-lion shield from the original user-supplied J8 graphic**. Never regenerate a crest with ImageGen. Image was exported from the local run as `S360_Liga_Portugal_2026-27_Jornada_09_Disciplina.png`; source datasets and snapshots are in GitHub branch pending PR review. Link artifact in the user notification.
+
+**Santa Clara red recipient identity correction verified 2026-11-01:** https://www.slbenfica.pt/pt-pt/futebol/match-center/santa-clara-benfica-26-outubro-2026 and https://www.abola.pt/noticias/benfica-mario-branco-suspenso-20-dias-2026102914325018999 establish **Luís Fernando**, not Torrão. The overall J9 public snapshot metrics are unchanged (1 Santa Clara player dismissal for the Santa Clara–Benfica match). The graphical note must name Durán and Luís Fernando.
+
+## 2026-11-01 late audit — J10 Sporting foul reconciliation and named referee review
+
+- **Discipline J9** remains the latest equalised and publishable comparison (9 completed games per club). J9 immutable cumulative totals independently recomputed from the 5-game baseline plus verified match records; all fourteen incremental matches (games 6–10) pass the 2-source metric-claim/conflict-resolution checks. `discipline/snapshots/009.json` still `publishable: true`.
+- **J10 discipline (Casa Pia–Sporting, 30 October 2026)**: verified **Casa Pia 11–15 Sporting fouls**, with **2 shown player yellows each, no player dismissals**. Match-specific Flashscore and zerozero both record Sporting 15; worldfootball also 15; a different 14-foul FootballEdge reading remains in resolved-conflict audit. Prior non-match-specific Flashscore entry with 14 was stale and replaced. All played tracked J10 discipline matches are now verified, so `discipline/pending-verification.json` is clear. **SL Benfica–Alverca remains scheduled for 2 November 2026 at 20:15 (Lisbon)**: `discipline/snapshots/010.json` remains **blocked**. Partial J10 Sporting totals are 122 fouls, 23 player yellows, 1 red; opponents 127 fouls, 25 yellows, 1 red. FC Porto J10 141/10/0; opponents 108/16/3; Benfica J9 110/21/2; opponents 150/29/2.
+- **J9 refereeing, Gil Vicente–FC Porto, 73' Santi García**: previously candidate missed yellow promoted to **confirmed internal refereeing error against Porto**, with unanimous **four named reviews** (Pedro Henriques/A BOLA; Marco Ferreira, Jorge Faustino and Iturralde/Record), incident https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4. The previous incorrect Elimbi red remains separately confirmed in Porto's favour. The actual on-field player card counts are not changed by missed hypothetical cautions.
+- **J8 refereeing Marítimo–FC Porto, 20' Froholdt**: expert split **3 missed yellow vs 2 no error** (A BOLA, Record, Renascença) explicitly documented; incident stays **disputed**, not counted: https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c.
+- **J10 refereeing FC Porto–Estoril, 82' Souza contact**: Pedro Henriques/A BOLA plus Jorge Faustino and Marco Ferreira/Record and José Leirós/O JOGO favor missing yellow; Jorge Coroado and Fortunato Azevedo/O JOGO dissent (**4 vs 2 across 3 editorials**). Status **disputed** and **excluded** pending further corroboration; source https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c; A BOLA https://www.abola.pt/noticias/arbitragem-quase-perfeita-no-dragao-a-analise-de-pedro-henriques-ao-fc-porto-estoril-2026110100080659490.
+- **Refereeing J9/J10**: all confirmed incidents remain **internal-only** and public totals remain `{}`, not numerical zero. The **24-match pending review queue** continues to block both snapshots, including 14 older backfills and further named reviews for J8–J10.
+- **Infographic**: deterministically rendered a verified J9 square graphic from user's exact original J8 poster, preserving its visual layout and original Sporting white-lion crest (not redrawn by generative AI). Output `S360_Liga_Portugal_2026-27_Jornada_09_Disciplina_VERIFICADO.png` generated as a conversation artifact, not committed to GitHub. Displayed values are exactly `discipline/snapshots/009.json`; note expressly includes both after-final reds (Durán and Luís Fernando).
+- **Validation**: re-aggregated game-6-to-10 fouls/player yellows/player reds from baseline-005 + every verified match and compared to snapshot 009/010: **zero mismatches**; for every verified match and field, >=2 source-group claims or documented resolved conflict: **zero validation failures**.
+
+### Next required gate
+
+Verify and ingest Benfica–Alverca after 2 Nov match; rebuild snapshot 010 only when all three clubs have played ten games and independent event verification passes. Continue backfilling historical refereeing evidence and close each reviewed tracked match under the named-source/official threshold before any public refereeing total.
+
+
+## 2026-11-01 late named-source review: Sporting J9 closed; Académico–FC Porto J4 backfill
+
+### Sporting CP 1–2 Académico de Viseu, 25 Oct 2026 (J9)
+- Referee: Miguel Nogueira; VAR: Luís Ferreira.
+- Full **13-incident** match sweep (8', 11', 16', 21', **22'**, 29', 36', 41', **45'**, 45+6', 74', 88', 90+4') against named assessments from **A BOLA (Pedro Henriques)**, **Record (Marco Ferreira, Jorge Faustino)**, **O JOGO (Coroado, Leirós, Fortunato)**, **Renascença Bola Branca**, plus match sheet/VSPORTS clips and Verdade Desportiva incident-index source attribution. Editorial independence counted per publication family rather than by number of reviewers.
+- **22' Suárez missed yellow:** Jorge Coroado requires yellow, José Leirós and Fortunato disagree; **DISPUTED** (1/3, one publication family), excluded.
+- **45' initially awarded Sporting penalty reverted by VAR:** Jorge Coroado calls the reversal wrong/penalty required, whereas Pedro Henriques, Marco Ferreira, Jorge Faustino, José Leirós and Fortunato Azevedo find the VAR correction appropriate (**5/6 no-error vs one dissent**); **DISPUTED** rather than treating majority as unanimity, excluded.
+- **29' disallowed Académico goal:** Record and O JOGO reviewers consider the throw-in illegal; A BOLA states available images cannot determine whether heel was on line. Record this as residual evidentiary uncertainty: no **confirmed** refereeing error, not a false zero inferred from absent review.
+- 36' main Verdade Desportiva match widget initially showed stale 'Em análise', but the incident-specific expert page and latest match page show **no penalty** from A BOLA, Record, O JOGO. Corrected based on primary sources.
+- All other match issues reviewed; match status changed from pending to **complete** after the thresholded full match sweep. Note: this DOES NOT make milestone referee totals public, as older and other matches remain pending.
+- Primary attribution: https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91 ; A BOLA https://www.abola.pt/noticias/o-golo-anulado-ao-academico-e-o-penalti-revertido-ao-sporting-pedro-henriques-analisa-os-casos-2026102601113914088 ; Renascença https://rr.pt/bola-branca/noticia/futebol-nacional/2026/10/25/nota-4-para-miguel-nogueira-muito-boa-arbitragem/490711/ ; VSPORTS https://vsports.pt/vsports/jogo/i-liga/sporting-academico/30427/destaques .
+
+### Académico de Viseu 0–3 FC Porto, 29 Aug 2026 (J4)
+- Older game now represented in explicit refereeing match-review dataset. Reviewed game/result/date via worldfootball and A BOLA; **still pending** for full closure (33'/35' need cross-publisher confirmation).
+- **30' André Silva missed yellow:** 3 pro and 3 against from A BOLA, Record and O JOGO — **DISPUTED**, excluded.
+- **33' Froholdt missed yellow** and **35' António Correia missed yellow**: all three O JOGO experts agree but they are one publication group — two **CANDIDATES**, excluded.
+- **57' Kahraman jersey hold on Gabri Veiga**: two independent editorial source groups (Pedro Henriques/A BOLA and Marco Ferreira & Jorge Faustino/Record), three agreeing reviewers — **CONFIRMED INTERNAL error AGAINST FC Porto**; excluded publicly until all tracked matches clear threshold.
+- Source incident URLs: https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df ; https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3 ; https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62 ; https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c .
+
+### Publication gate and builder correction
+- Current **round-9** referee review: **6 complete, 21 pending out of 27** tracked perspectives; round-10: **6 complete, 23 pending out of 29**. Public snapshots remain `publishable=false` and `public_totals={}`; no zero-error implication.
+- `build_refereeing_snapshot` previously summed lengths of `matches.json` and `pending-review.json` when **eight pending match_ids occurred in both**, double-counting scope. Fixed builder to use **union of unique match_ids**, preserving independently tracked club perspectives. Added regression test.
+- Discipline unchanged. Latest publishable common milestone still **J9**; Benfica–Alverca J10 scheduled **2 Nov 2026, 20:15 Lisbon**. Wait until it is completed and verified before any J10 public discipline comparison.
+
+## 2026-11-02 00:08 UTC checkpoint — no J10 public milestone yet
+
+- Latest completed equalised round remains **J9**. Its verified `discipline/snapshots/009.json` has `publishable: true`; source-conflict audits for Gil Vicente–Porto, Sporting–Académico, and Santa Clara–Benfica are retained. This is the source for the freshly reconstructed J9 social graphic using the **original J8 uploaded poster and untouched club crests**, including the authentic Sporting white-lion shield. The latest corrected graphic is exported as `S360_Liga_Portugal_2026-27_Jornada_09_Disciplina_VERIFICADO.png` in the conversation artifact workspace, and not committed as binary by the text-only connector. Its numerical fields exactly mirror snapshot 009 (Porto 128/9/0 vs 101/16/3; Benfica 110/21/2 vs 150/29/2; Sporting 107/21/1 vs 116/23/1; fouls/yellows/player dismissals).
+- **J10:** Casa Pia 0–2 Sporting (30 Oct) and FC Porto 4–0 Estoril (31 Oct) both completed and already included in discipline match records with multiple-source verification. Earlier Sporting foul conflict is **resolved at 15**; do not regress it to pending. **Benfica–FC Alverca has not begun as at 00:08 Portugal on Monday 2 Nov**; scheduled kickoff **2 Nov 20:15** per Liga Portugal official match page https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/10/9 and VSPORTS https://vsports.pt/vsports/equipa/alverca/v20/jogos. Therefore snapshot 010 stays blocked, without guessing Benfica match metrics.
+- **Refereeing:** checked fresh coverage of Casa Pia–Sporting (Pedro Henriques / A BOLA, 30 Oct) and FC Porto–Estoril (Verdade Desportiva / expert aggregation, 31 Oct / 1 Nov) and the latest official fixture material. No new sufficiently grounded adjudication warrants moving candidate/disputed entries to confirmed at this checkpoint. **6 complete, 23 pending played tracked perspectives** as already recorded by `refereeing/snapshots/010.json`. Preserve `public_totals={}`, `publishable=false`; no zero-error inference. Incidents and source provenance already in `refereeing/decisions.json` remain unchanged.
+- **Workflow:** No discipline/refereeing data corrections necessary on this check because staged played matches are already reconciled. Keep PR #2 in draft pending review/merge; do not imply that the draft branch has been merged into `main`. Next comparison gate is completion and independent card/foul verification for Benfica–Alverca after kickoff.

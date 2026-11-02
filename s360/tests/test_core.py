@@ -143,6 +143,27 @@ class TestSnapshots(unittest.TestCase):
         self.assertEqual(snap["public_totals"], {})
         self.assertTrue(any("old-backfill" in reason for reason in snap["blocking_reasons"]))
 
+    def test_refereeing_pending_duplicate_match_id_does_not_double_count(self):
+        matches = {"matches": [{
+            "match_id": "same-game",
+            "tracked_club": "Sporting CP",
+            "comparison_game_number": 8,
+            "status": "completed",
+            "review_status": "pending",
+        }]}
+        pending = {"matches": [{
+            "match_id": "same-game",
+            "tracked_club": "Sporting CP",
+            "comparison_game_number": 8,
+            "review_status": "pending_evidence_review",
+        }]}
+        snap = build_refereeing_snapshot(
+            CONFIG, matches, {"decisions": []}, 8, "2026-11-01", pending_doc=pending
+        )
+        self.assertEqual(snap["played_matches_in_scope"], 1)
+        self.assertFalse(snap["publishable"])
+        self.assertEqual(snap["public_totals"], {})
+
     def test_refereeing_only_confirmed_counts(self):
         matches = {"matches": [{
             "match_id": "m1",
