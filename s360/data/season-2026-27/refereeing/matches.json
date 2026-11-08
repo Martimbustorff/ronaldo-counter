@@ -987,6 +987,145 @@
         "Liga Portugal / FPF"
       ],
       "notes": "2026-11-08 expert sweep: 12' missed Palhinha foul + yellow confirmed across A BOLA and Record; internal only. 29' Davy Gui 4-1 pro-error including O JOGO dissent stays DISPUTED per strict S360 rule, not confirmed. 9' Bojang disagreement and 49' penalty with minority dissent retained. Overall referee match evidence review NOT marked complete, no zero-error inference, referee public snapshot blocked."
+    },
+    {
+      "match_id": "2026-11-07-sporting-moreirense",
+      "played_at": "2026-11-07",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "Sporting CP",
+      "status": "completed",
+      "review_status": "pending",
+      "review_last_checked_at": "2026-11-08",
+      "reviewed_sources": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "published_at": "2026-11-08",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "coverage": "2,12,14,30,46,48,49,90+3 incidents",
+          "usable_for_confirmation": true
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "published_at": "2026-11-07",
+          "reviewer": "José Leirós",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/11/07/nota-3-para-joao-goncalves-arbitragem-muito-positiva/492615/",
+          "coverage": "12 Liberato missed yellow; match discipline; 35/36 advantage",
+          "usable_for_confirmation": true
+        },
+        {
+          "source_family": "VSPORTS / A BOLA embedded video",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "coverage": "Footage used only as event evidence",
+          "usable_for_confirmation": false
+        }
+      ],
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / official",
+        "FPF / official VAR"
+      ],
+      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold."
+    },
+    {
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "FC Porto",
+      "status": "completed",
+      "review_status": "pending",
+      "review_last_checked_at": "2026-11-08",
+      "reviewed_sources": [
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "published_at": "2026-11-08",
+          "reviewer": "Tiago Rocha",
+          "url": "https://rr.pt/video/bola-branca/2026/11/08/nota-3-para-david-silva-no-v-guimaraes-1-2-fc-porto/495962/",
+          "coverage": "Video commentary located; exact per-incident transcript unavailable",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "published_at": "2026-11-08",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/video/v-guimaraes-fc-porto-pedro-henriques-analisa-situacao-completamente-inedita-2026110821435927425",
+          "coverage": "Video mentions unusual thirteen substitutions; no extracted incident-specific adjudication",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "VSPORTS match highlights",
+          "url": "https://www.rotascore.com/pt/match/vitoria-guimaraes-porto/l7oqdehgw0ddr51",
+          "coverage": "Match highlights, no conclusive expert verdict",
+          "usable_for_confirmation": false
+        }
+      ],
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / official",
+        "FPF / official VAR"
+      ],
+      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold."
+    },
+    {
+      "match_id": "2026-11-08-estrela-benfica",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "SL Benfica",
+      "status": "completed",
+      "review_status": "pending",
+      "review_last_checked_at": "2026-11-08",
+      "reviewed_sources": [
+        {
+          "source_family": "Liga Portugal official match",
+          "published_at": "2026-11-08",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/11/2",
+          "coverage": "Fixture/result and referee appointments; no named verdict",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "A BOLA match liveblog",
+          "published_at": "2026-11-08",
+          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
+          "coverage": "Player and staff cautions including Marco Silva and Pepa staff; no retrospective named expert conclusion",
+          "usable_for_confirmation": false
+        }
+      ],
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / official",
+        "FPF / official VAR"
+      ],
+      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold."
     }
   ]
 }
