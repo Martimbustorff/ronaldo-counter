@@ -858,6 +858,192 @@
         }
       ],
       "notes": "5 no-error / 1 error across Record/A BOLA/O JOGO, majority favor correction but expert disagreement remains documented: disputed and excluded from public error totals."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-12m-palhinha-missed-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "12",
+      "incident": "João Palhinha tripped Dawda Camara in a promising attack; direct free kick and player yellow omitted",
+      "direction": "for",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Independent editorial families A BOLA + Record all agree omitted yellow/foul. Incident benefits Benfica, is a confirmed referee error in INTERNAL ONLY records; referee snapshot remains withheld until all tracked matches fully reviewed."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-9m-bojang-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "9",
+      "incident": "Bojang step on Dahl; debate whether a yellow should follow advantage",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "Record named analysts disagree; candidate no public tally under strict S360 disagreement policy."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-29m-davy-gui-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "29",
+      "incident": "Davy Gui foul on Aursnes, yellow not shown",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "4/5 favor yellow (2 independent editorial groups) but explicit Coroado dissent; strict decision-status disputed; excluded from public total."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-37m-prestianni-simulation-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "37",
+      "incident": "Prestianni falls without contact; Fortunato alleges yellow for simulation",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Only one named reviewer; no independent editorial corroboration."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-49m-echeverri-penalty",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "49",
+      "incident": "Penalty awarded after Sergi Gómez/Echeverri contact; minority says no penalty",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "5/6 say penalty correct incl A BOLA and Record; one dissent (Coroado), no confirmed refereeing error. Keep disputed incident provenance, excluded from public error tally."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-15m-prestianni-unspecified",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "15",
+      "incident": "Verdade Desportiva lists incident involving Prestianni under analysis",
+      "direction": "unknown",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva aggregator",
+          "reviewer": "Unattributed",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "under_analysis"
+        }
+      ],
+      "notes": "No conclusive named assessment; not eligible for totals."
     }
   ]
 }
