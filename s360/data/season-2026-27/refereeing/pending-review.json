@@ -241,6 +241,87 @@
       "opponent": "GD Estoril Praia",
       "review_status": "pending_evidence_review",
       "notes": "J10 Porto: Pedro Henriques/A BOLA, Record and O JOGO experts + Renascença now consulted. 82 Souza card disputed (4 supporting, 2 disagreeing); excluded. Match overall still pending full threshold."
+    },
+    {
+      "match_id": "2026-11-02-benfica-alverca",
+      "played_at": "2026-11-02",
+      "comparison_game_number": 10,
+      "competition_round": 10,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Alverca",
+      "review_status": "pending_evidence_review",
+      "notes": "Independent 12' Palhinha omitted yellow confirmed internally by Pedro Henriques (A BOLA) and Record Marco Ferreira+Jorge Faustino. 29' Davy Gui yellow 4/5 expert disagreement excluded as disputed. 9' Bojang split, 37' Prestianni single-expert, 49' penalty split (5/6 correct, Coroado dissent). Named/official full review threshold not closed. See refereeing/matches.json and decisions.json.",
+      "last_checked_at": "2026-11-08"
+    },
+    {
+      "match_id": "2026-11-07-sporting-moreirense",
+      "played_at": "2026-11-07",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "Sporting CP",
+      "opponent": "Moreirense FC",
+      "review_status": "pending_evidence_review",
+      "referee": "João Gonçalves",
+      "result": "Sporting CP 1-0 Moreirense FC",
+      "evidence_found": [
+        {
+          "source_family": "Verdade Desportiva / Record",
+          "url": "https://verdadedesportiva.pt/",
+          "finding": "42' penalty assessment from Record analysts indicates no penalty; one editorial group, not enough to conclude entire match has no errors."
+        },
+        {
+          "source_family": "Liga Portugal / match report",
+          "url": "https://www.ligaportugal.pt/",
+          "finding": "Fixture/result after final."
+        }
+      ],
+      "notes": "Played; no zero-error inference; review named A BOLA/Record/O JOGO/Renascença/official and video sources before complete.",
+      "last_checked_at": "2026-11-08"
+    },
+    {
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "FC Porto",
+      "opponent": "Vitória SC",
+      "review_status": "pending_evidence_review",
+      "referee": "David Silva",
+      "result": "Vitória SC 1-2 FC Porto",
+      "evidence_found": [
+        {
+          "source_family": "A BOLA",
+          "url": "https://www.abola.pt/",
+          "finding": "2026-11-08 live story of two concussion protocol purple cards (Bednarek/Borevković), which are medical substitutions not yellow/red sanction or referee error."
+        },
+        {
+          "source_family": "ProMatch24",
+          "url": "https://promatch24.com/match/746139/",
+          "finding": "Match timeline and named match referee; not an expert adjudication."
+        }
+      ],
+      "notes": "Recent final; review queue pending named expert and VAR/official evidence. Medical concussion purple card is not disciplinary player card.",
+      "last_checked_at": "2026-11-08"
+    },
+    {
+      "match_id": "2026-11-08-estrela-benfica",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "SL Benfica",
+      "opponent": "CF Estrela da Amadora",
+      "review_status": "pending_evidence_review",
+      "referee": "António Nobre",
+      "result": "CF Estrela da Amadora 2-3 SL Benfica",
+      "evidence_found": [
+        {
+          "source_family": "A BOLA live match",
+          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
+          "finding": "Match completed 2-3, individual player/staff yellow events; no retrospective named referee verdict yet."
+        }
+      ],
+      "notes": "Recent final; no referee-error conclusion, all review families pending independent evidence.",
+      "last_checked_at": "2026-11-08"
     }
   ],
   "already_complete_elsewhere": [
@@ -252,6 +333,6 @@
     "2026-10-25-sporting-academico"
   ],
   "source_for_fixture_backfill": "Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available.",
-  "last_checked_at": "2026-11-02",
-  "last_check_note": "2026-11-02 00:08 UTC: Benfica–Alverca J10 not yet played; no new expert consensus promoted. Porto–Estoril and Casa Pia–Sporting played and still pending full named-source review. No zero inferred. Round-10 refereeing snapshot remains unpublishable; 23 pending tracked perspectives, 6 complete."
+  "last_checked_at": "2026-11-08",
+  "last_check_note": "J10 all three played and discipline J10 publishable. J11 all three played as of 2026-11-08 22:34 UTC, but J11 discipline and referee evidence threshold incomplete. 27 outstanding tracked referee perspectives (including 14 earlier backfills); 6 complete. Internal J10 Benfica–Alverca 12' referee error confirmed, other new candidate/disputed rows excluded, no inference of zero errors."
 }
