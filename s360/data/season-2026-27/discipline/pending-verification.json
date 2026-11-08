@@ -1,9 +1,126 @@
 {
   "season": "2026-27",
   "purpose": "Completed tracked matches that are not yet safe to merge into discipline/matches.json because the public foul/card metrics have not been independently verified to the S360 threshold.",
-  "matches": [],
-  "last_cleared_milestone": 9,
-  "last_cleared_at": "2026-11-01",
-  "note": "All played tracked J10 discipline matches (Sporting and FC Porto) verified through independent match-source families; Sporting 15 vs 14 foul conflict resolved in matches.json. Benfica–Alverca scheduled 2026-11-02 at 20:15 local Portugal, not played at 00:08 UTC. J10 public snapshot remains blocked until that game is complete and independently verified.",
-  "last_checked_at": "2026-11-02"
+  "matches": [
+    {
+      "match_id": "2026-11-07-sporting-moreirense",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "played_at": "2026-11-07",
+      "tracked_club": "Sporting CP",
+      "opponent": "Moreirense FC",
+      "status": "completed",
+      "verification_status": "provisional",
+      "result": "Sporting CP 1-0 Moreirense FC",
+      "provisional_metrics": {
+        "tracked_fouls": 10,
+        "opponent_fouls": 8,
+        "tracked_player_yellows": 0,
+        "opponent_player_yellows": 0,
+        "tracked_player_dismissals": 0,
+        "opponent_player_dismissals": 0
+      },
+      "evidence": [
+        {
+          "family": "Golazo News",
+          "url": "https://www.golazonews.com/en/match/1575543/sporting-cp-vs-moreirense"
+        },
+        {
+          "family": "OffsideScores",
+          "url": "https://offsidescores.com/"
+        }
+      ],
+      "pending": "Confirm all 6 metrics including shown-player vs staff card events with two genuinely independent source families before promotion."
+    },
+    {
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "played_at": "2026-11-08",
+      "tracked_club": "FC Porto",
+      "opponent": "Vitória SC",
+      "status": "completed",
+      "verification_status": "provisional",
+      "result": "Vitória SC 1-2 FC Porto",
+      "provisional_metrics": {
+        "tracked_fouls": 11,
+        "opponent_fouls": 13,
+        "tracked_player_yellows": 4,
+        "opponent_player_yellows": 2,
+        "tracked_player_dismissals": 0,
+        "opponent_player_dismissals": 0
+      },
+      "evidence": [
+        {
+          "family": "ProMatch24",
+          "url": "https://promatch24.com/match/746139/"
+        },
+        {
+          "family": "OFStats",
+          "url": "https://ofstats.com/matches/view/vitoria-guimaraes-porto-2026-11-08"
+        },
+        {
+          "family": "TotalOdds",
+          "url": "https://totalodds.co.uk/matches/vitoria-guimaraes-vs-porto-7615911"
+        }
+      ],
+      "pending": "Verify independent metric provenance and enumerate all individual players. Vitória coach Tiago Margarido was yellow-carded at 19' (staff only, must not enter public player yellows). Provisional 11-13 fouls and 4-2 player yellows."
+    },
+    {
+      "match_id": "2026-11-08-estrela-benfica",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "played_at": "2026-11-08",
+      "tracked_club": "SL Benfica",
+      "opponent": "CF Estrela da Amadora",
+      "status": "completed",
+      "verification_status": "provisional",
+      "result": "CF Estrela da Amadora 2-3 SL Benfica",
+      "evidence": [
+        {
+          "family": "A BOLA match liveblog",
+          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog"
+        },
+        {
+          "family": "Liga Portugal",
+          "url": "https://www.ligaportugal.pt/"
+        }
+      ],
+      "known_card_events": [
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Marco Silva",
+          "minute": "50",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "staff",
+          "subject": "Pepa",
+          "minute": "53",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Lovro Zvonarek",
+          "minute": "51",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Alisson Souza",
+          "minute": "89",
+          "card": "yellow"
+        }
+      ],
+      "pending": "Full-time match stats and all player/staff event checks must be confirmed by independent match-specific sources. Two shown staff yellows must be excluded from public player totals."
+    }
+  ],
+  "last_cleared_milestone": 10,
+  "last_cleared_at": "2026-11-08",
+  "note": "As of 2026-11-08 22:34 Europe/Lisbon J10 (all 3 played) discipline published from separately verified Benfica–Alverca data. J11 all three completed but NOT independently verified at six-metric threshold; held provisional here. Staff cards tracked independently for J11 Estrela-Benfica and Vitoria-Porto.",
+  "last_checked_at": "2026-11-08"
 }
