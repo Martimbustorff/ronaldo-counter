@@ -132,7 +132,10 @@
       "2026-08-29-academico-fc-porto-33m-froholdt-yellow",
       "2026-08-29-academico-fc-porto-35m-antonio-correia-yellow",
       "2026-11-02-benfica-alverca-37m-prestianni-simulation-yellow",
-      "2026-11-02-benfica-alverca-15m-prestianni-unspecified"
+      "2026-11-02-benfica-alverca-15m-prestianni-unspecified",
+      "2026-11-07-sporting-moreirense-12m-maxi-dissent-yellow",
+      "2026-11-07-sporting-moreirense-12m-liberato-yellow",
+      "2026-11-07-sporting-moreirense-30m-liberato-shirt-pull"
     ],
     "disputed": [
       "2026-09-09-moreirense-benfica-44m-penalty",
@@ -149,5 +152,5 @@
       "2026-11-02-benfica-alverca-49m-echeverri-penalty"
     ]
   },
-  "note": "2026-11-08 J11 completed in all three clubs, but discipline J11 provisional and referee 27/33 perspective reviews pending. No zero errors inferred, public_totals withheld. Internal confirmed decisions not public."
+  "note": "J11 all three tracked games completed. A BOLA Pedro Henriques and Renascença José Leirós independently reviewed Sporting-Moreirense; three candidate incidents recorded, none confirmed. Vitória-Porto videos identified without auditable transcripts; Estrela-Benfica named postmatch expert review pending. 27 of 33 tracked perspectives still incomplete, no zero errors inferred and public totals withheld."
 }
