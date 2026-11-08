@@ -1,0 +1,153 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 11,
+  "as_of": "2026-11-08",
+  "publishable": false,
+  "blocking_reasons": [
+    "27 tracked match records or backfill perspectives pending evidence-threshold review.",
+    "2026-08-09-fc-porto-alverca: outstanding independent named expert/official evidence",
+    "2026-08-15-rio-ave-fc-porto: outstanding independent named expert/official evidence",
+    "2026-08-23-fc-porto-arouca: outstanding independent named expert/official evidence",
+    "2026-08-29-academico-fc-porto: outstanding independent named expert/official evidence",
+    "2026-09-04-fc-porto-moreirense: outstanding independent named expert/official evidence",
+    "2026-08-09-benfica-academico: outstanding independent named expert/official evidence",
+    "2026-08-17-casa-pia-benfica: outstanding independent named expert/official evidence",
+    "2026-08-31-benfica-estoril: outstanding independent named expert/official evidence",
+    "2026-09-05-maritimo-benfica: outstanding independent named expert/official evidence",
+    "2026-08-08-estrela-sporting: outstanding independent named expert/official evidence",
+    "2026-08-14-sporting-vitoria: outstanding independent named expert/official evidence",
+    "2026-08-22-sporting-alverca: outstanding independent named expert/official evidence",
+    "2026-08-28-rio-ave-sporting: outstanding independent named expert/official evidence",
+    "2026-09-05-sporting-nacional: outstanding independent named expert/official evidence",
+    "2026-09-20-fc-porto-benfica: outstanding independent named expert/official evidence",
+    "2026-09-20-fc-porto-benfica-benfica-perspective: outstanding independent named expert/official evidence",
+    "2026-10-09-braga-sporting: outstanding independent named expert/official evidence",
+    "2026-10-10-maritimo-fc-porto: outstanding independent named expert/official evidence",
+    "2026-10-11-benfica-vitoria-sc: outstanding independent named expert/official evidence",
+    "2026-10-24-gil-vicente-fc-porto: outstanding independent named expert/official evidence",
+    "2026-10-26-santa-clara-benfica: outstanding independent named expert/official evidence",
+    "2026-10-30-casa-pia-sporting: outstanding independent named expert/official evidence",
+    "2026-10-31-fc-porto-estoril: outstanding independent named expert/official evidence",
+    "2026-11-02-benfica-alverca: outstanding independent named expert/official evidence",
+    "2026-11-07-sporting-moreirense: outstanding independent named expert/official evidence",
+    "2026-11-08-vitoria-fc-porto: outstanding independent named expert/official evidence",
+    "2026-11-08-estrela-benfica: outstanding independent named expert/official evidence"
+  ],
+  "public_totals": {},
+  "reviewed_matches": 6,
+  "played_matches_in_scope": 33,
+  "pending_match_ids": [
+    "2026-08-09-fc-porto-alverca",
+    "2026-08-15-rio-ave-fc-porto",
+    "2026-08-23-fc-porto-arouca",
+    "2026-08-29-academico-fc-porto",
+    "2026-09-04-fc-porto-moreirense",
+    "2026-08-09-benfica-academico",
+    "2026-08-17-casa-pia-benfica",
+    "2026-08-31-benfica-estoril",
+    "2026-09-05-maritimo-benfica",
+    "2026-08-08-estrela-sporting",
+    "2026-08-14-sporting-vitoria",
+    "2026-08-22-sporting-alverca",
+    "2026-08-28-rio-ave-sporting",
+    "2026-09-05-sporting-nacional",
+    "2026-09-20-fc-porto-benfica",
+    "2026-09-20-fc-porto-benfica-benfica-perspective",
+    "2026-10-09-braga-sporting",
+    "2026-10-10-maritimo-fc-porto",
+    "2026-10-11-benfica-vitoria-sc",
+    "2026-10-24-gil-vicente-fc-porto",
+    "2026-10-26-santa-clara-benfica",
+    "2026-10-30-casa-pia-sporting",
+    "2026-10-31-fc-porto-estoril",
+    "2026-11-02-benfica-alverca",
+    "2026-11-07-sporting-moreirense",
+    "2026-11-08-vitoria-fc-porto",
+    "2026-11-08-estrela-benfica"
+  ],
+  "confirmed_decisions_not_yet_public": [
+    {
+      "decision_id": "2026-09-12-casa-pia-fc-porto-45+4m-missed-kaly-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-benfica-gil-vicente-18m-missed-card",
+      "tracked_club": "SL Benfica",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-benfica-gil-vicente-67m-missed-free-kick",
+      "tracked_club": "SL Benfica",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-13-famalicao-sporting-7m-missed-penalty",
+      "tracked_club": "Sporting CP",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-09-19-sporting-arouca-25m-missed-yellow",
+      "tracked_club": "Sporting CP",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red",
+      "tracked_club": "FC Porto",
+      "direction": "for"
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-4m-ofori-yellow",
+      "tracked_club": "Sporting CP",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-57m-kahraman-yellow",
+      "tracked_club": "FC Porto",
+      "direction": "against"
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-12m-palhinha-missed-yellow",
+      "tracked_club": "SL Benfica",
+      "direction": "for"
+    }
+  ],
+  "excluded_unconfirmed_decisions": {
+    "candidate": [
+      "2026-09-09-moreirense-benfica-12m-missed-maracas-yellow",
+      "2026-09-09-moreirense-benfica-69m-missed-lukebakio-yellow",
+      "2026-09-12-casa-pia-fc-porto-30m-missed-foul",
+      "2026-09-13-famalicao-sporting-33m-missed-foul-yellow",
+      "2026-09-13-famalicao-sporting-59m-missed-yellow",
+      "2026-09-19-sporting-arouca-28m-missed-yellow",
+      "2026-10-09-braga-sporting-20m-missed-yellow",
+      "2026-10-11-benfica-vitoria-9m-penalty",
+      "2026-10-26-santa-clara-benfica-48m-brenner-yellow",
+      "2026-10-30-casa-pia-sporting-45+2m-pedro-lima-yellow",
+      "2026-08-29-academico-fc-porto-33m-froholdt-yellow",
+      "2026-08-29-academico-fc-porto-35m-antonio-correia-yellow",
+      "2026-11-02-benfica-alverca-37m-prestianni-simulation-yellow",
+      "2026-11-02-benfica-alverca-15m-prestianni-unspecified"
+    ],
+    "disputed": [
+      "2026-09-09-moreirense-benfica-44m-penalty",
+      "2026-09-12-casa-pia-fc-porto-1m-penalty",
+      "2026-10-09-braga-sporting-48m-doumbia-handball",
+      "2026-10-10-maritimo-porto-20m-froholdt",
+      "2026-10-30-casa-pia-sporting-70m-flavio-penalty",
+      "2026-10-31-fc-porto-estoril-82m-souza-yellow",
+      "2026-08-29-academico-fc-porto-30m-andre-silva-yellow",
+      "2026-10-25-sporting-academico-22m-suarez-yellow",
+      "2026-10-25-sporting-academico-45m-reversed-penalty",
+      "2026-11-02-benfica-alverca-9m-bojang-yellow",
+      "2026-11-02-benfica-alverca-29m-davy-gui-yellow",
+      "2026-11-02-benfica-alverca-49m-echeverri-penalty"
+    ]
+  },
+  "note": "2026-11-08 J11 completed in all three clubs, but discipline J11 provisional and referee 27/33 perspective reviews pending. No zero errors inferred, public_totals withheld. Internal confirmed decisions not public."
+}
