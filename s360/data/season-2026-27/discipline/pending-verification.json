@@ -1,62 +1,9 @@
 {
   "season": "2026-27",
   "purpose": "Completed tracked matches that are not yet safe to merge into discipline/matches.json because the public foul/card metrics have not been independently verified to the S360 threshold.",
-  "matches": [
-    {
-      "match_id": "2026-11-08-estrela-benfica",
-      "comparison_game_number": 11,
-      "competition_round": 11,
-      "played_at": "2026-11-08",
-      "tracked_club": "SL Benfica",
-      "opponent": "CF Estrela da Amadora",
-      "status": "completed",
-      "verification_status": "provisional",
-      "result": "CF Estrela da Amadora 2-3 SL Benfica",
-      "evidence": [
-        {
-          "family": "A BOLA match liveblog",
-          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog"
-        },
-        {
-          "family": "Liga Portugal",
-          "url": "https://www.ligaportugal.pt/"
-        }
-      ],
-      "known_card_events": [
-        {
-          "side": "tracked",
-          "subject_type": "staff",
-          "subject": "Marco Silva",
-          "minute": "50",
-          "card": "yellow"
-        },
-        {
-          "side": "opponent",
-          "subject_type": "staff",
-          "subject": "Pepa",
-          "minute": "53",
-          "card": "yellow"
-        },
-        {
-          "side": "opponent",
-          "subject_type": "player",
-          "subject": "Lovro Zvonarek",
-          "minute": "51",
-          "card": "yellow"
-        },
-        {
-          "side": "tracked",
-          "subject_type": "player",
-          "subject": "Alisson Souza",
-          "minute": "89",
-          "card": "yellow"
-        }
-      ],
-      "pending": "Full-time match stats and all player/staff event checks must be confirmed by independent match-specific sources. Two shown staff yellows must be excluded from public player totals."
-    }
-  ],
-  "last_cleared_milestone": 10,
+  "matches": [],
+  "last_cleared_milestone": 11,
   "last_cleared_at": "2026-11-08",
-  "note": "J10 snapshot publishable. J11 all 3 played; Sporting-Moreirense (10-8 fouls 0-0 shown yellows) and Vitória-Porto (Porto 11/4 player yellows vs Vitória 13/2, plus excluded staff coach yellow) independently reconciled 8 Nov. Benfica-Estrela missing reliable full-time foul/card split, remains unverified; do not publish J11.",
+  "note": "J11 all three tracked games completed and match-level discipline verified to two independent source groups where relevant: Sporting-Moreirense 10-8 fouls and 0-0 player yellows; Vitória-Porto Porto 11/4 player yellows vs Vitória 13/2; Estrela-Benfica Benfica 12 fouls, 0 player yellows vs Estrela 15 fouls, 2 player yellows. Estrela coach Pepa and Benfica coach Marco Silva have 1 staff yellow each (excluded). Prior provisional Alisson Souza club-side misclassification was corrected; player is Estrela. worldfootball mixed aggregates of 3/1 yellows include coach cards; independent FootyPulse/FotMob player event split 2/0. Verified match and conflict provenance in discipline/matches.json. No pending match perspectives; J11 can now be published after snapshot recomputation.",
   "last_checked_at": "2026-11-08"
 }
