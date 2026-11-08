@@ -1109,6 +1109,34 @@
           "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
           "coverage": "Player and staff cautions including Marco Silva and Pepa staff; no retrospective named expert conclusion",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "FotMob / Opta match timeline",
+          "published_at": "2026-11-08",
+          "url": "https://www.fotmob.com/pt-PT/matches/benfica-vs-estrela-da-amadora/7hyaphua",
+          "coverage": "Full-time events; Estrela player cautions Zvonarek 51' and Alisson Souza 89', and Pepa coaching staff card 53'. Match evidence only, no expert error judgment.",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "FootyPulse match stats",
+          "published_at": "2026-11-08",
+          "url": "https://footypulse.org/matches/liga-portugal/estrela-amadora-vs-benfica-2026-11-08",
+          "coverage": "Full-time 15 Estrela/12 Benfica fouls; player yellows 2 Estrela/0 Benfica; not an expert referee decision analysis.",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "worldfootball / Heimspiel Medien final stats",
+          "published_at": "2026-11-08",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223831/estrela-amadora_sl-benfica/team-statistics/",
+          "coverage": "Full-time 15-12 fouls; card totals 3 Estrela/1 Benfica include 1 coach caution each; no expert decision assessment.",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "Sporting Lisbon/SL Benfica official referee appointment",
+          "published_at": "2026-11-04",
+          "url": "https://www.slbenfica.pt/pt-pt/agora/noticias/2026/11/04/futebol-arbitro-estrela-da-amadora-benfica-liga-betclic-11-jornada",
+          "coverage": "António Nobre referee, Tiago Martins VAR, Cátia Tavares AVAR; referee appointments not adjudication.",
+          "usable_for_confirmation": false
         }
       ],
       "searched_source_families": [
@@ -1125,7 +1153,7 @@
         "Liga Portugal / official",
         "FPF / official VAR"
       ],
-      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold."
+      "notes": "2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-08 23:3x UTC: Rechecked specific named analyses from Pedro Henriques/A BOLA, Marco Ferreira/Jorge Faustino/Iturralde/Record, Coroado/Leirós/Fortunato/O JOGO, Renascença VAR Bola Branca, Verdade Desportiva, official VAR/FPF and VSPORTS; no auditable per-incident retrospective thresholds yet for this just-ended match. FotMob/Opta and FootyPulse/Heimspiel FT match data confirm cards/fouls but not refereeing-error verdicts. Remains PENDING; no zero errors inferred."
     }
   ]
 }
