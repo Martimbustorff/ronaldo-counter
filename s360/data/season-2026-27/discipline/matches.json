@@ -1673,6 +1673,115 @@
       ],
       "conflicts": [],
       "notes": "Porto 4-0 Estoril. Fouls 13-7, player yellows 1-0 (Bednarek 34'), no reds; corroborated by multiple published stat/event feeds. J10 comparison withheld pending Benfica match."
+    },
+    {
+      "match_id": "2026-11-02-benfica-alverca",
+      "comparison_game_number": 10,
+      "played_at": "2026-11-02",
+      "competition_round": 10,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Alverca",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 11,
+        "opponent_fouls": 15
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Yaya Bojang",
+          "minute": "15",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Francisco Chiquinho",
+          "minute": "58",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Ian Luccas",
+          "minute": "63",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "player",
+          "subject": "Clément Lenglet",
+          "minute": "65",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "apwin-benfica-alverca-j10",
+          "independence_group": "APWin",
+          "url": "https://www.apwin.com/match/benfica-alverca/jpGrk/",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "zerozero-benfica-alverca-j10",
+          "independence_group": "zerozero",
+          "url": "https://www.zerozero.pt/live-ao-minuto/2026-11-02-benfica-fc-alverca/12278083",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "flashscore-benfica-alverca-j10",
+          "independence_group": "Flashscore",
+          "url": "https://www.flashscore.com/match/football/alverca-roaMksQg/benfica-zBkyuyRI/summary/stats/",
+          "claims": {
+            "tracked_fouls": 11,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "sofascore-benfica-alverca-j10",
+          "independence_group": "Sofascore",
+          "url": "https://www.sofascore.com/football/match/fc-alverca-benfica/gkbsDgBb",
+          "claims": {
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        },
+        {
+          "id": "cornerflick-benfica-alverca-j10",
+          "independence_group": "Cornerflick",
+          "url": "https://cornerflick.com/football/primeira-liga/matches/benfica-vs-alverca-primeira-liga-2026-11-02",
+          "claims": {
+            "tracked_player_yellows": 1,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 3,
+            "opponent_player_dismissals": 0
+          }
+        }
+      ],
+      "conflicts": [],
+      "notes": "Verified 2026-11-08; Benfica 1-0 Alverca, 2 Nov J10. Independent match-specific APWin, zerozero and Flashscore agree 11-15 fouls and 1-3 player yellows; Sofascore and Cornerflick timeline identify individual cards. No player dismissals. Sources using alternate methods/cache for foul tables are NOT adopted; official Liga match page in text mode currently shows fixture/result but does not expose foul/card stats for reconciliation. No staff-card event reliably reported. Do not infer additional cards from commentary-only missed-yellow claims. Match refereeing remains pending expert threshold."
     }
   ]
 }
