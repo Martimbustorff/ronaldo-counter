@@ -1,11 +1,9 @@
 {
   "season": "2026-27",
   "comparison_game_number": 10,
-  "as_of": "2026-11-01",
-  "publishable": false,
-  "blocking_reasons": [
-    "SL Benfica: expected verified games 6,7,8,9,10 but got 6,7,8,9"
-  ],
+  "as_of": "2026-11-02",
+  "publishable": true,
+  "blocking_reasons": [],
   "clubs": {
     "FC Porto": {
       "games": 10,
@@ -25,19 +23,19 @@
       }
     },
     "SL Benfica": {
-      "games": 9,
+      "games": 10,
       "team": {
-        "fouls": 110,
-        "player_yellows": 21,
+        "fouls": 121,
+        "player_yellows": 22,
         "player_dismissals": 2,
-        "avg_fouls": 12.2,
-        "fouls_per_yellow": 5.2
+        "avg_fouls": 12.1,
+        "fouls_per_yellow": 5.5
       },
       "opponents": {
-        "fouls": 150,
-        "player_yellows": 29,
+        "fouls": 165,
+        "player_yellows": 32,
         "player_dismissals": 2,
-        "avg_fouls": 16.7,
+        "avg_fouls": 16.5,
         "fouls_per_yellow": 5.2
       }
     },
