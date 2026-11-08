@@ -1044,6 +1044,67 @@
         }
       ],
       "notes": "No conclusive named assessment; not eligible for totals."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-12m-maxi-dissent-yellow",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "12",
+      "incident": "Maximiliano Araújo gesture-based protest after no foul; possible omitted caution",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "possible_error"
+        }
+      ],
+      "notes": "Expert says gestures 'poderiam valer' yellow; single editorial family, no conclusive requirement. Do not count publicly."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-12m-liberato-yellow",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "12",
+      "incident": "Potential omitted Guilherme Liberato caution for Moreirense",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "José Leirós",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/11/07/nota-3-para-joao-goncalves-arbitragem-muito-positiva/492615/",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "not_addressed",
+          "note": "Evaluates advantage and Maxi's simulation, does not state Liberato deserved yellow."
+        }
+      ],
+      "notes": "Only José Leirós explicitly says card missing. Needs independent positive corroboration before confirming."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-30m-liberato-shirt-pull",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "30",
+      "incident": "Guilherme Liberato holding Luís Guilherme's shirt near right corner of box; direct free kick not awarded",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Pedro Henriques alone asserts clear missed direct FK; no second named editorial confirmation found."
     }
   ]
 }
