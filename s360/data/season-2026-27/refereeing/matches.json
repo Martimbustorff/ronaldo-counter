@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "As of 2026-11-01, comparison J9 all three played, J10 Porto and Sporting played, Benfica-Alverca scheduled 2026-11-02. 14 earlier games still in backfill, J7 classic and J8-J10 referee reviews not fully closed. Public referee snapshot blocked; absence of expert reporting is not zero errors.",
+  "coverage_note": "As of 2026-11-08 all J10 and J11 tracked club matches finished, but expert evidence queue includes 14 earlier backfills and J10/J11 checks. Benfica-Alverca J10 researched with A BOLA/Record/O JOGO/Renascença/VAR and one confirmed missed yellow recorded internally. No referee public snapshot until exhaustive evidence threshold reached.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -839,6 +839,154 @@
         "FPF / Liga Portugal official material"
       ],
       "notes": "Round-4 backlog converted to substantiated review in 2026-11-01. 57' missed Kahraman yellow confirmed by two independent editorial families. 30' Andre Silva yellow disputed (3–3); 33' Froholdt and 35' Antonio Correia missed yellows each supported only by the three O JOGO reviewers (same publisher). Pending full threshold and cross-editorial review for these two; not complete."
+    },
+    {
+      "match_id": "2026-11-02-benfica-alverca",
+      "played_at": "2026-11-02",
+      "competition_round": 10,
+      "comparison_game_number": 10,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Alverca",
+      "status": "completed",
+      "result": "SL Benfica 1-0 FC Alverca",
+      "referee": "Bruno Pires Costa",
+      "var": "Luís Ferreira",
+      "review_status": "pending",
+      "review_last_checked_at": "2026-11-08",
+      "reviewed_sources": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-11-03",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "usable_for_confirmation": true,
+          "coverage": "9,12,15,25,33,45,49,58,63,65,90 incidents incl missed Palhinha 12 yellow; confirmed goals/penalty decisions"
+        },
+        {
+          "source_family": "Marco Ferreira + Jorge Faustino / Record",
+          "reviewer": "Marco Ferreira; Jorge Faustino",
+          "published_at": "2026-11-03",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "usable_for_confirmation": true,
+          "coverage": "12 Palhinha missed yellow both error; 29 Davy Gui missed yellow both error; 9 Bojang split; 25 disallowed goal correct, 49 penalty correct"
+        },
+        {
+          "source_family": "Jorge Coroado, José Leirós, Fortunato Azevedo / O JOGO",
+          "reviewer": "Jorge Coroado; José Leirós; Fortunato Azevedo",
+          "published_at": "2026-11-03",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "usable_for_confirmation": true,
+          "coverage": "29 Davy Gui yellow 2 errors/1 no-error, 37 simulation yellow 1 analyst only, 49 penalty 2 correct/1 no-penalty; 25 goal correctly annulled"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "José Leirós",
+          "published_at": "2026-11-02",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/11/02/nota-3-para-bruno-costa-no-benfica-alverca-faltou-lhe-pulso/491803/",
+          "usable_for_confirmation": true,
+          "coverage": "25 goal correctly disallowed, 49 penalty correct, general disciplinary criticism; not a match-wide exhaustive incident threshold"
+        },
+        {
+          "source_family": "Verdade Desportiva",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "usable_for_confirmation": false,
+          "coverage": "Aggregator/transcriptions linked by original editorial families, not additional independent expert"
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://vitoriasc.vsports.pt/vod/133031/m/0/vsports/f9d1d4279d174cba9994156e66d66e93",
+          "usable_for_confirmation": false,
+          "coverage": "Official video timeline/highlights; not a standalone expert verdict"
+        },
+        {
+          "source_family": "Liga Portugal official",
+          "url": "https://www.ligaportugal.pt/match/20262027/ligaportugalbetclic/10/9",
+          "usable_for_confirmation": false,
+          "coverage": "Fixture/result, no directly extractable stats/official VAR conclusion"
+        }
+      ],
+      "reviewed_incidents": [
+        {
+          "minute": "9",
+          "type": "Bojang foul on Dahl; missed yellow",
+          "verdict": "disputed",
+          "evidence": "Pedro Henriques error, Record Marco Ferreira error and Jorge Faustino no error; dissent remains"
+        },
+        {
+          "minute": "12",
+          "type": "Palhinha challenge on Dawda Camara; foul and yellow not awarded",
+          "verdict": "confirmed",
+          "evidence": "A BOLA Pedro Henriques + Record Marco Ferreira and Jorge Faustino; independent editorial confirmation"
+        },
+        {
+          "minute": "15",
+          "type": "Unresolved Prestianni incident",
+          "verdict": "candidate",
+          "evidence": "Verdade Desportiva em análise, no conclusive named verdict"
+        },
+        {
+          "minute": "25",
+          "type": "Bojang offside goal disallowed after VAR",
+          "verdict": "correct",
+          "evidence": "A BOLA, Record, O JOGO and Renascença support onside/offside decision"
+        },
+        {
+          "minute": "29",
+          "type": "Davy Gui challenge on Aursnes missed yellow",
+          "verdict": "disputed",
+          "evidence": "Record 2 and O JOGO 2 support error; O JOGO Coroado disagrees 4-1, retain disputed under strict no-dissent policy"
+        },
+        {
+          "minute": "33",
+          "type": "Pavlidis potential penalty",
+          "verdict": "correct",
+          "evidence": "A BOLA and O JOGO no infraction"
+        },
+        {
+          "minute": "37",
+          "type": "Prestianni possible simulation yellow",
+          "verdict": "candidate",
+          "evidence": "O JOGO Fortunato single reviewer only"
+        },
+        {
+          "minute": "49",
+          "type": "Penalty to Echeverri",
+          "verdict": "disputed_no_error_majority",
+          "evidence": "A BOLA Pedro + Record 2 + O JOGO 2 correct, O JOGO Coroado no penalty; dissent retained; not a confirmed error"
+        },
+        {
+          "minute": "58",
+          "type": "Alverca Chiquinho yellow",
+          "verdict": "correct",
+          "evidence": "A BOLA Pedro; match event official video"
+        },
+        {
+          "minute": "63",
+          "type": "Alverca Ian Luccas yellow",
+          "verdict": "correct",
+          "evidence": "A BOLA Pedro; match event official video"
+        },
+        {
+          "minute": "65",
+          "type": "Benfica Lenglet yellow",
+          "verdict": "correct",
+          "evidence": "A BOLA Pedro; match event official video"
+        }
+      ],
+      "searched_source_families": [
+        "Pedro Henriques / A BOLA",
+        "Marco Ferreira / Record",
+        "Jorge Faustino / Record",
+        "Iturralde / Record",
+        "Jorge Coroado / O JOGO",
+        "José Leirós / O JOGO",
+        "Fortunato Azevedo / O JOGO",
+        "Renascença VAR Bola Branca",
+        "Verdade Desportiva",
+        "VSPORTS",
+        "Liga Portugal / FPF"
+      ],
+      "notes": "2026-11-08 expert sweep: 12' missed Palhinha foul + yellow confirmed across A BOLA and Record; internal only. 29' Davy Gui 4-1 pro-error including O JOGO dissent stays DISPUTED per strict S360 rule, not confirmed. 9' Bojang disagreement and 49' penalty with minority dissent retained. Overall referee match evidence review NOT marked complete, no zero-error inference, referee public snapshot blocked."
     }
   ]
 }
