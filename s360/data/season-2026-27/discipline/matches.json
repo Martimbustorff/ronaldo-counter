@@ -1943,6 +1943,118 @@
       ],
       "conflicts": [],
       "notes": "Vitoria 1-2 FC Porto. Concussion-protocol purple substitution cards are medical only and must not enter disciplinary yellow/red totals. Manager Tiago Margarido 19m yellow excluded from player cards. Preliminary OFStats partial-time snapshot not considered a final-time contradiction."
+    },
+    {
+      "match_id": "2026-11-08-estrela-benfica",
+      "comparison_game_number": 11,
+      "played_at": "2026-11-08",
+      "competition_round": 11,
+      "tracked_club": "SL Benfica",
+      "opponent": "CF Estrela da Amadora",
+      "status": "completed",
+      "verification_status": "verified",
+      "resolved": {
+        "tracked_fouls": 12,
+        "opponent_fouls": 15
+      },
+      "cards": [
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Lovro Zvonarek",
+          "minute": "51",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Marco Silva (treinador)",
+          "minute": "50",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "staff",
+          "subject": "Pepa (treinador)",
+          "minute": "53",
+          "card": "yellow"
+        },
+        {
+          "side": "opponent",
+          "subject_type": "player",
+          "subject": "Alisson Souza de Jesus (Alisson Jesus)",
+          "minute": "89",
+          "card": "yellow"
+        }
+      ],
+      "sources": [
+        {
+          "id": "footypulse-estrela-benfica-j11-ft",
+          "independence_group": "FootyPulse",
+          "url": "https://footypulse.org/matches/liga-portugal/estrela-amadora-vs-benfica-2026-11-08",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 15,
+            "tracked_player_yellows": 0,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "Full-time Estrela 15 Benfica 12 fouls; player yellows Estrela 2 Benfica 0; separately displays coaching staff booking events. Estrela yellows Zvonarek 51 and Alisson Souza 89."
+        },
+        {
+          "id": "fotmob-estrela-benfica-j11-events",
+          "independence_group": "FotMob / Opta",
+          "url": "https://www.fotmob.com/pt-PT/matches/benfica-vs-estrela-da-amadora/7hyaphua",
+          "claims": {
+            "tracked_player_yellows": 0,
+            "tracked_player_dismissals": 0,
+            "opponent_player_yellows": 2,
+            "opponent_player_dismissals": 0
+          },
+          "notes": "FT 2-3; explicit Zvonarek 51, Alisson Jesus 89 yellows; separate Pepa 53 entry labeled treinador; no Benfica player shown yellow; A BOLA independently confirms Benfica coach Marco Silva yellow."
+        },
+        {
+          "id": "worldfootball-estrela-benfica-j11-ft",
+          "independence_group": "worldfootball.net / Heimspiel Medien",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223831/estrela-amadora_sl-benfica/team-statistics/",
+          "claims": {
+            "tracked_fouls": 12,
+            "opponent_fouls": 15
+          },
+          "notes": "FT 15 Estrela/12 Benfica fouls, 0 red and 0 yellow-red. Team-total yellows printed 3 Estrela / 1 Benfica include one staff caution on each side, not player-only metrics; subtract staff based on named timeline to reach Estrela player 2 / Benfica player 0."
+        },
+        {
+          "id": "abola-estrela-benfica-j11-live",
+          "independence_group": "A BOLA",
+          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
+          "claims": {},
+          "notes": "Independent Benfica Marco Silva and Estrela Pepa coaching staff yellows, separately classified from player cards."
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "match_feed_total_yellows_vs_player_only",
+          "status": "resolved",
+          "observed_values": [
+            "FootyPulse/FotMob 2 Estrela players, 0 Benfica players",
+            "worldfootball aggregate 3 Estrela, 1 Benfica (staff included)"
+          ],
+          "chosen_value": "Estrela 2 player yellows plus Pepa staff; Benfica 0 player yellows plus Marco Silva staff",
+          "resolution_note": "worldfootball reports mixed team-card totals 3/1; FotMob explicitly labels Pepa as coach; A BOLA reports Marco Silva as Benfica coach. Subtract exactly one staff booking from each team's aggregate and keep staff in cards[] but exclude from public player totals. FootyPulse and FotMob independently corroborate each player card recipient. All source groups agree on 15-12 full-time fouls."
+        },
+        {
+          "field": "initial_pending_card_attribution",
+          "status": "resolved",
+          "observed_values": [
+            "provisional pending: Alisson Souza misclassified as Benfica player",
+            "FotMob and FootyPulse: Estrela player Alisson Jesus/Souza"
+          ],
+          "chosen_value": "CF Estrela da Amadora player yellow 89m",
+          "resolution_note": "Initial pending record incorrectly assigned Alisson Souza to tracked SL Benfica. Live player event and teams list clearly show Alisson Souza de Jesus is Estrela's number 80 substitute; corrected prior to verified ingestion and cumulative snapshot."
+        }
+      ],
+      "notes": "SL Benfica win 3-2 away at CF Estrela, 8 Nov 2026 J11; FT fouls Estrela 15 / Benfica 12 independently corroborated by FootyPulse and worldfootball. Player yellows Estrela 2 (Zvonarek 51; Alisson Souza/Alisson Jesus 89), Benfica 0 confirmed by FootyPulse and FotMob event timeline. Coach/staff yellows Estrela Pepa 53, Benfica Marco Silva 50/51 are retained separately, excluded from player totals. worldfootball prints 3-1 aggregate cautions INCLUDING the 2 staff yellows: no genuine disagreement about shown player yellows once attribution is resolved. No player dismissals. Initial pending event wrongly assigned Alisson to Benfica; fixed using current team lineup/event sources. No missed hypothetical yellow cards imported from refereeing analysis."
     }
   ]
 }
