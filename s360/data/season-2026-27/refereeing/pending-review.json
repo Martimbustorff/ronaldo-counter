@@ -318,9 +318,29 @@
           "source_family": "A BOLA live match",
           "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
           "finding": "Match completed 2-3, individual player/staff yellow events; no retrospective named referee verdict yet."
+        },
+        {
+          "source_family": "FotMob / Opta",
+          "url": "https://www.fotmob.com/pt-PT/matches/benfica-vs-estrela-da-amadora/7hyaphua",
+          "finding": "FT played; card-event and staff-label factual evidence; does NOT establish existence/absence of referee error."
+        },
+        {
+          "source_family": "FootyPulse",
+          "url": "https://footypulse.org/matches/liga-portugal/estrela-amadora-vs-benfica-2026-11-08",
+          "finding": "Full-time 15-12 fouls, 2-0 player yellows. Does not constitute expert VAR/refereeing verdict."
+        },
+        {
+          "source_family": "worldfootball.net",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223831/estrela-amadora_sl-benfica/team-statistics/",
+          "finding": "Independent 15-12 fouls; mixed staff-inclusive 3-1 yellows, corrected to 2-0 player-only after staff separation; no judgment of referee errors."
+        },
+        {
+          "source_family": "Official Benfica referee appointments / CA FPF",
+          "url": "https://www.slbenfica.pt/pt-pt/agora/noticias/2026/11/04/futebol-arbitro-estrela-da-amadora-benfica-liga-betclic-11-jornada",
+          "finding": "António Nobre officiated, VAR Tiago Martins, AVAR Cátia Tavares. Appointment only, no retrospective error verdict."
         }
       ],
-      "notes": "Recent final; no referee-error conclusion, all review families pending independent evidence.\n2026-11-08: A BOLA Pedro Henriques / Renascença José Leirós processed for Sporting; Porto videos located but untranscribed; Benfica post-match independent expert reviews still pending. No assumption of zero errors.",
+      "notes": "Recent final; no referee-error conclusion, all review families pending independent evidence.\n2026-11-08: A BOLA Pedro Henriques / Renascença José Leirós processed for Sporting; Porto videos located but untranscribed; Benfica post-match independent expert reviews still pending. No assumption of zero errors.\n2026-11-08 late: factual events independently reconciled; searched fresh Pedro Henriques/A BOLA, Record panel Marco Ferreira/Jorge Faustino/Iturralde, O JOGO panel Coroado/Leirós/Fortunato, Renascença VAR Bola Branca, Verdade Desportiva, FPF VAR and VSPORTS. No retrospective auditable named-per-incident verdict yet: leave entire refereeing perspective PENDING and exclude all unconfirmed decisions. Discipline J11 is a separate publishable milestone.",
       "last_checked_at": "2026-11-08"
     }
   ],
@@ -334,5 +354,5 @@
   ],
   "source_for_fixture_backfill": "Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available.",
   "last_checked_at": "2026-11-08",
-  "last_check_note": "J10 all three played and discipline J10 publishable. J11 all three played as of 2026-11-08 22:34 UTC, but J11 discipline and referee evidence threshold incomplete. 27 outstanding tracked referee perspectives (including 14 earlier backfills); 6 complete. Internal J10 Benfica–Alverca 12' referee error confirmed, other new candidate/disputed rows excluded, no inference of zero errors."
+  "last_check_note": "J11 tracked-club discipline verified separately and snapshot publishable after Estrela–Benfica final 15-12 fouls and 2-0 player yellows (plus staff 1-1 excluded). REFEREEING still 6 complete / 27 pending of 33 perspectives; no fresh evidenced confirmed errors, no zero inference; review all named/official/VAR materials in next check."
 }
