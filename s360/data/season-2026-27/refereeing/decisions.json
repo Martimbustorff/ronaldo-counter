@@ -1105,6 +1105,38 @@
         }
       ],
       "notes": "Pedro Henriques alone asserts clear missed direct FK; no second named editorial confirmation found."
+    },
+    {
+      "decision_id": "2026-11-08-vitoria-fc-porto-56m-froholdt-nogueira-possible-penalty",
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "56",
+      "incident": "Vitória SC Gonçalo Nogueira appealed for a penalty following contact/hold allegedly involving Porto's Victor Froholdt in the box. Vitória coach Tiago Margarido later alleged VAR should have reviewed it.",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "A BOLA match live",
+          "reviewer": "Match reporter",
+          "url": "https://www.abola.pt/futebol/jogo/vitoria-de-guimaraes-fc-porto-11216351/liveblog",
+          "verdict": "incident_reported",
+          "note": "56m describes Gonçalo Nogueira appealing for a penalty after a possible pull; does not adjudicate."
+        },
+        {
+          "source_family": "Tiago Margarido post-match statement / A BOLA",
+          "reviewer": "Tiago Margarido (interested party, NOT independent referee expert)",
+          "url": "https://www.abola.pt/noticias/o-froholdt-nem-olha-para-a-bola-faz-uma-placagem-ao-goncalo-nogueira-2026110819101454211",
+          "verdict": "coach_allegation",
+          "note": "Coach says Froholdt 'faz uma placagem' to Nogueira and wanted a VAR check. A stakeholder allegation is not a confirmed mistake."
+        },
+        {
+          "source_family": "Record / post-match coach statement",
+          "reviewer": "Tiago Margarido (same speaker, NOT independent second expert)",
+          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/v--guimaraes/amp/tiago-margarido-o-jogo-foi-equilibrado-e-o-empate-seria-o-mais-justo",
+          "verdict": "coach_allegation"
+        }
+      ],
+      "notes": "CANDIDATE, NOT CONFIRMED: match-live penalty appeal and coach complaint are insufficient for S360 referee-error attribution. Needs official/VAR footage and independent named-expert opinions; do not add to public totals."
     }
   ]
 }
