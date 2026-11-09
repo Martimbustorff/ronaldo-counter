@@ -1879,7 +1879,7 @@
           "side": "tracked",
           "subject_type": "player",
           "subject": "Borja Sainz",
-          "minute": "43",
+          "minute": "38",
           "card": "yellow"
         },
         {
@@ -1901,6 +1901,13 @@
           "subject_type": "player",
           "subject": "Alan Varela",
           "minute": "90+7",
+          "card": "yellow"
+        },
+        {
+          "side": "tracked",
+          "subject_type": "staff",
+          "subject": "Rui Correia (team manager do FC Porto)",
+          "minute": "19",
           "card": "yellow"
         }
       ],
@@ -1939,10 +1946,41 @@
           "url": "https://ofstats.com/matches/view/vitoria-guimaraes-porto-2026-11-08",
           "claims": {},
           "notes": "Observed stale partial live capture (~82 minute, 9/12 fouls and 3/2 yellows); not final; do not use as conflicting final match evidence."
+        },
+        {
+          "id": "abola-vitoria-porto-j11-live-cards",
+          "independence_group": "A BOLA",
+          "url": "https://www.abola.pt/futebol/jogo/vitoria-de-guimaraes-fc-porto-11216351/liveblog",
+          "claims": {
+            "tracked_player_yellows": 4,
+            "opponent_player_yellows": 2
+          },
+          "notes": "Detailed match live report: Borja Sainz 38m yellow for celebration after his goal; Pablo Rosario 43m; Tiago Margarido (Vitória coach) and Rui Correia (Porto team manager) both cautioned 19m. Staff yellows excluded from player totals."
+        },
+        {
+          "id": "xgfootball-vitoria-porto-j11-events",
+          "independence_group": "xg.football",
+          "url": "https://xg.football/fr/matches/vitoria-sc-fc-porto-2026-11-08",
+          "claims": {
+            "tracked_player_yellows": 4,
+            "opponent_player_yellows": 2
+          },
+          "notes": "Independent event list puts Borja Sainz caution at 38m, immediately after goal, and Rosario at 43m. Also records manager Tiago Margarido."
         }
       ],
-      "conflicts": [],
-      "notes": "Vitoria 1-2 FC Porto. Concussion-protocol purple substitution cards are medical only and must not enter disciplinary yellow/red totals. Manager Tiago Margarido 19m yellow excluded from player cards. Preliminary OFStats partial-time snapshot not considered a final-time contradiction."
+      "conflicts": [
+        {
+          "field": "borja_sainz_yellow_event_minute",
+          "status": "resolved",
+          "observed_values": [
+            "ProMatch24 abridged chronology appeared to attribute minute 43 to Borja Sainz",
+            "A BOLA minute-by-minute report and xg.football match timeline show Borja Sainz 38 and Pablo Rosario 43; ProMatch24 alternative minute-by-minute event feed also shows Borja 38 for excessive celebration"
+          ],
+          "chosen_value": "Borja Sainz yellow 38m; Pablo Rosario yellow 43m",
+          "resolution_note": "The 43-minute card belongs to Pablo Rosario, not Borja. A BOLA live, xg.football and the alternate ProMatch24 events section all agree on Borja booked for goal celebration at 38. Public cautions unchanged."
+        }
+      ],
+      "notes": "Vitoria 1-2 FC Porto. Concussion-protocol purple substitution cards are medical only and must not enter disciplinary yellow/red totals. Manager Tiago Margarido 19m yellow excluded from player cards. Preliminary OFStats partial-time snapshot not considered a final-time contradiction.\n2026-11-09 re-audit: corrected Borja Sainz yellow-event minute 43→38 (post-goal celebration), kept Rosario yellow 43; added Rui Correia (FC Porto team manager) staff yellow at 19 from A BOLA. Changes are to event provenance/staff audit only; team-vs-opponent player counts unchanged."
     },
     {
       "match_id": "2026-11-08-estrela-benfica",
