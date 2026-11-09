@@ -135,7 +135,8 @@
       "2026-11-02-benfica-alverca-15m-prestianni-unspecified",
       "2026-11-07-sporting-moreirense-12m-maxi-dissent-yellow",
       "2026-11-07-sporting-moreirense-12m-liberato-yellow",
-      "2026-11-07-sporting-moreirense-30m-liberato-shirt-pull"
+      "2026-11-07-sporting-moreirense-30m-liberato-shirt-pull",
+      "2026-11-08-vitoria-fc-porto-56m-froholdt-nogueira-possible-penalty"
     ],
     "disputed": [
       "2026-09-09-moreirense-benfica-44m-penalty",
@@ -152,5 +153,5 @@
       "2026-11-02-benfica-alverca-49m-echeverri-penalty"
     ]
   },
-  "note": "J11 played perspectives for Porto, Benfica and Sporting are recorded; discipline snapshot J11 is separately publishable after player-vs-staff card reconciliation. Refereeing J11 remains blocked: only 6/33 tracked perspectives fully reviewed; 27 require the complete official/named-expert/VAR evidence threshold, including Estrela-Benfica 8 November. New FotMob / FootyPulse / Heimspiel full-time card and foul data establish factual discipline but are not referee error judgments. Pedro Henriques/A BOLA, Record named experts, O JOGO named experts, Renascença VAR Bola Branca, Verdade Desportiva and VSPORTS evidence searched; no new auditable confirmed refereeing decision for Estrela-Benfica. Confirmed internal decisions stay nonpublic; disputed/candidate excluded; public_totals={} is WITHHELD, not zero errors."
+  "note": "J11 played perspectives for Porto, Benfica and Sporting are recorded; discipline snapshot J11 is separately publishable after player-vs-staff card reconciliation. Refereeing J11 remains blocked: only 6/33 tracked perspectives fully reviewed; 27 require the complete official/named-expert/VAR evidence threshold, including Estrela-Benfica 8 November. New FotMob / FootyPulse / Heimspiel full-time card and foul data establish factual discipline but are not referee error judgments. Pedro Henriques/A BOLA, Record named experts, O JOGO named experts, Renascença VAR Bola Branca, Verdade Desportiva and VSPORTS evidence searched; no new auditable confirmed refereeing decision for Estrela-Benfica. Confirmed internal decisions stay nonpublic; disputed/candidate excluded; public_totals={} is WITHHELD, not zero errors. 2026-11-09 new Vitória-Porto Froholdt/Nogueira 56m penalty-appeal CANDIDATE logged from match live and interested coach; no independent referee ruling. Caution minute/staff source correction in discipline leaves all public discipline totals unchanged."
 }
