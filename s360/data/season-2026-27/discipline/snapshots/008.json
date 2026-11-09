@@ -1,0 +1,60 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 8,
+  "as_of": "2026-10-11",
+  "publishable": true,
+  "blocking_reasons": [],
+  "clubs": {
+    "FC Porto": {
+      "games": 8,
+      "team": {
+        "fouls": 111,
+        "player_yellows": 8,
+        "player_dismissals": 0,
+        "avg_fouls": 13.9,
+        "fouls_per_yellow": 13.9
+      },
+      "opponents": {
+        "fouls": 84,
+        "player_yellows": 16,
+        "player_dismissals": 2,
+        "avg_fouls": 10.5,
+        "fouls_per_yellow": 5.3
+      }
+    },
+    "SL Benfica": {
+      "games": 8,
+      "team": {
+        "fouls": 97,
+        "player_yellows": 16,
+        "player_dismissals": 1,
+        "avg_fouls": 12.1,
+        "fouls_per_yellow": 6.1
+      },
+      "opponents": {
+        "fouls": 133,
+        "player_yellows": 25,
+        "player_dismissals": 1,
+        "avg_fouls": 16.6,
+        "fouls_per_yellow": 5.3
+      }
+    },
+    "Sporting CP": {
+      "games": 8,
+      "team": {
+        "fouls": 93,
+        "player_yellows": 19,
+        "player_dismissals": 1,
+        "avg_fouls": 11.6,
+        "fouls_per_yellow": 4.9
+      },
+      "opponents": {
+        "fouls": 107,
+        "player_yellows": 19,
+        "player_dismissals": 1,
+        "avg_fouls": 13.4,
+        "fouls_per_yellow": 5.6
+      }
+    }
+  }
+}

@@ -326,6 +326,817 @@
         }
       ],
       "notes": "Only one underlying expert evaluation at the current check; excluded from public totals."
+    },
+    {
+      "decision_id": "2026-10-09-braga-sporting-20m-missed-yellow",
+      "match_id": "2026-10-09-braga-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "20",
+      "incident": "Possible missed yellow for Gabriel Silva challenge on Geny Catamo",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "url": "https://www.abola.pt/noticias/penalti-por-marcar-a-analise-de-pedro-henriques-ao-sc-braga-sporting-2026100922234411476",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Verdade Desportiva (aggregated analysts)",
+          "url": "https://verdadedesportiva.pt/lances/d551c5ca-abde-490c-89e3-fe5bebe5dfcd",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Preliminary report indicated 3 agreeing reviewers; candidate pending direct review of primary named claims and reviewer independence."
+    },
+    {
+      "decision_id": "2026-10-09-braga-sporting-48m-doumbia-handball",
+      "match_id": "2026-10-09-braga-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "48",
+      "incident": "Possible penalty, Doumbia handball",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva (aggregate)",
+          "url": "https://verdadedesportiva.pt/lances/1ab61544-0033-483e-b8a2-669e54f4b3ee",
+          "verdict": "conflicting_4_to_3"
+        }
+      ],
+      "notes": "Previous report notes disagreement: 4 error versus 3 no error. Retain dispute, excluded."
+    },
+    {
+      "decision_id": "2026-10-10-maritimo-porto-20m-froholdt",
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "20",
+      "incident": "Possible missed yellow on Froholdt",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Iturralde / Record",
+          "reviewer": "Iturralde González",
+          "url": "https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/85ced58d-005a-40ca-8c81-d790b0ff3d8c",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "2026-11-01 audit: Verdade Desportiva's incident ledger has FIVE named evaluations: A BOLA + Record (3) say missed yellow, Iturralde/Record and José Leirós/Renascença (2) say correct no yellow. Retain disputed (not a zero-error conclusion, not public) because substantial inter-editorial dissent, even though aggregator labels 3/5 'consensus'."
+    },
+    {
+      "decision_id": "2026-10-11-benfica-vitoria-9m-penalty",
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "tracked_club": "SL Benfica",
+      "minute": "9",
+      "incident": "Possible missed penalty for Benfica",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "url": "https://www.abola.pt/video/penalti-por-marcar-a-favor-do-benfica-a-analise-de-pedro-henriques-2026101120231764897",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Single reviewer; excluded."
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red",
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "84",
+      "incident": "Marvin Elimbi shown direct red for foul on Pepê; two expert analysts conclude DOGSO criteria not met and caution (yellow) should have been shown instead.",
+      "direction": "for",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/expulsao-incorreta-no-gil-vicente-fc-porto-a-analise-de-pedro-henriques-2026102423450755827",
+          "verdict": "error_yellow_not_red"
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "Tiago Antunes",
+          "url": "https://rr.pt/bola-branca/noticia/amp/futebol-nacional/2026/10/24/nota-2-para-luis-godinho-arbitragem-manchada-pelo-vermelho/490610/",
+          "verdict": "error_no_clear_goal_scoring_opportunity"
+        }
+      ],
+      "notes": "Confirmed with two independent named expert families on Oct 25. Official shown card remains direct red in discipline. Not eligible for public snapshot until all played tracked matches fully reviewed."
+    },
+    {
+      "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "73",
+      "incident": "Santi García stepped on Jan Bednarek's heel from behind at 73'; the direct free kick was awarded but a yellow for a negligent challenge was omitted.",
+      "direction": "against",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/expulsao-incorreta-no-gil-vicente-fc-porto-a-analise-de-pedro-henriques-2026102423450755827",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Iturralde / Record",
+          "reviewer": "Iturralde González",
+          "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Verdade Desportiva / editorial provenance",
+          "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
+          "verdict": "four_of_four_missed_yellow_two_independent_editorial_families"
+        },
+        {
+          "source_family": "VSPORTS",
+          "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
+          "verdict": "video_evidence_only"
+        }
+      ],
+      "notes": "PROMOTED 2026-11-01: unanimous 4/4 named reviews from A BOLA and Record (Pedro Henriques, Marco Ferreira, Jorge Faustino and Iturralde) agree missing yellow. S360 confirms referee error against FC Porto; original player-card tallies unchanged (no yellow actually shown). Internal-only until entire refereeing backlog reviewed; not part of public totals."
+    },
+    {
+      "decision_id": "2026-10-26-santa-clara-benfica-48m-brenner-yellow",
+      "match_id": "2026-10-26-santa-clara-benfica",
+      "tracked_club": "SL Benfica",
+      "minute": "48",
+      "incident": "Brenner challenge on Alexander Bah should have been sanctioned by a yellow card.",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/penalti-golo-validado-e-duran-a-analise-de-pedro-henriques-ao-santa-clara-benfica-2026102623455767448",
+          "verdict": "missed_yellow"
+        }
+      ],
+      "notes": "Only one independent editorial group; Renascença summary did not identify this specific caution. Not included."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-4m-ofori-yellow",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "4",
+      "incident": "Ofori missed foul and yellow on Pedro Lima near edge of area.",
+      "direction": "against",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "missed_yellow_and_direct_free_kick"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_yellow_and_foul"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_yellow_and_foul"
+        },
+        {
+          "source_family": "O JOGO / Verdade Desportiva",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/68ab7f83-d8c5-4c48-ab6c-541914698cce",
+          "verdict": "missed_foul_but_no_yellow"
+        }
+      ],
+      "notes": "Confirmed error: missed foul and card endorsed by A BOLA Pedro Henriques and two O JOGO reviewers from independent editorial family; third O JOGO disagrees only on sanction severity. Club direction against Sporting because opponent should have been cautioned. Withheld from public referee totals until all tracked games in scope fully reviewed."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-45+2m-pedro-lima-yellow",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "45+2",
+      "incident": "Pedro Lima pulled Khaly; yellow not shown.",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "missed_yellow"
+        }
+      ],
+      "notes": "Single primary named source; excluded."
+    },
+    {
+      "decision_id": "2026-10-30-casa-pia-sporting-70m-flavio-penalty",
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "tracked_club": "Sporting CP",
+      "minute": "70",
+      "incident": "Possible missed penalty after contact of Khaly on Flávio Gonçalves in Casa Pia area.",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva / expert aggregation",
+          "url": "https://verdadedesportiva.pt/jornadas/2026-27/10",
+          "verdict": "analysts_divided"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/ficaram-dois-penaltis-por-marcar-no-casa-pia-sporting-a-analise-de-pedro-henriques-2026103023580730819",
+          "verdict": "reviewed"
+        }
+      ],
+      "notes": "Genuine analyst disagreement; no public tally."
+    },
+    {
+      "decision_id": "2026-10-31-fc-porto-estoril-82m-souza-yellow",
+      "match_id": "2026-10-31-fc-porto-estoril",
+      "tracked_club": "FC Porto",
+      "minute": "82",
+      "incident": "Souza's raised arm contacted Pedro Carvalho's face during FC Porto–Estoril. No yellow shown (and reportedly no free kick).",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/arbitragem-quase-perfeita-no-dragao-a-analise-de-pedro-henriques-ao-fc-porto-estoril-2026110100080659490",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "missed_yellow_and_foul"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "missed_yellow"
+        },
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "no_error_incidental_contact"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "foul_only_no_yellow"
+        },
+        {
+          "source_family": "VSPORTS official evidence",
+          "url": "https://verdadedesportiva.pt/lances/c96e2d15-15e4-494c-b3a8-35c922e8226c",
+          "verdict": "video_evidence_only"
+        }
+      ],
+      "notes": "2026-11-01: Pedro Henriques (A BOLA) plus Jorge Faustino and Marco Ferreira (Record) + José Leirós (O JOGO) support missed yellow; Jorge Coroado and Fortunato Azevedo (O JOGO) say no yellow, 4 vs 2 all named sources, 3 vs 2 among the O JOGO+Record reviewers in Verdade Desportiva. Classified DISPUTED conservatively pending any new named/official clarification; excluded from public confirmed totals."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-30m-andre-silva-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "30",
+      "incident": "André Silva contact on Luís Silva; caution not shown",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/a-analise-de-pedro-henriques-a-arbitragem-do-academico-de-viseu-fc-porto-2026082907333799612",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/95d15bac-270f-482b-8cca-3a1b9998c5df",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "3 error vs 3 no_error across 3 publishers. Excluded; no majority-based promotion."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-33m-froholdt-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "33",
+      "incident": "Froholdt jersey tug; missed caution",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/0e2e3abf-ba21-4fdb-8b2f-e5ad2219b8d3",
+          "verdict": "error"
+        }
+      ],
+      "notes": "All three are O JOGO, one independent publisher family: keep candidate, not confirmed."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-35m-antonio-correia-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "35",
+      "incident": "António Correia contact on Pepê; missed caution",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        },
+        {
+          "source_family": "O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/lances/2a02658f-1ed0-4a19-8674-4827dfa0bd62",
+          "verdict": "error"
+        }
+      ],
+      "notes": "All three are O JOGO, one independent publisher family: keep candidate, not confirmed."
+    },
+    {
+      "decision_id": "2026-08-29-academico-fc-porto-57m-kahraman-yellow",
+      "match_id": "2026-08-29-academico-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "57",
+      "incident": "Kahraman held Gabri Veiga shirt; caution not shown",
+      "direction": "against",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/a-analise-de-pedro-henriques-a-arbitragem-do-academico-de-viseu-fc-porto-2026082907333799612",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/lances/07f9eafe-f47d-40bf-a75a-0c17f2dfc70c",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Independently supported by two editorial families, unanimity 3 named reviewers. Confirmed INTERNAL only until whole referee scope threshold complete. Does NOT alter actual on-field discipline yellows."
+    },
+    {
+      "decision_id": "2026-10-25-sporting-academico-22m-suarez-yellow",
+      "match_id": "2026-10-25-sporting-academico",
+      "tracked_club": "Sporting CP",
+      "minute": "22",
+      "incident": "Suárez contact on Académico goalkeeper Ewerton; foul given, caution disputed",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "error_yellow_required"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "1 vs 2 judgments, all same publication. Disputed (not zero, not confirmed); excluded."
+    },
+    {
+      "decision_id": "2026-10-25-sporting-academico-45m-reversed-penalty",
+      "match_id": "2026-10-25-sporting-academico",
+      "tracked_club": "Sporting CP",
+      "minute": "45",
+      "incident": "Sporting penalty reversed after VAR following Ewerton–Maxi collision",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "error_penalty_required"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/4ecddade-bead-4635-ae98-fafa1d630d91",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/o-golo-anulado-ao-academico-e-o-penalti-revertido-ao-sporting-pedro-henriques-analisa-os-casos-2026102601113914088",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "5 no-error / 1 error across Record/A BOLA/O JOGO, majority favor correction but expert disagreement remains documented: disputed and excluded from public error totals."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-12m-palhinha-missed-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "12",
+      "incident": "João Palhinha tripped Dawda Camara in a promising attack; direct free kick and player yellow omitted",
+      "direction": "for",
+      "status": "confirmed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Independent editorial families A BOLA + Record all agree omitted yellow/foul. Incident benefits Benfica, is a confirmed referee error in INTERNAL ONLY records; referee snapshot remains withheld until all tracked matches fully reviewed."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-9m-bojang-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "9",
+      "incident": "Bojang step on Dahl; debate whether a yellow should follow advantage",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "Record named analysts disagree; candidate no public tally under strict S360 disagreement policy."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-29m-davy-gui-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "29",
+      "incident": "Davy Gui foul on Aursnes, yellow not shown",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "4/5 favor yellow (2 independent editorial groups) but explicit Coroado dissent; strict decision-status disputed; excluded from public total."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-37m-prestianni-simulation-yellow",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "37",
+      "incident": "Prestianni falls without contact; Fortunato alleges yellow for simulation",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Only one named reviewer; no independent editorial corroboration."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-49m-echeverri-penalty",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "49",
+      "incident": "Penalty awarded after Sergi Gómez/Echeverri contact; minority says no penalty",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Jorge Coroado / O JOGO",
+          "reviewer": "Jorge Coroado",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "error"
+        },
+        {
+          "source_family": "José Leirós / O JOGO",
+          "reviewer": "José Leirós",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Fortunato Azevedo / O JOGO",
+          "reviewer": "Fortunato Azevedo",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Jorge Faustino / Record",
+          "reviewer": "Jorge Faustino",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Marco Ferreira / Record",
+          "reviewer": "Marco Ferreira",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "no_error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/pedro-henriques-analisa-os-momentos-decisivos-do-benfica-alverca-2026110300483384505",
+          "verdict": "no_error"
+        }
+      ],
+      "notes": "5/6 say penalty correct incl A BOLA and Record; one dissent (Coroado), no confirmed refereeing error. Keep disputed incident provenance, excluded from public error tally."
+    },
+    {
+      "decision_id": "2026-11-02-benfica-alverca-15m-prestianni-unspecified",
+      "match_id": "2026-11-02-benfica-alverca",
+      "tracked_club": "SL Benfica",
+      "minute": "15",
+      "incident": "Verdade Desportiva lists incident involving Prestianni under analysis",
+      "direction": "unknown",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Verdade Desportiva aggregator",
+          "reviewer": "Unattributed",
+          "url": "https://verdadedesportiva.pt/jogos/c505d054-a2bd-4e72-9dd2-db84dc533f0d",
+          "verdict": "under_analysis"
+        }
+      ],
+      "notes": "No conclusive named assessment; not eligible for totals."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-12m-maxi-dissent-yellow",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "12",
+      "incident": "Maximiliano Araújo gesture-based protest after no foul; possible omitted caution",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "possible_error"
+        }
+      ],
+      "notes": "Expert says gestures 'poderiam valer' yellow; single editorial family, no conclusive requirement. Do not count publicly."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-12m-liberato-yellow",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "12",
+      "incident": "Potential omitted Guilherme Liberato caution for Moreirense",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Renascença VAR Bola Branca",
+          "reviewer": "José Leirós",
+          "url": "https://rr.pt/bola-branca/noticia/futebol-nacional/2026/11/07/nota-3-para-joao-goncalves-arbitragem-muito-positiva/492615/",
+          "verdict": "error"
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "not_addressed",
+          "note": "Evaluates advantage and Maxi's simulation, does not state Liberato deserved yellow."
+        }
+      ],
+      "notes": "Only José Leirós explicitly says card missing. Needs independent positive corroboration before confirming."
+    },
+    {
+      "decision_id": "2026-11-07-sporting-moreirense-30m-liberato-shirt-pull",
+      "match_id": "2026-11-07-sporting-moreirense",
+      "tracked_club": "Sporting CP",
+      "minute": "30",
+      "incident": "Guilherme Liberato holding Luís Guilherme's shirt near right corner of box; direct free kick not awarded",
+      "direction": "against",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "url": "https://www.abola.pt/noticias/tera-havido-penaltis-em-alvalade-pedro-henriques-analisa-2026110800180470986",
+          "verdict": "error"
+        }
+      ],
+      "notes": "Pedro Henriques alone asserts clear missed direct FK; no second named editorial confirmation found."
+    },
+    {
+      "decision_id": "2026-11-08-vitoria-fc-porto-56m-froholdt-nogueira-possible-penalty",
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "56",
+      "incident": "Vitória SC Gonçalo Nogueira appealed for a penalty following contact/hold allegedly involving Porto's Victor Froholdt in the box. Vitória coach Tiago Margarido later alleged VAR should have reviewed it.",
+      "direction": "for",
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_family": "A BOLA match live",
+          "reviewer": "Match reporter",
+          "url": "https://www.abola.pt/futebol/jogo/vitoria-de-guimaraes-fc-porto-11216351/liveblog",
+          "verdict": "incident_reported",
+          "note": "56m describes Gonçalo Nogueira appealing for a penalty after a possible pull; does not adjudicate."
+        },
+        {
+          "source_family": "Tiago Margarido post-match statement / A BOLA",
+          "reviewer": "Tiago Margarido (interested party, NOT independent referee expert)",
+          "url": "https://www.abola.pt/noticias/o-froholdt-nem-olha-para-a-bola-faz-uma-placagem-ao-goncalo-nogueira-2026110819101454211",
+          "verdict": "coach_allegation",
+          "note": "Coach says Froholdt 'faz uma placagem' to Nogueira and wanted a VAR check. A stakeholder allegation is not a confirmed mistake."
+        },
+        {
+          "source_family": "Record / post-match coach statement",
+          "reviewer": "Tiago Margarido (same speaker, NOT independent second expert)",
+          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/v--guimaraes/amp/tiago-margarido-o-jogo-foi-equilibrado-e-o-empate-seria-o-mais-justo",
+          "verdict": "coach_allegation"
+        }
+      ],
+      "notes": "CANDIDATE, NOT CONFIRMED: match-live penalty appeal and coach complaint are insufficient for S360 referee-error attribution. Needs official/VAR footage and independent named-expert opinions; do not add to public totals."
     }
   ]
 }

@@ -306,7 +306,10 @@ def build_refereeing_snapshot(
         else:
             blocking.append(f"{decision.get('decision_id','<unknown>')}: invalid direction {direction}")
 
-    played_scope = len(relevant_matches) + len(pending_in_scope)
+    # A tracked perspective may exist in the reviewed dataset AND pending queue.
+    # Count distinct match_ids; two explicitly separate tracked-club perspectives
+    # on the same physical match remain distinct IDs (e.g. Porto-Benfica).
+    played_scope = len({m["match_id"] for m in relevant_matches} | {m["match_id"] for m in pending_in_scope})
     publishable = not blocking and bool(played_scope)
     return {
         "season": config["season"],

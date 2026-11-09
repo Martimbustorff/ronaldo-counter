@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "purpose": "Explicit review backlog. A match listed here must not be interpreted as zero refereeing errors; it remains excluded from publishable totals until moved into matches.json with review_status=complete and evidence-threshold review.",
+  "purpose": "Every unreviewed tracked played game must remain explicitly pending. All games already reviewed with sufficient threshold listed separately. No implicit zero errors.",
   "matches": [
     {
       "match_id": "2026-08-09-fc-porto-alverca",
@@ -28,7 +28,9 @@
       "comparison_game_number": 4,
       "tracked_club": "FC Porto",
       "opponent": "Académico de Viseu FC",
-      "review_status": "pending_backfill"
+      "review_status": "pending_evidence_review",
+      "notes": "4 incidents logged, 57' confirmed across A BOLA and Record, 30' disputed 3-3, 33'/35' still single publication family. Explicit evidence threshold incomplete. See refereeing/matches.json.",
+      "last_checked_at": "2026-11-01"
     },
     {
       "match_id": "2026-09-04-fc-porto-moreirense",
@@ -177,6 +179,184 @@
         }
       ],
       "notes": "Same physical match as the FC Porto perspective. Keep pending until named expert analysis reaches threshold; no zero inference."
+    },
+    {
+      "match_id": "2026-10-09-braga-sporting",
+      "comparison_game_number": 8,
+      "tracked_club": "Sporting CP",
+      "opponent": "SC Braga",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-10-maritimo-fc-porto",
+      "comparison_game_number": 8,
+      "tracked_club": "FC Porto",
+      "opponent": "CS Marítimo",
+      "review_status": "pending_evidence_review",
+      "notes": "J8 Porto: Froholdt 20 card split 3/5, remains disputed after A BOLA/Record/Renascença named reviews; match backfill incomplete."
+    },
+    {
+      "match_id": "2026-10-11-benfica-vitoria-sc",
+      "comparison_game_number": 8,
+      "tracked_club": "SL Benfica",
+      "opponent": "Vitória SC",
+      "review_status": "pending_evidence_review",
+      "notes": "Initial J8 expert incident candidates in refereeing/decisions.json. All evidence families must be checked."
+    },
+    {
+      "match_id": "2026-10-24-gil-vicente-fc-porto",
+      "comparison_game_number": 9,
+      "tracked_club": "FC Porto",
+      "opponent": "Gil Vicente FC",
+      "review_status": "pending_evidence_review",
+      "notes": "J9 Porto: Santi 73 confirmed after 4/4 independent A BOLA/Record reports; Elimbi 84 confirmed erroneous red; other match review stays pending."
+    },
+    {
+      "match_id": "2026-10-26-santa-clara-benfica",
+      "played_at": "2026-10-26",
+      "competition_round": 9,
+      "comparison_game_number": 9,
+      "tracked_club": "SL Benfica",
+      "opponent": "CD Santa Clara",
+      "review_status": "pending_evidence_review",
+      "notes": "J9 played. Pedro Henriques and Renascença reviewed; Brenner caution at 48' candidate; further independent confirmation pending."
+    },
+    {
+      "match_id": "2026-10-30-casa-pia-sporting",
+      "played_at": "2026-10-30",
+      "competition_round": 10,
+      "comparison_game_number": 10,
+      "tracked_club": "Sporting CP",
+      "opponent": "Casa Pia AC",
+      "review_status": "pending_evidence_review",
+      "notes": "J10 played. Ofori 4m missed caution confirmed across A BOLA / O JOGO, other incidents candidate/disputed, full closure pending."
+    },
+    {
+      "match_id": "2026-10-31-fc-porto-estoril",
+      "played_at": "2026-10-31",
+      "competition_round": 10,
+      "comparison_game_number": 10,
+      "tracked_club": "FC Porto",
+      "opponent": "GD Estoril Praia",
+      "review_status": "pending_evidence_review",
+      "notes": "J10 Porto: Pedro Henriques/A BOLA, Record and O JOGO experts + Renascença now consulted. 82 Souza card disputed (4 supporting, 2 disagreeing); excluded. Match overall still pending full threshold."
+    },
+    {
+      "match_id": "2026-11-02-benfica-alverca",
+      "played_at": "2026-11-02",
+      "comparison_game_number": 10,
+      "competition_round": 10,
+      "tracked_club": "SL Benfica",
+      "opponent": "FC Alverca",
+      "review_status": "pending_evidence_review",
+      "notes": "Independent 12' Palhinha omitted yellow confirmed internally by Pedro Henriques (A BOLA) and Record Marco Ferreira+Jorge Faustino. 29' Davy Gui yellow 4/5 expert disagreement excluded as disputed. 9' Bojang split, 37' Prestianni single-expert, 49' penalty split (5/6 correct, Coroado dissent). Named/official full review threshold not closed. See refereeing/matches.json and decisions.json.",
+      "last_checked_at": "2026-11-08"
+    },
+    {
+      "match_id": "2026-11-07-sporting-moreirense",
+      "played_at": "2026-11-07",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "Sporting CP",
+      "opponent": "Moreirense FC",
+      "review_status": "pending_evidence_review",
+      "referee": "João Gonçalves",
+      "result": "Sporting CP 1-0 Moreirense FC",
+      "evidence_found": [
+        {
+          "source_family": "Verdade Desportiva / Record",
+          "url": "https://verdadedesportiva.pt/",
+          "finding": "42' penalty assessment from Record analysts indicates no penalty; one editorial group, not enough to conclude entire match has no errors."
+        },
+        {
+          "source_family": "Liga Portugal / match report",
+          "url": "https://www.ligaportugal.pt/",
+          "finding": "Fixture/result after final."
+        }
+      ],
+      "notes": "Played; no zero-error inference; review named A BOLA/Record/O JOGO/Renascença/official and video sources before complete.\n2026-11-08: A BOLA Pedro Henriques / Renascença José Leirós processed for Sporting; Porto videos located but untranscribed; Benfica post-match independent expert reviews still pending. No assumption of zero errors.",
+      "last_checked_at": "2026-11-08"
+    },
+    {
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "FC Porto",
+      "opponent": "Vitória SC",
+      "review_status": "pending_evidence_review",
+      "referee": "David Silva",
+      "result": "Vitória SC 1-2 FC Porto",
+      "evidence_found": [
+        {
+          "source_family": "A BOLA",
+          "url": "https://www.abola.pt/",
+          "finding": "2026-11-08 live story of two concussion protocol purple cards (Bednarek/Borevković), which are medical substitutions not yellow/red sanction or referee error."
+        },
+        {
+          "source_family": "ProMatch24",
+          "url": "https://promatch24.com/match/746139/",
+          "finding": "Match timeline and named match referee; not an expert adjudication."
+        },
+        {
+          "source_family": "Renascença VAR Bola Branca / Tiago Rocha",
+          "url": "https://rr.pt/video/bola-branca/2026/11/08/nota-3-para-david-silva-no-v-guimaraes-1-2-fc-porto/495962/",
+          "finding": "Published 8 Nov 21:09, rates David Silva 3. Video text only; no incident-specific adjudication extracted, therefore not evidence of zero errors."
+        },
+        {
+          "source_family": "VSPORTS / Liga Portugal match highlights",
+          "url": "https://superportistas.pt/video/resumo-vitoria-sc-1-2-fc-porto-133391/",
+          "finding": "Official match highlights indexed, no verified expert decision from footage."
+        },
+        {
+          "source_family": "A BOLA / Vitória coach postmatch",
+          "url": "https://www.abola.pt/noticias/o-froholdt-nem-olha-para-a-bola-faz-uma-placagem-ao-goncalo-nogueira-2026110819101454211",
+          "finding": "Tiago Margarido complains about Froholdt–Gonçalo Nogueira incident; only stakeholder assertion, no independent named expert verdict; candidate decision tracked."
+        }
+      ],
+      "notes": "Recent final; review queue pending named expert and VAR/official evidence. Medical concussion purple card is not disciplinary player card.\n2026-11-08: A BOLA Pedro Henriques / Renascença José Leirós processed for Sporting; Porto videos located but untranscribed; Benfica post-match independent expert reviews still pending. No assumption of zero errors.\n2026-11-09: flagged Froholdt–Nogueira 56m stakeholder allegation as referee CANDIDATE only; A BOLA live/coach source, Record same statement, Renascença Tiago Rocha grade-3 and VSPORTS match clip located. Nothing merits confirmed status and queue remains pending.",
+      "last_checked_at": "2026-11-09"
+    },
+    {
+      "match_id": "2026-11-08-estrela-benfica",
+      "played_at": "2026-11-08",
+      "comparison_game_number": 11,
+      "competition_round": 11,
+      "tracked_club": "SL Benfica",
+      "opponent": "CF Estrela da Amadora",
+      "review_status": "pending_evidence_review",
+      "referee": "António Nobre",
+      "result": "CF Estrela da Amadora 2-3 SL Benfica",
+      "evidence_found": [
+        {
+          "source_family": "A BOLA live match",
+          "url": "https://www.abola.pt/futebol/jogo/estrela-da-amadora-benfica-11216339/liveblog",
+          "finding": "Match completed 2-3, individual player/staff yellow events; no retrospective named referee verdict yet."
+        },
+        {
+          "source_family": "FotMob / Opta",
+          "url": "https://www.fotmob.com/pt-PT/matches/benfica-vs-estrela-da-amadora/7hyaphua",
+          "finding": "FT played; card-event and staff-label factual evidence; does NOT establish existence/absence of referee error."
+        },
+        {
+          "source_family": "FootyPulse",
+          "url": "https://footypulse.org/matches/liga-portugal/estrela-amadora-vs-benfica-2026-11-08",
+          "finding": "Full-time 15-12 fouls, 2-0 player yellows. Does not constitute expert VAR/refereeing verdict."
+        },
+        {
+          "source_family": "worldfootball.net",
+          "url": "https://www--worldfootball--net.c.hs-data.com/match-report/co123/portugal-primeira-liga/ma12223831/estrela-amadora_sl-benfica/team-statistics/",
+          "finding": "Independent 15-12 fouls; mixed staff-inclusive 3-1 yellows, corrected to 2-0 player-only after staff separation; no judgment of referee errors."
+        },
+        {
+          "source_family": "Official Benfica referee appointments / CA FPF",
+          "url": "https://www.slbenfica.pt/pt-pt/agora/noticias/2026/11/04/futebol-arbitro-estrela-da-amadora-benfica-liga-betclic-11-jornada",
+          "finding": "António Nobre officiated, VAR Tiago Martins, AVAR Cátia Tavares. Appointment only, no retrospective error verdict."
+        }
+      ],
+      "notes": "Recent final; no referee-error conclusion, all review families pending independent evidence.\n2026-11-08: A BOLA Pedro Henriques / Renascença José Leirós processed for Sporting; Porto videos located but untranscribed; Benfica post-match independent expert reviews still pending. No assumption of zero errors.\n2026-11-08 late: factual events independently reconciled; searched fresh Pedro Henriques/A BOLA, Record panel Marco Ferreira/Jorge Faustino/Iturralde, O JOGO panel Coroado/Leirós/Fortunato, Renascença VAR Bola Branca, Verdade Desportiva, FPF VAR and VSPORTS. No retrospective auditable named-per-incident verdict yet: leave entire refereeing perspective PENDING and exclude all unconfirmed decisions. Discipline J11 is a separate publishable milestone.",
+      "last_checked_at": "2026-11-08"
     }
   ],
   "already_complete_elsewhere": [
@@ -184,7 +364,10 @@
     "2026-09-12-casa-pia-fc-porto",
     "2026-09-13-benfica-gil-vicente",
     "2026-09-13-famalicao-sporting",
-    "2026-09-19-sporting-arouca"
+    "2026-09-19-sporting-arouca",
+    "2026-10-25-sporting-academico"
   ],
-  "source_for_fixture_backfill": "Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available."
+  "source_for_fixture_backfill": "Primeira Liga 2026/27 results pages cross-checked against club fixture pages where available.",
+  "last_checked_at": "2026-11-09",
+  "last_check_note": "J11 tracked-club discipline verified separately and snapshot publishable after Estrela–Benfica final 15-12 fouls and 2-0 player yellows (plus staff 1-1 excluded). REFEREEING still 6 complete / 27 pending of 33 perspectives; no fresh evidenced confirmed errors, no zero inference; review all named/official/VAR materials in next check."
 }
