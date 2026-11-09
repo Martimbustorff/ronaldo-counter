@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "As of 2026-11-08 all J10 and J11 tracked club matches finished, but expert evidence queue includes 14 earlier backfills and J10/J11 checks. Benfica-Alverca J10 researched with A BOLA/Record/O JOGO/Renascença/VAR and one confirmed missed yellow recorded internally. No referee public snapshot until exhaustive evidence threshold reached.",
+  "coverage_note": "As of 2026-11-08 all J10 and J11 tracked club matches finished, but expert evidence queue includes 14 earlier backfills and J10/J11 checks. Benfica-Alverca J10 researched with A BOLA/Record/O JOGO/Renascença/VAR and one confirmed missed yellow recorded internally. No referee public snapshot until exhaustive evidence threshold reached.\n2026-11-09: J11 Vitória–Porto extra source review, candidate/under review; full 6/33 complete gate unchanged.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -1068,6 +1068,20 @@
           "url": "https://www.rotascore.com/pt/match/vitoria-guimaraes-porto/l7oqdehgw0ddr51",
           "coverage": "Match highlights, no conclusive expert verdict",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "A BOLA / match live report",
+          "published_at": "2026-11-08",
+          "url": "https://www.abola.pt/futebol/jogo/vitoria-de-guimaraes-fc-porto-11216351/liveblog",
+          "coverage": "At minutes 52 and 56 home side demanded penalties, VAR looked at 52; minute 56 Nogueira possible pull; coach later alleged Froholdt contact",
+          "usable_for_confirmation": false
+        },
+        {
+          "source_family": "VSPORTS / J11 official match highlights",
+          "published_at": "2026-11-08",
+          "url": "https://superportistas.pt/video/resumo-vitoria-sc-1-2-fc-porto-133391/",
+          "coverage": "Match video highlights available; without reviewing the specific incident footage, no expert error verdict",
+          "usable_for_confirmation": false
         }
       ],
       "searched_source_families": [
@@ -1084,7 +1098,7 @@
         "Liga Portugal / official",
         "FPF / official VAR"
       ],
-      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold."
+      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-09: 56m Froholdt vs Gonçalo Nogueira possible missed penalty remains CANDIDATE (match reporter appeal + stakeholder coach protest; not a referee expert). Renascença VAR Bola Branca Tiago Rocha grade 3 for David Silva and VSPORTS clips identified; no incident-specific independent adjudication. Full referee review remains pending."
     },
     {
       "match_id": "2026-11-08-estrela-benfica",
