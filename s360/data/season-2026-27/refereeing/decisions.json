@@ -432,7 +432,7 @@
       "minute": "84",
       "incident": "Marvin Elimbi shown direct red for foul on Pepê; two expert analysts conclude DOGSO criteria not met and caution (yellow) should have been shown instead.",
       "direction": "for",
-      "status": "confirmed",
+      "status": "disputed",
       "provenance": [
         {
           "source_family": "Pedro Henriques / A BOLA",
@@ -445,9 +445,24 @@
           "reviewer": "Tiago Antunes",
           "url": "https://rr.pt/bola-branca/noticia/amp/futebol-nacional/2026/10/24/nota-2-para-luis-godinho-arbitragem-manchada-pelo-vermelho/490610/",
           "verdict": "error_no_clear_goal_scoring_opportunity"
+        },
+        {
+          "source_family": "Direção Técnica Nacional (DTN) / Record",
+          "reviewer": "João Ferreira (position attributed by Record; not a direct FPF publication)",
+          "published_at": "2026-11-04",
+          "url": "https://www.record.pt/futebol/arbitragem/detalhe/direcao-tecnica-nacional-valida-expulsao-no-gil-vicente-fc-porto-e-amarelo-no-santa-clara-benfica",
+          "verdict": "no_error_DOGSO_red_justified",
+          "note": "DTN technical training reportedly judged red correct for DOGSO; referee's original written reason was excessive force. Important contrary authoritative position despite majority named expert views of incorrect red."
+        },
+        {
+          "source_family": "Verdade Desportiva (attribution to Record/O JOGO/A BOLA/Renascença independent editorials)",
+          "published_at": "2026-10-27",
+          "url": "https://verdadedesportiva.pt/lances/b686f60c-baf1-43c7-bb0e-792a0506e775",
+          "verdict": "experts_divided_7_wrong_1_correct_1_doubtful",
+          "note": "Primary expert opinions linked individually on source; aggregating them does not create a separate independent source group."
         }
       ],
-      "notes": "Confirmed with two independent named expert families on Oct 25. Official shown card remains direct red in discipline. Not eligible for public snapshot until all played tracked matches fully reviewed."
+      "notes": "Confirmed with two independent named expert families on Oct 25. Official shown card remains direct red in discipline. Not eligible for public snapshot until all played tracked matches fully reviewed.\n2026-11-15 RETROSPECTIVE CONFLICT: Record 4 Nov reports DTN/João Ferreira validates Elimbi's red for DOGSO, in direct disagreement with Pedro Henriques/A BOLA, Tiago Antunes/Renascença, Jorge Faustino/Record and all three O JOGO analysts, though Marco Ferreira/Record agrees with DTN. Move CONFIRMED -> DISPUTED; no longer count even internally. Shown red remains in discipline dataset unchanged. Reported DTN position is indirect; ask for FPF primary documentary clarification."
     },
     {
       "decision_id": "2026-10-24-gil-vicente-fc-porto-73m-santi-yellow",
@@ -1110,10 +1125,10 @@
       "decision_id": "2026-11-08-vitoria-fc-porto-56m-froholdt-nogueira-possible-penalty",
       "match_id": "2026-11-08-vitoria-fc-porto",
       "tracked_club": "FC Porto",
-      "minute": "56",
+      "minute": "55",
       "incident": "Vitória SC Gonçalo Nogueira appealed for a penalty following contact/hold allegedly involving Porto's Victor Froholdt in the box. Vitória coach Tiago Margarido later alleged VAR should have reviewed it.",
       "direction": "for",
-      "status": "candidate",
+      "status": "disputed",
       "provenance": [
         {
           "source_family": "A BOLA match live",
@@ -1134,9 +1149,92 @@
           "reviewer": "Tiago Margarido (same speaker, NOT independent second expert)",
           "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/v--guimaraes/amp/tiago-margarido-o-jogo-foi-equilibrado-e-o-empate-seria-o-mais-justo",
           "verdict": "coach_allegation"
+        },
+        {
+          "source_family": "Direção Técnica Nacional / Record",
+          "published_at": "2026-11-11",
+          "url": "https://www.record.pt/futebol/arbitragem/amp/direcao-tecnica-nacional-acha-que-froholdt-fez-penalti-em-guimaraes",
+          "verdict": "missed_penalty_for_Vitoria",
+          "note": "Record reports DTN presentation of this as a foul/penalty not called; primary FPF technical training deck not publicly available."
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/abe59f13-8bed-4e1b-aaa3-e7a5704a15f7",
+          "verdict": "no_penalty_mutual_arm_use",
+          "note": "Exact attributed quote and A BOLA primary source linked by Verdade Desportiva."
+        },
+        {
+          "source_family": "O JOGO trio / Verdade Desportiva",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/abe59f13-8bed-4e1b-aaa3-e7a5704a15f7",
+          "verdict": "split_1_penalty_2_no_penalty",
+          "note": "Jorge Coroado: missed penalty. José Leirós and Fortunato Azevedo: no penalty; same O JOGO publication family."
+        },
+        {
+          "source_family": "VSPORTS / Notícias ao Minuto",
+          "published_at": "2026-11-08",
+          "url": "https://www.noticiasaominuto.com/desporto/3080711/o-lance-em-que-o-vitoria-sc-fica-a-pedir-penalti-contra-o-fc-porto",
+          "verdict": "footage_of_contested_55m_incident_only",
+          "note": "Clip/report is evidence of occurrence, not a referee expert verdict."
         }
       ],
-      "notes": "CANDIDATE, NOT CONFIRMED: match-live penalty appeal and coach complaint are insufficient for S360 referee-error attribution. Needs official/VAR footage and independent named-expert opinions; do not add to public totals."
+      "notes": "CANDIDATE, NOT CONFIRMED: match-live penalty appeal and coach complaint are insufficient for S360 referee-error attribution. Needs official/VAR footage and independent named-expert opinions; do not add to public totals.\n2026-11-15: Reclassify CANDIDATE -> DISPUTED because Record 11 Nov attributes a missed-penalty verdict to DTN, contradicting A BOLA Pedro Henriques and 2/3 O JOGO analysts (Coroado supporting penalty). Strong substantive conflict. Minute 55 reported by VSPORTS and Record (prior stored 56 as liveblog minute; retain decision_id for stable references). Do not confirm or count until official primary DTN record and thresholded adjudication reconcile."
+    },
+    {
+      "decision_id": "2026-11-08-vitoria-fc-porto-43m-pablo-rosario-yellow",
+      "match_id": "2026-11-08-vitoria-fc-porto",
+      "tracked_club": "FC Porto",
+      "minute": "43",
+      "incident": "David Silva cautioned FC Porto player Pablo Rosario at 43'; analysts split on whether challenge merited a yellow.",
+      "direction": "against",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "Record / Marco Ferreira and Jorge Faustino",
+          "reviewer": "Marco Ferreira; Jorge Faustino",
+          "published_at": "2026-11-08",
+          "url": "https://verdadedesportiva.pt/lances/26e7b976-e8bf-44ba-aa85-3483cf1cb66c",
+          "verdict": "yellow_incorrect",
+          "note": "Record analysts both call yellow incorrect; primary Record linked in Verdade Desportiva."
+        },
+        {
+          "source_family": "Pedro Henriques / A BOLA",
+          "reviewer": "Pedro Henriques",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/26e7b976-e8bf-44ba-aa85-3483cf1cb66c",
+          "verdict": "yellow_correct"
+        },
+        {
+          "source_family": "O JOGO trio",
+          "reviewer": "Jorge Coroado; José Leirós; Fortunato Azevedo",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/26e7b976-e8bf-44ba-aa85-3483cf1cb66c",
+          "verdict": "split_1_correct_2_incorrect"
+        }
+      ],
+      "notes": "2026-11-15. 4 of 6 individual expert opinions claim unjustified yellow, two defend original yellow; cross-publication disagreement material, so DISPUTED despite aggregate majority. Actual player yellow remains included in discipline snapshot."
+    },
+    {
+      "decision_id": "2026-11-08-estrela-benfica-35m-pavlidis-yellow",
+      "match_id": "2026-11-08-estrela-benfica",
+      "tracked_club": "SL Benfica",
+      "minute": "35",
+      "incident": "Pavlidis touched Kevin Jansson in the face; no yellow shown, two O JOGO analysts say yellow warranted, one disagrees.",
+      "direction": "for",
+      "status": "disputed",
+      "provenance": [
+        {
+          "source_family": "O JOGO / Jorge Coroado, José Leirós, Fortunato Azevedo",
+          "reviewer": "Jorge Coroado; José Leirós; Fortunato Azevedo",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/2d28ce21-6598-40b5-92eb-3b1d4bb49a94",
+          "verdict": "split_2_yellow_1_no_card",
+          "note": "Three experts but one publication family; sources are not independent groups. No A BOLA/Record second corroborating editorial yet."
+        }
+      ],
+      "notes": "2026-11-15. DISPUTED O JOGO analyst split (2-1), not confirmed at S360 multi-source threshold; excluded from public totals."
     }
   ]
 }
