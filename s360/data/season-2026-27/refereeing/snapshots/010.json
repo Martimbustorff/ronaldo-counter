@@ -86,11 +86,6 @@
       "direction": "against"
     },
     {
-      "decision_id": "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red",
-      "tracked_club": "FC Porto",
-      "direction": "for"
-    },
-    {
       "decision_id": "2026-10-30-casa-pia-sporting-4m-ofori-yellow",
       "tracked_club": "Sporting CP",
       "direction": "against"
@@ -140,8 +135,9 @@
       "2026-10-25-sporting-academico-45m-reversed-penalty",
       "2026-11-02-benfica-alverca-9m-bojang-yellow",
       "2026-11-02-benfica-alverca-29m-davy-gui-yellow",
-      "2026-11-02-benfica-alverca-49m-echeverri-penalty"
+      "2026-11-02-benfica-alverca-49m-echeverri-penalty",
+      "2026-10-24-gil-vicente-fc-porto-84m-elimbi-red"
     ]
   },
-  "note": "2026-11-08: Full J10 tracked perspective set complete, but 24 of 30 perspectives lack S360 match-wide review threshold. New 12' Benfica–Alverca referee error confirmed internally (A BOLA and Record); Davy Gui 29' 4/5 expert majority with named dissent remains disputed and excluded. No public totals. J11 completed but must be separate J11 snapshot."
+  "note": "2026-11-08: Full J10 tracked perspective set complete, but 24 of 30 perspectives lack S360 match-wide review threshold. New 12' Benfica–Alverca referee error confirmed internally (A BOLA and Record); Davy Gui 29' 4/5 expert majority with named dissent remains disputed and excluded. No public totals. J11 completed but must be separate J11 snapshot.\n2026-11-15 retrospective audit: DTN reported by Record supports Elimbi red whereas named panels disagree => decision downgraded confirmed to disputed. J11 Froholdt 55m DTN vs A BOLA/O JOGO disputed; J11 Pablo Rosario yellow and Pavlidis missed caution recorded as disputed, excluded. Publication gate still blocked, public_totals withheld. Disciplinary shown cards are unaffected."
 }
