@@ -2,7 +2,7 @@
   "season": "2026-27",
   "note": "Every played tracked match must exist here before a refereeing snapshot can be publishable.",
   "coverage_status": "baseline_backfill_incomplete",
-  "coverage_note": "As of 2026-11-08 all J10 and J11 tracked club matches finished, but expert evidence queue includes 14 earlier backfills and J10/J11 checks. Benfica-Alverca J10 researched with A BOLA/Record/O JOGO/Renascença/VAR and one confirmed missed yellow recorded internally. No referee public snapshot until exhaustive evidence threshold reached.\n2026-11-09: J11 Vitória–Porto extra source review, candidate/under review; full 6/33 complete gate unchanged.",
+  "coverage_note": "As of 2026-11-08 all J10 and J11 tracked club matches finished, but expert evidence queue includes 14 earlier backfills and J10/J11 checks. Benfica-Alverca J10 researched with A BOLA/Record/O JOGO/Renascença/VAR and one confirmed missed yellow recorded internally. No referee public snapshot until exhaustive evidence threshold reached.\n2026-11-09: J11 Vitória–Porto extra source review, candidate/under review; full 6/33 complete gate unchanged.\n2026-11-15 audit: J11 discipline publishable and unchanged; J12 upcoming, referee 6/33 reviewed, Elimbi technical conflict downgraded confirmed to disputed, Froholdt/Pablo Rosario/Pavlidis disputed; referee publication gate still BLOCKED.",
   "matches": [
     {
       "match_id": "2026-09-09-moreirense-benfica",
@@ -354,10 +354,17 @@
           "url": "https://verdadedesportiva.pt/lances/8080e179-37e3-4eb9-b900-9d9fe6afe5b4",
           "usable_for_confirmation": true,
           "coverage": "73m Santi García missed yellow, unanimous 4/4 A BOLA+Record independent experts"
+        },
+        {
+          "source_family": "Direção Técnica Nacional / Record (reported official technical session)",
+          "published_at": "2026-11-04",
+          "url": "https://www.record.pt/futebol/arbitragem/detalhe/direcao-tecnica-nacional-valida-expulsao-no-gil-vicente-fc-porto-e-amarelo-no-santa-clara-benfica",
+          "coverage": "Elimbi 84m DOGSO red reportedly deemed valid. Contradicts A BOLA and Renascença named reviewers; confirmation invalidated.",
+          "usable_for_confirmation": false
         }
       ],
-      "notes": "Elimbi direct red remains confirmed error with independent A BOLA and Renascença expert analyses; a different missed caution remains candidate. Need full Record/O JOGO and remaining incidents; pending. UPDATED 2026-11-01: Santi 73' is now confirmed (4/4 named experts across Record/A BOLA); Elimbi direct red also confirmed erroneous, both internally only; other match-wide review still pending.",
-      "review_last_checked_at": "2026-11-01",
+      "notes": "Elimbi direct red remains confirmed error with independent A BOLA and Renascença expert analyses; a different missed caution remains candidate. Need full Record/O JOGO and remaining incidents; pending. UPDATED 2026-11-01: Santi 73' is now confirmed (4/4 named experts across Record/A BOLA); Elimbi direct red also confirmed erroneous, both internally only; other match-wide review still pending.\n2026-11-15: Elimbi referee error status DISPUTED due to opposite DTN report; official red stays. Needs FPF primary documentation.",
+      "review_last_checked_at": "2026-11-15",
       "searched_source_families": [
         "Pedro Henriques / A BOLA",
         "Marco Ferreira / Record",
@@ -1045,7 +1052,7 @@
       "tracked_club": "FC Porto",
       "status": "completed",
       "review_status": "pending",
-      "review_last_checked_at": "2026-11-08",
+      "review_last_checked_at": "2026-11-15",
       "reviewed_sources": [
         {
           "source_family": "Renascença VAR Bola Branca",
@@ -1082,6 +1089,13 @@
           "url": "https://superportistas.pt/video/resumo-vitoria-sc-1-2-fc-porto-133391/",
           "coverage": "Match video highlights available; without reviewing the specific incident footage, no expert error verdict",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "Direção Técnica Nacional / Record (reported official training)",
+          "published_at": "2026-11-11",
+          "url": "https://www.record.pt/futebol/arbitragem/amp/direcao-tecnica-nacional-acha-que-froholdt-fez-penalti-em-guimaraes",
+          "coverage": "Froholdt-Nogueira 55m missed penalty reportedly DTN view, contrasting Pedro Henriques/A BOLA and two O JOGO analysts.",
+          "usable_for_confirmation": false
         }
       ],
       "searched_source_families": [
@@ -1098,7 +1112,7 @@
         "Liga Portugal / official",
         "FPF / official VAR"
       ],
-      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-09: 56m Froholdt vs Gonçalo Nogueira possible missed penalty remains CANDIDATE (match reporter appeal + stakeholder coach protest; not a referee expert). Renascença VAR Bola Branca Tiago Rocha grade 3 for David Silva and VSPORTS clips identified; no incident-specific independent adjudication. Full referee review remains pending."
+      "notes": "\n2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-09: 56m Froholdt vs Gonçalo Nogueira possible missed penalty remains CANDIDATE (match reporter appeal + stakeholder coach protest; not a referee expert). Renascença VAR Bola Branca Tiago Rocha grade 3 for David Silva and VSPORTS clips identified; no incident-specific independent adjudication. Full referee review remains pending.\n2026-11-15: Froholdt 55m disputed; Rosario 43m yellow disputed; do not treat majority editorials as definitive amid opposing DTN report."
     },
     {
       "match_id": "2026-11-08-estrela-benfica",
@@ -1108,7 +1122,7 @@
       "tracked_club": "SL Benfica",
       "status": "completed",
       "review_status": "pending",
-      "review_last_checked_at": "2026-11-08",
+      "review_last_checked_at": "2026-11-15",
       "reviewed_sources": [
         {
           "source_family": "Liga Portugal official match",
@@ -1151,6 +1165,13 @@
           "url": "https://www.slbenfica.pt/pt-pt/agora/noticias/2026/11/04/futebol-arbitro-estrela-da-amadora-benfica-liga-betclic-11-jornada",
           "coverage": "António Nobre referee, Tiago Martins VAR, Cátia Tavares AVAR; referee appointments not adjudication.",
           "usable_for_confirmation": false
+        },
+        {
+          "source_family": "O JOGO trio / Verdade Desportiva attributed review",
+          "published_at": "2026-11-09",
+          "url": "https://verdadedesportiva.pt/lances/2d28ce21-6598-40b5-92eb-3b1d4bb49a94",
+          "coverage": "Pavlidis 35m yellow decision split 2-1 within same editorial source; not multi-publication confirmation.",
+          "usable_for_confirmation": false
         }
       ],
       "searched_source_families": [
@@ -1167,7 +1188,7 @@
         "Liga Portugal / official",
         "FPF / official VAR"
       ],
-      "notes": "2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-08 23:3x UTC: Rechecked specific named analyses from Pedro Henriques/A BOLA, Marco Ferreira/Jorge Faustino/Iturralde/Record, Coroado/Leirós/Fortunato/O JOGO, Renascença VAR Bola Branca, Verdade Desportiva, official VAR/FPF and VSPORTS; no auditable per-incident retrospective thresholds yet for this just-ended match. FotMob/Opta and FootyPulse/Heimspiel FT match data confirm cards/fouls but not refereeing-error verdicts. Remains PENDING; no zero errors inferred."
+      "notes": "2026-11-08: Searched named-source families and official/VAR/video; specific expert verdicts recorded separately. Missing source analysis is NOT zero errors. Refereeing match remains pending full evidence threshold.\n2026-11-08 23:3x UTC: Rechecked specific named analyses from Pedro Henriques/A BOLA, Marco Ferreira/Jorge Faustino/Iturralde/Record, Coroado/Leirós/Fortunato/O JOGO, Renascença VAR Bola Branca, Verdade Desportiva, official VAR/FPF and VSPORTS; no auditable per-incident retrospective thresholds yet for this just-ended match. FotMob/Opta and FootyPulse/Heimspiel FT match data confirm cards/fouls but not refereeing-error verdicts. Remains PENDING; no zero errors inferred.\n2026-11-15: Pavlidis 35m potential missing yellow disputed; no independent confirmed error."
     }
   ]
 }
