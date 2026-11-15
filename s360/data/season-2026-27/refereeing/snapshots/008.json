@@ -1,0 +1,12 @@
+{
+  "season": "2026-27",
+  "comparison_game_number": 8,
+  "as_of": "2026-10-12",
+  "publishable": false,
+  "blocking_reasons": [
+    "Earlier tracked-match backfill is incomplete",
+    "J7 and J8 match evidence thresholds are not fully met"
+  ],
+  "public_totals": {},
+  "note": "Do not infer zero errors from missing review. Candidate/disputed excluded."
+}
